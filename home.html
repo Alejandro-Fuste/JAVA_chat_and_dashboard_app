@@ -13,12 +13,22 @@
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <!-- Container for entire page -->
     <div id="container">
+
+      <!-- Main container for left and right sections -->
         <main>
+
+          <!-- left section -->
           <section id="leftSection">
+            <!-- Fake company logo -->
             <img src="./assets/images/Logo.png" alt="logo" id="homeLogo" />
           </section>
+
+          <!-- right section -->
           <section id="rightSection">
+
+            <!-- form for logging in -->
             <form id="loginForm">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -30,11 +40,9 @@
                   <input type="password" class="form-control" id="password">
                 </div>
 
-                <select class="form-select form-select-md" id='role' aria-label=".form-select-md example">
-                  <option selected>Open this select your company role</option>
-                  <option value="employee">Employee</option>
-                  <option value="manager">Manager</option>
-                </select>
+                <div id="goToSignUp" class="form-text">
+                  Don't have an account? <a href="signup.html">Sign Up</a>
+                </div>
                 
                 <button id='submitButton' type="submit" class="btn btn-primary">Submit</button>
                 <p id="hideErrorMessage"></p>
