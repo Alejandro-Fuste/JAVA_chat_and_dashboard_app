@@ -28,7 +28,10 @@
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+      <!-- Container for entire page -->
     <div id="container">
+
+        <!-- Navigation...left section -->
       <aside id="leftBar">
         <img src="./assets/images/Logo.png" alt="logo" id="logo" />
         <button id="logoutEl" type="button" class="btn btn-secondary">
@@ -39,7 +42,8 @@
         <i id="inactiveLink" class="fas fa-shopping-cart"></i>
         <i id="inactiveLink" class="fas fa-sliders-h-square"></i>
       </aside>
-
+      
+      <!-- Main part of page...middle section -->
       <main id="employeeMain">
         <header>
           <h4>Welcome to Dashboard</h4>
@@ -55,8 +59,11 @@
           </div>
         </header>
 
+        <!-- left part of main -->
         <section id="articleContainer">
           <article id="leftSection">
+
+            <!-- Form for create pitch -->
             <p id="formTitle">Reimbursement Form</p>
             <form
               id="reimbursementForm"
@@ -145,12 +152,33 @@
             </form>
           </article>
 
+            <!-- right part of main -->
           <article id="rightSection">
+
+            <!-- redo this section for viewing pitches -->
             <p id="pastTitle">Past Reimbursements</p>
             <ul id="reimbUl"></ul>
           </article>
+
         </section>
       </main>
+
+      <!-- profile and comment...right section -->
+      <aside id='rightBar'>
+
+        <!-- profile...top inner section -->
+        <section id="myProfileContainer">
+            <h4>My Profile</h4>
+
+            <div id="picInfoContainer">
+                <img src="" alt="profile avatar">
+                <p id="fullName">First Name Last Name</p>
+                <p id="businessName">Business Name</p>
+                <p id="location">Location</p>
+            </div>
+        </section>
+      </aside>
+
     </div>
   </body>
   <script
