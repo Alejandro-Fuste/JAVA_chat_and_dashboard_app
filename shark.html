@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/profilePages.css" />
-    <title>Business</title>
+    <title>Shark</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -44,7 +44,7 @@
       </aside>
       
       <!-- Main part of page...middle section -->
-      <main id="businessMain">
+      <main id="sharkMain">
           <!-- banner -->
         <header id="banner">
             <div id="dateNameDiv">
@@ -60,91 +60,12 @@
 
         <!-- left part of main -->
         <section id="articlesContainer">
-          <article id="leftSection">
-
-            <!-- Form for create pitch -->
-            <p id="formTitle">Pitch Form</p>
-            <form
-              id="pitchForm"
-              class="row g-3 was-validated"
-              novalidate
-            >
-            <!-- date input -->
-              <div class="col-md-12">
-                <label for="validationCustom01" class="form-label"
-                  >Date</label
-                >
-                <input
-                  type="date"
-                  class="form-control"
-                  id="validationCustom01"
-                  data-name="creationDate"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a date</div>
-              </div>
-
-              <!-- amount input -->
-              <div class="col-md-12">
-                <label for="validationCustom02" class="form-label"
-                  >Amount</label
-                >
-                <input
-                  type="number"
-                  step="0.01"
-                  min="0"
-                  class="form-control"
-                  id="validationCustom02"
-                  data-name="amount"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a valid amount</div>
-              </div>
-
-              <!-- percentage input -->
-              <div class="col-md-12">
-                <label for="validationCustom02" class="form-label"
-                  >Percentage</label
-                >
-                <input
-                  type="number"
-                  step="0.01"
-                  min="0"
-                  class="form-control"
-                  id="validationCustom03"
-                  data-name="percentage"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a valid amount</div>
-              </div>
-
-              <!-- pitch textarea -->
-              <div class="mb-3">
-                <label for="validationTextarea" class="form-label">Please enter a valid pitch.</label>
-                <textarea class="form-control" id="validationTextarea" data-name="pitch" placeholder="Required textarea" required></textarea>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">
-                  Please enter a message in the textarea.
-                </div>
-              </div>
-
-              <!-- form button -->
-              <div class="col-12">
-                <button id="submitButton" class="btn btn-primary" type="submit">
-                  Submit form
-                </button>
-              </div>
-            </form>
-          </article>
-
+          
             <!-- right part of main -->
-          <article id="rightSection">
+          <article id="pitchesContainer">
 
             <!-- redo this section for viewing pitches -->
-            <p id="pastTitle">Past Pitches</p>
+            <p id="pastTitle">View Pitches</p>
             <ul id="pitchUl"></ul>
           </article>
 
