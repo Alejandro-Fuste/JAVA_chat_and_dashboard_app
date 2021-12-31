@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/employee.css" />
+    <link rel="stylesheet" href="./assets/css/profilePages.css" />
     <title>Employee</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
   </head>
@@ -45,18 +45,17 @@
       
       <!-- Main part of page...middle section -->
       <main id="employeeMain">
-        <header>
-          <h4>Welcome to Dashboard</h4>
-          <span id="fakeSearch"
-            ><i id="searchGlass" class="fas fa-search"></i
-          ></span>
+          <!-- banner -->
+        <header id="banner">
+            <div id="dateNameDiv">
+                <p id="date">Date</p>
 
-          <div id="rightSideHeaderDiv">
-            <p id="employeeName"></p>
-            <span id="thumbNail"></span>
-            <span><i id="headerIcons" class="far fa-bell"></i></span>
-            <span><i id="headerIcons" class="fas fa-cog"></i></span>
-          </div>
+                <p id="headerName">Welcome, FirstName LastName</p>
+            </div>  
+            
+            <div id="imgDiv">
+               <h2>Image Div</h2>
+            </div>
         </header>
 
         <!-- left part of main -->
@@ -64,15 +63,15 @@
           <article id="leftSection">
 
             <!-- Form for create pitch -->
-            <p id="formTitle">Reimbursement Form</p>
+            <p id="formTitle">Pitch Form</p>
             <form
-              id="reimbursementForm"
+              id="pitchForm"
               class="row g-3 needs-validation"
               novalidate
             >
               <div class="col-md-12">
                 <label for="validationCustom01" class="form-label"
-                  >Reimbursement Date</label
+                  >Date</label
                 >
                 <input
                   type="date"
@@ -81,6 +80,7 @@
                   data-name="reimbursementDate"
                   required
                 />
+                <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter a date</div>
               </div>
 
@@ -97,51 +97,17 @@
                   data-name="reimbursementAmount"
                   required
                 />
+                <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter a valid amount</div>
               </div>
 
-              <div class="col-md-12">
-                <label for="validationCustom03" class="form-label"
-                  >Enter reason for reimbursement</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom03"
-                  data-name="reimbursementReason"
-                  required
-                />
-                <div class="invalid-feedback">Please enter a valid reason.</div>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom04" class="form-label"
-                  >Choose a category</label
-                >
-                <select
-                  class="form-select"
-                  id="validationCustom04"
-                  data-name="category"
-                  required
-                >
-                  <option selected disabled value="">Choose...</option>
-                </select>
-                <div class="invalid-feedback">Please select a category.</div>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom05" class="form-label"
-                  >Choose your manager</label
-                >
-                <select
-                  class="form-select"
-                  id="validationCustom05"
-                  data-name="managerId"
-                  required
-                >
-                  <option selected disabled value="">Choose...</option>
-                </select>
-                <div class="invalid-feedback">Please select your manager.</div>
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label">Please enter a valid pitch.</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Required textarea" required></textarea>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
               </div>
 
               <div class="col-12">
