@@ -8,4 +8,6 @@ public interface SharkDAO {
     Shark createSharkProfile(Shark o);
 
     List<Shark> getAllSharks();
+
+    Shark getSharkByUsername(String username);
 }

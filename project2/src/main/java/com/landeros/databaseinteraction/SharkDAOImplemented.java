@@ -1,5 +1,6 @@
 package com.landeros.databaseinteraction;
 
+import com.landeros.customexceptions.SharkNotFound;
 import com.landeros.entities.Shark;
 import com.landeros.utility.DatabaseConnection;
 
@@ -53,6 +54,34 @@ public class SharkDAOImplemented implements SharkDAO{
 
             return sharks;
 
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public Shark getSharkByUsername(String username) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "select * from shark where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+
+                return new Shark(
+                        resultSet.getInt("sharkId"),
+                        resultSet.getString("firstName"),
+                        resultSet.getString("lastName"),
+                        resultSet.getString("businessName"),
+                        resultSet.getString("username"),
+                        resultSet.getString("password")
+                );
+            }
+            else {
+                throw new SharkNotFound("Shark not found!");
+            }
         }
         catch (SQLException e) {
             e.printStackTrace();

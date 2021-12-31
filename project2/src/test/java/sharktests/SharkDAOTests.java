@@ -13,8 +13,8 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy, Inc",
-                "Kelso", "70sShow");
+        Shark shark1 = new Shark(0, "Kevin", "O'Leary", "Millions, Inc.",
+                "MrWonderful", "baldy1");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
@@ -26,5 +26,11 @@ public class SharkDAOTests {
             System.out.println(s);
         }
         Assert.assertTrue(sharks.size() >= 1);
+    }
+
+    @Test
+    void getSharkByUsername() {
+        Shark returnedShark = sharkDAO.getSharkByUsername("Kelso");
+        Assert.assertEquals(returnedShark.getUsername(), "Kelso");
     }
 }
