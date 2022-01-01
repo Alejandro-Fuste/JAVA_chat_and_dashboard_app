@@ -20,6 +20,12 @@ public class App {
         // home route
         app.get("/", appController.hello);
 
+        // business route
+        app.get("/business", appController.business);
+
+        // shark route
+        app.get("/shark", appController.shark);
+
         // start app connection
         app.start();
     }
