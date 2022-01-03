@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/SharkDAOImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/SharkDAOImplemented.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchServiceImplemented.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkServiceImplemented.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,12 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="TestNG.SharkServiceTests">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

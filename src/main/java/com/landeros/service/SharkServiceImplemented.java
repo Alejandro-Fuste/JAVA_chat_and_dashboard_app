@@ -1,6 +1,5 @@
 package com.landeros.service;
 
-import com.landeros.customexceptions.SharkNotFound;
 import com.landeros.customexceptions.UsernameOrPasswordIncorrect;
 import com.landeros.databaseinteraction.SharkDAO;
 import com.landeros.entities.Shark;

@@ -1,6 +1,5 @@
 package com.landeros.databaseinteraction;
 
-import com.landeros.customexceptions.SharkNotFound;
 import com.landeros.entities.Shark;
 import com.landeros.utility.DatabaseConnection;
 
