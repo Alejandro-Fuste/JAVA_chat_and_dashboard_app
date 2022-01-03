@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/JAVA_investing_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/controllers/SharkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/controllers/SharkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAOImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAOImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkServiceImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +112,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SharkDAOTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JAVA_investing_app" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sharktests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="sharktests" />
+      <option name="MAIN_CLASS_NAME" value="sharktests.SharkDAOTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
+        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
+        <env name="DB" value="postgres" />
+        <env name="PASSWORD" value="Udonlamei31" />
+        <env name="PORT" value="5432" />
+        <env name="USER" value="Virtud87" />
+      </envs>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SharkServiceTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVA_investing_app" />
       <shortenClasspath name="NONE" />
@@ -165,10 +189,12 @@
       <item itemvalue="Application.DatabaseConnection" />
       <item itemvalue="TestNG.PitchDAOTests" />
       <item itemvalue="TestNG.SharkServiceTests" />
+      <item itemvalue="TestNG.SharkDAOTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SharkServiceTests" />
+        <item itemvalue="TestNG.SharkDAOTests" />
         <item itemvalue="Application.App" />
         <item itemvalue="TestNG.PitchDAOTests" />
         <item itemvalue="Application.DatabaseConnection" />

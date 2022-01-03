@@ -34,7 +34,4 @@ public class SharkDAOTests {
         Shark returnedShark = sharkDAO.getSharkByUsername("Kelso");
         Assert.assertEquals(returnedShark.getUsername(), "Kelso");
     }
-
-    @Test(expectedExceptions = SharkNotFound.class, expectedExceptionsMessageRegExp = "Shark not found!")
-    void getSharkByUsernameFail() {Shark shark = sharkDAO.getSharkByUsername("Bob");}
 }
