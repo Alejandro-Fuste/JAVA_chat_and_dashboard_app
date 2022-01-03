@@ -30,9 +30,9 @@ public class SharkServiceImplemented implements SharkService {
     @Override
     public Shark sharkLoginService(String username, String password) {
         Shark shark = this.sharkDAO.getSharkByUsername(username);
-        if (!Objects.equals(shark.getUsername(), username) ||
-                !Objects.equals(shark.getPassword(), password))
-            throw new UsernameOrPasswordIncorrect("Either username, password or both incorrect!");
+        if (!Objects.equals(shark.getUsername(), username))
+            throw new UsernameOrPasswordIncorrect("Either your username or password or both are incorrect!");
         return shark;
+
     }
 }

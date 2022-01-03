@@ -15,7 +15,7 @@ public class SharkServiceTests {
     static SharkService sharkService = new SharkServiceImplemented(sharkDAO);
 
     @Test(expectedExceptions = UsernameOrPasswordIncorrect.class,
-            expectedExceptionsMessageRegExp = "Either username, password or both incorrect!")
+            expectedExceptionsMessageRegExp = "Either your username or password or both are incorrect!")
     void sharkLoginService() {
         Shark shark = sharkService.sharkLoginService("Bobby", "Mavs1");
     }

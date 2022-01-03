@@ -22,11 +22,8 @@ public class PitchDAOTests {
 
     @Test
     void makeOffer() {
-        Pitch offer = pitchDAO.makeOffer(1, 100_000, 6.5);
-        Assert.assertEquals(offer.getPitchId(), 1);
-//        Assert.assertEquals(offer.getAmount(), 100_000.0);
-//        Assert.assertEquals(offer.getPercentage(), 6.5);
-//        System.out.println(offer);
+        boolean offer = pitchDAO.makeOffer(1, 100_000, 6.5);
+        Assert.assertTrue(offer);
     }
 
     @Test

@@ -39,34 +39,19 @@ public class PitchDAOImplemented implements PitchDAO {
     }
 
     @Override
-    public Pitch makeOffer(int pitchId, double amount, double percentage) {
+    public boolean makeOffer(int pitchId, double amount, double percentage) {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "update pitches set amount = ?, percentage = ? where pitchId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setDouble(1, amount);
             preparedStatement.setDouble(2, percentage);
             preparedStatement.setInt(3, pitchId);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()) {
-                Pitch pitch = new Pitch(
-                        resultSet.getInt("pitchId"),
-                        resultSet.getInt("businessId"),
-                        resultSet.getString("creationDate"),
-                        resultSet.getString("pitch"),
-                        resultSet.getFloat("amount"),
-                        resultSet.getDouble("percentage"),
-                        resultSet.getString("status")
-                );
-
-                return pitch;
+            preparedStatement.execute();
+            return true;
             }
-            else {
-                throw new PitchNotFound("Pitch not found!");
-            }
-         }
         catch (SQLException e) {
             e.printStackTrace();
-            return null;
+            return false;
         }
     }
 
@@ -76,11 +61,8 @@ public class PitchDAOImplemented implements PitchDAO {
             String sql = "update pitches set status = 'Accepted' where pitchId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, pitchId);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) return true;
-            else {
-                throw new RuntimeException("Something went wrong!");
-            }
+            preparedStatement.execute();
+            return true;
         }
         catch (SQLException e) {
             e.printStackTrace();

@@ -7,6 +7,7 @@ import com.landeros.service.SharkService;
 import io.javalin.http.Handler;
 
 import java.util.List;
+import java.util.Map;
 
 public class SharkController {
     SharkService sharkService;
@@ -34,15 +35,18 @@ public class SharkController {
 
     public Handler sharkLogin = ctx -> {
         Gson gson = new Gson();
-        String username = gson.toJson(ctx.body(), String.class);
-        String password = gson.toJson(ctx.body(), String.class);
+        Map<String, String> credentials = gson.fromJson(ctx.body(), Map.class);
         try {
-            Shark sharkLoggedIn = this.sharkService.sharkLoginService(username, password);
+            Shark sharkLoggedIn = this.sharkService.sharkLoginService(credentials.get("username"), credentials.get("password"));
             String sharkLoggedInJson = gson.toJson(sharkLoggedIn);
             ctx.result(sharkLoggedInJson);
             ctx.status(200);
         }
         catch (UsernameOrPasswordIncorrect e) {
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+        catch (Exception e) {
             ctx.result(e.getMessage());
             ctx.status(404);
         }
