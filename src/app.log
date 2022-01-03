@@ -1,0 +1,215 @@
+2022-01-01 16:11:31,999 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-01 16:11:32,005 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @703ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-01 16:11:32,006 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-01 16:11:32,020 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
+2022-01-01 16:11:32,020 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-01 16:11:32,140 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-01 16:11:32,140 [main] INFO  io.javalin.Javalin - Javalin started in 135ms \o/
+2022-01-01 16:11:37,726 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 4.52 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:11:37 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:42:36,897 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-01 16:42:36,906 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @430ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-01 16:42:36,908 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-01 16:42:36,927 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
+2022-01-01 16:42:36,928 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-01 16:42:37,024 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-01 16:42:37,024 [main] INFO  io.javalin.Javalin - Javalin started in 117ms \o/
+2022-01-01 16:42:41,180 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 8.00 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:42:41 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:48:12,086 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-01 16:48:12,092 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @462ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-01 16:48:12,093 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-01 16:48:12,105 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
+2022-01-01 16:48:12,106 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-01 16:48:12,197 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-01 16:48:12,197 [main] INFO  io.javalin.Javalin - Javalin started in 104ms \o/
+2022-01-01 16:48:25,713 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 4.89 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:48:25 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:48:32,520 [qtp2003147568-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 3.12 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:48:32 GMT, Content-Type=text/plain}
+    Body is 9 bytes (starts on next line):
+    Not found
+----------------------------------------------------------------------------------
+2022-01-01 16:49:11,598 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-01 16:49:11,603 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @381ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-01 16:49:11,604 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-01 16:49:11,611 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
+2022-01-01 16:49:11,611 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-01 16:49:11,737 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-01 16:49:11,738 [main] INFO  io.javalin.Javalin - Javalin started in 134ms \o/
+2022-01-01 16:49:14,569 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 4.26 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:49:14 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:49:26,829 [qtp2003147568-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1.18 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:49:26 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:49:48,477 [qtp2003147568-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 5.91 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:49:48 GMT, Content-Type=text/plain}
+    Body is 9 bytes (starts on next line):
+    Not found
+----------------------------------------------------------------------------------
+2022-01-01 16:55:39,780 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-01 16:55:39,785 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @353ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-01 16:55:39,786 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-01 16:55:39,795 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
+2022-01-01 16:55:39,795 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-01 16:55:39,874 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-01 16:55:39,874 [main] INFO  io.javalin.Javalin - Javalin started in 89ms \o/
+2022-01-01 16:55:45,262 [qtp1871612052-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/]
+    Matching endpoint-handlers: [BEFORE=*, GET=/]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 6.63 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:55:45 GMT, Content-Type=text/plain}
+    Body is 12 bytes (starts on next line):
+    Hello there!
+----------------------------------------------------------------------------------
+2022-01-01 16:55:53,736 [qtp1871612052-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1.00 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:55:53 GMT, Content-Type=text/plain}
+    Body is 25 bytes (starts on next line):
+    Hello from business page!
+----------------------------------------------------------------------------------
+2022-01-01 16:56:00,271 [qtp1871612052-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/shark]
+    Matching endpoint-handlers: [BEFORE=*, GET=/shark]
+    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.33 ms
+    Headers: {Date=Sat, 01 Jan 2022 21:56:00 GMT, Content-Type=text/plain}
+    Body is 22 bytes (starts on next line):
+    Hello from shark page!
+----------------------------------------------------------------------------------
