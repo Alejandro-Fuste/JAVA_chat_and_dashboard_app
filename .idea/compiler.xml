@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="af_JavaAppFile" />
+        <module name="JAVA_investing_app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="af_JavaAppFile" target="17" />
+      <module name="JAVA_investing_app" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
