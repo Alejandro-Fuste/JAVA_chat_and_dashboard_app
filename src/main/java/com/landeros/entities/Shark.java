@@ -94,5 +94,3 @@ public class Shark {
         this.password = password;
     }
 }
-
-

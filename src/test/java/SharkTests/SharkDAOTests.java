@@ -1,5 +1,6 @@
-package SharkTests;
+package sharktests;
 
+import com.landeros.customexceptions.SharkNotFound;
 import com.landeros.databaseinteraction.SharkDAO;
 import com.landeros.databaseinteraction.SharkDAOImplemented;
 import com.landeros.entities.Shark;
@@ -13,9 +14,9 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy, Inc",
-                "Kelso", "70sShow");
-        Shark returnedShark = sharkDAO.sharkCreateProfile(shark1);
+        Shark shark1 = new Shark(0, "Kevin", "O'Leary", "Millions, Inc.",
+                "MrWonderful", "baldy1");
+        Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
 
@@ -27,4 +28,13 @@ public class SharkDAOTests {
         }
         Assert.assertTrue(sharks.size() >= 1);
     }
+
+    @Test
+    void getSharkByUsername() {
+        Shark returnedShark = sharkDAO.getSharkByUsername("Kelso");
+        Assert.assertEquals(returnedShark.getUsername(), "Kelso");
+    }
+
+    @Test(expectedExceptions = SharkNotFound.class, expectedExceptionsMessageRegExp = "Shark not found!")
+    void getSharkByUsernameFail() {Shark shark = sharkDAO.getSharkByUsername("Bob");}
 }

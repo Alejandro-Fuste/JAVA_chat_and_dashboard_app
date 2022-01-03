@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/JAVA_investing_app.iml" filepath="$PROJECT_DIR$/JAVA_investing_app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/af_JavaAppFile.iml" filepath="$PROJECT_DIR$/af_JavaAppFile.iml" />
+>>>>>>> 4535d0c60cd448ff480c3633f72adecfcbe0bb67
     </modules>
   </component>
 </project>
