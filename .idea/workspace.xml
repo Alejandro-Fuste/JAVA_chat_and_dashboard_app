@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257ae0ac-dea6-4865-bcfb-f8f9c32aac0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/customexceptions/CommentNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/servicelayer/CommentingServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/servicelayer/CommentingServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/DAO/BusinessDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/DAO/BusinessDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/servicelayer/BusinessServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/servicelayer/BusinessServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

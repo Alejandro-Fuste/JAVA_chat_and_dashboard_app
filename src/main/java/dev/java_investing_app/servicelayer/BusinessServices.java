@@ -11,5 +11,4 @@ public interface BusinessServices {
     Business getBusinessByIdService(int id);
 
     List<Business> getAllBusinessesService();
-
 }
