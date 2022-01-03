@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257ae0ac-dea6-4865-bcfb-f8f9c32aac0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/connectingtodatabase/ConnectionFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/af_JavaAppFile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/af_JavaAppFile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/app/java/dev/java_investing_app/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/app/java/dev/java_investing_app/controllers/AppController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/java_investing_app/controllers/AppController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +24,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="236yGcGyw67Gj77M38EP0EVpIBz" />
   <component name="ProjectLevelVcsManager">
@@ -52,6 +48,8 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="dev.java_investing_app.app.App" />
       <module name="af_JavaAppFile" />
       <extension name="coverage">
@@ -91,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
