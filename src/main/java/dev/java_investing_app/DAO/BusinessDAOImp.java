@@ -1,7 +1,11 @@
 package dev.java_investing_app.DAO;
 
+import com.landeros.customexceptions.UsernameOrPasswordIncorrect;
+import com.landeros.entities.Shark;
+import com.landeros.utility.DatabaseConnection;
 import dev.java_investing_app.connectingtodatabase.ConnectionFile;
 import dev.java_investing_app.customexceptions.BusinessNotFound;
+import dev.java_investing_app.customexceptions.UsernameOrPasswordError;
 import dev.java_investing_app.entities.Business;
 
 import java.sql.*;
@@ -82,6 +86,58 @@ public class BusinessDAOImp implements BusinessDAO {
             return null;
         }
     }
-//    New comment
 
+    public Business getBusinessByUsername(String username) {
+        try (Connection connection = ConnectionFile.createConnection()) {
+            String sql = "select * from business where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+//            Business businessUser = new Business();
+            if (resultSet.next()) {
+                Business businessUser = new Business (
+                        resultSet.getInt("businessId"),
+                        resultSet.getString("firstName"),
+                        resultSet.getString("lastName"),
+                        resultSet.getString("businessName"),
+                        resultSet.getString("username"),
+                        resultSet.getString("password")
+                );
+                return businessUser;
+            } else {
+                throw new UsernameOrPasswordError("Username or Password are incorrect");
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
+//   --------------------  Other Login Method If Needed ------------------------
+//    public Business businessLogin(String username, String password){
+//        try(Connection connection = ConnectionFile.createConnection()) {
+//            String sql = "select * from business where username = ? and password = ?";
+//            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+//            preparedStatement.setString(2, username);
+//            preparedStatement.setString(2, password);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            if(resultSet.next()) {
+//                Business business = new Business(
+//                        resultSet.getInt("businessId"),
+//                        resultSet.getString("firstName"),
+//                        resultSet.getString("lastName"),
+//                        resultSet.getString("businessName"),
+//                        resultSet.getString("username"),
+//                        resultSet.getString("password")
+//                );
+//                return business;
+//        } else {
+//            throw new UsernameOrPasswordError("Username or Password are incorrect");
+//        }
+//    } catch (SQLException e){
+//        e.printStackTrace();
+//        return null;
+//    }
+
+

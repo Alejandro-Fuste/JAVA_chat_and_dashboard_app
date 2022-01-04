@@ -12,4 +12,7 @@ public interface BusinessDAO {
 
     List<Business> getAllBusinesses();
 
+//    Business businessLogin(String username, String password);
+
+    Business getBusinessByUsername(String username);
 }

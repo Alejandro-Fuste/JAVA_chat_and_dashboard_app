@@ -1,6 +1,7 @@
 package dev.java_investing_app.DAO;
 
 import dev.java_investing_app.connectingtodatabase.ConnectionFile;
+import dev.java_investing_app.customexceptions.CommentNotFound;
 import dev.java_investing_app.entities.Commenting;
 
 import java.sql.*;
@@ -37,21 +38,24 @@ public class CommentingDAOImp implements CommentingDAO{
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            resultSet.next();
-            Commenting commenting = new Commenting(
-                    resultSet.getInt("commentId"),
-                    resultSet.getInt("businessId"),
-                    resultSet.getInt("pitchId"),
-                    resultSet.getInt("sharkId"),
-                    resultSet.getString("commenting"),
-                    resultSet.getString("createDate")
-            );
-            return commenting;
+//            resultSet.next();
+            if (resultSet.next()) {
+                Commenting commenting = new Commenting(
+                        resultSet.getInt("commentId"),
+                        resultSet.getInt("businessId"),
+                        resultSet.getInt("pitchId"),
+                        resultSet.getInt("sharkId"),
+                        resultSet.getString("commenting"),
+                        resultSet.getString("createDate")
+                );
+                return commenting;
+            } else {
+                throw new CommentNotFound("Comment not found");
+            }
         } catch (SQLException e){
             e.printStackTrace();
             return null;
         }
-
     }
 
     public List<Commenting> getAllComments(){

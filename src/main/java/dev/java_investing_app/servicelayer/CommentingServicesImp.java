@@ -1,6 +1,7 @@
 package dev.java_investing_app.servicelayer;
 
 import dev.java_investing_app.DAO.CommentingDAO;
+import dev.java_investing_app.customexceptions.CommentNotFound;
 import dev.java_investing_app.entities.Commenting;
 
 import java.util.List;
@@ -18,11 +19,18 @@ public class CommentingServicesImp implements CommentingServices{
 
     @Override
     public Commenting getCommentByIdService(int id) {
-        return null;
+        try {
+            Commenting commenting = this.commentingDAO.getCommentById(id);
+            return commenting;
+        }
+        catch (CommentNotFound e){
+            throw new CommentNotFound("Comment not found");
+        }
     }
 
     @Override
     public List<Commenting> getAllCommentsService() {
-        return null;
+        return this.commentingDAO.getAllComments();
     }
 }
+

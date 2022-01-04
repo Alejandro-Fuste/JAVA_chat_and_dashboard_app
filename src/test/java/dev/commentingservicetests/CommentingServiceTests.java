@@ -17,6 +17,6 @@ public class CommentingServiceTests {
 
     @Test(expectedExceptions = CommentNotFound.class, expectedExceptionsMessageRegExp = "Comment not found")
     void badIdForComment() {
-        Commenting commenting = commentingServices.getCommentByIdService(commentingDAO);
+        Commenting commenting = commentingServices.getCommentByIdService(55678);
     }
 }

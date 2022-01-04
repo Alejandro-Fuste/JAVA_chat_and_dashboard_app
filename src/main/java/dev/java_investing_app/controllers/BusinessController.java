@@ -1,12 +1,16 @@
 package dev.java_investing_app.controllers;
 
 import com.google.gson.Gson;
+import com.landeros.customexceptions.UsernameOrPasswordIncorrect;
+import com.landeros.entities.Shark;
 import dev.java_investing_app.customexceptions.BusinessNotFound;
+import dev.java_investing_app.customexceptions.UsernameOrPasswordError;
 import dev.java_investing_app.entities.Business;
 import dev.java_investing_app.servicelayer.BusinessServices;
 import io.javalin.http.Handler;
 
 import java.util.List;
+import java.util.Map;
 
 public class BusinessController {
     BusinessServices businessServices;
@@ -44,5 +48,23 @@ public class BusinessController {
         String businessesJSONs = gson.toJson(businesses);
         ctx.result(businessesJSONs);
         ctx.status(200);
+    };
+
+    public Handler getBusinessLogin = ctx -> {
+        Gson gson = new Gson();
+        Map<String, String> loginCredentials = gson.fromJson(ctx.body(), Map.class);
+        try {
+            Business businessLogin = this.businessServices.getBusinessLoginService(loginCredentials.get("username"), loginCredentials.get("password"));
+            String businessLoginJson = gson.toJson(businessLogin);
+            ctx.result(businessLoginJson);
+            ctx.status(200);
+        } catch (UsernameOrPasswordError e) {
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+        catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
 }

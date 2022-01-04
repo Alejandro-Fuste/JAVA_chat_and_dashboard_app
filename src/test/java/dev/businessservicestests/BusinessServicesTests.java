@@ -2,6 +2,7 @@ package dev.businessservicestests;
 
 import dev.java_investing_app.DAO.BusinessDAO;
 import dev.java_investing_app.customexceptions.BusinessNotFound;
+import dev.java_investing_app.customexceptions.UsernameOrPasswordError;
 import dev.java_investing_app.entities.Business;
 import dev.java_investing_app.DAO.BusinessDAO;
 import dev.java_investing_app.DAO.BusinessDAOImp;
@@ -16,6 +17,10 @@ public class BusinessServicesTests {
 
     @Test(expectedExceptions = BusinessNotFound.class, expectedExceptionsMessageRegExp = "Business not found")
     void badIdForBusiness(){
-        Business business = businessServices.getBusinessByIdService(2345);
+        Business anotherBusiness = businessServices.getBusinessByIdService(2345);
+    }
+    @Test(expectedExceptions = UsernameOrPasswordError.class, expectedExceptionsMessageRegExp = "Username or Password are incorrect")
+    void badLogin(){
+        Business newBusiness = businessServices.getBusinessLoginService("Lex", "Luther");
     }
 }
