@@ -1,14 +1,12 @@
 package dev.commentingservicetests;
 
-import dev.java_investing_app.DAO.CommentingDAO;
-import dev.java_investing_app.DAO.CommentingDAOImp;
-import dev.java_investing_app.customexceptions.CommentNotFound;
-import dev.java_investing_app.entities.Commenting;
-import dev.java_investing_app.servicelayer.CommentingServices;
-import dev.java_investing_app.servicelayer.CommentingServicesImp;
+import com.investing_app.databaseinteraction.CommentingDAO;
+import com.investing_app.databaseinteraction.CommentingDAOImp;
+import com.investing_app.customexceptions.CommentNotFound;
+import com.investing_app.entities.Commenting;
+import com.investing_app.service.CommentingServices;
+import com.investing_app.service.CommentingServicesImp;
 import org.testng.annotations.Test;
-
-import javax.xml.stream.events.Comment;
 
 public class CommentingServiceTests {
 

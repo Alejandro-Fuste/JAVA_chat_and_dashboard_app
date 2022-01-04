@@ -1,8 +1,8 @@
 package dev.businesstests;
 
-import dev.java_investing_app.entities.Business;
-import dev.java_investing_app.DAO.BusinessDAO;
-import dev.java_investing_app.DAO.BusinessDAOImp;
+import com.investing_app.entities.Business;
+import com.investing_app.databaseinteraction.BusinessDAO;
+import com.investing_app.databaseinteraction.BusinessDAOImp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -42,12 +42,3 @@ public class BusinessDAOTest {
         Assert.assertEquals(newBusiness.getUsername(), "Wayne100");
     }
 }
-
-
-    // ------------------  Unused Method --------------------------------
-//    @Test
-//    void testBusinessLogin(){
-//        Business business = businessDAO.businessLogin("Wayne100", "ImBatman");
-////        Assert.assertTrue(business.getBusinessName() == "Wayne Enterprises");
-//        Assert.assertSame(business.getFirstName(), "Wayne", "These names do not match");
-//    }

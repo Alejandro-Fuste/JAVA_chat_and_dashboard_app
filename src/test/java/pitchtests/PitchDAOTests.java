@@ -1,8 +1,8 @@
 package pitchtests;
 
-import com.landeros.databaseinteraction.PitchDAO;
-import com.landeros.databaseinteraction.PitchDAOImplemented;
-import com.landeros.entities.Pitch;
+import com.investing_app.databaseinteraction.PitchDAO;
+import com.investing_app.databaseinteraction.PitchDAOImplemented;
+import com.investing_app.entities.Pitch;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

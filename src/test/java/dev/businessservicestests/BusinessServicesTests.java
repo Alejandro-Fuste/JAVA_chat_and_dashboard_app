@@ -1,13 +1,12 @@
 package dev.businessservicestests;
 
-import dev.java_investing_app.DAO.BusinessDAO;
-import dev.java_investing_app.customexceptions.BusinessNotFound;
-import dev.java_investing_app.customexceptions.UsernameOrPasswordError;
-import dev.java_investing_app.entities.Business;
-import dev.java_investing_app.DAO.BusinessDAO;
-import dev.java_investing_app.DAO.BusinessDAOImp;
-import dev.java_investing_app.servicelayer.BusinessServices;
-import dev.java_investing_app.servicelayer.BusinessServicesImp;
+import com.investing_app.databaseinteraction.BusinessDAO;
+import com.investing_app.customexceptions.BusinessNotFound;
+import com.investing_app.customexceptions.UsernameOrPasswordError;
+import com.investing_app.entities.Business;
+import com.investing_app.databaseinteraction.BusinessDAOImp;
+import com.investing_app.service.BusinessServices;
+import com.investing_app.service.BusinessServicesImp;
 import org.testng.annotations.Test;
 
 public class BusinessServicesTests {
