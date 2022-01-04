@@ -1,6 +1,5 @@
 package sharktests;
 
-import com.landeros.customexceptions.SharkNotFound;
 import com.landeros.databaseinteraction.SharkDAO;
 import com.landeros.databaseinteraction.SharkDAOImplemented;
 import com.landeros.entities.Shark;
