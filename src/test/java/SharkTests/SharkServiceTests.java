@@ -1,11 +1,11 @@
 package sharktests;
 
-import com.landeros.customexceptions.UsernameOrPasswordIncorrect;
-import com.landeros.databaseinteraction.SharkDAO;
-import com.landeros.databaseinteraction.SharkDAOImplemented;
-import com.landeros.entities.Shark;
-import com.landeros.service.SharkService;
-import com.landeros.service.SharkServiceImplemented;
+import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
+import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.databaseinteraction.SharkDAOImplemented;
+import com.investing_app.entities.Shark;
+import com.investing_app.service.SharkService;
+import com.investing_app.service.SharkServiceImplemented;
 import org.testng.annotations.Test;
 
 public class SharkServiceTests {
