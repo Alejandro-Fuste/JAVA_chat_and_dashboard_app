@@ -2,12 +2,19 @@ package sharktests;
 
 import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
 import com.investing_app.databaseinteraction.SharkDAO;
+<<<<<<< HEAD
 import com.investing_app.entities.Shark;
 import com.investing_app.service.SharkService;
 import com.investing_app.service.SharkServiceImplemented;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+=======
+import com.investing_app.databaseinteraction.SharkDAOImplemented;
+import com.investing_app.entities.Shark;
+import com.investing_app.service.SharkService;
+import com.investing_app.service.SharkServiceImplemented;
+>>>>>>> 39b27918ccee249c0f0be5ec538ae715a4c3ff1c
 import org.testng.annotations.Test;
 
 public class SharkServiceTests {
