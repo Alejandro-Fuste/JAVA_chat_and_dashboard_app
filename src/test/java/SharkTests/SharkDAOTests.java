@@ -1,8 +1,8 @@
 package sharktests;
 
-import com.landeros.databaseinteraction.SharkDAO;
-import com.landeros.databaseinteraction.SharkDAOImplemented;
-import com.landeros.entities.Shark;
+import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.databaseinteraction.SharkDAOImplemented;
+import com.investing_app.entities.Shark;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,14 +19,6 @@ public class SharkDAOTests {
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
 
-    @Test
-    void getAllSharks() {
-        List<Shark> sharks = sharkDAO.getAllSharks();
-        for (Shark s : sharks) {
-            System.out.println(s);
-        }
-        Assert.assertTrue(sharks.size() >= 1);
-    }
 
     @Test
     void getSharkByUsername() {

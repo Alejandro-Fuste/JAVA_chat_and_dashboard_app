@@ -84,7 +84,7 @@ com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -149,7 +149,7 @@ com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -229,7 +229,7 @@ com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -309,7 +309,7 @@ com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -389,7 +389,7 @@ com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -464,10 +464,10 @@ Response: [500], execution took 67.25 ms
 2022-01-03 09:17:41,152 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-01-03 09:17:41,157 [main] INFO  io.javalin.Javalin - Javalin started in 170ms \o/
 2022-01-03 09:17:47,900 [qtp231311211-23] WARN  io.javalin.Javalin - Uncaught exception
-com.landeros.customexceptions.SharkNotFound: Shark not found!
-	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
-	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+com.investing_app.customexceptions.SharkNotFound: Shark not found!
+	at com.investing_app.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
+	at com.investing_app.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -536,10 +536,10 @@ Response: [500], execution took 863.84 ms
 2022-01-03 09:21:20,567 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-01-03 09:21:20,567 [main] INFO  io.javalin.Javalin - Javalin started in 161ms \o/
 2022-01-03 09:21:34,026 [qtp231311211-23] WARN  io.javalin.Javalin - Uncaught exception
-com.landeros.customexceptions.SharkNotFound: Shark not found!
-	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
-	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+com.investing_app.customexceptions.SharkNotFound: Shark not found!
+	at com.investing_app.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
+	at com.investing_app.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -609,9 +609,9 @@ Response: [500], execution took 848.67 ms
 2022-01-03 13:07:42,441 [main] INFO  io.javalin.Javalin - Javalin started in 211ms \o/
 2022-01-03 13:08:07,412 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
 java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
-	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
-	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at com.investing_app.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.investing_app.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -681,9 +681,9 @@ Response: [500], execution took 121.14 ms
 2022-01-03 13:16:24,204 [main] INFO  io.javalin.Javalin - Javalin started in 216ms \o/
 2022-01-03 13:16:37,437 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
 java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
-	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
-	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at com.investing_app.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.investing_app.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -753,9 +753,9 @@ Response: [500], execution took 67.37 ms
 2022-01-03 13:32:59,638 [main] INFO  io.javalin.Javalin - Javalin started in 307ms \o/
 2022-01-03 13:33:13,489 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
 java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
-	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
-	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
-	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at com.investing_app.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.investing_app.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.investing_app.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
 	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
 	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
@@ -902,7 +902,7 @@ Request: POST [/shark/login]
 Response: [404], execution took 843.13 ms
     Headers: {Date=Mon, 03 Jan 2022 20:42:05 GMT, Content-Type=text/plain}
     Body is 117 bytes (starts on next line):
-    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+    Cannot invoke "String.equals(Object)" because the return value of "com.investing_app.entities.Shark.getUsername()" is null
 ----------------------------------------------------------------------------------
 2022-01-03 13:42:56,788 [qtp231311211-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
 Request: POST [/shark/login]
@@ -919,7 +919,7 @@ Request: POST [/shark/login]
 Response: [404], execution took 483.11 ms
     Headers: {Date=Mon, 03 Jan 2022 20:42:56 GMT, Content-Type=text/plain}
     Body is 117 bytes (starts on next line):
-    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+    Cannot invoke "String.equals(Object)" because the return value of "com.investing_app.entities.Shark.getUsername()" is null
 ----------------------------------------------------------------------------------
 2022-01-03 13:47:30,783 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
@@ -1000,7 +1000,7 @@ Request: POST [/shark/login]
 Response: [404], execution took 470.60 ms
     Headers: {Date=Mon, 03 Jan 2022 20:57:44 GMT, Content-Type=text/plain}
     Body is 117 bytes (starts on next line):
-    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+    Cannot invoke "String.equals(Object)" because the return value of "com.investing_app.entities.Shark.getUsername()" is null
 ----------------------------------------------------------------------------------
 2022-01-03 14:17:55,704 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
