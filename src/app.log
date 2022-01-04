@@ -1149,3 +1149,190 @@ Response: [200], execution took 490.94 ms
     Body is 123 bytes (starts on next line):
     {"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"}
 ----------------------------------------------------------------------------------
+2022-01-03 15:45:09,791 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 15:45:09,810 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1029ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 15:45:09,812 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 15:45:09,837 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 15:45:09,837 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 15:45:10,091 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 15:45:10,091 [main] INFO  io.javalin.Javalin - Javalin started in 281ms \o/
+2022-01-04 08:25:20,408 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 08:25:20,425 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1174ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 08:25:20,427 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 08:25:20,452 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 08:25:20,452 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 08:25:20,637 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 08:25:20,638 [main] INFO  io.javalin.Javalin - Javalin started in 212ms \o/
+2022-01-04 08:31:11,317 [qtp79438382-26] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=99cb570c-2762-4725-8fa3-fcdceb0a93de, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 120000,
+    "percentage": 7.0
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 929.29 ms
+    Headers: {Date=Tue, 04 Jan 2022 15:31:10 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 10:15:34,795 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 10:15:34,809 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1124ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 10:15:34,810 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 10:15:34,836 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 10:15:34,837 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 10:15:35,079 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 10:15:35,079 [main] INFO  io.javalin.Javalin - Javalin started in 270ms \o/
+2022-01-04 10:15:40,198 [qtp412111214-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=12923815-9d69-4a02-9fa2-74bdd2fb4764, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1050.69 ms
+    Headers: {Date=Tue, 04 Jan 2022 17:15:39 GMT, Content-Type=text/plain}
+    Body is 180 bytes (starts on next line):
+    [{"pitchId":1,"businessId":1,"creationDate":"12-31-2021","pitch":"Send us your kitchen knives and we sharpen them for you!","amount":100000.0,"percentage":6.5,"status":"Accepted"}]
+----------------------------------------------------------------------------------
+2022-01-04 10:59:41,642 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 10:59:41,659 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1022ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 10:59:41,660 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 10:59:41,686 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 10:59:41,686 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 10:59:41,889 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 10:59:41,889 [main] INFO  io.javalin.Javalin - Javalin started in 230ms \o/
+2022-01-04 12:08:04,153 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:08:04,164 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @954ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:08:04,165 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:08:04,186 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:08:04,186 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:08:04,401 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:08:04,401 [main] INFO  io.javalin.Javalin - Javalin started in 236ms \o/
+2022-01-04 12:08:54,513 [qtp79438382-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PUT=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=7a490dff-3113-4f48-809f-12b0f49e8be0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 130000,
+    "percentage": 8.5
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1043.04 ms
+    Headers: {Date=Tue, 04 Jan 2022 19:08:53 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 12:52:26,096 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:52:26,107 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @750ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:52:26,108 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:52:26,128 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:52:26,128 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:52:26,295 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:52:26,295 [main] INFO  io.javalin.Javalin - Javalin started in 187ms \o/
+2022-01-04 12:52:50,944 [qtp79438382-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=4e1e7fba-468a-49e6-bb1f-8b345e928adf, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 130000,
+    "percentage": 8.5
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 835.42 ms
+    Headers: {Date=Tue, 04 Jan 2022 19:52:50 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 12:59:22,024 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:59:22,038 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @845ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:59:22,039 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:59:22,058 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:59:22,058 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:59:22,251 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:59:22,252 [main] INFO  io.javalin.Javalin - Javalin started in 213ms \o/
+2022-01-04 13:01:57,871 [qtp2031951755-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/accept/1]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/accept/{pitchId}]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=aafeb37f-579e-41a0-8f82-82e51ca844c8, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 780.21 ms
+    Headers: {Date=Tue, 04 Jan 2022 20:01:57 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
