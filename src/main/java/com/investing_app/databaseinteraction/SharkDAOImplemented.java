@@ -1,7 +1,7 @@
-package com.investing_app.databaseinteraction;
+package com.landeros.databaseinteraction;
 
-import com.investing_app.entities.Shark;
-import com.investing_app.utility.DatabaseConnection;
+import com.landeros.entities.Shark;
+import com.landeros.utility.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
