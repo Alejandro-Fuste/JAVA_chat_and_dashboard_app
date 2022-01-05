@@ -6,50 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/controllers/PitchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/controllers/PitchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/controllers/SharkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/controllers/SharkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/customexceptions/PitchNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/customexceptions/PitchNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/customexceptions/SharkNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/customexceptions/SharkNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/customexceptions/UsernameOrPasswordIncorrect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/customexceptions/UsernameOrPasswordIncorrect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/databaseinteraction/PitchDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/PitchDAOImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/databaseinteraction/PitchDAOImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/SharkDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/databaseinteraction/SharkDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/databaseinteraction/SharkDAOImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/databaseinteraction/SharkDAOImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/entities/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/entities/Pitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Pitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/entities/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Shark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/PitchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/PitchServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/PitchServiceImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/SharkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/service/SharkServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/SharkServiceImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/landeros/utility/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/utility/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SharkTests/SharkDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharkTests/SharkDAOTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SharkTests/SharkServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharkTests/SharkServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/landeros/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/investing_app/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/controllers/PitchController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/controllers/SharkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/customexceptions/PitchNotFound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/customexceptions/SharkNotFound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/customexceptions/UsernameOrPasswordIncorrect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/databaseinteraction/PitchDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/databaseinteraction/PitchDAOImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/databaseinteraction/SharkDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/databaseinteraction/SharkDAOImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/entities/Offer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/entities/Pitch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/entities/Shark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/service/PitchService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/service/PitchServiceImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/service/SharkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/service/SharkServiceImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/landeros/utility/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/landeros/runner/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

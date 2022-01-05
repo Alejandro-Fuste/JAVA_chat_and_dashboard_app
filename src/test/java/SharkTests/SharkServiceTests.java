@@ -2,19 +2,12 @@ package sharktests;
 
 import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
 import com.investing_app.databaseinteraction.SharkDAO;
-<<<<<<< HEAD
 import com.investing_app.entities.Shark;
 import com.investing_app.service.SharkService;
 import com.investing_app.service.SharkServiceImplemented;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-=======
-import com.investing_app.databaseinteraction.SharkDAOImplemented;
-import com.investing_app.entities.Shark;
-import com.investing_app.service.SharkService;
-import com.investing_app.service.SharkServiceImplemented;
->>>>>>> 39b27918ccee249c0f0be5ec538ae715a4c3ff1c
 import org.testng.annotations.Test;
 
 public class SharkServiceTests {
@@ -55,14 +48,14 @@ public class SharkServiceTests {
     public void sharkLoginPasswordFail() {
         Mockito.when(sharkDAO.getSharkByUsername("Kelso"))
                 .thenThrow(new UsernameOrPasswordIncorrect("Either your username or password or both are incorrect!"));
-        sharkService.sharkLoginService("Keslo", "Show1");
+        sharkService.sharkLoginService("Kelso", "Show1");
     }
 
     // Correct credentials
     @Test
     public void sharkLoginSuccess() {
         Mockito.when(sharkDAO.getSharkByUsername("QueenQVC")).thenReturn(returnedSharkProfile);
-        Shark result = sharkService.sharkLoginService("QuuenQVC", "qvc1");
+        Shark result = sharkService.sharkLoginService("QueenQVC", "qvc1");
         Assert.assertEquals(result, returnedSharkProfile);
     }
 
@@ -74,13 +67,4 @@ public class SharkServiceTests {
         Shark result = sharkService.createSharkProfileService(sharkProfile);
         Assert.assertEquals(result, returnedSharkProfile);
     }
-
-
-
-
-
-
-    // add stubbing test to make sure correct object is returned
-    // positive test: show method handles correct login info
-
 }
