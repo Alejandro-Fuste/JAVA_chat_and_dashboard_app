@@ -1,12 +1,11 @@
-package com.landeros.controllers;
+package com.investing_app.controllers;
 
 import com.google.gson.Gson;
-import com.landeros.entities.Offer;
-import com.landeros.entities.Pitch;
-import com.landeros.service.PitchService;
+import com.investing_app.entities.Offer;
+import com.investing_app.entities.Pitch;
+import com.investing_app.service.PitchService;
 
 import java.util.List;
-import java.util.Map;
 
 import io.javalin.http.Handler;
 

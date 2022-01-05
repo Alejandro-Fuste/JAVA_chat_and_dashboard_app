@@ -5,7 +5,7 @@ import com.investing_app.databaseinteraction.PitchDAO;
 import com.investing_app.databaseinteraction.PitchDAOImplemented;
 import com.investing_app.databaseinteraction.SharkDAO;
 import com.investing_app.service.SharkService;
-import com.investing_app.service.SharkServiceImplemented;
+import com.investing_app.service.PitchServiceImplemented;
 import com.investing_app.controllers.PitchController;
 import com.investing_app.databaseinteraction.SharkDAOImplemented;
 import com.investing_app.service.PitchService;
@@ -51,17 +51,19 @@ public class App {
         // business route
 //        app.get("/business", appController.business);
         app.get("/business/{id}", businessController.getBusiness);
-        app.get("/business/all", businessController.getAllBusinesses);
+        app.get("/businesses", businessController.getAllBusinesses);
         app.post("/business/login", businessController.getBusinessLogin);
         app.post("/business/create", businessController.createBusiness);
 
-//
-        // shark route
-//           // Shark
+        app.get("/commenting/{id}", commentingController.getComment);
+        app.get("/commentingAll", commentingController.getAllComments);
+        app.post("/commenting/create", commentingController.createComment);
+
+           // Shark
         SharkDAO sharkDAO = new SharkDAOImplemented();
-        SharkService sharkService = new SharkServiceImplemented(sharkDAO);
+        SharkService sharkService = new com.investing_app.service.SharkServiceImplemented(sharkDAO);
         SharkController sharkController = new SharkController(sharkService);
-//
+
 //        // Pitch
         PitchDAO pitchDAO = new PitchDAOImplemented();
         PitchService pitchService = new PitchServiceImplemented(pitchDAO);

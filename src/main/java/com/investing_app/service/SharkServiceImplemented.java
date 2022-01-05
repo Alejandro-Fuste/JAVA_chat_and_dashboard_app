@@ -1,8 +1,9 @@
-package com.landeros.service;
+package com.investing_app.service;
 
-import com.landeros.customexceptions.UsernameOrPasswordIncorrect;
-import com.landeros.databaseinteraction.SharkDAO;
-import com.landeros.entities.Shark;
+import com.investing_app.service.SharkService;
+import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
+import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.entities.Shark;
 
 import java.util.List;
 import java.util.Objects;

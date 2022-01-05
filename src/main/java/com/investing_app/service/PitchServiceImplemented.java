@@ -1,11 +1,12 @@
-package com.landeros.service;
+package com.investing_app.service;
 
-import com.landeros.databaseinteraction.PitchDAO;
-import com.landeros.entities.Pitch;
+import com.investing_app.service.PitchService;
+import com.investing_app.databaseinteraction.PitchDAO;
+import com.investing_app.entities.Pitch;
 
 import java.util.List;
 
-public class PitchServiceImplemented implements PitchService{
+public class PitchServiceImplemented implements PitchService {
 
     // declare pitch field
     PitchDAO pitchDAO;

@@ -1,7 +1,6 @@
-package com.landeros.service;
+package com.investing_app.service;
 
-import com.landeros.entities.Pitch;
-
+import com.investing_app.entities.Pitch;
 import java.util.List;
 
 public interface PitchService {

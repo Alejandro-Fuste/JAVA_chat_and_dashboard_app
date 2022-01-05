@@ -1,13 +1,14 @@
-package com.landeros.databaseinteraction;
+package com.investing_app.databaseinteraction;
 
-import com.landeros.entities.Shark;
-import com.landeros.utility.DatabaseConnection;
+import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.entities.Shark;
+import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SharkDAOImplemented implements SharkDAO{
+public class SharkDAOImplemented implements SharkDAO {
 
     @Override
     public Shark createSharkProfile(Shark shark) {
