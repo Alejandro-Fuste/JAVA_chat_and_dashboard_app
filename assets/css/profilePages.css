@@ -87,6 +87,18 @@
 
 #date {
   background: var(--tertiary-color);
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  width: 30vh;
+}
+
+.fa-calendar {
+  padding-right: 10px;
+}
+
+#headerName {
+  font-size: 1.5rem;
 }
 
 #imgDiv {
