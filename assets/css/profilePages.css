@@ -1,5 +1,6 @@
 :root {
   --primary-color: #2a67ca;
+  --container-bg: #edebeb;
   --nav-buttons: white;
   --logout-button-bg: #2a67ca;
 }
@@ -14,13 +15,14 @@
   font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
+  background-color: var(--container-bg);
 }
 
 /* ********* Left Bar Navigation ********* */
 
 #leftBar {
   display: flex;
-  width: 6vw;
+  width: 6%;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -35,7 +37,7 @@
 #logoutEl {
   background-color: var(--logout-button-bg);
   color: var(--nav-buttons);
-  border: white;
+  border: var(--nav-buttons);
   font-size: 2vw;
 }
 
@@ -44,4 +46,19 @@
   color: var(--nav-buttons);
   font-size: 2vw;
   margin: 2rem 0;
+}
+
+/* ********* Main (middle section) ********* */
+
+#businessMain,
+#sharkMain {
+  width: 75%;
+  height: 100%;
+}
+
+/* ********* Right Bar ********* */
+
+#rightBar {
+  width: 19%;
+  height: 100%;
 }
