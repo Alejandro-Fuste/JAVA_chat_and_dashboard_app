@@ -45,7 +45,10 @@ main {
   justify-content: center;
 }
 
-form {
+/* ********* forms  ********* */
+
+#loginForm,
+#signUpForm {
   width: 64%;
   height: 50%;
   border: solid 1px #ced4da;
@@ -54,6 +57,12 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 0px 5vw;
+}
+
+/* ********* login form ********* */
+
+#signUpForm {
+  height: 72%;
 }
 
 #submitButton {
