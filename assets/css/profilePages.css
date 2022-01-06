@@ -9,9 +9,11 @@
 }
 
 #container {
-  padding: 1rem 1rem 1rem 0rem;
+  padding: 1rem;
   display: flex;
   font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* ********* Left Bar Navigation ********* */
