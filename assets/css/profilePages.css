@@ -1,7 +1,7 @@
 :root {
   --primary-color: #2a67ca;
   --container-bg: #edebeb;
-  --nav-buttons: white;
+  --nav-buttons: #ffffff;
   --logout-button-bg: #2a67ca;
   --border-radius: 10px;
 }
@@ -61,12 +61,22 @@
   align-items: center;
 }
 
+#banner,
+#articlesContainer {
+  width: 80%;
+  border-radius: var(--border-radius);
+}
+
 #banner {
   background: var(--primary-color);
-  border-radius: var(--border-radius);
-  width: 80%;
   height: 30%;
   color: var(--nav-buttons);
+}
+
+#articlesContainer {
+  background: var(--nav-buttons);
+  height: 64%;
+  margin-top: 2rem;
 }
 
 /* ********* Right Bar ********* */
@@ -74,4 +84,10 @@
 #rightBar {
   width: 19%;
   height: 100%;
+}
+
+#myProfileContainer,
+#commentsContainer {
+  background: var(--nav-buttons);
+  border-radius: var(--border-radius);
 }

@@ -28,10 +28,9 @@
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-      <!-- Container for entire page -->
+    <!-- Container for entire page -->
     <div id="container">
-
-        <!-- Navigation...left section -->
+      <!-- Navigation...left section -->
       <aside id="leftBar">
         <img src="./assets/images/Logo.png" alt="logo" id="logo" />
         <button id="logoutEl" type="button" class="btn btn-secondary">
@@ -42,38 +41,31 @@
         <i id="inactiveLink" class="fas fa-shopping-cart"></i>
         <i id="inactiveLink" class="fas fa-sliders-h-square"></i>
       </aside>
-      
+
       <!-- Main part of page...middle section -->
       <main id="businessMain">
-          <!-- banner -->
+        <!-- banner -->
         <header id="banner">
-            <div id="dateNameDiv">
-                <p id="date">Date</p>
+          <div id="dateNameDiv">
+            <p id="date">Date</p>
 
-                <p id="headerName">Welcome, FirstName LastName</p>
-            </div>  
-            
-            <div id="imgDiv">
-               <h2>Image Div</h2>
-            </div>
+            <p id="headerName">Welcome, FirstName LastName</p>
+          </div>
+
+          <div id="imgDiv">
+            <h2>Image Div</h2>
+          </div>
         </header>
 
         <!-- left part of main -->
         <section id="articlesContainer">
           <article id="leftSection">
-
             <!-- Form for create pitch -->
             <p id="formTitle">Pitch Form</p>
-            <form
-              id="pitchForm"
-              class="row g-3 was-validated"
-              novalidate
-            >
-            <!-- date input -->
+            <form id="pitchForm" class="row g-3 was-validated" novalidate>
+              <!-- date input -->
               <div class="col-md-12">
-                <label for="validationCustom01" class="form-label"
-                  >Date</label
-                >
+                <label for="validationCustom01" class="form-label">Date</label>
                 <input
                   type="date"
                   class="form-control"
@@ -123,8 +115,16 @@
 
               <!-- pitch textarea -->
               <div class="mb-3">
-                <label for="validationTextarea" class="form-label">Please enter a valid pitch.</label>
-                <textarea class="form-control" id="validationTextarea" data-name="pitch" placeholder="Required textarea" required></textarea>
+                <label for="validationTextarea" class="form-label"
+                  >Please enter a valid pitch.</label
+                >
+                <textarea
+                  class="form-control"
+                  id="validationTextarea"
+                  data-name="pitch"
+                  placeholder="Required textarea"
+                  required
+                ></textarea>
                 <div class="valid-feedback"></div>
                 <div class="invalid-feedback">
                   Please enter a message in the textarea.
@@ -140,43 +140,38 @@
             </form>
           </article>
 
-            <!-- right part of main -->
+          <!-- right part of main -->
           <article id="rightSection">
-
             <!-- redo this section for viewing pitches -->
             <p id="pastTitle">Past Pitches</p>
             <ul id="pitchUl"></ul>
           </article>
-
         </section>
       </main>
 
       <!-- profile and comment...right section -->
-      <aside id='rightBar'>
-
+      <aside id="rightBar">
         <!-- profile...top inner section -->
         <section id="myProfileContainer">
-            <h4 id="title">My Profile</h4>
+          <h4 id="title">My Profile</h4>
 
-            <div id="picInfoContainer">
-                <img src="" alt="profile avatar">
-                <p id="fullName">First Name Last Name</p>
-                <p id="businessName">Business Name</p>
-                <p id="location">Location</p>
-            </div>
+          <div id="picInfoContainer">
+            <img src="" alt="profile avatar" />
+            <p id="fullName">First Name Last Name</p>
+            <p id="businessName">Business Name</p>
+            <p id="location">Location</p>
+          </div>
         </section>
 
         <!-- comments...bottom inner section -->
-        <section>
-            <h4 id="title">Comments</h4>
-  
-            <div id="commentsDiv">
-                <!-- dynamically add comments here -->
-            </div>
+        <section id="commentsContainer">
+          <h4 id="title">Comments</h4>
+
+          <div id="commentsDiv">
+            <!-- dynamically add comments here -->
+          </div>
         </section>
-
       </aside>
-
     </div>
   </body>
   <script
