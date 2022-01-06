@@ -65,8 +65,9 @@ main {
   height: 72%;
 }
 
-#submitButton {
-  margin-top: 10px;
+#submitButton,
+#submitSignUpButton {
+  margin-top: 15px;
   background-color: var(--submit-button-color);
   border-color: var(--submit-button-color);
 }
