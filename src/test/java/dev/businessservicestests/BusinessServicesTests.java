@@ -22,4 +22,6 @@ public class BusinessServicesTests {
     void badLogin(){
         Business newBusiness = businessServices.getBusinessLoginService("Lex", "Luther");
     }
+
+
 }
