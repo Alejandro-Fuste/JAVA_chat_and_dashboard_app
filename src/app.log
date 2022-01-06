@@ -1,4 +1,4 @@
-2022-01-01 16:11:31,999 [main] INFO  io.javalin.Javalin - 
+2022-01-02 10:46:22,283 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
  __  / // __ `/| | / // __ `// // // __ \    / // /_
@@ -7,27 +7,13 @@
 
           https://javalin.io/documentation
 
-2022-01-01 16:11:32,005 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @703ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-01-01 16:11:32,006 [main] INFO  io.javalin.Javalin - Starting Javalin ...
-2022-01-01 16:11:32,020 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
-2022-01-01 16:11:32,020 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
-2022-01-01 16:11:32,140 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
-2022-01-01 16:11:32,140 [main] INFO  io.javalin.Javalin - Javalin started in 135ms \o/
-2022-01-01 16:11:37,726 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
-    Cookies: {}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [200], execution took 4.52 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:11:37 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
-----------------------------------------------------------------------------------
-2022-01-01 16:42:36,897 [main] INFO  io.javalin.Javalin - 
+2022-01-02 10:46:22,297 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1120ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-02 10:46:22,298 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-02 10:46:22,322 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 84 days old. Consider upgrading!).
+2022-01-02 10:46:22,322 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-02 10:46:22,573 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-02 10:46:22,573 [main] INFO  io.javalin.Javalin - Javalin started in 275ms \o/
+2022-01-02 10:48:02,932 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
  __  / // __ `/| | / // __ `// // // __ \    / // /_
@@ -36,27 +22,48 @@ Response: [200], execution took 4.52 ms
 
           https://javalin.io/documentation
 
-2022-01-01 16:42:36,906 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @430ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-01-01 16:42:36,908 [main] INFO  io.javalin.Javalin - Starting Javalin ...
-2022-01-01 16:42:36,927 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
-2022-01-01 16:42:36,928 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
-2022-01-01 16:42:37,024 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
-2022-01-01 16:42:37,024 [main] INFO  io.javalin.Javalin - Javalin started in 117ms \o/
-2022-01-01 16:42:41,180 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-02 10:48:02,944 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @608ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-02 10:48:02,945 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-02 10:48:02,957 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 84 days old. Consider upgrading!).
+2022-01-02 10:48:02,957 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-02 10:48:03,103 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-02 10:48:03,103 [main] INFO  io.javalin.Javalin - Javalin started in 159ms \o/
+2022-01-02 10:51:50,960 [qtp1192923170-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=58e84b4d-d591-4151-8f05-19a3e24eb6c2, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=164, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "sharkId": 0,
+    "firstName": "Mark",
+    "lastName": "Cuban",
+    "businessName": "Billions, Inc.",
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 910.68 ms
+    Headers: {Date=Sun, 02 Jan 2022 17:51:50 GMT, Content-Type=text/plain}
+    Body is 127 bytes (starts on next line):
+    {"sharkId":8,"firstName":"Mark","lastName":"Cuban","businessName":"Billions, Inc.","username":"MarkySharky","password":"Mavs1"}
+----------------------------------------------------------------------------------
+2022-01-02 10:52:44,642 [qtp1192923170-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/sharks]
+    Matching endpoint-handlers: [BEFORE=*, GET=/sharks]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=29560377-e986-4f50-bd87-94b859a0960f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
     Cookies: {}
     Body: 
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 8.00 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:42:41 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
+Response: [200], execution took 616.66 ms
+    Headers: {Date=Sun, 02 Jan 2022 17:52:44 GMT, Content-Type=text/plain}
+    Body is 514 bytes (starts on next line):
+    [{"sharkId":5,"firstName":"Lori","lastName":"Greiner","businessName":"CU Creations","username":"QueenQVC","password":"qvc1"},{"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"},{"sharkId":7,"firstName":"Kevin","lastName":"O\u0027Leary","businessName":"Millions, Inc.","username":"MrWonderful","password":"baldy1"},{"sharkId":8,"firstName":"Mark","lastName":"Cuban","businessName":"Billions, Inc.","username":"MarkySharky","password":"Mavs1"}]
 ----------------------------------------------------------------------------------
-2022-01-01 16:48:12,086 [main] INFO  io.javalin.Javalin - 
+2022-01-02 11:01:10,567 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
  __  / // __ `/| | / // __ `// // // __ \    / // /_
@@ -65,41 +72,143 @@ Response: [200], execution took 8.00 ms
 
           https://javalin.io/documentation
 
-2022-01-01 16:48:12,092 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @462ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-01-01 16:48:12,093 [main] INFO  io.javalin.Javalin - Starting Javalin ...
-2022-01-01 16:48:12,105 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
-2022-01-01 16:48:12,106 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
-2022-01-01 16:48:12,197 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
-2022-01-01 16:48:12,197 [main] INFO  io.javalin.Javalin - Javalin started in 104ms \o/
-2022-01-01 16:48:25,713 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-02 11:01:10,587 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @803ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-02 11:01:10,588 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-02 11:01:10,613 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 84 days old. Consider upgrading!).
+2022-01-02 11:01:10,614 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-02 11:01:10,909 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-02 11:01:10,909 [main] INFO  io.javalin.Javalin - Javalin started in 322ms \o/
+2022-01-02 11:02:23,302 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:824) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:380) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:368) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 39 more
+2022-01-02 11:02:23,333 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=7c741e3c-2664-4d73-b3f7-d30034107eb9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
     Cookies: {}
-    Body: 
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 4.89 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:48:25 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
+Response: [500], execution took 58.62 ms
+    Headers: {Date=Sun, 02 Jan 2022 18:02:23 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
 ----------------------------------------------------------------------------------
-2022-01-01 16:48:32,520 [qtp2003147568-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/business]
-    Matching endpoint-handlers: [BEFORE=*]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-02 11:04:22,472 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:824) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:380) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:368) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 39 more
+2022-01-02 11:04:22,478 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=15e9b912-b640-49b6-aaf7-0ddfa8fec398, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
     Cookies: {}
-    Body: 
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [404], execution took 3.12 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:48:32 GMT, Content-Type=text/plain}
-    Body is 9 bytes (starts on next line):
-    Not found
+Response: [500], execution took 7.33 ms
+    Headers: {Date=Sun, 02 Jan 2022 18:04:22 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
 ----------------------------------------------------------------------------------
-2022-01-01 16:49:11,598 [main] INFO  io.javalin.Javalin - 
+2022-01-02 11:04:32,495 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
  __  / // __ `/| | / // __ `// // // __ \    / // /_
@@ -108,55 +217,78 @@ Response: [404], execution took 3.12 ms
 
           https://javalin.io/documentation
 
-2022-01-01 16:49:11,603 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @381ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-01-01 16:49:11,604 [main] INFO  io.javalin.Javalin - Starting Javalin ...
-2022-01-01 16:49:11,611 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
-2022-01-01 16:49:11,611 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
-2022-01-01 16:49:11,737 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
-2022-01-01 16:49:11,738 [main] INFO  io.javalin.Javalin - Javalin started in 134ms \o/
-2022-01-01 16:49:14,569 [qtp2003147568-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-02 11:04:32,506 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @781ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-02 11:04:32,507 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-02 11:04:32,518 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 84 days old. Consider upgrading!).
+2022-01-02 11:04:32,519 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-02 11:04:32,670 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-02 11:04:32,670 [main] INFO  io.javalin.Javalin - Javalin started in 164ms \o/
+2022-01-02 11:04:36,157 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:36) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:824) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:380) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:368) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 39 more
+2022-01-02 11:04:36,189 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=f4641666-4c3b-4192-a872-d43878fac11f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
     Cookies: {}
-    Body: 
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 4.26 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:49:14 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
+Response: [500], execution took 61.14 ms
+    Headers: {Date=Sun, 02 Jan 2022 18:04:36 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
 ----------------------------------------------------------------------------------
-2022-01-01 16:49:26,829 [qtp2003147568-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
-    Cookies: {}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [200], execution took 1.18 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:49:26 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
-----------------------------------------------------------------------------------
-2022-01-01 16:49:48,477 [qtp2003147568-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/business]
-    Matching endpoint-handlers: [BEFORE=*]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
-    Cookies: {}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [404], execution took 5.91 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:49:48 GMT, Content-Type=text/plain}
-    Body is 9 bytes (starts on next line):
-    Not found
-----------------------------------------------------------------------------------
-2022-01-01 16:55:39,780 [main] INFO  io.javalin.Javalin - 
+2022-01-02 11:08:37,829 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
  __  / // __ `/| | / // __ `// // // __ \    / // /_
@@ -165,51 +297,1042 @@ Response: [404], execution took 5.91 ms
 
           https://javalin.io/documentation
 
-2022-01-01 16:55:39,785 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @353ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-01-01 16:55:39,786 [main] INFO  io.javalin.Javalin - Starting Javalin ...
-2022-01-01 16:55:39,795 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 83 days old. Consider upgrading!).
-2022-01-01 16:55:39,795 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
-2022-01-01 16:55:39,874 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
-2022-01-01 16:55:39,874 [main] INFO  io.javalin.Javalin - Javalin started in 89ms \o/
-2022-01-01 16:55:45,262 [qtp1871612052-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/]
-    Matching endpoint-handlers: [BEFORE=*, GET=/]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-02 11:08:37,852 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @874ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-02 11:08:37,854 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-02 11:08:37,882 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 84 days old. Consider upgrading!).
+2022-01-02 11:08:37,882 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-02 11:08:38,113 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-02 11:08:38,113 [main] INFO  io.javalin.Javalin - Javalin started in 260ms \o/
+2022-01-02 11:08:41,753 [qtp231311211-25] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:824) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:380) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:368) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 39 more
+2022-01-02 11:08:41,783 [qtp231311211-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=9fb4a3c2-3f2b-4aaa-9287-0c22fcf3be81, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
     Cookies: {}
-    Body: 
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 6.63 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:55:45 GMT, Content-Type=text/plain}
-    Body is 12 bytes (starts on next line):
-    Hello there!
+Response: [500], execution took 50.48 ms
+    Headers: {Date=Sun, 02 Jan 2022 18:08:41 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
 ----------------------------------------------------------------------------------
-2022-01-01 16:55:53,736 [qtp1871612052-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/business]
-    Matching endpoint-handlers: [BEFORE=*, GET=/business]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-03 09:14:57,271 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 09:14:57,285 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1019ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 09:14:57,286 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 09:14:57,311 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 09:14:57,311 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 09:14:57,511 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 09:14:57,511 [main] INFO  io.javalin.Javalin - Javalin started in 225ms \o/
+2022-01-03 09:15:50,472 [qtp231311211-24] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:37) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:824) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:380) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:368) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 39 more
+2022-01-03 09:15:50,505 [qtp231311211-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=1f9ea73b-5b69-4604-92f0-46099ba5a882, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
     Cookies: {}
-    Body: 
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 1.00 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:55:53 GMT, Content-Type=text/plain}
-    Body is 25 bytes (starts on next line):
-    Hello from business page!
+Response: [500], execution took 67.25 ms
+    Headers: {Date=Mon, 03 Jan 2022 16:15:50 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
 ----------------------------------------------------------------------------------
-2022-01-01 16:56:00,271 [qtp1871612052-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/shark]
-    Matching endpoint-handlers: [BEFORE=*, GET=/shark]
-    Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=navigate, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="macOS", Sec-Fetch-User=?1, Accept-Language=en-US,en;q=0.9}
+2022-01-03 09:17:40,976 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 09:17:40,986 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @779ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 09:17:40,987 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 09:17:41,005 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 09:17:41,005 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 09:17:41,152 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 09:17:41,157 [main] INFO  io.javalin.Javalin - Javalin started in 170ms \o/
+2022-01-03 09:17:47,900 [qtp231311211-23] WARN  io.javalin.Javalin - Uncaught exception
+com.landeros.customexceptions.SharkNotFound: Shark not found!
+	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
+	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-03 09:17:47,937 [qtp231311211-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=3c43e22b-3706-4ba6-8fca-c89bebf3a2e3, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 863.84 ms
+    Headers: {Date=Mon, 03 Jan 2022 16:17:47 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-03 09:21:20,395 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 09:21:20,405 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @767ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 09:21:20,406 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 09:21:20,420 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 09:21:20,420 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 09:21:20,567 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 09:21:20,567 [main] INFO  io.javalin.Javalin - Javalin started in 161ms \o/
+2022-01-03 09:21:34,026 [qtp231311211-23] WARN  io.javalin.Javalin - Uncaught exception
+com.landeros.customexceptions.SharkNotFound: Shark not found!
+	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:83) ~[classes/:?]
+	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-03 09:21:34,071 [qtp231311211-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, GET=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=d476b309-8748-47f3-9a29-c98ad6582c18, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 848.67 ms
+    Headers: {Date=Mon, 03 Jan 2022 16:21:33 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-03 13:07:42,214 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:07:42,230 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1061ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:07:42,231 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:07:42,252 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:07:42,252 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:07:42,441 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:07:42,441 [main] INFO  io.javalin.Javalin - Javalin started in 211ms \o/
+2022-01-03 13:08:07,412 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-03 13:08:07,446 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=516f17d4-76c7-4eed-8981-2fc72e8df272, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 121.14 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:08:07 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-03 13:16:23,976 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:16:23,987 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1057ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:16:23,988 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:16:24,007 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:16:24,007 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:16:24,204 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:16:24,204 [main] INFO  io.javalin.Javalin - Javalin started in 216ms \o/
+2022-01-03 13:16:37,437 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-03 13:16:37,462 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=75ea5069-4f2d-40df-a88f-9d0bf6bef6e6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 67.37 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:16:37 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-03 13:32:59,310 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:32:59,330 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1005ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:32:59,332 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:32:59,360 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:32:59,361 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:32:59,637 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:32:59,638 [main] INFO  io.javalin.Javalin - Javalin started in 307ms \o/
+2022-01-03 13:33:13,489 [qtp231311211-31] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+	at com.landeros.databaseinteraction.SharkDAOImplemented.getSharkByUsername(SharkDAOImplemented.java:68) ~[classes/:?]
+	at com.landeros.service.SharkServiceImplemented.sharkLoginService(SharkServiceImplemented.java:32) ~[classes/:?]
+	at com.landeros.controllers.SharkController.lambda$new$2(SharkController.java:40) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-03 13:33:13,518 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=dbf4b620-8aa0-4885-be65-542786abc89b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 82.98 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:33:13 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-03 13:34:46,010 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:34:46,021 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @699ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:34:46,022 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:34:46,042 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:34:46,042 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:34:46,203 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:34:46,203 [main] INFO  io.javalin.Javalin - Javalin started in 182ms \o/
+2022-01-03 13:34:49,572 [qtp231311211-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=6c48c38b-b8fe-41a7-9cb2-330babf03233, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 65.26 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:34:49 GMT, Content-Type=text/plain}
+    Body is 89 bytes (starts on next line):
+    Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connection" is null
+----------------------------------------------------------------------------------
+2022-01-03 13:35:35,855 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:35:35,867 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @979ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:35:35,868 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:35:35,881 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:35:35,881 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:35:36,068 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:35:36,068 [main] INFO  io.javalin.Javalin - Javalin started in 200ms \o/
+2022-01-03 13:35:42,717 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=3c4bebcd-e458-480e-afcc-badf38b310c7, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 873.89 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:35:41 GMT, Content-Type=text/plain}
+    Body is 44 bytes (starts on next line):
+    Either username, password or both incorrect!
+----------------------------------------------------------------------------------
+2022-01-03 13:41:25,041 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:41:25,051 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @837ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:41:25,052 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:41:25,070 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:41:25,070 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:41:25,244 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:41:25,244 [main] INFO  io.javalin.Javalin - Javalin started in 192ms \o/
+2022-01-03 13:42:06,867 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=b6396444-5e5e-401b-9a65-bddae450c514, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=58, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "MarkySharky",
+    "password": "Mavs1"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 843.13 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:42:05 GMT, Content-Type=text/plain}
+    Body is 117 bytes (starts on next line):
+    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+----------------------------------------------------------------------------------
+2022-01-03 13:42:56,788 [qtp231311211-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=74d99ef6-a23b-4674-9996-61317fb38b74, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=54, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Kelso",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 483.11 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:42:56 GMT, Content-Type=text/plain}
+    Body is 117 bytes (starts on next line):
+    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+----------------------------------------------------------------------------------
+2022-01-03 13:47:30,783 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:47:30,795 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @988ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:47:30,796 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:47:30,816 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:47:30,817 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:47:31,122 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:47:31,122 [main] INFO  io.javalin.Javalin - Javalin started in 326ms \o/
+2022-01-03 13:47:49,652 [qtp231311211-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=e7d669d1-2d14-499d-b936-91d60a4fde85, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=54, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Kelso",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 892.29 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:47:48 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    {"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"}
+----------------------------------------------------------------------------------
+2022-01-03 13:57:10,185 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 13:57:10,205 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1106ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 13:57:10,207 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 13:57:10,227 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 13:57:10,227 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 13:57:10,438 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 13:57:10,439 [main] INFO  io.javalin.Javalin - Javalin started in 233ms \o/
+2022-01-03 13:57:31,642 [qtp1192923170-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=52a954da-89be-46f9-8888-344bd5e2cde5, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=50, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Kelso",
+    "password": "bob"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 785.61 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:57:30 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    {"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"}
+----------------------------------------------------------------------------------
+2022-01-03 13:57:44,980 [qtp1192923170-22] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=26b23a64-af78-4f83-bf95-d29daf25353c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=48, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "bob",
+    "password": "bob"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 470.60 ms
+    Headers: {Date=Mon, 03 Jan 2022 20:57:44 GMT, Content-Type=text/plain}
+    Body is 117 bytes (starts on next line):
+    Cannot invoke "String.equals(Object)" because the return value of "com.landeros.entities.Shark.getUsername()" is null
+----------------------------------------------------------------------------------
+2022-01-03 14:17:55,704 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 14:17:55,717 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1147ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 14:17:55,718 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 14:17:55,733 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 14:17:55,734 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 14:17:55,930 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 14:17:55,930 [main] INFO  io.javalin.Javalin - Javalin started in 212ms \o/
+2022-01-03 14:18:03,095 [qtp1871612052-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=657b983c-120e-4f0c-8829-391bc2d5fd63, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=48, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "bob",
+    "password": "bob"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1111.79 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:18:01 GMT, Content-Type=text/plain}
+    Body is 13 bytes (starts on next line):
+    {"sharkId":0}
+----------------------------------------------------------------------------------
+2022-01-03 14:20:01,156 [qtp1871612052-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=acad71d8-4099-40a6-bd70-2d96b3b93716, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=54, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Kelso",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 542.62 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:20:00 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    {"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"}
+----------------------------------------------------------------------------------
+2022-01-03 14:20:11,608 [qtp1871612052-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=e8ac8191-82cc-40df-94da-d20e72c57838, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=52, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "bob",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 462.22 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:20:11 GMT, Content-Type=text/plain}
+    Body is 13 bytes (starts on next line):
+    {"sharkId":0}
+----------------------------------------------------------------------------------
+2022-01-03 14:25:28,903 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 14:25:28,916 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @752ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 14:25:28,917 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 14:25:28,934 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 14:25:28,935 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 14:25:29,123 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 14:25:29,123 [main] INFO  io.javalin.Javalin - Javalin started in 206ms \o/
+2022-01-03 14:25:37,533 [qtp231311211-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=ba8f8813-8f0c-4a62-a979-16406911db44, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=52, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "bob",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1210.77 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:25:36 GMT, Content-Type=text/plain}
+    Body is 13 bytes (starts on next line):
+    {"sharkId":0}
+----------------------------------------------------------------------------------
+2022-01-03 14:31:00,794 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 14:31:00,809 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1007ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 14:31:00,811 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 14:31:00,831 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 14:31:00,831 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 14:31:01,071 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 14:31:01,071 [main] INFO  io.javalin.Javalin - Javalin started in 261ms \o/
+2022-01-03 14:31:09,276 [qtp231311211-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=f14bb4b2-6171-49c5-81db-695f0db0ab5f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=52, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "bob",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 769.44 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:31:08 GMT, Content-Type=text/plain}
+    Body is 55 bytes (starts on next line):
+    Either your username or password or both are incorrect!
+----------------------------------------------------------------------------------
+2022-01-03 14:31:19,705 [qtp231311211-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=79833a9c-9806-4ce8-a3fe-aab1e475a7a2, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=54, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Kelso",
+    "password": "70sShow"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 490.94 ms
+    Headers: {Date=Mon, 03 Jan 2022 21:31:19 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    {"sharkId":6,"firstName":"Ashton","lastName":"Kutcher","businessName":"Ashy, Inc.","username":"Kelso","password":"70sShow"}
+----------------------------------------------------------------------------------
+2022-01-03 15:45:09,791 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-03 15:45:09,810 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1029ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-03 15:45:09,812 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-03 15:45:09,837 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 85 days old. Consider upgrading!).
+2022-01-03 15:45:09,837 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-03 15:45:10,091 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-03 15:45:10,091 [main] INFO  io.javalin.Javalin - Javalin started in 281ms \o/
+2022-01-04 08:25:20,408 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 08:25:20,425 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1174ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 08:25:20,427 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 08:25:20,452 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 08:25:20,452 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 08:25:20,637 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 08:25:20,638 [main] INFO  io.javalin.Javalin - Javalin started in 212ms \o/
+2022-01-04 08:31:11,317 [qtp79438382-26] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=99cb570c-2762-4725-8fa3-fcdceb0a93de, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 120000,
+    "percentage": 7.0
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 929.29 ms
+    Headers: {Date=Tue, 04 Jan 2022 15:31:10 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 10:15:34,795 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 10:15:34,809 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1124ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 10:15:34,810 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 10:15:34,836 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 10:15:34,837 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 10:15:35,079 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 10:15:35,079 [main] INFO  io.javalin.Javalin - Javalin started in 270ms \o/
+2022-01-04 10:15:40,198 [qtp412111214-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=12923815-9d69-4a02-9fa2-74bdd2fb4764, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
     Cookies: {}
     Body: 
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200], execution took 0.33 ms
-    Headers: {Date=Sat, 01 Jan 2022 21:56:00 GMT, Content-Type=text/plain}
-    Body is 22 bytes (starts on next line):
-    Hello from shark page!
+Response: [200], execution took 1050.69 ms
+    Headers: {Date=Tue, 04 Jan 2022 17:15:39 GMT, Content-Type=text/plain}
+    Body is 180 bytes (starts on next line):
+    [{"pitchId":1,"businessId":1,"creationDate":"12-31-2021","pitch":"Send us your kitchen knives and we sharpen them for you!","amount":100000.0,"percentage":6.5,"status":"Accepted"}]
+----------------------------------------------------------------------------------
+2022-01-04 10:59:41,642 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 10:59:41,659 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1022ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 10:59:41,660 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 10:59:41,686 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 10:59:41,686 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 10:59:41,889 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 10:59:41,889 [main] INFO  io.javalin.Javalin - Javalin started in 230ms \o/
+2022-01-04 12:08:04,153 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:08:04,164 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @954ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:08:04,165 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:08:04,186 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:08:04,186 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:08:04,401 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:08:04,401 [main] INFO  io.javalin.Javalin - Javalin started in 236ms \o/
+2022-01-04 12:08:54,513 [qtp79438382-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PUT=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=7a490dff-3113-4f48-809f-12b0f49e8be0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 130000,
+    "percentage": 8.5
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1043.04 ms
+    Headers: {Date=Tue, 04 Jan 2022 19:08:53 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 12:52:26,096 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:52:26,107 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @750ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:52:26,108 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:52:26,128 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:52:26,128 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:52:26,295 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:52:26,295 [main] INFO  io.javalin.Javalin - Javalin started in 187ms \o/
+2022-01-04 12:52:50,944 [qtp79438382-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/offer]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=4e1e7fba-468a-49e6-bb1f-8b345e928adf, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=65, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 1,
+    "amount": 130000,
+    "percentage": 8.5
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 835.42 ms
+    Headers: {Date=Tue, 04 Jan 2022 19:52:50 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-01-04 12:59:22,024 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-04 12:59:22,038 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @845ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-04 12:59:22,039 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-04 12:59:22,058 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 86 days old. Consider upgrading!).
+2022-01-04 12:59:22,058 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-04 12:59:22,251 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-04 12:59:22,252 [main] INFO  io.javalin.Javalin - Javalin started in 213ms \o/
+2022-01-04 13:01:57,871 [qtp2031951755-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/accept/1]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/accept/{pitchId}]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=aafeb37f-579e-41a0-8f82-82e51ca844c8, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 780.21 ms
+    Headers: {Date=Tue, 04 Jan 2022 20:01:57 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
 ----------------------------------------------------------------------------------

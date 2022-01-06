@@ -1,8 +1,8 @@
 package pitchtests;
 
-import com.landeros.databaseinteraction.PitchDAO;
-import com.landeros.databaseinteraction.PitchDAOImplemented;
-import com.landeros.entities.Pitch;
+import com.investing_app.databaseinteraction.PitchDAO;
+import com.investing_app.databaseinteraction.PitchDAOImplemented;
+import com.investing_app.entities.Pitch;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +22,7 @@ public class PitchDAOTests {
 
     @Test
     void makeOffer() {
-        boolean offer = pitchDAO.makeOffer(1, 100_000, 6.5);
+        boolean offer = pitchDAO.makeOffer(1, 120_000, 7.0);
         Assert.assertTrue(offer);
     }
 
