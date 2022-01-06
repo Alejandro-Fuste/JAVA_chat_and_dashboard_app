@@ -10,3 +10,44 @@
   align-content: center;
   justify-content: center;
 }
+
+main {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-content: center;
+  padding: 0 50px;
+  justify-content: center;
+}
+
+/* ********* Left Section ********* */
+#leftSection {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #ced4da;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 5vw;
+}
+
+#submitButton {
+  margin-top: 10px;
+  background-color: #463f57;
+  border-color: #463f57;
+}
+
+#hideErrorMessage {
+  display: none;
+}
+
+#errorMessage {
+  color: red;
+  margin-top: 4vh;
+}
