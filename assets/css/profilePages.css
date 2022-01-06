@@ -1,7 +1,7 @@
 :root {
-  --submit-button-color: #2a67ca;
-  --nav-buttons: #463f57;
-  --logout-button-bg: white;
+  --primary-color: #2a67ca;
+  --nav-buttons: white;
+  --logout-button-bg: #2a67ca;
 }
 
 * {
@@ -20,10 +20,12 @@
 
 #leftBar {
   display: flex;
-  width: 9vw;
+  width: 6vw;
   position: relative;
   flex-direction: column;
   align-items: center;
+  background: var(--primary-color);
+  border-radius: 10px;
 }
 
 #logo {
