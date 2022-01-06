@@ -3,6 +3,7 @@
   --container-bg: #edebeb;
   --nav-buttons: white;
   --logout-button-bg: #2a67ca;
+  --border-radius: 10px;
 }
 
 * {
@@ -54,6 +55,18 @@
 #sharkMain {
   width: 75%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#banner {
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  width: 80%;
+  height: 30%;
+  color: var(--nav-buttons);
 }
 
 /* ********* Right Bar ********* */
