@@ -1,8 +1,9 @@
 :root {
   --primary-color: #2a67ca;
+  --tertiary-color: #5184d6;
   --container-bg: #edebeb;
   --nav-buttons: #ffffff;
-  --logout-button-bg: #2a67ca;
+  /* --logout-button-bg: #2a67ca; */
   --border-radius: 10px;
 }
 
@@ -36,7 +37,7 @@
 }
 
 #logoutEl {
-  background-color: var(--logout-button-bg);
+  background-color: var(--primary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);
   font-size: 2vw;
@@ -67,10 +68,29 @@
   border-radius: var(--border-radius);
 }
 
+/* *** banner *** */
+
 #banner {
   background: var(--primary-color);
-  height: 30%;
   color: var(--nav-buttons);
+  height: 30%;
+  display: flex;
+  padding: 10px;
+}
+
+#dateNameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0 10px 10px;
+}
+
+#date {
+  background: var(--tertiary-color);
+}
+
+#imgDiv {
+  width: 34vw;
 }
 
 #articlesContainer {
