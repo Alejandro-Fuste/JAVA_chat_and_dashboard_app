@@ -53,7 +53,7 @@
 
 #businessMain,
 #sharkMain {
-  width: 75%;
+  width: 72%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -84,10 +84,21 @@
 #rightBar {
   width: 19%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #myProfileContainer,
 #commentsContainer {
   background: var(--nav-buttons);
   border-radius: var(--border-radius);
+}
+
+#myProfileContainer {
+  height: 30%;
+}
+
+#commentsContainer {
+  margin-top: 2rem;
+  height: 64%;
 }
