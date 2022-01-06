@@ -1,5 +1,7 @@
 :root {
   --submit-button-color: #2a67ca;
+  --nav-buttons: #463f57;
+  --logout-button-bg: white;
 }
 
 * {
@@ -12,10 +14,30 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* ********* Left Bar Navigation ********* */
+
 #leftBar {
   display: flex;
   width: 9vw;
   position: relative;
   flex-direction: column;
   align-items: center;
+}
+
+#logo {
+  width: 10vw;
+}
+
+#logoutEl {
+  background-color: var(--logout-button-bg);
+  color: var(--nav-buttons);
+  border: white;
+  font-size: 2vw;
+}
+
+#inactiveLink {
+  opacity: 0.4;
+  color: var(--nav-buttons);
+  font-size: 2vw;
+  margin: 2rem 0;
 }
