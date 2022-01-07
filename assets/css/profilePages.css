@@ -82,7 +82,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 20px;
+  width: 50%;
 }
 
 #date {
@@ -102,7 +103,15 @@
 }
 
 #imgDiv {
-  width: 34vw;
+  position: relative;
+}
+
+#bannerImg {
+  position: absolute;
+  left: 5rem;
+  bottom: -6.5rem;
+  width: 27vw;
+  height: 42vh;
 }
 
 #articlesContainer {
