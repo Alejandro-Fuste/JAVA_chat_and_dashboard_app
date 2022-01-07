@@ -163,6 +163,11 @@
   margin: 0;
 }
 
+#avatar {
+  height: 4rem;
+  width: 4rem;
+}
+
 #commentsContainer {
   margin-top: 2rem;
   height: 64%;
