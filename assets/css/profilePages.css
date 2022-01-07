@@ -36,7 +36,8 @@
   width: 10vw;
 }
 
-#logoutEl {
+#logoutEl,
+#addPitchButton {
   background-color: var(--primary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);

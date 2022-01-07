@@ -47,6 +47,7 @@
                 type="text"
                 class="form-control"
                 id="firstName"
+                data-name="firstName"
                 aria-describedby="firstNameHelp"
               />
             </div>
@@ -54,21 +55,52 @@
               <label for="exampleInputLastName" class="form-label"
                 >Last Name</label
               >
-              <input type="text" class="form-control" id="lastName" />
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                data-name="lastName"
+              />
             </div>
 
             <div class="mb-3">
               <label for="exampleInputBusinessName" class="form-label"
                 >Business Name</label
               >
-              <input type="text" class="form-control" id="businessName" />
+              <input
+                type="text"
+                class="form-control"
+                id="businessName"
+                data-name="businessName"
+              />
             </div>
 
             <div class="mb-3">
               <label for="exampleInputUserName" class="form-label"
                 >User Name</label
               >
-              <input type="text" class="form-control" id="userName" />
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                data-name="userName"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="validationCustom04" class="form-label"
+                >Choose your role</label
+              >
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="role"
+                data-name="role"
+              >
+                <option selected>Choose...</option>
+                <option value="Business">Business</option>
+                <option value="Shark">Shark</option>
+              </select>
             </div>
 
             <div id="goToSignUp" class="form-text">
