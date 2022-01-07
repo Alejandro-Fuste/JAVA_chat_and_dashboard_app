@@ -85,11 +85,15 @@
   width: 50%;
 }
 
-#date {
+#date,
+.far {
   background: var(--tertiary-color);
   border-radius: 6px;
   padding: 6px;
   text-align: center;
+}
+
+#date {
   width: 30vh;
 }
 
@@ -138,15 +142,25 @@
   height: 30%;
 }
 
+#profileCommentsDiv {
+  height: 7vh;
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--nav-buttons);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+}
+
 #picInfoContainer {
   display: flex;
   margin: 1rem 0;
 }
 
 #title {
-  height: 7vh;
-  background: var(--primary-color);
-  border-radius: var(--border-radius);
+  margin: 0;
 }
 
 #commentsContainer {
