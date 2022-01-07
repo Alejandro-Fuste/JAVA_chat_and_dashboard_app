@@ -3,7 +3,6 @@
   --tertiary-color: #5184d6;
   --container-bg: #edebeb;
   --nav-buttons: #ffffff;
-  /* --logout-button-bg: #2a67ca; */
   --border-radius: 10px;
 }
 
@@ -137,6 +136,17 @@
 
 #myProfileContainer {
   height: 30%;
+}
+
+#picInfoContainer {
+  display: flex;
+  margin: 1rem 0;
+}
+
+#title {
+  height: 7vh;
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
 }
 
 #commentsContainer {
