@@ -1,9 +1,10 @@
 package com.investing_app.databaseinteraction;
 
-import com.investing_app.utility.ConnectionFile;
+
 import com.investing_app.customexceptions.BusinessNotFound;
 import com.investing_app.customexceptions.UsernameOrPasswordError;
 import com.investing_app.entities.Business;
+import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,19 +14,19 @@ public class BusinessDAOImp implements BusinessDAO {
 
     @Override
     public Business createBusiness(Business business){
-        try(Connection connection = ConnectionFile.createConnection()) {
-            String sql = "insert into business values(default, ?, ?, ?, ?, ?)";
+        try(Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "insert into business values(default, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-//            preparedStatement.setInt(1, business.getBusinessNumber());
             preparedStatement.setString(1, business.getFirstName());
             preparedStatement.setString(2, business.getLastName());
             preparedStatement.setString(3, business.getBusinessName());
             preparedStatement.setString(4, business.getUsername());
             preparedStatement.setString(5, business.getPassword());
+            preparedStatement.setString(6, business.getRole());
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
-            business.setBusinessNumber(resultSet.getInt("businessId"));
+            business.setBusinessId(resultSet.getInt("businessId"));
             return business;
         } catch (SQLException e){
             e.printStackTrace();
@@ -35,7 +36,7 @@ public class BusinessDAOImp implements BusinessDAO {
 
     @Override
     public Business getBusinessById(int id){
-        try(Connection connection = ConnectionFile.createConnection()) {
+        try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business where businessId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -47,7 +48,8 @@ public class BusinessDAOImp implements BusinessDAO {
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
                 return business;
             } else {
@@ -61,7 +63,7 @@ public class BusinessDAOImp implements BusinessDAO {
 
     @Override
     public List<Business> getAllBusinesses(){
-        try(Connection connection = ConnectionFile.createConnection()) {
+        try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -73,7 +75,8 @@ public class BusinessDAOImp implements BusinessDAO {
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
                 businesses.add(business);
             }
@@ -85,7 +88,7 @@ public class BusinessDAOImp implements BusinessDAO {
     }
 
     public Business getBusinessByUsername(String username) {
-        try (Connection connection = ConnectionFile.createConnection()) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business where username = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
@@ -98,7 +101,8 @@ public class BusinessDAOImp implements BusinessDAO {
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
                 return businessUser;
             } else {

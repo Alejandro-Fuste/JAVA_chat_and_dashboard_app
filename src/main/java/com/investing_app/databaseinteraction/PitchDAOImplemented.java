@@ -1,5 +1,6 @@
 package com.investing_app.databaseinteraction;
 
+import com.investing_app.entities.NewPitch;
 import com.investing_app.entities.Pitch;
 import com.investing_app.utility.DatabaseConnection;
 
@@ -8,6 +9,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PitchDAOImplemented implements PitchDAO {
+
+    @Override
+    public Pitch createPitch(Pitch pitch) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "insert into pitches values(default, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setInt(1, pitch.getBusinessId());
+            preparedStatement.setString(2, pitch.getCreationDate());
+            preparedStatement.setString(3, pitch.getPitch());
+            preparedStatement.setDouble(4, pitch.getAmount());
+            preparedStatement.setDouble(5, pitch.getPercentage());
+            preparedStatement.setString(6, pitch.getStatus());
+            preparedStatement.execute();
+            ResultSet resultSet = preparedStatement.getGeneratedKeys();
+            resultSet.next();
+            pitch.setPitchId(resultSet.getInt("pitchId"));
+            return pitch;
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
     @Override
     public List<Pitch> viewPitches() {

@@ -14,21 +14,22 @@ public class BusinessDAOTest {
 
     @Test
     void testCreateBusiness() {
-        Business newBusiness = new Business(0, "first", "last", "bizName", "UN", "PW");
+        Business newBusiness = new Business(0, "first", "last", "bizName",
+                "UN", "PW", "business");
         Business returnedBusiness = businessDAO.createBusiness(newBusiness);
-        Assert.assertTrue(returnedBusiness.getBusinessNumber() != 0);
+        Assert.assertTrue(returnedBusiness.getBusinessId() != 0);
     }
 
     @Test
     void selectBusinessById() {
         Business business = businessDAO.getBusinessById(1);
-        Assert.assertEquals(business.getBusinessNumber(), 1);
+        Assert.assertEquals(business.getBusinessId(), 1);
     }
 
     @Test
     void getAllBusinesses() {
         List<Business> businesses = businessDAO.getAllBusinesses();
-        Assert.assertTrue(businesses.size() >= 2);
+        Assert.assertTrue(businesses.size() >= 1);
         for (Business b : businesses) {
             System.out.println(b);
             System.out.println();

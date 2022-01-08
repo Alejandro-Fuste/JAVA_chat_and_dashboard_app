@@ -6,15 +6,14 @@ import com.investing_app.entities.Shark;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
 
 public class SharkDAOTests {
     SharkDAO sharkDAO = new SharkDAOImplemented();
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Kevin", "O'Leary", "Millions, Inc.",
-                "MrWonderful", "baldy1");
+        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Rich, Inc.",
+                "Kelso", "70sShow", "Shark");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }

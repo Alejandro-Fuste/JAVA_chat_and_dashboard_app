@@ -6,7 +6,6 @@ import com.investing_app.entities.Shark;
 import com.investing_app.service.SharkService;
 import io.javalin.http.Handler;
 
-import java.util.List;
 import java.util.Map;
 
 public class SharkController {
@@ -20,10 +19,17 @@ public class SharkController {
     public Handler createSharkProfile = ctx -> {
         Gson gson = new Gson();
         Shark newShark = gson.fromJson(ctx.body(), Shark.class);
-        Shark createdShark = this.sharkService.createSharkProfileService(newShark);
-        String createdSharkJson = gson.toJson(createdShark);
-        ctx.result(createdSharkJson);
-        ctx.status(201);
+        try {
+            Shark createdShark = this.sharkService.createSharkProfileService(newShark);
+            String createdSharkJson = gson.toJson(createdShark);
+            ctx.result(createdSharkJson);
+            ctx.status(201);
+        }
+        catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(400);
+        }
+
     };
 
 
@@ -36,13 +42,9 @@ public class SharkController {
             ctx.result(sharkLoggedInJson);
             ctx.status(200);
         }
-        catch (UsernameOrPasswordIncorrect e) {
-            ctx.result(e.getMessage());
-            ctx.status(404);
-        }
         catch (Exception e) {
             ctx.result(e.getMessage());
-            ctx.status(404);
+            ctx.status(400);
         }
     };
 }

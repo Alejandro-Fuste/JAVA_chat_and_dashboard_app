@@ -18,6 +18,7 @@ public class BusinessServicesTests {
     void badIdForBusiness(){
         Business anotherBusiness = businessServices.getBusinessByIdService(2345);
     }
+
     @Test(expectedExceptions = UsernameOrPasswordError.class, expectedExceptionsMessageRegExp = "Username or Password are incorrect")
     void badLogin(){
         Business newBusiness = businessServices.getBusinessLoginService("Lex", "Luther");

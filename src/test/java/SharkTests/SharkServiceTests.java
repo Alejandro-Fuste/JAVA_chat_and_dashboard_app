@@ -1,5 +1,8 @@
 package sharktests;
 
+import com.investing_app.customexceptions.IncorrectDataType;
+import com.investing_app.customexceptions.NullValue;
+import com.investing_app.customexceptions.TooManyChar;
 import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
 import com.investing_app.databaseinteraction.SharkDAO;
 import com.investing_app.entities.Shark;
@@ -17,17 +20,41 @@ public class SharkServiceTests {
     static SharkService sharkService;
     static Shark sharkProfile;
     static Shark returnedSharkProfile;
+    static Shark sharkProfileTooManyChar;
+    static Shark sharkProfileNullValue;
+    static Shark sharkProfileIncorrectDataType;
+
 
     @BeforeClass
     public void setup() {
        sharkDAO = Mockito.mock(SharkDAO.class);
        sharkService = new SharkServiceImplemented(sharkDAO);
        sharkProfile = new Shark(0, "Lori", "Greiner", "CU Creations",
-               "QueenQVC", "qvc1");
+               "QueenQVC", "qvc1", "Shark");
        returnedSharkProfile = new Shark(1, "Lori", "Greiner", "CU Creations",
-               "QueenQVC", "qvc1");
+               "QueenQVC", "qvc1", "Shark");
+       sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
+               "kwowkgjthfmbnalkjwkdjhgkskejdjghee", "jgkdkjeighejekfjghfjej",
+               "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
+        sharkProfileNullValue = new Shark(0, "", "", "", "",
+                "", "");
+        sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
+                "Business", "TexasDan", "heyYou", "5hark");
     }
 
+    // Catching null inputs for login
+    @Test(expectedExceptions = NullValue.class)
+    public void sharkLoginNullValues() {
+        Mockito.when(sharkDAO.getSharkByUsername("Kevin")).thenThrow(new NullValue("You must enter a value!"));
+        sharkService.sharkLoginService("", "");
+    }
+
+    // Catching too long an entry for login
+    @Test(expectedExceptions = TooManyChar.class)
+    public void sharkLoginTooManyChar() {
+        Mockito.when(sharkDAO.getSharkByUsername("Troy")).thenThrow(new TooManyChar("You are exceeding the value length"));
+        sharkService.sharkLoginService("a;lskdjfjdkslslekejldk", "gjkfndheuthfndjethfndjakqpoekjsnf");
+    }
 
     // Catching incorrect credentials
     @Test(expectedExceptions = UsernameOrPasswordIncorrect.class)
@@ -67,4 +94,27 @@ public class SharkServiceTests {
         Shark result = sharkService.createSharkProfileService(sharkProfile);
         Assert.assertEquals(result, returnedSharkProfile);
     }
+
+    // Catching too long of an input for creating profile
+    @Test(expectedExceptions = TooManyChar.class)
+    public void createSharkProfileTooManyChar() {
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfileTooManyChar)).thenThrow(new TooManyChar("You are exceeding the value length"));
+        sharkService.createSharkProfileService(sharkProfileTooManyChar);
+    }
+
+    // Catching null input for creating profile
+    @Test(expectedExceptions = NullValue.class)
+    public void createSharkProfileNullValue() {
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfileNullValue)).thenThrow(new NullValue("You must enter a value!"));
+        sharkService.createSharkProfileService(sharkProfileNullValue);
+    }
+
+    // Catching incorrect data type
+    @Test(expectedExceptions = IncorrectDataType.class)
+    public void createSharkProfileIncorrectDataType() {
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfileIncorrectDataType))
+                .thenThrow(new IncorrectDataType("Input type not allowed"));
+        sharkService.createSharkProfileService(sharkProfileIncorrectDataType);
+    }
+
 }
