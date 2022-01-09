@@ -1,4 +1,4 @@
-package com.investing_app.databaseinteraction;
+package com.investing_app.dao;
 
 
 import com.investing_app.customexceptions.BusinessNotFound;

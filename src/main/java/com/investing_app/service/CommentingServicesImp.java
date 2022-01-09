@@ -1,7 +1,7 @@
 package com.investing_app.service;
 
 import com.investing_app.customexceptions.CommentNotFound;
-import com.investing_app.databaseinteraction.CommentingDAO;
+import com.investing_app.dao.CommentingDAO;
 import com.investing_app.entities.Commenting;
 
 import java.util.List;

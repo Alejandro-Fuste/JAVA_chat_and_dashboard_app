@@ -1,8 +1,7 @@
-package com.investing_app.databaseinteraction;
+package com.investing_app.dao;
 
 import com.investing_app.customexceptions.CommentNotFound;
 import com.investing_app.entities.Commenting;
-import com.investing_app.utility.ConnectionFile;
 import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;

@@ -1,7 +1,7 @@
 package dev.commentingservicetests;
 
-import com.investing_app.databaseinteraction.CommentingDAO;
-import com.investing_app.databaseinteraction.CommentingDAOImp;
+import com.investing_app.dao.CommentingDAO;
+import com.investing_app.dao.CommentingDAOImp;
 import com.investing_app.customexceptions.CommentNotFound;
 import com.investing_app.entities.Commenting;
 import com.investing_app.service.CommentingServices;

@@ -29,7 +29,6 @@ public class SharkController {
             ctx.result(e.getMessage());
             ctx.status(400);
         }
-
     };
 
 

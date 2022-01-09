@@ -1,7 +1,7 @@
 package com.investing_app.service;
 
 import com.investing_app.customexceptions.CreateBusinessException;
-import com.investing_app.databaseinteraction.BusinessDAO;
+import com.investing_app.dao.BusinessDAO;
 import com.investing_app.customexceptions.BusinessNotFound;
 
 import com.investing_app.customexceptions.UsernameOrPasswordError;

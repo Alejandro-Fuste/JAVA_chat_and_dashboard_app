@@ -1,10 +1,7 @@
 package com.investing_app.service;
 
-import com.investing_app.customexceptions.IncorrectDataType;
-import com.investing_app.customexceptions.NullValue;
-import com.investing_app.customexceptions.TooManyChar;
-import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
-import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.customexceptions.*;
+import com.investing_app.dao.SharkDAO;
 import com.investing_app.entities.Shark;
 
 import java.util.List;
@@ -21,18 +18,29 @@ public class SharkServiceImplemented implements SharkService {
 
     @Override
     public Shark createSharkProfileService(Shark o) {
-        Shark shark = this.sharkDAO.createSharkProfile(o);
-        if ((o.getFirstName().length() > 20) || (o.getLastName().length() > 20) || (o.getBusinessName().length() > 30)
-        || (o.getUsername().length() > 20) || (o.getPassword().length() > 30) || (o.getRole().length() > 10))
-            throw new TooManyChar("You are exceeding the value length");
+        List<Shark> sharks = this.sharkDAO.getAllSharks();
+
         if ((o.getFirstName().length() == 0) || (o.getLastName().length() == 0) || (o.getBusinessName().length() == 0)
                 || (o.getUsername().length() == 0) || (o.getPassword().length() == 0) || (o.getRole().length() == 0))
             throw new NullValue("You must enter a value!");
+        if ((o.getFirstName().length() > 20) || (o.getLastName().length() > 20) || (o.getBusinessName().length() > 30)
+        || (o.getUsername().length() > 20) || (o.getPassword().length() > 30) || (o.getRole().length() > 10))
+            throw new TooManyChar("You are exceeding the value length");
+        // Throws exception correctly, however, still persists profile with too short a username
+        if (o.getUsername().length() < 5)
+            throw new UsernameTooShort("Username must be at least 5 characters!");
+        // Throws exception correctly, however, still persists profile with too short a password
+        if (o.getPassword().length() < 8)
+            throw new PasswordTooShort("Password must be at least 8 characters!");
         if (!Pattern.matches("^[a-zA-Z]*$", o.getFirstName()) ||
                 !Pattern.matches("^[a-zA-Z]*$", o.getLastName()) ||
                 !Pattern.matches("^[a-zA-Z]*$", o.getRole()))
             throw new IncorrectDataType("Input type not allowed");
-        return shark;
+        for (Shark _shark : sharks) {
+            if (Objects.equals(_shark.getUsername(), o.getUsername()))
+                throw new UsernameTaken("That username is already taken! Please try again.");
+        }
+        return this.sharkDAO.createSharkProfile(o);
     }
 
 

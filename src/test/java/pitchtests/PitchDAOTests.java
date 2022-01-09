@@ -1,8 +1,7 @@
 package pitchtests;
 
-import com.investing_app.databaseinteraction.PitchDAO;
-import com.investing_app.databaseinteraction.PitchDAOImplemented;
-import com.investing_app.entities.NewPitch;
+import com.investing_app.dao.PitchDAO;
+import com.investing_app.dao.PitchDAOImplemented;
 import com.investing_app.entities.Pitch;
 import org.testng.Assert;
 import org.testng.annotations.Test;

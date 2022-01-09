@@ -3,7 +3,8 @@ package pitchtests;
 import com.investing_app.customexceptions.IncorrectDataType;
 import com.investing_app.customexceptions.NullValue;
 import com.investing_app.customexceptions.TooManyChar;
-import com.investing_app.databaseinteraction.PitchDAO;
+import com.investing_app.customexceptions.ValueTooLarge;
+import com.investing_app.dao.PitchDAO;
 import com.investing_app.entities.Pitch;
 import com.investing_app.service.PitchService;
 import com.investing_app.service.PitchServiceImplemented;
@@ -25,6 +26,8 @@ public class PitchServiceTests {
     static Pitch pitchTooManyChar;
     static Pitch pitchNullValues;
     static Pitch pitchIncorrectDataType;
+    static Pitch AmountTooHigh;
+    static Pitch PercentTooHigh;
 
     @BeforeClass
     public void setup() {
@@ -50,6 +53,10 @@ public class PitchServiceTests {
                 1.0, "");
         pitchIncorrectDataType = new Pitch(0, 1, "alsk", "my pitch",
                 100_000, 3.3, "");
+        AmountTooHigh = new Pitch(0, 1, "2022/01/08", "My pitch!",
+                1_000_001, 5.6, "");
+        PercentTooHigh = new Pitch(0, 2, "2022/01/08", "My pitch!",
+                900_000, 50.0, "");
     }
 
     // Stubbing DAO results(positive)
@@ -103,5 +110,21 @@ public class PitchServiceTests {
         Mockito.when(pitchDAO.createPitch(pitchIncorrectDataType))
                 .thenThrow(new IncorrectDataType("Input type not allowed"));
         pitchService.createPitchService(pitchIncorrectDataType);
+    }
+
+    // Catching too large an amount
+    @Test(expectedExceptions = ValueTooLarge.class)
+    public void createPitchAmountTooHigh() {
+        Mockito.when(pitchDAO.createPitch(AmountTooHigh))
+                .thenThrow(new ValueTooLarge("Please enter an amount below one million dollars."));
+        pitchService.createPitchService(AmountTooHigh);
+    }
+
+    // Catching percent >= 50
+    @Test(expectedExceptions = ValueTooLarge.class)
+    public void createPitchPercentTooHigh() {
+        Mockito.when(pitchDAO.createPitch(PercentTooHigh))
+                .thenThrow(new ValueTooLarge("Please enter a percentage below 50."));
+        pitchService.createPitchService(PercentTooHigh);
     }
 }

@@ -1,10 +1,7 @@
 package sharktests;
 
-import com.investing_app.customexceptions.IncorrectDataType;
-import com.investing_app.customexceptions.NullValue;
-import com.investing_app.customexceptions.TooManyChar;
-import com.investing_app.customexceptions.UsernameOrPasswordIncorrect;
-import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.customexceptions.*;
+import com.investing_app.dao.SharkDAO;
 import com.investing_app.entities.Shark;
 import com.investing_app.service.SharkService;
 import com.investing_app.service.SharkServiceImplemented;
@@ -23,6 +20,8 @@ public class SharkServiceTests {
     static Shark sharkProfileTooManyChar;
     static Shark sharkProfileNullValue;
     static Shark sharkProfileIncorrectDataType;
+    static Shark shortUsername;
+    static Shark shortPassword;
 
 
     @BeforeClass
@@ -40,6 +39,10 @@ public class SharkServiceTests {
                 "", "");
         sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
                 "Business", "TexasDan", "heyYou", "5hark");
+        shortUsername = new Shark(0, "Texas", "Dan", "MyBusiness",
+                "sjdh", "atleast8", "");
+        shortPassword = new Shark(0, "Texas", "Dan", "MyBusiness",
+                "AtLeast5", "sj", "");
     }
 
     // Catching null inputs for login
@@ -117,4 +120,27 @@ public class SharkServiceTests {
         sharkService.createSharkProfileService(sharkProfileIncorrectDataType);
     }
 
+    // Testing for unique username
+    @Test(expectedExceptions = UsernameTaken.class)
+    public void createSharkProfileUniqueUsername() {
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfile))
+                .thenThrow(new UsernameTaken("That username is already taken! Please try again."));
+        sharkService.createSharkProfileService(sharkProfile);
+    }
+
+    // Catching too short a username
+    @Test(expectedExceptions = UsernameTooShort.class)
+    public void createSharkProfileShortUsername() {
+        Mockito.when(sharkDAO.createSharkProfile(shortUsername))
+                .thenThrow(new UsernameTooShort("Username must be at least 5 characters!"));
+        sharkService.createSharkProfileService(shortUsername);
+    }
+
+    // Catching too short a password
+    @Test(expectedExceptions = PasswordTooShort.class)
+    public void createSharkProfileShortPassword() {
+        Mockito.when(sharkDAO.createSharkProfile(shortPassword))
+                .thenThrow(new PasswordTooShort("Password must be at least 8 characters!"));
+        sharkService.createSharkProfileService(shortPassword);
+    }
 }

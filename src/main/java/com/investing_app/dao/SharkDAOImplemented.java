@@ -1,9 +1,11 @@
-package com.investing_app.databaseinteraction;
+package com.investing_app.dao;
 
 import com.investing_app.entities.Shark;
 import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SharkDAOImplemented implements SharkDAO{
 
@@ -53,6 +55,34 @@ public class SharkDAOImplemented implements SharkDAO{
                 );
             }
             return sharkReturned;
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public List<Shark> getAllSharks() {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "select * from shark";
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            List<Shark> sharks = new ArrayList<>();
+            while(resultSet.next()) {
+                Shark shark = new Shark(
+                        resultSet.getInt("sharkId"),
+                        resultSet.getString("firstName"),
+                        resultSet.getString("lastName"),
+                        resultSet.getString("businessName"),
+                        resultSet.getString("username"),
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
+                );
+                sharks.add(shark);
+            }
+
+            return sharks;
         }
         catch (SQLException e) {
             e.printStackTrace();

@@ -1,6 +1,5 @@
-package com.investing_app.databaseinteraction;
+package com.investing_app.dao;
 
-import com.investing_app.entities.NewPitch;
 import com.investing_app.entities.Pitch;
 
 import java.util.List;

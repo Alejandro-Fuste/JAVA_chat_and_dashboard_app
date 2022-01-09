@@ -1,21 +1,21 @@
 package com.investing_app.app;
 
 import com.investing_app.controllers.SharkController;
-import com.investing_app.databaseinteraction.PitchDAO;
-import com.investing_app.databaseinteraction.PitchDAOImplemented;
-import com.investing_app.databaseinteraction.SharkDAO;
+import com.investing_app.dao.PitchDAO;
+import com.investing_app.dao.PitchDAOImplemented;
+import com.investing_app.dao.SharkDAO;
 import com.investing_app.service.SharkService;
 import com.investing_app.service.SharkServiceImplemented;
 import com.investing_app.controllers.PitchController;
-import com.investing_app.databaseinteraction.SharkDAOImplemented;
+import com.investing_app.dao.SharkDAOImplemented;
 import com.investing_app.service.PitchService;
 import com.investing_app.service.PitchServiceImplemented;
 import io.javalin.Javalin;
 
-import com.investing_app.databaseinteraction.BusinessDAO;
-import com.investing_app.databaseinteraction.BusinessDAOImp;
-import com.investing_app.databaseinteraction.CommentingDAO;
-import com.investing_app.databaseinteraction.CommentingDAOImp;
+import com.investing_app.dao.BusinessDAO;
+import com.investing_app.dao.BusinessDAOImp;
+import com.investing_app.dao.CommentingDAO;
+import com.investing_app.dao.CommentingDAOImp;
 import com.investing_app.controllers.BusinessController;
 import com.investing_app.controllers.CommentingController;
 import com.investing_app.service.BusinessServices;
