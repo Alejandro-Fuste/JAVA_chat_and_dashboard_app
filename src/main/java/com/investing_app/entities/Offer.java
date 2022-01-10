@@ -1,4 +1,4 @@
-package com.landeros.entities;
+package com.investing_app.entities;
 
 import java.util.Objects;
 
