@@ -150,6 +150,11 @@
   margin-right: 1rem;
 }
 
+#bizName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 /* ********* Right Bar ********* */
 
 #rightBar {
