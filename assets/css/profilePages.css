@@ -89,7 +89,8 @@
 }
 
 #date,
-.far {
+.far,
+#statusButton {
   background: var(--tertiary-color);
   border-radius: 6px;
   padding: 6px;
@@ -153,6 +154,12 @@
 #bizName {
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+#statusButton {
+  height: 4vh;
+  width: 3vw;
+  border-color: var(--tertiary-color);
 }
 
 /* ********* Right Bar ********* */
