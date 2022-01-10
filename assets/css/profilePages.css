@@ -144,7 +144,8 @@
   height: 30%;
 }
 
-#profileCommentsDiv {
+#profileCommentsDiv,
+#pitchesTitleContainer {
   height: 7vh;
   background: var(--primary-color);
   border-radius: var(--border-radius);
@@ -162,7 +163,8 @@
   justify-content: space-evenly;
 }
 
-#title {
+#title,
+#pastTitle {
   margin: 0;
 }
 
