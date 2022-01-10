@@ -1,8 +1,7 @@
 package com.investing_app.controllers;
 
 import com.google.gson.Gson;
-import com.investing_app.customexceptions.BusinessNotFound;
-import com.investing_app.customexceptions.UsernameOrPasswordError;
+import com.investing_app.customexceptions.*;
 import com.investing_app.entities.Business;
 import com.investing_app.service.BusinessServices;
 import io.javalin.http.Handler;
@@ -17,13 +16,30 @@ public class BusinessController {
     }
 
     public Handler createBusiness = ctx ->{
-        Gson gson = new Gson();
-        Business newBusiness = gson.fromJson(ctx.body(), Business.class);
-        Business createdBusiness = this.businessServices.getCreateBusinessService(newBusiness);
-        String createdBusinessJson = gson.toJson(createdBusiness);
-        ctx.result(createdBusinessJson);
-        ctx.status(201);
+        try {
+            Gson gson = new Gson();
+            Business newBusiness = gson.fromJson(ctx.body(), Business.class);
+            Business createdBusiness = this.businessServices.getCreateBusinessService(newBusiness);
+            String createdBusinessJson = gson.toJson(createdBusiness);
+            ctx.result(createdBusinessJson);
+            ctx.status(201);
+        } catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
+
+//        catch (NoValueException e) {
+//            ctx.result(e.getMessage());
+//            ctx.status(405);
+//        } catch (NotEnoughChars e){
+//            ctx.result(e.getMessage());
+//            ctx.status(406);
+//        } catch (OnlyLetters e){
+//            ctx.result(e.getMessage());
+//            ctx.status(407);
+//        }
+
 
     public Handler getBusiness = ctx -> {
         int id = Integer.parseInt(ctx.pathParam("id"));
@@ -41,11 +57,16 @@ public class BusinessController {
     };
 
     public Handler getAllBusinesses = ctx -> {
-        List<Business> businesses = this.businessServices.getAllBusinessesService();
-        Gson gson = new Gson();
-        String businessesJSONs = gson.toJson(businesses);
-        ctx.result(businessesJSONs);
-        ctx.status(200);
+        try {
+            List<Business> businesses = this.businessServices.getAllBusinessesService();
+            Gson gson = new Gson();
+            String businessesJSONs = gson.toJson(businesses);
+            ctx.result(businessesJSONs);
+            ctx.status(200);
+        } catch (BusinessNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
 
     public Handler getBusinessLogin = ctx -> {

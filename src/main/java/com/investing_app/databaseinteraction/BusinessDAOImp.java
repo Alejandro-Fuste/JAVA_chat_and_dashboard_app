@@ -1,5 +1,6 @@
 package com.investing_app.databaseinteraction;
 
+import com.investing_app.customexceptions.UsernameAlreadyExists;
 import com.investing_app.utility.ConnectionFile;
 import com.investing_app.customexceptions.BusinessNotFound;
 import com.investing_app.customexceptions.UsernameOrPasswordError;
@@ -14,7 +15,7 @@ public class BusinessDAOImp implements BusinessDAO {
     @Override
     public Business createBusiness(Business business){
         try(Connection connection = ConnectionFile.createConnection()) {
-            String sql = "insert into business values(default, ?, ?, ?, ?, ?)";
+            String sql = "insert into business values(default, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 //            preparedStatement.setInt(1, business.getBusinessNumber());
             preparedStatement.setString(1, business.getFirstName());
@@ -22,6 +23,7 @@ public class BusinessDAOImp implements BusinessDAO {
             preparedStatement.setString(3, business.getBusinessName());
             preparedStatement.setString(4, business.getUsername());
             preparedStatement.setString(5, business.getPassword());
+            preparedStatement.setString(6, business.getRole());
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
@@ -47,7 +49,8 @@ public class BusinessDAOImp implements BusinessDAO {
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
                 return business;
             } else {
@@ -73,7 +76,8 @@ public class BusinessDAOImp implements BusinessDAO {
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
                 businesses.add(business);
             }
@@ -90,20 +94,23 @@ public class BusinessDAOImp implements BusinessDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();
-//            Business businessUser = new Business();
+            Business businessUser = new Business();
             if (resultSet.next()) {
-                Business businessUser = new Business (
+                return new Business (
                         resultSet.getInt("businessId"),
                         resultSet.getString("firstName"),
                         resultSet.getString("lastName"),
                         resultSet.getString("businessName"),
                         resultSet.getString("username"),
-                        resultSet.getString("password")
+                        resultSet.getString("password"),
+                        resultSet.getString("role")
                 );
-                return businessUser;
-            } else {
-                throw new UsernameOrPasswordError("Username or Password are incorrect");
+
             }
+            return businessUser;
+//            else {
+//                throw new UsernameOrPasswordError("Username or Password are incorrect");
+//            }
         }
         catch (SQLException e) {
             e.printStackTrace();
