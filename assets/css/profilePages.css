@@ -178,8 +178,8 @@
 }
 
 #statusButton {
-  height: 4vh;
-  width: 3vw;
+  height: 35px;
+  width: 30px;
   border-color: var(--tertiary-color);
 }
 
@@ -227,7 +227,7 @@
 
 #picInfoContainer {
   display: flex;
-  margin: 3rem 1rem;
+  margin: 20px 10px;
   justify-content: space-evenly;
 }
 
@@ -239,6 +239,7 @@
 #avatar {
   height: 4rem;
   width: 4rem;
+  margin-top: 15px;
 }
 
 #fullName,
