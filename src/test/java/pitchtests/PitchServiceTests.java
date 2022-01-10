@@ -33,29 +33,29 @@ public class PitchServiceTests {
     public void setup() {
         pitchDAO = Mockito.mock(PitchDAO.class);
         pitchService = new PitchServiceImplemented(pitchDAO);
-        pitch = new Pitch(0, 1, "01/06/2022",
+        pitch = new Pitch(0, 1, "My Business", "01/06/2022",
                 "Send us your kitchen knives and we sharpen them for you!",
                 100000, 4.5, "");
-        pitch2 = new Pitch(2, 2, "01-06-2022", "Mench on a Bench toy",
+        pitch2 = new Pitch(2, 2, "Our Business", "01-06-2022", "Mench on a Bench toy",
                 120000, 5.5, "");
         returnedPitches = new ArrayList<>();
         returnedPitches.add(pitch);
         returnedPitches.add(pitch2);
-        returnedPitch = new Pitch(1, 1, "01-06-2022",
+        returnedPitch = new Pitch(1, 1, "My Business", "01-06-2022",
                 "Send us your kitchen knives and we sharpen them for you!",
                 100000, 4.5, "");
-        pitchTooManyChar = new Pitch(0, 1, "01-28-20222022",
+        pitchTooManyChar = new Pitch(0, 1, ";slkdjalsjljaslfj", "01-28-20222022",
                 "a;lksjdf asjdkf dfklj lkasjdfkjsdfl;kaeinlsiehg lsjfoawilejfaiefja;wiejfawoie iowleijfaw;liefja " +
                         "lkasdjflasjfa;slkdalskjfkdsjfa sflkajsdlkfjaiwefjisdfaksdjfa;liwejiegj aowejlfingao;weiganwiijf" +
                         "s;ldkfjal;ksjf;laskdjfl;aksdjflka",
                 100_000, 5.55, "");
-        pitchNullValues = new Pitch(0, 1, "", "", 50000,
+        pitchNullValues = new Pitch(0, 1, "", "", "", 50000,
                 1.0, "");
-        pitchIncorrectDataType = new Pitch(0, 1, "alsk", "my pitch",
+        pitchIncorrectDataType = new Pitch(0, 1, "My Business", "alsk", "my pitch",
                 100_000, 3.3, "");
-        AmountTooHigh = new Pitch(0, 1, "2022/01/08", "My pitch!",
+        AmountTooHigh = new Pitch(0, 1, "My Business", "2022/01/08", "My pitch!",
                 1_000_001, 5.6, "");
-        PercentTooHigh = new Pitch(0, 2, "2022/01/08", "My pitch!",
+        PercentTooHigh = new Pitch(0, 2, "My Business", "2022/01/08", "My pitch!",
                 900_000, 50.0, "");
     }
 
@@ -93,7 +93,7 @@ public class PitchServiceTests {
     @Test(expectedExceptions = TooManyChar.class)
     public void createPitchTooManyChar() {
         Mockito.when(pitchDAO.createPitch(pitchTooManyChar))
-                .thenThrow(new TooManyChar("You are exceeding the value length"));
+                .thenThrow(new TooManyChar("You are exceeding the value length!"));
         pitchService.createPitchService(pitchTooManyChar);
     }
 
@@ -108,7 +108,7 @@ public class PitchServiceTests {
     @Test(expectedExceptions = IncorrectDataType.class)
     public void createPitchIncorrectDataType() {
         Mockito.when(pitchDAO.createPitch(pitchIncorrectDataType))
-                .thenThrow(new IncorrectDataType("Input type not allowed"));
+                .thenThrow(new IncorrectDataType("Input type not allowed!"));
         pitchService.createPitchService(pitchIncorrectDataType);
     }
 
@@ -120,11 +120,11 @@ public class PitchServiceTests {
         pitchService.createPitchService(AmountTooHigh);
     }
 
-    // Catching percent >= 50
+    // Catching percent > 100
     @Test(expectedExceptions = ValueTooLarge.class)
     public void createPitchPercentTooHigh() {
         Mockito.when(pitchDAO.createPitch(PercentTooHigh))
-                .thenThrow(new ValueTooLarge("Please enter a percentage below 50."));
+                .thenThrow(new ValueTooLarge("Please enter a percentage less than or equal to 100."));
         pitchService.createPitchService(PercentTooHigh);
     }
 }

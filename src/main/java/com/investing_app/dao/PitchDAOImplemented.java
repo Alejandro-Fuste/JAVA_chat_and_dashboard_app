@@ -12,14 +12,15 @@ public class PitchDAOImplemented implements PitchDAO {
     @Override
     public Pitch createPitch(Pitch pitch) {
         try (Connection connection = DatabaseConnection.createConnection()) {
-            String sql = "insert into pitches values(default, ?, ?, ?, ?, ?, ?)";
+            String sql = "insert into pitches values(default, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1, pitch.getBusinessId());
-            preparedStatement.setString(2, pitch.getCreationDate());
-            preparedStatement.setString(3, pitch.getPitch());
-            preparedStatement.setDouble(4, pitch.getAmount());
-            preparedStatement.setDouble(5, pitch.getPercentage());
-            preparedStatement.setString(6, pitch.getStatus());
+            preparedStatement.setString(2, pitch.getBusinessName());
+            preparedStatement.setString(3, pitch.getCreationDate());
+            preparedStatement.setString(4, pitch.getPitch());
+            preparedStatement.setDouble(5, pitch.getAmount());
+            preparedStatement.setDouble(6, pitch.getPercentage());
+            preparedStatement.setString(7, pitch.getStatus());
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
@@ -43,6 +44,7 @@ public class PitchDAOImplemented implements PitchDAO {
                 Pitch pitch = new Pitch(
                         resultSet.getInt("pitchId"),
                         resultSet.getInt("businessId"),
+                        resultSet.getString("businessName"),
                         resultSet.getString("creationDate"),
                         resultSet.getString("pitch"),
                         resultSet.getFloat("amount"),

@@ -6,9 +6,6 @@ import com.investing_app.customexceptions.TooManyChar;
 import com.investing_app.customexceptions.ValueTooLarge;
 import com.investing_app.dao.PitchDAO;
 import com.investing_app.entities.Pitch;
-import com.investing_app.entities.Shark;
-import com.investing_app.utility.DatabaseConnection;
-
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -28,13 +25,14 @@ public class PitchServiceImplemented implements PitchService{
         Double percentage = this.pitchDAO.createPitch(pitch).getPercentage();
         Pitch _pitch = this.pitchDAO.createPitch(pitch);
 
+        // Try to fix character length of percentage
         if ((pitch.getCreationDate().length() > 10) || (pitch.getPitch().length() > 200) ||
                 numberFormat.format(percentage).length() > 5)
-            throw new TooManyChar("You are exceeding the value length");
+            throw new TooManyChar("You are exceeding the value length!");
         if ((pitch.getCreationDate().length() == 0) || (pitch.getPitch().length() == 0))
             throw new NullValue("You must enter a value!");
         if (!Pattern.matches("^[0-9-/]*$", pitch.getCreationDate()))
-            throw new IncorrectDataType("Input type not allowed");
+            throw new IncorrectDataType("Input type not allowed!");
         if (pitch.getAmount() > 1_000_000)
             throw new ValueTooLarge("Please enter an amount below one million dollars.");
         if (pitch.getPercentage() > 100.00)

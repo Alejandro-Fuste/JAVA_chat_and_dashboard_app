@@ -13,7 +13,7 @@ public class PitchDAOTests {
 
     @Test
     void createPitch() {
-        Pitch pitch = new Pitch(0, 9, "01-07-2022", "This is my pitch",
+        Pitch pitch = new Pitch(0, 9, "My Business", "01-07-2022", "This is my pitch",
                 100_000, 2.6, "");
         Pitch returnedPitch = pitchDAO.createPitch(pitch);
         Assert.assertTrue(returnedPitch.getPitchId() != 0);

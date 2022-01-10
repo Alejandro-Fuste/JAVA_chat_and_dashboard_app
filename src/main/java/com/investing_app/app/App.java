@@ -11,7 +11,6 @@ import com.investing_app.dao.SharkDAOImplemented;
 import com.investing_app.service.PitchService;
 import com.investing_app.service.PitchServiceImplemented;
 import io.javalin.Javalin;
-
 import com.investing_app.dao.BusinessDAO;
 import com.investing_app.dao.BusinessDAOImp;
 import com.investing_app.dao.CommentingDAO;

@@ -14,7 +14,7 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Rich, Inc.",
+        Shark shark1 = new Shark(0, "Ashton", "Kutcher",
                 "ButterflyEffect2", "70sShow", "Shark");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);

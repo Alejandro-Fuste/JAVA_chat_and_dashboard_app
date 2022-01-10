@@ -6960,3 +6960,75 @@ Response: [400], execution took 1682.37 ms
     Body is 52 bytes (starts on next line):
     Please enter a percentage less than or equal to 100.
 ----------------------------------------------------------------------------------
+2022-01-10 10:05:55,208 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-10 10:05:55,226 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1159ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-10 10:05:55,227 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-10 10:05:55,261 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 92 days old. Consider upgrading!).
+2022-01-10 10:05:55,261 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-10 10:05:55,478 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-10 10:05:55,478 [main] INFO  io.javalin.Javalin - Javalin started in 252ms \o/
+2022-01-10 10:06:28,667 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-10 10:06:28,680 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @838ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-10 10:06:28,682 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-10 10:06:28,700 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 92 days old. Consider upgrading!).
+2022-01-10 10:06:28,700 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-10 10:06:28,927 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-10 10:06:28,927 [main] INFO  io.javalin.Javalin - Javalin started in 246ms \o/
+2022-01-10 10:07:26,466 [qtp1419064126-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=1478a9c4-f084-4927-ac0a-46ab561bc91f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=153, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "sharkId": 0,
+    "firstName": "kjhuuu",
+    "lastName": "nnbvvbnmn",
+    "username": "zjhklhkj",
+    "password": "klak1292",
+    "role": "Shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1429.77 ms
+    Headers: {Date=Mon, 10 Jan 2022 17:07:25 GMT, Content-Type=text/plain}
+    Body is 116 bytes (starts on next line):
+    {"sharkId":1,"firstName":"kjhuuu","lastName":"nnbvvbnmn","username":"zjhklhkj","password":"klak1292","role":"Shark"}
+----------------------------------------------------------------------------------
+2022-01-10 10:07:41,892 [qtp1419064126-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=1f15c60d-eafb-4cbe-9e66-95511a219f8f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=153, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "sharkId": 0,
+    "firstName": "kjhuuu",
+    "lastName": "nnbvvbnmn",
+    "username": "zjhklhkj",
+    "password": "klak1292",
+    "role": "Shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 484.76 ms
+    Headers: {Date=Mon, 10 Jan 2022 17:07:41 GMT, Content-Type=text/plain}
+    Body is 49 bytes (starts on next line):
+    That username is already taken! Please try again.
+----------------------------------------------------------------------------------

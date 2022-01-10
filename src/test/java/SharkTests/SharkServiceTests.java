@@ -28,21 +28,21 @@ public class SharkServiceTests {
     public void setup() {
        sharkDAO = Mockito.mock(SharkDAO.class);
        sharkService = new SharkServiceImplemented(sharkDAO);
-       sharkProfile = new Shark(0, "Lori", "Greiner", "CU Creations",
-               "QueenQVC", "qvc1", "Shark");
-       returnedSharkProfile = new Shark(1, "Lori", "Greiner", "CU Creations",
-               "QueenQVC", "qvc1", "Shark");
+       sharkProfile = new Shark(0, "Lori", "Greiner",
+               "QueenQVC", "qvc12345", "Shark");
+       returnedSharkProfile = new Shark(1, "Lori", "Greiner",
+               "QueenQVC", "qvc12345", "Shark");
        sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
-               "kwowkgjthfmbnalkjwkdjhgkskejdjghee", "jgkdkjeighejekfjghfjej",
+                "jgkdkjeighejekfjghfjej",
                "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
-        sharkProfileNullValue = new Shark(0, "", "", "", "",
+        sharkProfileNullValue = new Shark(0, "", "", "",
                 "", "");
         sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
-                "Business", "TexasDan", "heyYou", "5hark");
-        shortUsername = new Shark(0, "Texas", "Dan", "MyBusiness",
-                "sjdh", "atleast8", "");
-        shortPassword = new Shark(0, "Texas", "Dan", "MyBusiness",
-                "AtLeast5", "sj", "");
+                 "TexasDan", "heyYou765", "5hark");
+        shortUsername = new Shark(0, "Texas", "Dan",
+                "sjdh", "atleast8", "Shark");
+        shortPassword = new Shark(0, "Texas", "Dan",
+                "AtLeast5", "sj", "Shark");
     }
 
     // Catching null inputs for login
@@ -85,7 +85,7 @@ public class SharkServiceTests {
     @Test
     public void sharkLoginSuccess() {
         Mockito.when(sharkDAO.getSharkByUsername("QueenQVC")).thenReturn(returnedSharkProfile);
-        Shark result = sharkService.sharkLoginService("QueenQVC", "qvc1");
+        Shark result = sharkService.sharkLoginService("QueenQVC", "qvc12345");
         Assert.assertEquals(result, returnedSharkProfile);
     }
 
@@ -101,14 +101,16 @@ public class SharkServiceTests {
     // Catching too long of an input for creating profile
     @Test(expectedExceptions = TooManyChar.class)
     public void createSharkProfileTooManyChar() {
-        Mockito.when(sharkDAO.createSharkProfile(sharkProfileTooManyChar)).thenThrow(new TooManyChar("You are exceeding the value length"));
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfileTooManyChar))
+                .thenThrow(new TooManyChar("You are exceeding the value length"));
         sharkService.createSharkProfileService(sharkProfileTooManyChar);
     }
 
     // Catching null input for creating profile
     @Test(expectedExceptions = NullValue.class)
     public void createSharkProfileNullValue() {
-        Mockito.when(sharkDAO.createSharkProfile(sharkProfileNullValue)).thenThrow(new NullValue("You must enter a value!"));
+        Mockito.when(sharkDAO.createSharkProfile(sharkProfileNullValue))
+                .thenThrow(new NullValue("You must enter a value!"));
         sharkService.createSharkProfileService(sharkProfileNullValue);
     }
 
