@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/BusinessDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/BusinessDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/service/BusinessServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/BusinessServicesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/service/CommentingServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/CommentingServicesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/businessservicestests/BusinessServicesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/businessservicestests/BusinessServicesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
