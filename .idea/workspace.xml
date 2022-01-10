@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/target/test-classes/SharkTests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SharkTests/SharkDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SharkTests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SharkTests/SharkServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +214,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="project2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="project2" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
