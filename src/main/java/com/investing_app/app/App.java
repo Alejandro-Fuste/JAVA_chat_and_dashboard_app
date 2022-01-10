@@ -5,17 +5,19 @@ import com.investing_app.dao.PitchDAO;
 import com.investing_app.dao.PitchDAOImplemented;
 import com.investing_app.dao.SharkDAO;
 import com.investing_app.service.SharkService;
-import com.investing_app.service.SharkServiceImplemented;
+import com.investing_app.service.PitchServiceImplemented;
 import com.investing_app.controllers.PitchController;
 import com.investing_app.dao.SharkDAOImplemented;
 import com.investing_app.service.PitchService;
 import com.investing_app.service.PitchServiceImplemented;
 import io.javalin.Javalin;
+
 import com.investing_app.dao.BusinessDAO;
 import com.investing_app.dao.BusinessDAOImp;
 import com.investing_app.dao.CommentingDAO;
 import com.investing_app.dao.CommentingDAOImp;
 import com.investing_app.controllers.BusinessController;
+//import dev.java_investing_app.controllers.AppController;
 import com.investing_app.controllers.CommentingController;
 import com.investing_app.service.BusinessServices;
 import com.investing_app.service.BusinessServicesImp;
@@ -41,32 +43,30 @@ public class App {
 
         // Shark
         SharkDAO sharkDAO = new SharkDAOImplemented();
-        SharkService sharkService = new SharkServiceImplemented(sharkDAO);
+        SharkService sharkService = new com.investing_app.service.SharkServiceImplemented(sharkDAO);
         SharkController sharkController = new SharkController(sharkService);
 
-        // Pitch
+//        // Pitch
         PitchDAO pitchDAO = new PitchDAOImplemented();
         PitchService pitchService = new PitchServiceImplemented(pitchDAO);
         PitchController pitchController = new PitchController(pitchService);
 
-        // business routes
+
+        // business route
         app.get("/business/{id}", businessController.getBusiness);
         app.get("/businesses", businessController.getAllBusinesses);
         app.post("/business/login", businessController.getBusinessLogin);
         app.post("/business/create", businessController.createBusiness);
 
-        // comments routes
         app.get("/commenting/{id}", commentingController.getComment);
         app.get("/commentingAll", commentingController.getAllComments);
         app.post("/commenting/create", commentingController.createComment);
 
-
-        // Shark routes
+//        // Shark
         app.post("/shark", sharkController.createSharkProfile);
         app.post("/shark/login", sharkController.sharkLogin);
 
-        //Pitch routes
-        app.post("/pitch", pitchController.createPitch);
+        //Pitch
         app.get("/pitches", pitchController.viewPitches);
         app.patch("/offer", pitchController.makeOffer);
         app.patch("/accept/{pitchId}", pitchController.acceptOffer);
@@ -75,4 +75,3 @@ public class App {
         app.start();
     }
 }
-
