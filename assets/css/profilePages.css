@@ -158,11 +158,16 @@
   justify-content: space-between;
 }
 
-#pitchDiv {
+#pitchDiv,
+#businessPitchDiv {
   display: flex;
   margin-bottom: 2rem;
   background-color: var(--pitch-bg);
   border-radius: var(--border-radius);
+}
+
+#businessPitchDiv {
+  flex-direction: column;
 }
 
 #bizPic {
@@ -216,7 +221,8 @@
   padding: 1rem;
 }
 
-#profileCommentsDiv {
+#profileCommentsDiv,
+#pitchesTitleContainer {
   background: var(--primary-color);
 }
 
