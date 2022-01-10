@@ -2,6 +2,7 @@ package com.investing_app.controllers;
 
 import com.google.gson.Gson;
 import com.investing_app.customexceptions.BusinessNotFound;
+import com.investing_app.customexceptions.CreateBusinessException;
 import com.investing_app.customexceptions.UsernameOrPasswordError;
 import com.investing_app.entities.Business;
 import com.investing_app.service.BusinessServices;
@@ -17,12 +18,19 @@ public class BusinessController {
     }
 
     public Handler createBusiness = ctx ->{
-        Gson gson = new Gson();
-        Business newBusiness = gson.fromJson(ctx.body(), Business.class);
-        Business createdBusiness = this.businessServices.getCreateBusinessService(newBusiness);
-        String createdBusinessJson = gson.toJson(createdBusiness);
-        ctx.result(createdBusinessJson);
-        ctx.status(201);
+        try {
+            Gson gson = new Gson();
+            Business newBusiness = gson.fromJson(ctx.body(), Business.class);
+            Business createdBusiness = this.businessServices.getCreateBusinessService(newBusiness);
+            String createdBusinessJson = gson.toJson(createdBusiness);
+            ctx.result(createdBusinessJson);
+            ctx.status(201);
+        }
+        catch (CreateBusinessException e) {
+            ctx.result(e.getMessage());
+            ctx.status(400);
+        }
+
     };
 
     public Handler getBusiness = ctx -> {
@@ -33,7 +41,6 @@ public class BusinessController {
             String businessJson = gson.toJson(business);
             ctx.result(businessJson);
             ctx.status(200);
-//            return business;
         } catch (BusinessNotFound e){
             ctx.result(e.getMessage());
             ctx.status(404);
@@ -52,7 +59,8 @@ public class BusinessController {
         Gson gson = new Gson();
         Map<String, String> loginCredentials = gson.fromJson(ctx.body(), Map.class);
         try {
-            Business businessLogin = this.businessServices.getBusinessLoginService(loginCredentials.get("username"), loginCredentials.get("password"));
+            Business businessLogin = this.businessServices.getBusinessLoginService(loginCredentials.get("username"),
+                    loginCredentials.get("password"));
             String businessLoginJson = gson.toJson(businessLogin);
             ctx.result(businessLoginJson);
             ctx.status(200);

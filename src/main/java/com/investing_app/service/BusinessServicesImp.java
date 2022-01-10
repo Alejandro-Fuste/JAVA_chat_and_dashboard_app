@@ -1,6 +1,7 @@
 package com.investing_app.service;
 
-import com.investing_app.databaseinteraction.BusinessDAO;
+import com.investing_app.customexceptions.CreateBusinessException;
+import com.investing_app.dao.BusinessDAO;
 import com.investing_app.customexceptions.BusinessNotFound;
 
 import com.investing_app.customexceptions.UsernameOrPasswordError;
@@ -17,7 +18,12 @@ public class BusinessServicesImp implements BusinessServices {
 
     @Override
     public Business getCreateBusinessService(Business business) {
-        return this.businessDAO.createBusiness(business);
+        try {
+            return this.businessDAO.createBusiness(business);
+        }
+        catch(CreateBusinessException e) {
+            throw new CreateBusinessException("Unable to create profile");
+        }
     }
 
     @Override

@@ -1,8 +1,8 @@
 package dev.commentingtests;
 
 import com.investing_app.entities.Commenting;
-import com.investing_app.databaseinteraction.CommentingDAO;
-import com.investing_app.databaseinteraction.CommentingDAOImp;
+import com.investing_app.dao.CommentingDAO;
+import com.investing_app.dao.CommentingDAOImp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
