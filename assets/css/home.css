@@ -1,5 +1,6 @@
 :root {
   --primary-color: #2a67ca;
+  --submit-button-color: #000f39;
 }
 
 * {
@@ -30,6 +31,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 50%;
+  background: var(--submit-button-color);
 }
 
 #leftSectionImg {
@@ -62,7 +64,7 @@ main {
 /* ********* login form ********* */
 
 #signUpForm {
-  height: 72%;
+  height: 83%;
 }
 
 #submitButton,

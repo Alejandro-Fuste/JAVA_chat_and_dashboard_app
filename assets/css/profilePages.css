@@ -32,6 +32,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  justify-content: space-around;
 }
 
 #leftBar {
@@ -43,7 +44,7 @@
 }
 
 #logo {
-  width: 10vw;
+  width: 5vw;
 }
 
 #logoutEl,
@@ -65,7 +66,7 @@
   opacity: 0.4;
   color: var(--nav-buttons);
   font-size: 2vw;
-  margin: 2rem 0;
+  padding: 0.375rem 0.75rem;
 }
 
 /* ********* Main (middle section) ********* */
