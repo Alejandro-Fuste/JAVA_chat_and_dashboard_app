@@ -47,11 +47,18 @@
 }
 
 #logoutEl,
-#addPitchButton {
+#addPitchButton,
+#businessLogoutEl,
+#bizAddPitchButton {
   background-color: var(--secondary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);
   font-size: 2vw;
+}
+
+#businessLogoutEl,
+#bizAddPitchButton {
+  background-color: var(--primary-color);
 }
 
 #inactiveLink {
