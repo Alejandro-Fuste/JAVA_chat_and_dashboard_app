@@ -24,14 +24,22 @@
 
 /* ********* Left Bar Navigation ********* */
 
-#leftBar {
+#leftBar,
+#leftBarShark {
   display: flex;
   width: 6%;
   position: relative;
   flex-direction: column;
   align-items: center;
-  background: var(--primary-color);
   border-radius: 10px;
+}
+
+#leftBar {
+  background: var(--primary-color);
+}
+
+#leftBarShark {
+  background: var(--secondary-color);
 }
 
 #logo {
@@ -40,7 +48,7 @@
 
 #logoutEl,
 #addPitchButton {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);
   font-size: 2vw;
@@ -66,19 +74,28 @@
 }
 
 #banner,
-#articlesContainer {
+#articlesContainer,
+#bannerShark {
   width: 80%;
   border-radius: var(--border-radius);
 }
 
 /* *** banner *** */
 
-#banner {
-  background: var(--primary-color);
+#banner,
+#bannerShark {
   color: var(--nav-buttons);
   height: 30%;
   display: flex;
   padding: 10px;
+}
+
+#banner {
+  background: var(--primary-color);
+}
+
+#bannerShark {
+  background-color: var(--secondary-color);
 }
 
 #dateNameDiv {
@@ -186,9 +203,10 @@
 }
 
 #profileCommentsDiv,
-#pitchesTitleContainer {
+#pitchesTitleContainer,
+#profileCommentsDivShark,
+#pitchesTitleContainerShark {
   height: 7vh;
-  background: var(--primary-color);
   border-radius: var(--border-radius);
   color: var(--nav-buttons);
   display: flex;
@@ -196,6 +214,15 @@
   align-items: center;
   align-content: center;
   padding: 1rem;
+}
+
+#profileCommentsDiv {
+  background: var(--primary-color);
+}
+
+#profileCommentsDivShark,
+#pitchesTitleContainerShark {
+  background-color: var(--secondary-color);
 }
 
 #picInfoContainer {
