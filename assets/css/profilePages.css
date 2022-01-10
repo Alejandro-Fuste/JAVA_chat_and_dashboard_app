@@ -3,6 +3,7 @@
   --tertiary-color: #5184d6;
   --accent-color: #f7d35c;
   --container-bg: #edebeb;
+  --pitch-bg: #fafafa;
   --nav-buttons: #ffffff;
   --border-radius: 10px;
 }
@@ -137,6 +138,9 @@
 
 #pitchDiv {
   display: flex;
+  margin-bottom: 2rem;
+  background-color: var(--pitch-bg);
+  border-radius: var(--border-radius);
 }
 
 #bizPic {
