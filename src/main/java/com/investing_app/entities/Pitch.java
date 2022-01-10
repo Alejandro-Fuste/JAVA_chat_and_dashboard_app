@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Pitch {
     private int pitchId;
     private int businessId;
+    private String businessName;
     private String creationDate;
     private String pitch;
     private double amount;
@@ -13,10 +14,11 @@ public class Pitch {
 
     public Pitch() {}
 
-    public Pitch(int pitchId, int businessId, String creationDate, String pitch,
+    public Pitch(int pitchId, int businessId, String businessName, String creationDate, String pitch,
                  double amount, double percentage, String status) {
         this.pitchId = pitchId;
         this.businessId = businessId;
+        this.businessName = businessName;
         this.creationDate = creationDate;
         this.pitch = pitch;
         this.amount = amount;
@@ -29,6 +31,7 @@ public class Pitch {
         return "Pitch{" +
                 "pitchId=" + pitchId +
                 ", businessId=" + businessId +
+                ", businessName='" + businessName + '\'' +
                 ", creationDate='" + creationDate + '\'' +
                 ", pitch='" + pitch + '\'' +
                 ", amount=" + amount +
@@ -42,12 +45,12 @@ public class Pitch {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Pitch pitch1 = (Pitch) o;
-        return pitchId == pitch1.pitchId && businessId == pitch1.businessId && Double.compare(pitch1.amount, amount) == 0 && Double.compare(pitch1.percentage, percentage) == 0 && Objects.equals(creationDate, pitch1.creationDate) && Objects.equals(pitch, pitch1.pitch) && Objects.equals(status, pitch1.status);
+        return pitchId == pitch1.pitchId && businessId == pitch1.businessId && Double.compare(pitch1.amount, amount) == 0 && Double.compare(pitch1.percentage, percentage) == 0 && Objects.equals(businessName, pitch1.businessName) && Objects.equals(creationDate, pitch1.creationDate) && Objects.equals(pitch, pitch1.pitch) && Objects.equals(status, pitch1.status);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(pitchId, businessId, creationDate, pitch, amount, percentage, status);
+        return Objects.hash(pitchId, businessId, businessName, creationDate, pitch, amount, percentage, status);
     }
 
     public int getPitchId() {
@@ -64,6 +67,14 @@ public class Pitch {
 
     public void setBusinessId(int businessId) {
         this.businessId = businessId;
+    }
+
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
     }
 
     public String getCreationDate() {

@@ -4,9 +4,7 @@ import com.google.gson.Gson;
 import com.investing_app.entities.Offer;
 import com.investing_app.entities.Pitch;
 import com.investing_app.service.PitchService;
-
 import java.util.List;
-
 import io.javalin.http.Handler;
 
 public class PitchController {
@@ -16,6 +14,21 @@ public class PitchController {
     public PitchController(PitchService pitchService) {
         this.pitchService = pitchService;
     }
+
+    public Handler createPitch = ctx -> {
+        Gson gson = new Gson();
+        Pitch pitch = gson.fromJson(ctx.body(), Pitch.class);
+        try {
+            Pitch newPitch = this.pitchService.createPitchService(pitch);
+            String newPitchJson = gson.toJson(newPitch);
+            ctx.result(newPitchJson);
+            ctx.status(201);
+        }
+        catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(400);
+        }
+    };
 
     public Handler viewPitches = ctx -> {
         List<Pitch> pitches = this.pitchService.viewPitchesService();
@@ -28,10 +41,17 @@ public class PitchController {
     public Handler makeOffer = ctx -> {
         Gson gson = new Gson();
         Offer offerMade = gson.fromJson(ctx.body(), Offer.class);
-        boolean offer = this.pitchService.makeOfferService(offerMade.getPitchId(),
-                offerMade.getAmount(), offerMade.getPercentage());
-        ctx.result(String.valueOf(offer));
-        ctx.status(200);
+        try {
+            boolean offer = this.pitchService.makeOfferService(offerMade.getPitchId(),
+                    offerMade.getAmount(), offerMade.getPercentage());
+            ctx.result(String.valueOf(offer));
+            ctx.status(200);
+        }
+        catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(400);
+        }
+
     };
 
     public Handler acceptOffer = ctx -> {
