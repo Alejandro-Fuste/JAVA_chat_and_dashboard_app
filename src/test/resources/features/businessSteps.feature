@@ -20,7 +20,6 @@ Feature Businesses being able to sell a portion of their company
   Scenario: As a business, I want to post an investment price
     Given The user on the bidding page
     When The user enters a price into the asking price
-    When The user enters a price into the asking price
     When The user clicks submit
     Then The table is updated to show the new asking price
 
@@ -44,4 +43,3 @@ Feature Businesses being able to sell a portion of their company
     Given The user is logged in
     When The user clicks on the view all past requests button
     Then The user is shown all of his past denied requests
-    
