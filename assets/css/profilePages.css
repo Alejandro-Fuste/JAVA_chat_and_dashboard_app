@@ -125,6 +125,27 @@
   margin-top: 2rem;
 }
 
+/* *** shark pitches *** */
+#pitchesDiv {
+  padding: 1rem;
+}
+
+#namePercentAmountDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pitchDiv {
+  display: flex;
+}
+
+#bizPic {
+  width: 10vw;
+  height: 10vh;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
 /* ********* Right Bar ********* */
 
 #rightBar {
