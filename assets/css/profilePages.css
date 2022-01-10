@@ -1,5 +1,6 @@
 :root {
   --primary-color: #2a67ca;
+  --secondary-color: #0b2d78;
   --tertiary-color: #5184d6;
   --accent-color: #f7d35c;
   --container-bg: #edebeb;
@@ -130,6 +131,9 @@
 /* *** shark pitches *** */
 #pitchesDiv {
   padding: 1rem;
+  padding: 1rem;
+  overflow: scroll;
+  height: 54vh;
 }
 
 #namePercentAmountDiv {
