@@ -12,4 +12,6 @@ public interface BusinessServices {
     List<Business> getAllBusinessesService();
 
     Business getBusinessLoginService(String username, String password);
+
+//    boolean checkIfUsernameIsOriginal(String username);
 }

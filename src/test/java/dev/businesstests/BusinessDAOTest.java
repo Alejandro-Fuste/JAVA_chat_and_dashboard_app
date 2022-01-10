@@ -14,22 +14,21 @@ public class BusinessDAOTest {
 
     @Test
     void testCreateBusiness() {
-        Business newBusiness = new Business(0, "first", "last", "bizName",
-                "UN", "PW", "business");
+        Business newBusiness = new Business(0, "Tim", "Tebow", "QB Training Inc", "UN", "PW", "business");
         Business returnedBusiness = businessDAO.createBusiness(newBusiness);
-        Assert.assertTrue(returnedBusiness.getBusinessId() != 0);
+        Assert.assertTrue(returnedBusiness.getBusinessNumber() != 0);
     }
 
     @Test
     void selectBusinessById() {
         Business business = businessDAO.getBusinessById(1);
-        Assert.assertEquals(business.getBusinessId(), 1);
+        Assert.assertEquals(business.getBusinessNumber(), 1);
     }
 
     @Test
     void getAllBusinesses() {
         List<Business> businesses = businessDAO.getAllBusinesses();
-        Assert.assertTrue(businesses.size() >= 1);
+        Assert.assertTrue(businesses.size() >= 2);
         for (Business b : businesses) {
             System.out.println(b);
             System.out.println();
@@ -41,5 +40,11 @@ public class BusinessDAOTest {
         Business newBusiness = businessDAO.getBusinessByUsername("Wayne100");
         System.out.println("new business is " + newBusiness);
         Assert.assertEquals(newBusiness.getUsername(), "Wayne100");
+    }
+
+    @Test
+    void checkIfUsernameAlreadyExists() {
+//        Business newBusiness = businessDAO.("Wayne100");
+//        Assert.assertEquals(newBusiness.);
     }
 }
