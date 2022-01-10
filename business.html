@@ -25,157 +25,245 @@
     />
     <link rel="stylesheet" href="./assets/css/profilePages.css" />
     <title>Business</title>
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
-      <!-- Container for entire page -->
+    <!-- Container for entire page -->
     <div id="container">
-
-        <!-- Navigation...left section -->
+      <!-- Navigation...left section -->
       <aside id="leftBar">
-        <img src="./assets/images/Logo.png" alt="logo" id="logo" />
-        <button id="logoutEl" type="button" class="btn btn-secondary">
+        <img src="./assets/images/P2Logo3.png" alt="logo" id="logo" />
+        <button id="businessLogoutEl" type="button" class="btn btn-secondary">
           <i class="fas fa-sign-out-alt"></i>
         </button>
+
+        <button id="bizAddPitchButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fas fa-clipboard-check"></i>
+        </button>
+
         <i id="inactiveLink" class="fas fa-compass"></i>
-        <i id="inactiveLink" class="fas fa-clipboard-check"></i>
         <i id="inactiveLink" class="fas fa-shopping-cart"></i>
         <i id="inactiveLink" class="fas fa-sliders-h-square"></i>
       </aside>
-      
+
       <!-- Main part of page...middle section -->
       <main id="businessMain">
-          <!-- banner -->
+        <!-- banner -->
         <header id="banner">
-            <div id="dateNameDiv">
-                <p id="date">Date</p>
+          <div id="dateNameDiv">
+            <p id="date"><i class="fas fa-calendar"></i>Jan 6, 2022 5:26pm</p>
 
-                <p id="headerName">Welcome, FirstName LastName</p>
-            </div>  
-            
-            <div id="imgDiv">
-               <h2>Image Div</h2>
-            </div>
+            <p id="headerName">Welcome, FirstName LastName</p>
+          </div>
+
+          <div id="imgDiv">
+            <img
+              src="./assets/images/yellowInvesting.svg"
+              alt="investing"
+              id="bannerImg"
+            />
+          </div>
         </header>
 
         <!-- left part of main -->
         <section id="articlesContainer">
           <article id="leftSection">
-
-            <!-- Form for create pitch -->
-            <p id="formTitle">Pitch Form</p>
-            <form
-              id="pitchForm"
-              class="row g-3 was-validated"
-              novalidate
-            >
-            <!-- date input -->
-              <div class="col-md-12">
-                <label for="validationCustom01" class="form-label"
-                  >Date</label
-                >
-                <input
-                  type="date"
-                  class="form-control"
-                  id="validationCustom01"
-                  data-name="creationDate"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a date</div>
-              </div>
-
-              <!-- amount input -->
-              <div class="col-md-12">
-                <label for="validationCustom02" class="form-label"
-                  >Amount</label
-                >
-                <input
-                  type="number"
-                  step="0.01"
-                  min="0"
-                  class="form-control"
-                  id="validationCustom02"
-                  data-name="amount"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a valid amount</div>
-              </div>
-
-              <!-- percentage input -->
-              <div class="col-md-12">
-                <label for="validationCustom02" class="form-label"
-                  >Percentage</label
-                >
-                <input
-                  type="number"
-                  step="0.01"
-                  min="0"
-                  class="form-control"
-                  id="validationCustom03"
-                  data-name="percentage"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a valid amount</div>
-              </div>
-
-              <!-- pitch textarea -->
-              <div class="mb-3">
-                <label for="validationTextarea" class="form-label">Please enter a valid pitch.</label>
-                <textarea class="form-control" id="validationTextarea" data-name="pitch" placeholder="Required textarea" required></textarea>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">
-                  Please enter a message in the textarea.
-                </div>
-              </div>
-
-              <!-- form button -->
-              <div class="col-12">
-                <button id="submitButton" class="btn btn-primary" type="submit">
-                  Submit form
-                </button>
-              </div>
-            </form>
+            
           </article>
 
-            <!-- right part of main -->
+          <!-- right part of main -->
           <article id="rightSection">
+            
+            
+            <div id="pitchesTitleContainer">
+              <p id="pastTitle">View Pitches</p>
+              <i class="far fa-clipboard"></i>
+            </div>
 
-            <!-- redo this section for viewing pitches -->
-            <p id="pastTitle">Past Pitches</p>
-            <ul id="pitchUl"></ul>
+            <div id="pitchesDiv">
+              <!-- dynamically add pitches here -->
+
+              <div id='businessPitchDiv' data-pitchId="1" data-businessId="1">
+                
+                <div id="bizInfoDiv">
+                  <div id="namePercentAmountDiv">
+                    <p id="bizName">Business Name</p>
+                    <p id="percent">10%</p>
+                    <p id="pitchAmount">$100,000</p>
+                    
+                  </div>
+
+                  <div id="textDiv">
+                    <p id="pitchText">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, ipsum expedita. Vel, ipsum eveniet excepturi
+                      facere eos, accusantium repellendus eaque sequi incidunt,
+                      omnis aut exercitationem dicta doloremque ipsam adipisci
+                      ut.
+                    </p>
+                  </div>
+                </div>
+
+              <div id='pitchDiv' data-pitchId="2" data-businessId="2">
+                
+                <div id="bizInfoDiv">
+                  <div id="namePercentAmountDiv">
+                    <p id="bizName">Business Name</p>
+                    <p id="percent">10%</p>
+                    <p id="pitchAmount">$100,000</p>
+                    
+                  </div>
+
+                  <div id="textDiv">
+                    <p id="pitchText">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, ipsum expedita. Vel, ipsum eveniet excepturi
+                      facere eos, accusantium repellendus eaque sequi incidunt,
+                      omnis aut exercitationem dicta doloremque ipsam adipisci
+                      ut.
+                    </p>
+                  </div>
+                </div>
+
+
+            </div>
           </article>
-
         </section>
       </main>
 
       <!-- profile and comment...right section -->
-      <aside id='rightBar'>
-
-        <!-- profile...top inner section -->
+      <aside id="rightBar">
+          <!-- profile...top inner section -->
         <section id="myProfileContainer">
-            <h4 id="title">My Profile</h4>
+          <div id="profileCommentsDiv">
+            <p id="title">My Profile</p>
+            <i class="far fa-user-circle"></i>
+          </div>
 
-            <div id="picInfoContainer">
-                <img src="" alt="profile avatar">
-                <p id="fullName">First Name Last Name</p>
-                <p id="businessName">Business Name</p>
-                <p id="location">Location</p>
+          <div id="picInfoContainer">
+            <img id="avatar" src="./assets/images/blueAvatar.png" alt="profile avatar" />
+            
+            <div id="infoDiv">
+              <!-- dynamically add names -->
+              <p id="fullName">FirstName LastName</p>
+              <p id="businessName">Business Name</p>
+              <p id="location"><i class="fas fa-map-pin"></i>Orlando, Florida</p>
             </div>
+
+          </div>
         </section>
 
-        <!-- comments...bottom inner section -->
-        <section>
-            <h4 id="title">Comments</h4>
-  
-            <div id="commentsDiv">
-                <!-- dynamically add comments here -->
-            </div>
-        </section>
+          <!-- comments...bottom inner section -->
+        <section id="commentsContainer">
+          <div id="profileCommentsDiv">
+            <p id="title">My Comments</p>
+            <i class="far fa-comment-alt"></i>
+          </div>
 
+          <div id="commentsDiv">
+            <!-- dynamically add comments here -->
+            <p id="comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, ratione quos deserunt unde mollitia animi sit error, optio in minus necessitatibus! Est, reiciendis? Eos quas quia doloribus dicta dolore nisi!</p>
+            <p id="comment">comment 2</p>
+            <p id="comment">comment 3</p>
+            <p id="comment">comment 4</p>
+            <p id="comment">comment 5</p>
+            <p id="comment">comment 6</p>
+            <p id="comment">comment 7</p>
+            <p id="comment">comment 8</p>
+          </div>
+          </div>
+        </section>
       </aside>
+
+      <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pitch Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              
+                        <!-- Form for creating a pitch -->
+                  <form id="pitchForm" class="row g-3 was-validated" novalidate>
+                    <!-- date input -->
+                    <div class="col-md-12">
+                      <label for="validationCustom01" class="form-label">Date</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="validationCustom01"
+                        data-name="creationDate"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please enter a date</div>
+                    </div>
+
+                    <!-- amount input -->
+                    <div class="col-md-12">
+                      <label for="validationCustom02" class="form-label"
+                        >Amount</label
+                      >
+                      <input
+                        type="number"
+                        step="0.01"
+                        min="0"
+                        class="form-control"
+                        id="validationCustom02"
+                        data-name="amount"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please enter a valid amount</div>
+                    </div>
+
+                    <!-- percentage input -->
+                    <div class="col-md-12">
+                      <label for="validationCustom02" class="form-label"
+                        >Percentage</label
+                      >
+                      <input
+                        type="number"
+                        step="0.01"
+                        min="0"
+                        class="form-control"
+                        id="validationCustom03"
+                        data-name="percentage"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please enter a valid amount</div>
+                    </div>
+
+                    <!-- pitch textarea -->
+                    <div class="mb-3">
+                      <label for="validationTextarea" class="form-label"
+                        >Please enter a valid pitch.</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="validationTextarea"
+                        data-name="pitch"
+                        placeholder="Required textarea"
+                        required
+                      ></textarea>
+                      <div class="valid-feedback"></div>
+                      <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                      </div>
+                    </div>                    
+                  </form>
+
+              </div>
+              <div class="modal-footer">
+                <button id="submitPitchButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </div>
   </body>

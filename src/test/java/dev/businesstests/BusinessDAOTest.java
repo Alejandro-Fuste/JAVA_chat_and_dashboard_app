@@ -1,8 +1,8 @@
 package dev.businesstests;
 
 import com.investing_app.entities.Business;
-import com.investing_app.databaseinteraction.BusinessDAO;
-import com.investing_app.databaseinteraction.BusinessDAOImp;
+import com.investing_app.dao.BusinessDAO;
+import com.investing_app.dao.BusinessDAOImp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

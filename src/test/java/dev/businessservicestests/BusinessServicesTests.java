@@ -2,9 +2,9 @@ package dev.businessservicestests;
 
 
 import com.investing_app.customexceptions.*;
-import com.investing_app.databaseinteraction.BusinessDAO;
+import com.investing_app.dao.BusinessDAO;
 import com.investing_app.entities.Business;
-import com.investing_app.databaseinteraction.BusinessDAOImp;
+import com.investing_app.dao.BusinessDAOImp;
 import com.investing_app.service.BusinessServices;
 import com.investing_app.service.BusinessServicesImp;
 import org.mockito.Mockito;
