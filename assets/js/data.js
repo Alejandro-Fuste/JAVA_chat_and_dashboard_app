@@ -31,4 +31,18 @@ const sendBusinessComment = (e) => {
 
 const createPitchBusiness = (e) => {
   e.preventDefault();
+
+  let date = document.querySelector("#validationCustom01").value.trim();
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+  let pitchText = document.querySelector("#validationTextarea").value.trim();
+
+  let data = {
+    date,
+    amount,
+    percent,
+    pitchText,
+  };
+
+  console.table(data);
 };
