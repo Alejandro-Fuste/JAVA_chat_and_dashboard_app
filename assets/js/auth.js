@@ -87,4 +87,23 @@ const createUser = (e) => {
 
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
+
+  // Get first name, last name, business name, user name, password, and role from inputs
+  let firstName = document.querySelector("#firstName").value.trim();
+  let lastName = document.querySelector("#lastName").value.trim();
+  let businessName = document.querySelector("#businessName").value.trim();
+  let userName = document.querySelector("#userName").value.trim();
+  let password = document.querySelector("#signupPassword").value.trim();
+  let role = document.querySelector("#role").value.trim();
+
+  let data = {
+    firstName,
+    lastName,
+    businessName,
+    userName,
+    password,
+    role,
+  };
+
+  console.table(data);
 };
