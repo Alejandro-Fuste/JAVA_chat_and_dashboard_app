@@ -83,5 +83,8 @@ const loginUser = (e) => {
 };
 
 const createUser = (e) => {
-  alert("create user submit button clicked");
+  e.preventDefault();
+
+  // error message selector
+  const errorEl = document.querySelector("#hideErrorMessage");
 };
