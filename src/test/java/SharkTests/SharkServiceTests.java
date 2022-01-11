@@ -28,20 +28,20 @@ public class SharkServiceTests {
     public void setup() {
        sharkDAO = Mockito.mock(SharkDAO.class);
        sharkService = new SharkServiceImplemented(sharkDAO);
-       sharkProfile = new Shark(0, "Lori", "Greiner",
+       sharkProfile = new Shark(0, "Lori", "Greiner", "QVC, Inc",
                "QueenQVC", "qvc12345", "Shark");
-       returnedSharkProfile = new Shark(1, "Lori", "Greiner",
+       returnedSharkProfile = new Shark(1, "Lori", "Greiner", "QVC, Inc",
                "QueenQVC", "qvc12345", "Shark");
        sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
-                "jgkdkjeighejekfjghfjej",
+               "kasiwuehnvlaskeuhwkjenfalksjnf", "jgkdkjeighejekfjghfjej",
                "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
-        sharkProfileNullValue = new Shark(0, "", "", "",
+        sharkProfileNullValue = new Shark(0, "", "", "", "",
                 "", "");
-        sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
+        sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5", "MyBiz",
                  "TexasDan", "heyYou765", "5hark");
-        shortUsername = new Shark(0, "Texas", "Dan",
+        shortUsername = new Shark(0, "Texas", "Dan", "MyBiz",
                 "sjdh", "atleast8", "Shark");
-        shortPassword = new Shark(0, "Texas", "Dan",
+        shortPassword = new Shark(0, "Texas", "Dan", "MyBiz",
                 "AtLeast5", "sj", "Shark");
     }
 

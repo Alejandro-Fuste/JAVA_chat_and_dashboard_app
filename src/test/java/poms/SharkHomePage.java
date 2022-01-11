@@ -13,53 +13,63 @@ public class SharkHomePage {
         PageFactory.initElements(driver, this); // get driver from this object
     }
 
-    // View Pitches
-    @FindBy(id = "")
-    public WebElement viewPitchesButton;
-
-    @FindBy(id = "")
-    public WebElement pitchesTable;
-
     // Make Comment
-    @FindBy(id = "")
-    public WebElement businessIdInput;
+    @FindBy(id = "commentButtonShark")
+    public WebElement commentButtonShark;
 
-    @FindBy(id = "")
-    public WebElement pitchIdInput;
-
-    @FindBy(id = "")
-    public WebElement sharkIdInput;
-
-    @FindBy(id = "")
+    @FindBy(id = "commentShark")
     public WebElement commentInput;
 
-    @FindBy(id = "")
-    public WebElement postCommentButton;
+    @FindBy(id = "sendButtonShark")
+    public WebElement sendCommentButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "commentSent")
     public WebElement commentPostSuccessMessage;
 
     // Make Offer
-    @FindBy(id = "")
-    public WebElement amountInput;
+    @FindBy(id = "pitchButtonShark")
+    public WebElement pitchButtonShark;
 
-    @FindBy(id = "")
+    @FindBy(id = "percent")
     public WebElement percentageInput;
 
-    @FindBy(id = "")
-    public WebElement postOfferButton;
+    @FindBy(id = "pitchAmount")
+    public WebElement amountInput;
 
-    @FindBy(id = "")
+    @FindBy(id = "submitPitchButton")
+    public WebElement submitOfferButton;
+
+    @FindBy(id = "pitchAccepted")
     public WebElement offerPostSuccessMessage;
 
     // Accept Offer
-    @FindBy(id = "")
+    @FindBy(id = "statusButton")
     public WebElement sharkAcceptButton;
 
-    @FindBy(id = "")
-    public WebElement dealClosedMessage;
+    @FindBy(id = "pitchAccepted")
+    public WebElement acceptedMessage;
 
     // Logout
-    @FindBy(id = "")
+    @FindBy(id = "sharkLogoutEl")
     public WebElement sharkLogoutButton;
+
+    // Exceptions
+    @FindBy(id = "")
+    public WebElement nullValuesMessage;
+
+    @FindBy(id = "")
+    public WebElement tooLongMessage;
+
+    @FindBy(id = "")
+    public WebElement tooShortMessage;
+
+    @FindBy(id = "")
+    public WebElement incorrectDataTypeMessage;
+
+    @FindBy(id = "")
+    public WebElement usernameTakenMessage;
+
+    @FindBy(id = "")
+    public WebElement usernamePasswordIncorrectMessage;
+
 }
