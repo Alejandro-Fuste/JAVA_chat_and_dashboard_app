@@ -52,7 +52,7 @@ main {
 #loginForm,
 #signUpForm {
   width: 64%;
-  height: 50%;
+  height: 60%;
   border: solid 1px #ced4da;
   border-radius: 5px;
   display: flex;
