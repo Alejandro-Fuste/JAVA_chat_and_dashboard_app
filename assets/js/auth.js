@@ -6,12 +6,16 @@ const loginUser = (e) => {
 
   let role = document.querySelector("#roleSignIn").value;
 
-  let url = `http://127.0.0.1:5000/`;
+  let url;
+
+  role === "Business"
+    ? (url = `http://127.0.0.1:5000/business/login`)
+    : (url = `http://127.0.0.1:5000/shark/login`);
 
   let loginData = {
     userName,
     userPassword,
   };
 
-  console.table(role);
+  console.table(url);
 };
