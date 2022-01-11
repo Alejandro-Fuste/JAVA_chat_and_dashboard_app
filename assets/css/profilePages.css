@@ -50,7 +50,8 @@
 #logoutEl,
 #addPitchButton,
 #businessLogoutEl,
-#bizAddPitchButton {
+#bizAddPitchButton,
+#sharkLogoutEl {
   background-color: var(--secondary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);
