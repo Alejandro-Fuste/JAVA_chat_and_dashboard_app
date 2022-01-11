@@ -312,3 +312,9 @@
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
+
+#commentSent,
+#pitchSent,
+#pitchCreated {
+  display: none;
+}

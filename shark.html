@@ -33,7 +33,7 @@
       <!-- Navigation...left section -->
       <aside id="leftBarShark">
         <img src="./assets/images/P2Logo3.png" alt="logo" id="logo" />
-        <button id="logoutEl" type="button" class="btn btn-secondary">
+        <button id="sharkLogoutEl" type="button" class="btn btn-secondary">
           <i class="fas fa-sign-out-alt"></i>
         </button>
         <i id="inactiveLink" class="fas fa-compass"></i>
@@ -317,27 +317,10 @@
                     Please enter a valid amount
                   </div>
                 </div>
-
-                <!-- pitch textarea -->
-                <div class="mb-3">
-                  <label for="validationTextarea" class="form-label"
-                    >Please enter a valid pitch.</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="validationTextarea"
-                    data-name="pitch"
-                    placeholder="Required textarea"
-                    required
-                  ></textarea>
-                  <div class="valid-feedback"></div>
-                  <div class="invalid-feedback">
-                    Please enter a message in the textarea.
-                  </div>
-                </div>
               </form>
             </div>
             <div class="modal-footer">
+              <p id="pitchSent">Pitch offer was sent!</p>
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -429,7 +412,9 @@
                 </div>
               </form>
             </div>
+
             <div class="modal-footer">
+              <p id="commentSent">Comment was sent!</p>
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -457,5 +442,5 @@
   ></script>
   <script src="./assets/js/auth.js"></script>
   <script src="./assets/js/data.js"></script>
-  <script src="./assets/js/employee.js"></script>
+  <script src="./assets/js/shark.js"></script>
 </html>
