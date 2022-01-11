@@ -66,3 +66,11 @@ const loginUser = async (e) => {
     errorEl.textContent = content.message;
   }
 };
+
+const logout = () => {
+  // delete fake token from local storage
+  localStorage.removeItem("pseudoToken");
+
+  // redirect user back to home page
+  window.location.assign("/home.html");
+};
