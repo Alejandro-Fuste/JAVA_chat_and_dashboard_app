@@ -20,6 +20,14 @@ const login = (data) => {
   }
 };
 
+const logout = () => {
+  // delete fake token from local storage
+  localStorage.removeItem("pseudoToken");
+
+  // redirect user back to home page
+  window.location.assign("/home.html");
+};
+
 // const validateInputs = (data) => {
 //   let userName = document.querySelector("#userName").value.trim();
 
@@ -74,10 +82,6 @@ const loginUser = (e) => {
     });
 };
 
-const logout = () => {
-  // delete fake token from local storage
-  localStorage.removeItem("pseudoToken");
-
-  // redirect user back to home page
-  window.location.assign("/home.html");
+const createUser = (e) => {
+  alert("create user submit button clicked");
 };
