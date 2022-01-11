@@ -292,3 +292,8 @@
   padding: 1rem;
   margin: 0;
 }
+
+#commentButtonBiz {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
