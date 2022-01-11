@@ -20,6 +20,16 @@ const login = (data) => {
   }
 };
 
+// const validateInputs = (data) => {
+//   let userName = document.querySelector("#userName").value.trim();
+
+//   if (data.userName != '' || data.userName.length >=5){
+//     userName.classList.add("is-valid");
+//   } else {
+//     userName.classList.add("is-valid");
+//   }
+// };
+
 const loginUser = async (e) => {
   e.preventDefault();
 
@@ -37,6 +47,8 @@ const loginUser = async (e) => {
     userPassword,
   };
 
+  validateInputs(loginData);
+
   // get url depending the role the user selects
   // let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
   let url = "http://127.0.0.1:5000/";
@@ -44,27 +56,27 @@ const loginUser = async (e) => {
   role === "Business" ? (url += `business/login`) : (url += `shark/login`);
 
   // use fetch to send login request to server
-  const response = await fetch(url, {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(loginData),
-  });
+  // const response = await fetch(url, {
+  //   method: "POST",
+  //   mode: "cors",
+  //   headers: {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(loginData),
+  // });
 
-  // send user to their page if success...display error message if not
-  if (response.status === 200) {
-    let content = await response.json();
-    // login(content);
-    console.table(content);
-  } else {
-    let content = await response.json();
-    console.log(content);
-    errorEl.setAttribute("id", "errorMessage");
-    errorEl.textContent = content.message;
-  }
+  // // send user to their page if success...display error message if not
+  // if (response.status === 200) {
+  //   let content = await response.json();
+  //   // login(content);
+  //   console.table(content);
+  // } else {
+  //   let content = await response.json();
+  //   console.log(content);
+  //   errorEl.setAttribute("id", "errorMessage");
+  //   errorEl.textContent = content.message;
+  // }
 };
 
 const logout = () => {
