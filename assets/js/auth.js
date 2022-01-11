@@ -5,7 +5,7 @@ const login = (data) => {
   localStorage.setItem("pseudoToken", JSON.stringify(data));
 
   // redirect user base the role property in data
-  const expr = data.companyRole;
+  const expr = data.role;
   switch (expr) {
     case "business":
       window.location.assign("/business.html");
@@ -58,9 +58,9 @@ const loginUser = (e) => {
   // validateInputs(loginData);
 
   // get url depending the role the user selects
-  // let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
 
-  let url = "http://localhost:8080/";
+  // let url = "http://localhost:8080/";
 
   role === "Business" ? (url += `business/login`) : (url += `shark/login`);
 

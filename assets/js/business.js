@@ -13,3 +13,6 @@ pitchButtonEl.addEventListener("click", createPitchBusiness);
 
 // Send comment event listener
 sendCommentBusiness.addEventListener("click", sendBusinessComment);
+
+// logout event listener
+logoutButtonEl.addEventListener("click", logout);
