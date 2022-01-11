@@ -9,7 +9,7 @@ const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 // logoutButtonEl.addEventListener("click", logout);
 
 // Create Pitch event listener
-pitchButtonEl.addEventListener("click", createUser);
+pitchButtonEl.addEventListener("click", createPitchBusiness);
 
 // Send comment event listener
 sendCommentBusiness.addEventListener("click", sendBusinessComment);

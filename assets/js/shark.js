@@ -8,3 +8,5 @@ const sendCommentShark = document.querySelector("#sendButtonShark");
 
 // send comment event listener
 sendCommentShark.addEventListener("click", sendSharkComment);
+
+// shark offer event listener

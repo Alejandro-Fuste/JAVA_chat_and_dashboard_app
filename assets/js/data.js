@@ -1,7 +1,22 @@
 const sendSharkComment = (e) => {
-  alert("Shark comment button was sent");
+  e.preventDefault();
+  let reciepient = document.querySelector("#reciepientfromShark").value.trim();
+  let date = document.querySelector("#commentDateShark").value.trim();
+  let comment = document.querySelector("#commentShark").value.trim();
+
+  let data = {
+    reciepient,
+    date,
+    comment,
+  };
+
+  console.table(data);
 };
 
 const sendBusinessComment = (e) => {
-  alert("Biz comment button was sent");
+  e.preventDefault();
+};
+
+const createPitchBusiness = (e) => {
+  e.preventDefault();
 };
