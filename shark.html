@@ -86,10 +86,13 @@
                     <p id="bizName">Business Name</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
                     <button
-                      id="statusButton"
+                      id="pitchButtonShark"
                       type="button"
                       class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
                     >
                       +
                     </button>
@@ -118,10 +121,13 @@
                     <p id="bizName">Business Name</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
                     <button
-                      id="statusButton"
+                      id="pitchButtonShark"
                       type="button"
                       class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
                     >
                       +
                     </button>
@@ -150,10 +156,13 @@
                     <p id="bizName">Business Name</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
                     <button
-                      id="statusButton"
+                      id="pitchButtonShark"
                       type="button"
                       class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
                     >
                       +
                     </button>
@@ -230,6 +239,123 @@
           </div>
         </section>
       </aside>
+
+      <!-- Pitch Modal -->
+      <div
+        class="modal fade"
+        id="pitchModal"
+        tabindex="-1"
+        aria-labelledby="pitchModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pitch Form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Form for creating a pitch -->
+              <form id="pitchForm" class="row g-3" novalidate>
+                <!-- date input -->
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label"
+                    >Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="validationCustom01"
+                    data-name="creationDate"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter a date</div>
+                </div>
+
+                <!-- amount input -->
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label"
+                    >Amount</label
+                  >
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    class="form-control"
+                    id="validationCustom02"
+                    data-name="amount"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid amount
+                  </div>
+                </div>
+
+                <!-- percentage input -->
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label"
+                    >Percentage</label
+                  >
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    class="form-control"
+                    id="validationCustom03"
+                    data-name="percentage"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid amount
+                  </div>
+                </div>
+
+                <!-- pitch textarea -->
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label"
+                    >Please enter a valid pitch.</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="validationTextarea"
+                    data-name="pitch"
+                    placeholder="Required textarea"
+                    required
+                  ></textarea>
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                id="submitPitchButton"
+                type="button"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Comment Modal -->
       <div

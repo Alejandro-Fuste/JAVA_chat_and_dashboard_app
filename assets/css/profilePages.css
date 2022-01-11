@@ -123,6 +123,11 @@
   text-align: center;
 }
 
+/* .far,
+#statusButton {
+  opacity: 0.5;
+} */
+
 #date {
   width: 30vh;
 }
@@ -190,9 +195,14 @@
   font-weight: bold;
 }
 
-#statusButton {
+#pitchAccepted {
+  display: none;
+}
+
+#pitchButtonShark {
   height: 35px;
-  width: 30px;
+  width: 35px;
+  background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
 }
 
