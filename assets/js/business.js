@@ -6,7 +6,7 @@ const pitchButtonEl = document.querySelector("#submitPitchButton");
 const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 
 // Logout event listener
-// logoutButtonEl.addEventListener("click", logout);
+logoutButtonEl.addEventListener("click", logout);
 
 // Create Pitch event listener
 pitchButtonEl.addEventListener("click", createPitchBusiness);
