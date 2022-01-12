@@ -130,6 +130,15 @@ const acceptPitchShark = (e) => {
   e.preventDefault();
 
   // get id, amount, percentage
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+
+  let data = {
+    amount,
+    percent,
+  };
+
+  console.table(data);
 
   // get urls
 
@@ -146,4 +155,14 @@ const acceptPitchBusiness = (e) => {
   // get urls
 
   // fetch with patch method, success then, failure catch
+};
+
+// dynamic pitches
+const createPitch = (data) => {
+  console.log(data);
+};
+// dynamic comments
+
+const createComment = (data) => {
+  console.log(data);
 };

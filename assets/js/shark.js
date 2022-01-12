@@ -4,6 +4,10 @@ const sharkLogoutButton = document.querySelector("#sharkLogoutEl");
 const sendCommentShark = document.querySelector("#sendButtonShark");
 const sendPitchOffer = document.querySelector("#submitPitchButton");
 
+// get pitches
+
+// get comments
+
 // Logout event listener
 sharkLogoutButton.addEventListener("click", logout);
 

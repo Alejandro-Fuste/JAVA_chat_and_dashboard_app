@@ -5,6 +5,10 @@ const logoutButtonEl = document.querySelector("#businessLogoutEl");
 const pitchButtonEl = document.querySelector("#submitPitchButton");
 const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 
+// get pitches
+
+// get comments
+
 // Logout event listener
 logoutButtonEl.addEventListener("click", logout);
 
