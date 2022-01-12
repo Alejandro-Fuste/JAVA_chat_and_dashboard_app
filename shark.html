@@ -25,16 +25,15 @@
     />
     <link rel="stylesheet" href="./assets/css/profilePages.css" />
     <title>Shark</title>
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
-      <!-- Container for entire page -->
+    <!-- Container for entire page -->
     <div id="container">
-
-        <!-- Navigation...left section -->
-      <aside id="leftBar">
-        <img src="./assets/images/Logo.png" alt="logo" id="logo" />
-        <button id="logoutEl" type="button" class="btn btn-secondary">
+      <!-- Navigation...left section -->
+      <aside id="leftBarShark">
+        <img src="./assets/images/P2Logo3.png" alt="logo" id="logo" />
+        <button id="sharkLogoutEl" type="button" class="btn btn-secondary">
           <i class="fas fa-sign-out-alt"></i>
         </button>
         <i id="inactiveLink" class="fas fa-compass"></i>
@@ -42,62 +41,388 @@
         <i id="inactiveLink" class="fas fa-shopping-cart"></i>
         <i id="inactiveLink" class="fas fa-sliders-h-square"></i>
       </aside>
-      
+
       <!-- Main part of page...middle section -->
       <main id="sharkMain">
-          <!-- banner -->
-        <header id="banner">
-            <div id="dateNameDiv">
-                <p id="date">Date</p>
+        <!-- banner -->
+        <header id="bannerShark">
+          <div id="dateNameDiv">
+            <p id="date"><i class="fas fa-calendar"></i>Jan 6, 2022 5:26pm</p>
 
-                <p id="headerName">Welcome, FirstName LastName</p>
-            </div>  
-            
-            <div id="imgDiv">
-               <h2>Image Div</h2>
-            </div>
+            <p id="headerName">Welcome, FirstName LastName</p>
+          </div>
+
+          <div id="imgDiv">
+            <img
+              src="./assets/images/yellowInvesting.svg"
+              alt="investing"
+              id="bannerImg"
+            />
+          </div>
         </header>
 
-        <!-- left part of main -->
+        <!-- pitches part of main -->
         <section id="articlesContainer">
-          
-            <!-- right part of main -->
           <article id="pitchesContainer">
-
             <!-- redo this section for viewing pitches -->
-            <p id="pastTitle">View Pitches</p>
-            <ul id="pitchUl"></ul>
-          </article>
 
+            <div id="pitchesTitleContainerShark">
+              <p id="pastTitle">View Pitches</p>
+              <i class="far fa-clipboard"></i>
+            </div>
+
+            <div id="pitchesDiv">
+              <!-- dynamically add pitches here -->
+
+              <div id="pitchDiv" data-pitchId="1" data-businessId="1">
+                <img
+                  id="bizPic"
+                  src="./assets/images/biz1.png"
+                  alt="business"
+                />
+
+                <div id="bizInfoDiv">
+                  <div id="namePercentAmountDiv">
+                    <p id="bizName">Business Name</p>
+                    <p id="percent">10%</p>
+                    <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
+                    <button
+                      id="pitchButtonShark"
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <div id="textDiv">
+                    <p id="pitchText">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, ipsum expedita. Vel, ipsum eveniet excepturi
+                      facere eos, accusantium repellendus eaque sequi incidunt,
+                      omnis aut exercitationem dicta doloremque ipsam adipisci
+                      ut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="pitchDiv" data-pitchId="2" data-businessId="2">
+                <img
+                  id="bizPic"
+                  src="./assets/images/biz2.png"
+                  alt="business"
+                />
+                <div id="bizInfoDiv">
+                  <div id="namePercentAmountDiv">
+                    <p id="bizName">Business Name</p>
+                    <p id="percent">10%</p>
+                    <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
+                    <button
+                      id="pitchButtonShark"
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <div id="textDiv">
+                    <p id="pitchText">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, ipsum expedita. Vel, ipsum eveniet excepturi
+                      facere eos, accusantium repellendus eaque sequi incidunt,
+                      omnis aut exercitationem dicta doloremque ipsam adipisci
+                      ut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="pitchDiv" data-pitchId="3" data-businessId="3">
+                <img
+                  id="bizPic"
+                  src="./assets/images/biz3.png"
+                  alt="business"
+                />
+                <div id="bizInfoDiv">
+                  <div id="namePercentAmountDiv">
+                    <p id="bizName">Business Name</p>
+                    <p id="percent">10%</p>
+                    <p id="pitchAmount">$100,000</p>
+                    <p id="pitchAccepted">Accepted</p>
+                    <button
+                      id="pitchButtonShark"
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pitchModal"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <div id="textDiv">
+                    <p id="pitchText">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Numquam, ipsum expedita. Vel, ipsum eveniet excepturi
+                      facere eos, accusantium repellendus eaque sequi incidunt,
+                      omnis aut exercitationem dicta doloremque ipsam adipisci
+                      ut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </section>
       </main>
 
       <!-- profile and comment...right section -->
-      <aside id='rightBar'>
-
+      <aside id="rightBar">
         <!-- profile...top inner section -->
         <section id="myProfileContainer">
-            <h4 id="title">My Profile</h4>
+          <div id="profileCommentsDivShark">
+            <p id="title">My Profile</p>
+            <i class="far fa-user-circle"></i>
+          </div>
 
-            <div id="picInfoContainer">
-                <img src="" alt="profile avatar">
-                <p id="fullName">First Name Last Name</p>
-                <p id="businessName">Business Name</p>
-                <p id="location">Location</p>
+          <div id="picInfoContainer">
+            <img
+              id="avatar"
+              src="./assets/images/silverAvatar.png"
+              alt="profile avatar"
+            />
+
+            <div id="infoDiv">
+              <p id="fullName">FirstName LastName</p>
+              <p id="businessName">Business Name</p>
+              <p id="location">
+                <i class="fas fa-map-pin"></i>San Francisco, California
+              </p>
             </div>
+          </div>
         </section>
 
         <!-- comments...bottom inner section -->
-        <section>
-            <h4 id="title">Comments</h4>
-  
-            <div id="commentsDiv">
-                <!-- dynamically add comments here -->
-            </div>
-        </section>
+        <section id="commentsContainer">
+          <div id="profileCommentsDivShark">
+            <p id="title">My Comments</p>
+            <button
+              id="commentButtonShark"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#commentModal"
+            >
+              <i class="far fa-comment-alt"></i>
+            </button>
+          </div>
 
+          <div id="commentsDiv">
+            <!-- dynamically add comments here -->
+            <p id="comment">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+              eius totam enim, mollitia rerum esse hic? Sunt facilis blanditiis
+              rem cum suscipit. Perferendis impedit, veniam numquam enim nisi
+              odio est.
+            </p>
+            <p id="comment">comment 2</p>
+            <p id="comment">comment 3</p>
+            <p id="comment">comment 4</p>
+          </div>
+        </section>
       </aside>
 
+      <!-- Pitch Modal -->
+      <div
+        class="modal fade"
+        id="pitchModal"
+        tabindex="-1"
+        aria-labelledby="pitchModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pitch Form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Form for creating a pitch -->
+              <form id="pitchForm" class="row g-3" novalidate>
+                <!-- amount input -->
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label"
+                    >Amount</label
+                  >
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    class="form-control"
+                    id="validationCustom02"
+                    data-name="amount"
+                    required
+                    min="0"
+                    max="1000000"
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid amount
+                  </div>
+                </div>
+
+                <!-- percentage input -->
+                <div class="col-md-12">
+                  <label for="validationCustom02" class="form-label"
+                    >Percentage</label
+                  >
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    class="form-control"
+                    id="validationCustom03"
+                    data-name="percentage"
+                    required
+                    min="0"
+                    max="100.00"
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid amount
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <p id="pitchSent">Pitch offer was sent!</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                id="submitPitchButton"
+                type="button"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment Modal -->
+      <div
+        class="modal fade"
+        id="commentModal"
+        tabindex="-1"
+        aria-labelledby="commentLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Leave a Comment
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="pitchForm" class="row g-3" novalidate>
+                <!-- reciepient -->
+                <div class="mb-3">
+                  <label for="reciepient" class="form-label"
+                    >Choose the reciepient</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="reciepientfromShark"
+                    data-name="businessId"
+                  >
+                    <option selected>Choose...</option>
+                    <option value="1">Bruce Wayne</option>
+                    <option value="2">Clark Kent</option>
+                  </select>
+                </div>
+
+                <!-- date input -->
+                <div class="col-md-12">
+                  <label for="date" class="form-label">Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="commentDateShark"
+                    data-name="creationDate"
+                    required
+                    minlength="8"
+                    maxlength="10"
+                  />
+                  <div class="invalid-feedback">Please enter a date</div>
+                </div>
+
+                <!-- pitch textarea -->
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label"
+                    >Please enter your comment</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="commentShark"
+                    data-name="comment"
+                    placeholder="Required comment"
+                    required
+                  ></textarea>
+
+                  <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <p id="commentSent">Comment was sent!</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                id="sendButtonShark"
+                type="button"
+                class="btn btn-primary"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script
@@ -107,5 +432,5 @@
   ></script>
   <script src="./assets/js/auth.js"></script>
   <script src="./assets/js/data.js"></script>
-  <script src="./assets/js/employee.js"></script>
+  <script src="./assets/js/shark.js"></script>
 </html>
