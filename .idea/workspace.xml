@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
+    <list default="true" id="4e33b3c1-dafb-4610-82fc-5c5c58124909" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/SharkDAOImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/SharkDAOImplemented.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Shark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/service/SharkServiceImplemented.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/service/SharkServiceImplemented.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/exceptions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/exceptions.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/shark.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pitchtests/PitchDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +52,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PitchDAOTests">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
@@ -78,7 +63,7 @@
         <env name="PORT" value="5432" />
         <env name="USER" value="Virtud87" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="com.investing_app.App" />
+      <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
       <module name="project2" />
       <extension name="coverage">
         <pattern>
@@ -215,6 +200,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PitchDAOTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project2" />
       <shortenClasspath name="NONE" />
@@ -251,80 +251,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PitchServiceTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pitchtests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pitchtests" />
-      <option name="MAIN_CLASS_NAME" value="pitchtests.PitchServiceTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SharkDAOTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project2" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sharktests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="sharktests" />
-      <option name="MAIN_CLASS_NAME" value="sharktests.SharkDAOTests" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
-        <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
-        <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
-      </envs>
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="Cucumber Java.Feature: shark (1)" />
       <item itemvalue="Cucumber Java.Feature: exceptions" />
-      <item itemvalue="TestNG.PitchServiceTests" />
-      <item itemvalue="TestNG.SharkDAOTests" />
+      <item itemvalue="JUnit.TestRunner" />
       <item itemvalue="TestNG.PitchDAOTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PitchDAOTests" />
-        <item itemvalue="TestNG.SharkDAOTests" />
-        <item itemvalue="Cucumber Java.Feature: shark (1)" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Cucumber Java.Feature: exceptions" />
-        <item itemvalue="TestNG.PitchServiceTests" />
+        <item itemvalue="Cucumber Java.Feature: shark (1)" />
+        <item itemvalue="TestNG.PitchDAOTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="" />
+      <changelist id="4e33b3c1-dafb-4610-82fc-5c5c58124909" name="Changes" comment="" />
       <created>1641239585386</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

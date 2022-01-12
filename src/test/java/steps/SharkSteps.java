@@ -83,8 +83,8 @@ public class SharkSteps {
         TestRunner.homePage.loginButton.click();
     }
 
-    @Then("The shark should be redirected to the shark page")
-    public void the_shark_should_be_redirected_to_the_shark_page() {
+    @Then("The shark is redirected to the shark page")
+    public void the_shark_is_redirected_to_the_shark_page() {
         String title = TestRunner.driver.getTitle();
         Assert.assertEquals(title, "Shark");
     }
@@ -148,7 +148,7 @@ public class SharkSteps {
     }
 
     @When("The shark clicks on the submit offer button")
-    public void the_shark_clicks_on_the_offer_post_button() {
+    public void the_shark_clicks_on_the_submit_offer_button() {
         TestRunner.sharkHomePage.submitOfferButton.click();
     }
 
@@ -238,5 +238,11 @@ public class SharkSteps {
     public void an_alert_pops_up_saying_either_username_or_password_or_both_are_incorrect() {
         Assert.assertEquals(TestRunner.sharkHomePage.usernamePasswordIncorrectMessage.getText(),
                 "");
+    }
+
+    @When("The shark enters the pitch ID")
+    public void the_shark_enters_the_pitch_id() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 }

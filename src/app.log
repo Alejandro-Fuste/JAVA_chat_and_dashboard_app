@@ -7032,3 +7032,33 @@ Response: [400], execution took 484.76 ms
     Body is 49 bytes (starts on next line):
     That username is already taken! Please try again.
 ----------------------------------------------------------------------------------
+2022-01-11 15:37:06,393 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-11 15:37:06,413 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @978ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-11 15:37:06,414 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-11 15:37:06,439 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 93 days old. Consider upgrading!).
+2022-01-11 15:37:06,439 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-11 15:37:06,689 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-11 15:37:06,689 [main] INFO  io.javalin.Javalin - Javalin started in 276ms \o/
+2022-01-11 15:37:55,603 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-11 15:37:55,617 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @924ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-11 15:37:55,618 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-11 15:37:55,632 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 93 days old. Consider upgrading!).
+2022-01-11 15:37:55,633 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-11 15:37:55,821 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-11 15:37:55,821 [main] INFO  io.javalin.Javalin - Javalin started in 204ms \o/
