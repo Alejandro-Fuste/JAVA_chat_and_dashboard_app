@@ -4,315 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="">
+    <list default="true" id="f2b2196a-83cc-4bb8-99ad-8ba883f13a34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/business.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/shark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Commenting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/entities/Commenting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/profilePages.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profilePages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shark.html" beforeDir="false" afterPath="$PROJECT_DIR$/shark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SharkTests/SharkDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharkTests/SharkDAOTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SharkTests/SharkServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharkTests/SharkServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/businessSteps/BusinessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/businessSteps/BusinessSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/businessservicestests/BusinessServicesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/businessservicestests/BusinessServicesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/commentingservicetests/CommentingServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/commentingtests/CommentingDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/commentingtests/CommentingDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/shark.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/businessSteps.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/businessSteps.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/PitchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/PitchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/SharkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/SharkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateBusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateBusinessException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/IncorrectDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/IncorrectDataType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NullValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NullValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PasswordTooShort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PasswordTooShort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooManyChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooManyChar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTaken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTaken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTooShort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTooShort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/ValueTooLarge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/ValueTooLarge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/BusinessDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/BusinessDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/BusinessDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/BusinessDAOImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/CommentingDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/CommentingDAOImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/PitchDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/PitchDAOImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/SharkDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/databaseinteraction/SharkDAOImplemented.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Commenting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Commenting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/NewPitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/NewPitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Pitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Pitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/BusinessServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/BusinessServicesImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/CommentingServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/CommentingServicesImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/BusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/CommentingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/CommentingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateCommentException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateCommentException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NoValueException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NoValueException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotEnoughChars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotEnoughChars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotValidDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotValidDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyLetters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyLetters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooLong.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooLong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameAlreadyExists.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameAlreadyExists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Business.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/businessSteps.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/businessSteps.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pitchtests/PitchServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkDAOTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sharktests/SharkServiceTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="230yye44jWutp23hRcbQOQnjE46" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources/features" />
-      <recent name="$PROJECT_DIR$/src/test/java/features" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/test" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
-        <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
-        <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.investing_app.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
-        <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
-        <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.investing_app.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
-        <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
-        <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.investing_app.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="environment variables: PYTHONUNBUFFERED" value="1" />
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
-        <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
-        <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.investing_app.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: businessExceptions (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/businessExceptions.feature" />
-      <option name="GLUE" value="businessSteps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="project2" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: businessExceptions" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: businessExceptions" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/businessExceptions.feature" />
-      <option name="GLUE" value="businessSteps steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="project2" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: businessExceptions" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: businessSteps" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/businessSteps.feature" />
-      <option name="GLUE" value="businessSteps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="project2" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: businessSteps" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: The system should reject null values when business logs in" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/businessExceptions.feature" />
-      <option name="GLUE" value="businessSteps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="project2" />
-      <option name="NAME_FILTER" value="^The system should reject null values when business logs in$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The system should reject null values when business logs in$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: The system should reject null values when business logs in" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Cucumber Java.Feature: businessExceptions" />
-      <item itemvalue="Cucumber Java.Scenario: The system should reject null values when business logs in" />
-      <item itemvalue="JUnit.TestRunner" />
-      <item itemvalue="Cucumber Java.Feature: businessSteps" />
-      <item itemvalue="Cucumber Java.Feature: businessExceptions (1)" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: businessSteps" />
-        <item itemvalue="Cucumber Java.Feature: businessExceptions (1)" />
-        <item itemvalue="Cucumber Java.Scenario: The system should reject null values when business logs in" />
-        <item itemvalue="Cucumber Java.Feature: businessExceptions" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="" />
-      <created>1641239585386</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1641239585386</updated>
-    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

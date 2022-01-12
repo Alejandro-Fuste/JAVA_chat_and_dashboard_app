@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 
 public class SharkServiceTests {
 
-    // made static so that they are accessible without having to instantiate SharkServiceTests class
+    // made static so that they are accessible without having to instantiate
+    // SharkServiceTests class
     static SharkDAO sharkDAO;
     static SharkService sharkService;
     static Shark sharkProfile;
@@ -23,22 +24,21 @@ public class SharkServiceTests {
     static Shark shortUsername;
     static Shark shortPassword;
 
-
     @BeforeClass
     public void setup() {
-       sharkDAO = Mockito.mock(SharkDAO.class);
-       sharkService = new SharkServiceImplemented(sharkDAO);
-       sharkProfile = new Shark(0, "Lori", "Greiner",
-               "QueenQVC", "qvc12345", "Shark");
-       returnedSharkProfile = new Shark(1, "Lori", "Greiner",
-               "QueenQVC", "qvc12345", "Shark");
-       sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
+        sharkDAO = Mockito.mock(SharkDAO.class);
+        sharkService = new SharkServiceImplemented(sharkDAO);
+        sharkProfile = new Shark(0, "Lori", "Greiner",
+                "QueenQVC", "qvc12345", "Shark");
+        returnedSharkProfile = new Shark(1, "Lori", "Greiner",
+                "QueenQVC", "qvc12345", "Shark");
+        sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
                 "jgkdkjeighejekfjghfjej",
-               "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
+                "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
         sharkProfileNullValue = new Shark(0, "", "", "",
                 "", "");
         sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
-                 "TexasDan", "heyYou765", "5hark");
+                "TexasDan", "heyYou765", "5hark");
         shortUsername = new Shark(0, "Texas", "Dan",
                 "sjdh", "atleast8", "Shark");
         shortPassword = new Shark(0, "Texas", "Dan",
@@ -55,7 +55,8 @@ public class SharkServiceTests {
     // Catching too long an entry for login
     @Test(expectedExceptions = TooManyChar.class)
     public void sharkLoginTooManyChar() {
-        Mockito.when(sharkDAO.getSharkByUsername("Troy")).thenThrow(new TooManyChar("You are exceeding the value length"));
+        Mockito.when(sharkDAO.getSharkByUsername("Troy"))
+                .thenThrow(new TooManyChar("You are exceeding the value length"));
         sharkService.sharkLoginService("a;lskdjfjdkslslekejldk", "gjkfndheuthfndjethfndjakqpoekjsnf");
     }
 
@@ -88,7 +89,6 @@ public class SharkServiceTests {
         Shark result = sharkService.sharkLoginService("QueenQVC", "qvc12345");
         Assert.assertEquals(result, returnedSharkProfile);
     }
-
 
     // stub DAO results
     @Test

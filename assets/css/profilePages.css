@@ -50,7 +50,8 @@
 #logoutEl,
 #addPitchButton,
 #businessLogoutEl,
-#bizAddPitchButton {
+#bizAddPitchButton,
+#sharkLogoutEl {
   background-color: var(--secondary-color);
   color: var(--nav-buttons);
   border: var(--nav-buttons);
@@ -123,6 +124,11 @@
   text-align: center;
 }
 
+/* .far,
+#statusButton {
+  opacity: 0.5;
+} */
+
 #date {
   width: 30vh;
 }
@@ -190,9 +196,14 @@
   font-weight: bold;
 }
 
-#statusButton {
+#pitchAccepted {
+  display: none;
+}
+
+#pitchButtonShark {
   height: 35px;
-  width: 30px;
+  width: 35px;
+  background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
 }
 
@@ -291,4 +302,21 @@
   border-bottom: solid 1px #e9e9e9;
   padding: 1rem;
   margin: 0;
+}
+
+#commentButtonBiz {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#commentButtonShark {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+#commentSent,
+#pitchSent,
+#pitchCreated,
+#commentError {
+  display: none;
 }

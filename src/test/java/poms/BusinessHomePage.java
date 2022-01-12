@@ -19,12 +19,15 @@ public class BusinessHomePage {
     @FindBy(id = "logoutEl")
     public WebElement businessLogoutButton;
 
-    @FindBy(id = "")
-    public WebElement businessIdInput;
+//    @FindBy(id = "")
+//    public WebElement businessIdInput;
 
     //  ------------------------------    MAKE A COMMENT   ------------------------------
     @FindBy(id = "comment")
     public WebElement commentInput;
+
+    @FindBy(id = "")
+    public WebElement commentButton;
 
     @FindBy(id = "")
     public WebElement receiver;
@@ -32,10 +35,10 @@ public class BusinessHomePage {
     @FindBy(id = "commentDateBiz")
     public WebElement enterDate;
 
-    @FindBy(id = "")
+    @FindBy(id = "sendButtonBiz")
     public WebElement postCommentButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "commentSent")
     public WebElement commentPostSuccessMessage;
 
     @FindBy(id = "submitButton")
@@ -47,8 +50,7 @@ public class BusinessHomePage {
     @FindBy(id = "")
     public WebElement acceptPitchMessage;
 
-    @FindBy(id = "")
-    public WebElement commentButton;
+
 //
 //    @FindBy(id = "")
 //    public WebElement commentInput;
@@ -63,13 +65,13 @@ public class BusinessHomePage {
     @FindBy(id = "bizAddPitchButton")
     public WebElement enterAnotherDate;
 
-    @FindBy(id = "")
+    @FindBy(id = "validationCustom02")
     public WebElement enterAmount;
 
-    @FindBy(id = "")
+    @FindBy(id = "validationCustom03")
     public WebElement enterPercentage;
 
-    @FindBy(id = "")
+    @FindBy(id = "validationTextarea")
     public WebElement enterPitch;
 
     @FindBy(id = "pitchCreated")
