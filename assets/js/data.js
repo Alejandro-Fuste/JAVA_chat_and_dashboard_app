@@ -1,16 +1,44 @@
 const sendSharkComment = (e) => {
   e.preventDefault();
+
+  let successEl = document.querySelector("#commentSent");
+
   let reciepient = document.querySelector("#reciepientfromShark").value.trim();
   let date = document.querySelector("#commentDateShark").value.trim();
   let comment = document.querySelector("#commentShark").value.trim();
+  let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
+  console.log(bizId.businessId);
 
   let data = {
     reciepient,
     date,
     comment,
+    sharkId: sharkId.businessId,
   };
 
-  console.table(data);
+  // get url depending the role the user selects
+  let url =
+    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
+
+  // let url = "http://localhost:8080/commenting/create";
+
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      successEl.style.display = "block";
+    })
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 };
 
 const sendBusinessComment = (e) => {
@@ -19,14 +47,33 @@ const sendBusinessComment = (e) => {
   let reciepient = document.querySelector("#reciepientfromBiz").value.trim();
   let date = document.querySelector("#commentDateBiz").value.trim();
   let comment = document.querySelector("#commentBusiness").value.trim();
+  let bizId = JSON.parse(localStorage.getItem("pseudoToken"));
 
   let data = {
     reciepient,
     date,
     comment,
+    businessId: bizId.businessId,
   };
 
-  console.table(data);
+  // get url depending the role the user selects
+  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => login(data))
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 };
 
 const createPitchBusiness = (e) => {
@@ -44,5 +91,22 @@ const createPitchBusiness = (e) => {
     pitchText,
   };
 
-  console.table(data);
+  // get url depending the role the user selects
+  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(loginData),
+  })
+    .then((response) => response.json())
+    .then((data) => login(data))
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 };

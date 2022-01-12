@@ -316,6 +316,7 @@
 
 #commentSent,
 #pitchSent,
-#pitchCreated {
+#pitchCreated,
+#commentError {
   display: none;
 }

@@ -55,8 +55,6 @@ const loginUser = (e) => {
     userPassword,
   };
 
-  // validateInputs(loginData);
-
   // get url depending the role the user selects
   let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
 
