@@ -2,6 +2,7 @@
 const sharkLogoutButton = document.querySelector("#sharkLogoutEl");
 // const nameEl = document.querySelector('#employeeName');
 const sendCommentShark = document.querySelector("#sendButtonShark");
+const sendPitchOffer = document.querySelector("#submitPitchButton");
 
 // Logout event listener
 sharkLogoutButton.addEventListener("click", logout);
@@ -10,3 +11,4 @@ sharkLogoutButton.addEventListener("click", logout);
 sendCommentShark.addEventListener("click", sendSharkComment);
 
 // shark offer event listener
+sendPitchOffer.addEventListener("click", acceptPitchShark);

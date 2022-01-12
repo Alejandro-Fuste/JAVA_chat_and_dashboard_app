@@ -270,76 +270,97 @@
           </div>
         </div>
 
-        <!-- Comment Modal -->
-        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Leave a Comment</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                
-                <form id="pitchForm" class="row g-3" novalidate>
-                  <!-- reciepient -->
-                  <div class="mb-3">
-                    <label for="reciepient" class="form-label"
-                      >Choose the reciepient</label
-                    >
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                      id="reciepientfromBiz"
-                      data-name="sharkId"
-                    >
-                      <option selected>Choose...</option>
-                      <option value="1">Mark Cuban</option>
-                    </select>
+      <!-- Comment Modal -->
+      <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Leave a Comment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <form id="pitchForm" class="row g-3" novalidate>
+                <!-- reciepient -->
+                <div class="mb-3">
+                  <label for="reciepient" class="form-label"
+                    >Choose the reciepient</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="reciepientfromBiz"
+                    data-name="sharkId"
+                  >
+                    <option selected>Choose...</option>
+                    <option value="1">Mark Cuban</option>
+                  </select>
+                </div>
+
+                <!-- date input -->
+                <div class="col-md-12">
+                  <label for="date" class="form-label">Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="commentDateBiz"
+                    data-name="creationDate"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a date</div>
+                </div>
+
+                <!-- pitch textarea -->
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label"
+                    >Please enter your comment</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="commentBusiness"
+                    data-name="comment"
+                    placeholder="Required comment"
+                    required
+                  ></textarea>
+                  
+                  <div class="invalid-feedback">
+                    Please enter a message in the textarea.
                   </div>
+                </div>
 
-                  <!-- date input -->
-                  <div class="col-md-12">
-                    <label for="date" class="form-label">Date</label>
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="commentDateBiz"
-                      data-name="creationDate"
-                      required
-                    />
-                    <div class="invalid-feedback">Please enter a date</div>
-                  </div>
+              </form>
 
-                  <!-- pitch textarea -->
-                  <div class="mb-3">
-                    <label for="validationTextarea" class="form-label"
-                      >Please enter your comment</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="commentBusiness"
-                      data-name="comment"
-                      placeholder="Required comment"
-                      required
-                    ></textarea>
-                    
-                    <div class="invalid-feedback">
-                      Please enter a message in the textarea.
-                    </div>
-                  </div>
-
-                </form>
-
-              </div>
-              <div class="modal-footer">
-                <p id="commentSent">Comment was sent!</p>
-                <p id="commentError">Opps, something went wrong!</p>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button id="sendButtonBiz" type="button" class="btn btn-primary">Send</button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <p id="commentSent">Comment was sent!</p>
+              <p id="commentError">Opps, something went wrong!</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button id="sendButtonBiz" type="button" class="btn btn-primary">Send</button>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Accept Pitch Modal -->
+      <div class="modal fade" id="acceptPitchModal" tabindex="-1" aria-labelledby="acceptPitchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pitch Status</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6 id="acceptMessage">Pitch was accepted!</h6>
+            </div>
+            <div class="modal-footer">
+              <p id="pitchCreated">Pitch offer was created!</p>
+              <p id="commentError">Opps, something went wrong!</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </body>

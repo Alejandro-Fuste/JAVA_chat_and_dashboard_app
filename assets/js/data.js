@@ -1,3 +1,4 @@
+// function for sending a comment from the shark end
 const sendSharkComment = (e) => {
   e.preventDefault();
 
@@ -41,6 +42,7 @@ const sendSharkComment = (e) => {
     });
 };
 
+// function for sending a comment from the business end
 const sendBusinessComment = (e) => {
   e.preventDefault();
 
@@ -59,8 +61,10 @@ const sendBusinessComment = (e) => {
     businessId: bizId.businessId,
   };
 
-  // get url depending the role the user selects
-  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+  // url
+  let url =
+    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
+  // let url = "http://localhost:8080/commenting/create";
 
   fetch(url, {
     method: "POST",
@@ -80,6 +84,7 @@ const sendBusinessComment = (e) => {
     });
 };
 
+// function for creating pitch
 const createPitchBusiness = (e) => {
   e.preventDefault();
 
@@ -98,8 +103,9 @@ const createPitchBusiness = (e) => {
     pitchText,
   };
 
-  // get url depending the role the user selects
+  // need route from App class
   let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+  //   let url = "http://localhost:8080/;
 
   fetch(url, {
     method: "POST",
@@ -108,7 +114,7 @@ const createPitchBusiness = (e) => {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(loginData),
+    body: JSON.stringify(data),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -117,4 +123,27 @@ const createPitchBusiness = (e) => {
     .catch((err) => {
       errorEl.style.display = "block";
     });
+};
+
+// function for accepting pitch (shark)
+const acceptPitchShark = (e) => {
+  e.preventDefault();
+
+  // get id, amount, percentage
+
+  // get urls
+
+  // fetch with patch method, success then, failure catch
+};
+
+// function for accepting pitch (business)
+const acceptPitchBusiness = (e) => {
+  e.preventDefault();
+  alert("pitch accepted clicked");
+
+  // get id, amount, percentage
+
+  // get urls
+
+  // fetch with patch method, success then, failure catch
 };
