@@ -2,6 +2,7 @@ const sendSharkComment = (e) => {
   e.preventDefault();
 
   let successEl = document.querySelector("#commentSent");
+  let errorEl = document.querySelector("#commentError");
 
   let reciepient = document.querySelector("#reciepientfromShark").value.trim();
   let date = document.querySelector("#commentDateShark").value.trim();
@@ -36,13 +37,15 @@ const sendSharkComment = (e) => {
       successEl.style.display = "block";
     })
     .catch((err) => {
-      errorEl.setAttribute("id", "errorMessage");
-      errorEl.textContent = err;
+      errorEl.style.display = "block";
     });
 };
 
 const sendBusinessComment = (e) => {
   e.preventDefault();
+
+  let errorEl = document.querySelector("#commentError");
+  let successEl = document.querySelector("#commentSent");
 
   let reciepient = document.querySelector("#reciepientfromBiz").value.trim();
   let date = document.querySelector("#commentDateBiz").value.trim();
@@ -69,15 +72,19 @@ const sendBusinessComment = (e) => {
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
-    .then((data) => login(data))
+    .then((data) => {
+      successEl.style.display = "block";
+    })
     .catch((err) => {
-      errorEl.setAttribute("id", "errorMessage");
-      errorEl.textContent = err;
+      errorEl.style.display = "block";
     });
 };
 
 const createPitchBusiness = (e) => {
   e.preventDefault();
+
+  let errorEl = document.querySelector("#commentError");
+  let successEl = document.querySelector("#pitchCreated");
 
   let date = document.querySelector("#validationCustom01").value.trim();
   let amount = document.querySelector("#validationCustom02").value.trim();
@@ -104,9 +111,10 @@ const createPitchBusiness = (e) => {
     body: JSON.stringify(loginData),
   })
     .then((response) => response.json())
-    .then((data) => login(data))
+    .then((data) => {
+      successEl.style.display = "block";
+    })
     .catch((err) => {
-      errorEl.setAttribute("id", "errorMessage");
-      errorEl.textContent = err;
+      errorEl.style.display = "block";
     });
 };
