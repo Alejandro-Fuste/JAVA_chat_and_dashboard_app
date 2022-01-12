@@ -14,8 +14,7 @@ public class Business {
 
     public Business(){}
 
-    public Business(int businessId, String firstName, String lastName, String businessName, String username,
-                    String password, String role) {
+    public Business(int businessId, String firstName, String lastName, String businessName, String username, String password, String role) {
         this.businessId = businessId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -43,20 +42,12 @@ public class Business {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Business business = (Business) o;
-        return businessId == business.businessId && Objects.equals(firstName, business.firstName) && Objects.equals(lastName, business.lastName) && Objects.equals(businessName, business.businessName) && Objects.equals(username, business.username) && Objects.equals(password, business.password) && Objects.equals(role, business.role);
+        return businessId == business.businessId && Objects.equals(firstName, business.firstName) && Objects.equals(lastName, business.lastName) && Objects.equals(businessName, business.businessName) && Objects.equals(username, business.username) && Objects.equals(password, business.password)&& Objects.equals(role, business.role);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(businessId, firstName, lastName, businessName, username, password, role);
-    }
-
-    public int getBusinessId() {
-        return businessId;
-    }
-
-    public void setBusinessId(int businessId) {
-        this.businessId = businessId;
     }
 
     public String getFirstName() {
@@ -83,6 +74,14 @@ public class Business {
         this.businessName = businessName;
     }
 
+    public int getBusinessNumber() {
+        return businessId;
+    }
+
+    public void setBusinessNumber(int businessNumber) {
+        this.businessId = businessNumber;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -98,7 +97,6 @@ public class Business {
     public void setPassword(String password) {
         this.password = password;
     }
-
     public String getRole() {
         return role;
     }
