@@ -1,8 +1,8 @@
 package dev.commentingtests;
 
 import com.investing_app.entities.Commenting;
-import com.investing_app.databaseinteraction.CommentingDAO;
-import com.investing_app.databaseinteraction.CommentingDAOImp;
+import com.investing_app.dao.CommentingDAO;
+import com.investing_app.dao.CommentingDAOImp;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +14,7 @@ public class CommentingDAOTest {
 
     @Test
     void testCreateComment() {
-        Commenting newComment = new Commenting(0,1, 2, 1, "Trial", "2021/01/01");
+        Commenting newComment = new Commenting(0,1, 1, 1, "Trial", "2021/01/01");
         Commenting returnedComment = commentingDAO.createComment(newComment);
         Assert.assertTrue(returnedComment.getCommentId() != 0);
     }

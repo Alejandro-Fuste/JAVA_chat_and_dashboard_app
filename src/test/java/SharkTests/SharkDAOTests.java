@@ -1,8 +1,8 @@
-package sharktests;
+package SharkTests;
 
-import com.landeros.databaseinteraction.SharkDAO;
-import com.landeros.databaseinteraction.SharkDAOImplemented;
-import com.landeros.entities.Shark;
+import com.investing_app.dao.SharkDAO;
+import com.investing_app.dao.SharkDAOImplemented;
+import com.investing_app.entities.Shark;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,24 +13,23 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Kevin", "O'Leary", "Millions, Inc.",
-                "MrWonderful", "baldy1");
+        Shark shark1 = new Shark(0, "Ashton", "Kutcher",
+                "ButterflyEffect2", "70sShow", "Shark");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
 
     @Test
-    void getAllSharks() {
-        List<Shark> sharks = sharkDAO.getAllSharks();
-        for (Shark s : sharks) {
-            System.out.println(s);
-        }
-        Assert.assertTrue(sharks.size() >= 1);
+    void getSharkByUsername() {
+        Shark returnedShark = sharkDAO.getSharkByUsername("Wonders");
+        Assert.assertEquals(returnedShark.getUsername(), "Wonders");
     }
 
     @Test
-    void getSharkByUsername() {
-        Shark returnedShark = sharkDAO.getSharkByUsername("Kelso");
-        Assert.assertEquals(returnedShark.getUsername(), "Kelso");
+    void getAllSharks() {
+        List<Shark> sharks = sharkDAO.getAllSharks();
+        for (Shark s : sharks)
+            System.out.println(s);
+        Assert.assertTrue(sharks.size() >= 1);
     }
 }

@@ -15,4 +15,8 @@ pitchButtonEl.addEventListener("click", createPitchBusiness);
 sendCommentBusiness.addEventListener("click", sendBusinessComment);
 
 // logout event listener
+<<<<<<< HEAD
 logoutButtonEl.addEventListener("click", logout);
+=======
+logoutButtonEl.addEventListener("click", logout);
+>>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
