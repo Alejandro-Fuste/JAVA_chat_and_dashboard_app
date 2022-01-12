@@ -80,6 +80,8 @@
                   id="validationCustom01"
                   data-name="creationDate"
                   required
+                  minlength="8"
+                  maxlength="10"
                 />
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter a date</div>
@@ -98,6 +100,8 @@
                   id="validationCustom02"
                   data-name="amount"
                   required
+                  max="1000000.00"
+                  min="0"
                 />
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter a valid amount</div>
@@ -116,6 +120,8 @@
                   id="validationCustom03"
                   data-name="percentage"
                   required
+                  max="100.00"
+                  min="0"
                 />
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please enter a valid amount</div>
