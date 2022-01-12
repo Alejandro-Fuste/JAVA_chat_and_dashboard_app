@@ -37,7 +37,7 @@
           <i class="fas fa-sign-out-alt"></i>
         </button>
 
-        <button id="bizAddPitchButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button id="bizAddPitchButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pitchModal">
           <i class="fas fa-clipboard-check"></i>
         </button>
 
@@ -157,7 +157,10 @@
         <section id="commentsContainer">
           <div id="profileCommentsDiv">
             <p id="title">My Comments</p>
-            <i class="far fa-comment-alt"></i>
+            <button id="commentButtonBiz" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">
+              <i class="far fa-comment-alt"></i>
+            </button>
+            
           </div>
 
           <div id="commentsDiv">
@@ -175,8 +178,8 @@
         </section>
       </aside>
 
-      <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Pitch Modal -->
+        <div class="modal fade" id="pitchModal" tabindex="-1" aria-labelledby="pitchModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -186,7 +189,7 @@
               <div class="modal-body">
               
                         <!-- Form for creating a pitch -->
-                  <form id="pitchForm" class="row g-3 was-validated" novalidate>
+                  <form id="pitchForm" class="row g-3" novalidate>
                     <!-- date input -->
                     <div class="col-md-12">
                       <label for="validationCustom01" class="form-label">Date</label>
@@ -258,8 +261,81 @@
 
               </div>
               <div class="modal-footer">
-                <button id="submitPitchButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <p id="pitchCreated">Pitch offer was created!</p>
+                <p id="commentError">Opps, something went wrong!</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="submitPitchButton" type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comment Modal -->
+        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Leave a Comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <form id="pitchForm" class="row g-3" novalidate>
+                  <!-- reciepient -->
+                  <div class="mb-3">
+                    <label for="reciepient" class="form-label"
+                      >Choose the reciepient</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="reciepientfromBiz"
+                      data-name="sharkId"
+                    >
+                      <option selected>Choose...</option>
+                      <option value="1">Mark Cuban</option>
+                    </select>
+                  </div>
+
+                  <!-- date input -->
+                  <div class="col-md-12">
+                    <label for="date" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="commentDateBiz"
+                      data-name="creationDate"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a date</div>
+                  </div>
+
+                  <!-- pitch textarea -->
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Please enter your comment</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="commentBusiness"
+                      data-name="comment"
+                      placeholder="Required comment"
+                      required
+                    ></textarea>
+                    
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="modal-footer">
+                <p id="commentSent">Comment was sent!</p>
+                <p id="commentError">Opps, something went wrong!</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="sendButtonBiz" type="button" class="btn btn-primary">Send</button>
               </div>
             </div>
           </div>
@@ -274,5 +350,5 @@
   ></script>
   <script src="./assets/js/auth.js"></script>
   <script src="./assets/js/data.js"></script>
-  <script src="./assets/js/employee.js"></script>
+  <script src="./assets/js/business.js"></script>
 </html>

@@ -1,4 +1,4 @@
-package sharktests;
+package SharkTests;
 
 import com.investing_app.dao.SharkDAO;
 import com.investing_app.dao.SharkDAOImplemented;
@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
-
 
 public class SharkDAOTests {
     SharkDAO sharkDAO = new SharkDAOImplemented();
@@ -19,7 +18,6 @@ public class SharkDAOTests {
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
-
 
     @Test
     void getSharkByUsername() {
