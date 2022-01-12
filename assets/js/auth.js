@@ -105,5 +105,26 @@ const createUser = (e) => {
     role,
   };
 
-  console.table(data);
+  // urls
+  let url =
+    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/business/create";
+
+  // let url = "http://localhost:8080/business/create";
+
+  // use fetch to send sign up request to server
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then(window.location.assign("/home.html"))
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 };
