@@ -2,6 +2,9 @@ package com.investing_app.controllers;
 
 import com.google.gson.Gson;
 import com.investing_app.customexceptions.CommentNotFound;
+import com.investing_app.customexceptions.NoValueException;
+import com.investing_app.customexceptions.TooLong;
+import com.investing_app.entities.Business;
 import com.investing_app.entities.Commenting;
 import com.investing_app.service.CommentingServices;
 import io.javalin.http.Handler;
@@ -15,12 +18,20 @@ public class CommentingController {
     }
 
     public Handler createComment = ctx ->{
-        Gson gson = new Gson();
-        Commenting newComment = gson.fromJson(ctx.body(), Commenting.class);
-        Commenting createdComment = this.commentingServices.createCommentService(newComment);
-        String createdCommentJson = gson.toJson(createdComment);
-        ctx.result(createdCommentJson);
-        ctx.status(201);
+        try {
+            Gson gson = new Gson();
+            Commenting newComment = gson.fromJson(ctx.body(), Commenting.class);
+            Commenting createdComment = this.commentingServices.createCommentService(newComment);
+            String createdCommentJson = gson.toJson(createdComment);
+            ctx.result(createdCommentJson);
+            ctx.status(201);
+        } catch (TooLong e) {
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        } catch (Exception e) {
+            ctx.result(e.getMessage());
+            ctx.status(400);
+        }
     };
 
     public Handler getComment = ctx -> {
@@ -32,6 +43,9 @@ public class CommentingController {
             ctx.result(commentJson);
             ctx.status(200);
         } catch (CommentNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        } catch (Exception e) {
             ctx.result(e.getMessage());
             ctx.status(404);
         }
