@@ -103,7 +103,7 @@ const createPitchBusiness = (e) => {
     pitchText,
   };
 
-  // need route from App class
+  // urls
   let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
   //   let url = "http://localhost:8080/;
 
@@ -130,10 +130,12 @@ const acceptPitchShark = (e) => {
   e.preventDefault();
 
   // get id, amount, percentage
+  let id = document.querySelector("#pitchDiv");
   let amount = document.querySelector("#validationCustom02").value.trim();
   let percent = document.querySelector("#validationCustom03").value.trim();
 
   let data = {
+    pitchId: id.dataset.pitchId,
     amount,
     percent,
   };
@@ -141,6 +143,8 @@ const acceptPitchShark = (e) => {
   console.table(data);
 
   // get urls
+  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/pitch";
+  //   let url = "http://localhost:8080//pitch;
 
   // fetch with patch method, success then, failure catch
 };

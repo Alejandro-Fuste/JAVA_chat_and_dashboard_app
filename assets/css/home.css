@@ -82,3 +82,15 @@ main {
   color: red;
   margin-top: 4vh;
 }
+
+/* ********* Error Messages ********* */
+
+#firstNameError,
+#lastNameError,
+#businessError,
+#userNameError,
+#passwordError,
+#roleError {
+  color: red;
+  display: none;
+}
