@@ -13,13 +13,12 @@ public class CommentingDAOImp implements CommentingDAO {
     @Override
     public Commenting createComment(Commenting commenting){
         try(Connection connection = DatabaseConnection.createConnection()) {
-            String sql = "insert into commenting values(default, ?, ?, ?, ?, ?)";
+            String sql = "insert into commenting values(default, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1, commenting.getBusinessId());
-            preparedStatement.setInt(2, commenting.getPitchId());
-            preparedStatement.setInt(3, commenting.getSharkId());
-            preparedStatement.setString(4, commenting.getCommenting());
-            preparedStatement.setString(5, commenting.getCreateDate());
+            preparedStatement.setInt(2, commenting.getSharkId());
+            preparedStatement.setString(3, commenting.getCommenting());
+            preparedStatement.setString(4, commenting.getCreateDate());
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
@@ -42,7 +41,6 @@ public class CommentingDAOImp implements CommentingDAO {
                 Commenting commenting = new Commenting(
                         resultSet.getInt("commentId"),
                         resultSet.getInt("businessId"),
-                        resultSet.getInt("pitchId"),
                         resultSet.getInt("sharkId"),
                         resultSet.getString("commenting"),
                         resultSet.getString("createDate")
@@ -67,7 +65,6 @@ public class CommentingDAOImp implements CommentingDAO {
                 Commenting comment = new Commenting(
                         resultSet.getInt("commentId"),
                         resultSet.getInt("businessId"),
-                        resultSet.getInt("pitchId"),
                         resultSet.getInt("sharkId"),
                         resultSet.getString("commenting"),
                         resultSet.getString("createDate")

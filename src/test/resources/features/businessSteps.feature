@@ -1,7 +1,5 @@
 Feature Businesses being able to sell a portion of their company
 
-#  Remove all Pitch id from commenting
-
   Scenario: As a new Business, I can create a Business profile
     Given The user is on the signup page
     When The user enters their first name

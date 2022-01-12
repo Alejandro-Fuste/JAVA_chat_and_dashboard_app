@@ -1,4 +1,4 @@
-package sharktests;
+package SharkTests;
 
 import com.investing_app.dao.SharkDAO;
 import com.investing_app.dao.SharkDAOImplemented;

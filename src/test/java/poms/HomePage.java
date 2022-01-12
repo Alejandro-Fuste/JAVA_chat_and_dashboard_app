@@ -14,38 +14,42 @@ public class HomePage {
     }
 
     // Create Profile
-    @FindBy(id = "")
-    public WebElement newSharkProfileButton;
+//    @FindBy(id = "")
+//    public WebElement newBusinessProfileButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "role")
     public WebElement dropDownList;
 
-    @FindBy(id = "")
-    public WebElement sharkOption;
+    @FindBy(css = "[value='Business']")
+    public WebElement businessOption;
 
-    @FindBy(id = "")
+    @FindBy(id = "firstName")
     public WebElement firstNameInput;
 
-    @FindBy(id = "")
+    @FindBy(id = "lastName")
     public WebElement lastNameInput;
 
-    @FindBy(id = "")
+    @FindBy(id = "userName")
     public WebElement usernameInput;
 
-    @FindBy(id = "")
+    //  Dont see PW
+    @FindBy(id = "password")
     public WebElement passwordInput;
 
-    @FindBy(id = "")
-    public WebElement passwordReInput;
+    @FindBy(id = "submitSignUpButton")
+    public WebElement createBusinessProfileButton;
 
-    @FindBy(id = "")
-    public WebElement createSharkProfileButton;
-
-    @FindBy(id = "")
-    public WebElement createSharkProfileSuccessMessage;
-
+    @FindBy(id = "successProfile")
+    public WebElement createBusinessProfileSuccessMessage;
 
     // Login
-    @FindBy(id = "")
-    public WebElement sharkLoginButton;
+    @FindBy(id = "submitButton")
+    public WebElement loginButton;
+
+    @FindBy(id = "businessName")
+    public WebElement businessNameInput;
+
+    @FindBy(id = "submitSignUpButton")
+    public WebElement submitProfileButton;
+
 }
