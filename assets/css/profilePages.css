@@ -200,11 +200,16 @@
   display: none;
 }
 
-#pitchButtonShark {
+#pitchButtonShark,
+#pitchButtonAccept {
   height: 35px;
   width: 35px;
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
+}
+
+#pitchButtonAccept {
+  width: 41px;
 }
 
 /* ********* Right Bar ********* */
