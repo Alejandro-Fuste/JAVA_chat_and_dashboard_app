@@ -74,7 +74,7 @@
             <div id="pitchesDiv">
               <!-- dynamically add pitches here -->
 
-              <div id="pitchDiv" data-pitchId="1" data-businessId="1">
+              <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz1.png"
@@ -93,6 +93,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="1"
+                      data-businessId="1"
                     >
                       +
                     </button>
@@ -110,7 +112,7 @@
                 </div>
               </div>
 
-              <div id="pitchDiv" data-pitchId="2" data-businessId="2">
+              <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz2.png"
@@ -128,6 +130,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="2"
+                      data-businessId="2"
                     >
                       +
                     </button>
@@ -145,7 +149,7 @@
                 </div>
               </div>
 
-              <div id="pitchDiv" data-pitchId="3" data-businessId="3">
+              <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz3.png"
@@ -163,6 +167,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="3"
+                      data-businessId="3"
                     >
                       +
                     </button>
@@ -363,6 +369,7 @@
                     <option value="1">Bruce Wayne</option>
                     <option value="2">Clark Kent</option>
                   </select>
+                  <div class="invalid-feedback">Please enter a select</div>
                 </div>
 
                 <!-- date input -->

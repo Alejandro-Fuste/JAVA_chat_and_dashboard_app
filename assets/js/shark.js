@@ -2,6 +2,7 @@
 const sharkLogoutButton = document.querySelector("#sharkLogoutEl");
 // const nameEl = document.querySelector('#employeeName');
 const sendCommentShark = document.querySelector("#sendButtonShark");
+const pitchModalButton = document.querySelector("#pitchesDiv");
 const sendPitchOffer = document.querySelector("#submitPitchButton");
 
 // get pitches
@@ -16,3 +17,9 @@ sendCommentShark.addEventListener("click", sendSharkComment);
 
 // shark offer event listener
 sendPitchOffer.addEventListener("click", acceptPitchShark);
+
+pitchModalButton.addEventListener("click", pitchIdShark);
+
+// sendPitchOffer.addEventListener("click", function (e) {
+//   console.log(e.target);
+// });

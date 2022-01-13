@@ -46,6 +46,8 @@ const sendSharkComment = (e) => {
 const sendBusinessComment = (e) => {
   e.preventDefault();
 
+  commentValidation();
+
   let errorEl = document.querySelector("#commentError");
   let successEl = document.querySelector("#commentSent");
 
@@ -125,17 +127,21 @@ const createPitchBusiness = (e) => {
     });
 };
 
+const pitchIdShark = (e) => {
+  localStorage.setItem("pitchId", e.target.dataset.pitchid);
+};
+
 // function for accepting pitch (shark)
 const acceptPitchShark = (e) => {
   e.preventDefault();
 
   // get id, amount, percentage
-  let id = document.querySelector("#pitchDiv");
+  let id = parseInt(localStorage.getItem("pitchId"));
   let amount = document.querySelector("#validationCustom02").value.trim();
   let percent = document.querySelector("#validationCustom03").value.trim();
 
   let data = {
-    pitchId: id.dataset.pitchId,
+    pitchId: id,
     amount,
     percent,
   };
@@ -170,3 +176,42 @@ const createPitch = (data) => {
 const createComment = (data) => {
   console.log(data);
 };
+
+// -------------------SHARK MAKE COMMENT VALIDATION---------------
+
+function commentValidation() {
+  let dropdown = document.querySelector("#reciepientfromShark");
+  let commentSection = document.querySelector("#commentShark");
+  let data = {};
+
+  if (dropdown == null) {
+    alert("Please choose one of the available options.");
+  } else {
+    data.dropdown = dropdown;
+  }
+
+  if (commentSection.length == 0) {
+    alert("Please enter a comment.");
+  } else {
+    data.commentSection = commentSection;
+  }
+}
+
+// -------------------Business MAKE COMMENT VALIDATION---------------
+// commentValidation();
+function commentValidation() {
+  let dropdown = document.querySelector("#reciepientfromBiz");
+  let commentSection = document.querySelector("#commentBusiness");
+  let data = {};
+
+  if (dropdown == null) {
+    alert("Please choose one of the available options.");
+  } else {
+    data.dropdown = dropdown;
+  }
+  if (commentSection.length == 0) {
+    alert("Please enter a comment.");
+  } else {
+    data.commentSection = commentSection;
+  }
+}
