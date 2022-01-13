@@ -103,6 +103,11 @@ public class BusinessSteps {
         TestRunner.businessHomePage.commentButton.click();
     }
 
+    @When("The business clicks on the down arrow")
+    public void the_business_clicks_on_the_down_arrow() {
+        TestRunner.businessHomePage.downArrow.click();
+    }
+
     @When("The business clicks on the recipient")
     public void the_business_clicks_on_the_recipient() {
         TestRunner.businessHomePage.receiver.click();
@@ -197,13 +202,6 @@ public class BusinessSteps {
     @Then("A message says Pitch offer was created")
     public void a_message_says_pitch_offer_was_created() {
         Assert.assertEquals(TestRunner.businessHomePage.pitchCreated.getText(), "Comment was sent!");
-    }
-
-//    ------------------------  NULL VALUES IN PROFILE -----------------------------------
-
-    @Then("An alert pops up saying form cannot accept null values")
-    public void an_alert_pops_up_saying_form_cannot_accept_null_values() {
-
     }
 
     //    ------------------------  EXCEPTIONS BELOW -----------------------------------

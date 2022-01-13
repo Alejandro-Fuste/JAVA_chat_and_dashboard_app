@@ -27,6 +27,7 @@ Feature Businesses being able to sell a portion of their company
   Scenario: As a business, I want to make a comment
     Given The business is on the business page
     When The business clicks on the comment button
+    When The business clicks on the down arrow
     When The business clicks on the recipient
     When The business enters a date
     When The business enters a comment

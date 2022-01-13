@@ -26,10 +26,13 @@ public class BusinessHomePage {
     @FindBy(id = "comment")
     public WebElement commentInput;
 
-    @FindBy(id = "")
+    @FindBy(id = "commentButtonBiz")
     public WebElement commentButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "reciepientfromBiz")
+    public WebElement downArrow;
+
+    @FindBy(css = "[value='1']")
     public WebElement receiver;
 
     @FindBy(id = "commentDateBiz")
@@ -83,7 +86,7 @@ public class BusinessHomePage {
 //    @FindBy(id = "")
 //    public WebElement enterPitch;
 
-//  -----------------------  EXCEPTIONS --------------
+//  ----------------------------------------  EXCEPTIONS TESTING  -----------------------------------------
 
     @FindBy(id = "")
     public WebElement nullValuesMessage;
