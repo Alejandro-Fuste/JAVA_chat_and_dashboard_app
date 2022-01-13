@@ -15,19 +15,19 @@ public class SharkSteps {
         TestRunner.driver.get("http://127.0.0.1:5500/home.html");
     }
 
-    @When("The user clicks on the new shark profile button")
-    public void the_user_clicks_on_the_new_shark_profile_button() {
-        TestRunner.homePage.newSharkProfileButton.click();
-    }
+//    @When("The user clicks on the new Business profile button")
+//    public void the_user_clicks_on_the_new_shark_profile_button() {
+//        TestRunner.homePage.newBusinessProfileButton.click();
+//    }
 
     @When("The user clicks on drop down list")
     public void the_user_clicks_on_drop_down_list() {
         TestRunner.homePage.dropDownList.click();
     }
 
-    @When("The user clicks on Shark")
+    @When("The user clicks on Business")
     public void the_user_clicks_on_shark() {
-        TestRunner.homePage.sharkOption.click();
+        TestRunner.homePage.businessOption.click();
     }
 
     @When("The user enters their first name")
@@ -50,28 +50,22 @@ public class SharkSteps {
         TestRunner.homePage.passwordInput.sendKeys("Wonders1");
     }
 
-    @When("The user re-enters their password")
-    public void the_user_re_enters_their_password() {
-        TestRunner.homePage.passwordReInput.sendKeys("Wonders1");
-    }
-
     @When("The user clicks on the create profile button")
     public void the_user_clicks_on_the_create_profile_button() {
-        TestRunner.homePage.createSharkProfileButton.click();
+        TestRunner.homePage.createBusinessProfileButton.click();
     }
 
     @Then("A message saying shark profile created successfully appears")
     public void a_message_saying_account_created_successfully_appears() {
-        Assert.assertEquals(TestRunner.homePage.createSharkProfileSuccessMessage.getText(),
+        Assert.assertEquals(TestRunner.homePage.createBusinessProfileSuccessMessage.getText(),
                 "Shark profile created successfully!");
     }
 
-
-    // Login
-    @When("The user clicks on the shark login button")
-    public void the_user_clicks_on_the_login_button() {
-        TestRunner.homePage.sharkLoginButton.click();
-    }
+    // ------------------------------Login---------------------------------
+//    @When("The user clicks on the Business login button")
+//    public void the_user_clicks_on_the_login_button() {
+//        TestRunner.homePage.businessLoginButton.click();
+//    }
 
     @Then("The shark should be redirected to the shark page")
     public void the_shark_should_be_redirected_to_the_shark_page() {
