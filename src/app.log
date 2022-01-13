@@ -7062,3 +7062,18 @@ Response: [400], execution took 484.76 ms
 2022-01-11 15:37:55,633 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-01-11 15:37:55,821 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-01-11 15:37:55,821 [main] INFO  io.javalin.Javalin - Javalin started in 204ms \o/
+2022-01-12 20:40:48,138 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-12 20:40:48,144 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1034ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-12 20:40:48,145 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-12 20:40:48,160 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 94 days old. Consider upgrading!).
+2022-01-12 20:40:48,160 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-12 20:40:48,393 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-12 20:40:48,396 [main] INFO  io.javalin.Javalin - Javalin started in 252ms \o/

@@ -17,8 +17,12 @@ public class HomePage {
 //    @FindBy(id = "")
 //    public WebElement newBusinessProfileButton;
 
+
     @FindBy(id = "role")
     public WebElement dropDownList;
+
+    @FindBy(css = "[value='Shark']")
+    public WebElement sharkOption;
 
     @FindBy(css = "[value='Business']")
     public WebElement businessOption;
@@ -51,5 +55,13 @@ public class HomePage {
 
     @FindBy(id = "submitSignUpButton")
     public WebElement submitProfileButton;
+
+    @FindBy(id = "userName")
+    public WebElement loginUsernameInput;
+
+    @FindBy(id = "password")
+    public WebElement loginPasswordInput;
+
+
 
 }
