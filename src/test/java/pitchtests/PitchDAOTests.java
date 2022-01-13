@@ -13,8 +13,8 @@ public class PitchDAOTests {
 
     @Test
     void createPitch() {
-        Pitch pitch = new Pitch(0, 9, "My Business", "01-07-2022", "This is my pitch",
-                100_000, 2.6, "");
+        Pitch pitch = new Pitch(0, 1, "My Business", "01-12-2022",
+                "This is my pitch", 100_000, 2.6, "");
         Pitch returnedPitch = pitchDAO.createPitch(pitch);
         Assert.assertTrue(returnedPitch.getPitchId() != 0);
     }
@@ -30,13 +30,13 @@ public class PitchDAOTests {
 
     @Test
     void makeOffer() {
-        boolean offer = pitchDAO.makeOffer(9, 125_000, 6.0);
+        boolean offer = pitchDAO.makeOffer(1, 120_000, 3.0);
         Assert.assertTrue(offer);
     }
 
     @Test
     void acceptOffer() {
-        boolean accepted = pitchDAO.acceptOffer(9);
+        boolean accepted = pitchDAO.acceptOffer(2);
         Assert.assertTrue(accepted);
     }
 }

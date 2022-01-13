@@ -20,11 +20,11 @@ public class SharkServiceImplemented implements SharkService {
     public Shark createSharkProfileService(Shark o) {
         List<Shark> sharks = this.sharkDAO.getAllSharks();
 
-        if ((o.getFirstName().length() == 0) || (o.getLastName().length() == 0)
+        if ((o.getFirstName().length() == 0) || (o.getLastName().length() == 0) || (o.getBusinessName().length() == 0)
                 || (o.getUsername().length() == 0) || (o.getPassword().length() == 0) || (o.getRole().length() == 0))
             throw new NullValue("You must enter a value!");
-        if ((o.getFirstName().length() > 20) || (o.getLastName().length() > 20) || (o.getUsername().length() > 20) ||
-                (o.getPassword().length() > 30) || (o.getRole().length() > 10))
+        if ((o.getFirstName().length() > 20) || (o.getLastName().length() > 20) || (o.getBusinessName().length() > 20)
+                || (o.getUsername().length() > 20) || (o.getPassword().length() > 30) || (o.getRole().length() > 10))
             throw new TooManyChar("You are exceeding the value length");
         if (o.getUsername().length() < 5)
             throw new UsernameTooShort("Username must be at least 5 characters!");
