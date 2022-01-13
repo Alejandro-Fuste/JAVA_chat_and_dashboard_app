@@ -67,6 +67,7 @@ public class App {
         app.post("/shark/login", sharkController.sharkLogin);
 
         //Pitch
+        app.post("/pitch", pitchController.createPitch);
         app.get("/pitches", pitchController.viewPitches);
         app.patch("/offer", pitchController.makeOffer);
         app.patch("/accept/{pitchId}", pitchController.acceptOffer);

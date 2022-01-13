@@ -102,16 +102,19 @@ public class SharkSteps {
         TestRunner.sharkHomePage.commentButtonShark.click();
     }
 
+    @When("The shark clicks on drop down list")
+    public void the_shark_clicks_on_drop_down_list() {
+        TestRunner.sharkHomePage.commentDropdown.click();
+    }
+
     @When("The shark clicks on the recipient")
     public void the_shark_clicks_on_the_recipient() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        TestRunner.sharkHomePage.commentRecipient.click();
     }
 
     @When("The shark enters a date")
     public void the_shark_enters_a_date() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        TestRunner.sharkHomePage.commentDateShark.sendKeys("2022/01/13");
     }
 
     @When("The shark enters a comment")
@@ -182,7 +185,7 @@ public class SharkSteps {
     @Then("An alert pops up saying form cannot accept null values")
     public void an_alert_pops_up_saying_form_cannot_accept_null_values() {
         Assert.assertEquals(TestRunner.sharkHomePage.nullValuesMessage.getText(),
-                "");
+                "Please enter all values!");
     }
 
     @When("The user enters too long of a username")
@@ -193,7 +196,7 @@ public class SharkSteps {
     @Then("An alert pops up saying the entry has exceeded the allowed length")
     public void an_alert_pops_up_saying_the_entry_has_exceeded_the_allowed_length() {
         Assert.assertEquals(TestRunner.sharkHomePage.tooLongMessage.getText(),
-                "");
+                "Your entry is too long!");
     }
 
     @When("The user enters too short of a username")
@@ -204,7 +207,7 @@ public class SharkSteps {
     @Then("An alert pops up saying the entry has not met the allowed minimum length")
     public void an_alert_pops_up_saying_the_entry_has_not_met_the_allowed_minimum_length() {
         Assert.assertEquals(TestRunner.sharkHomePage.tooShortMessage.getText(),
-                "");
+                "Your username is too short!");
     }
 
     @When("The user enters non-alphabet characters as their first name")
@@ -215,7 +218,7 @@ public class SharkSteps {
     @Then("An alert pops up saying the entry has incorrect data type")
     public void an_alert_pops_up_saying_the_entry_has_incorrect_data_type() {
         Assert.assertEquals(TestRunner.sharkHomePage.incorrectDataTypeMessage.getText(),
-                "");
+                "Please enter only letters!");
     }
 
     @When("The shark enters non-numeric characters for an amount")
@@ -226,7 +229,7 @@ public class SharkSteps {
     @Then("An alert pops up saying the username entered is already taken")
     public void an_alert_pops_up_saying_the_username_entered_is_already_taken() {
         Assert.assertEquals(TestRunner.sharkHomePage.usernameTakenMessage.getText(),
-                "");
+                "This username is already taken! Please try again.");
     }
 
     @When("The user enters incorrect password")
@@ -237,12 +240,6 @@ public class SharkSteps {
     @Then("An alert pops up saying either username or password or both are incorrect")
     public void an_alert_pops_up_saying_either_username_or_password_or_both_are_incorrect() {
         Assert.assertEquals(TestRunner.sharkHomePage.usernamePasswordIncorrectMessage.getText(),
-                "");
-    }
-
-    @When("The shark enters the pitch ID")
-    public void the_shark_enters_the_pitch_id() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+                "Either you username or password or both are incorrect!");
     }
 }

@@ -22,6 +22,7 @@ Feature: Shark should be able to interact with potential investments
   Scenario: Shark can make a comment
     Given The shark is on the shark page
     When The shark clicks on the comment button
+    When The shark clicks on drop down list
     When The shark clicks on the recipient
     When The shark enters a date
     When The shark enters a comment

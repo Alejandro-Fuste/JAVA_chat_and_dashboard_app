@@ -17,6 +17,15 @@ public class SharkHomePage {
     @FindBy(id = "commentButtonShark")
     public WebElement commentButtonShark;
 
+    @FindBy(id = "reciepientfromShark")
+    public WebElement commentDropdown;
+
+    @FindBy(css = "[value='1']")
+    public WebElement commentRecipient;
+
+    @FindBy(id = "commentDateShark")
+    public WebElement commentDateShark;
+
     @FindBy(id = "commentShark")
     public WebElement commentInput;
 
@@ -54,22 +63,6 @@ public class SharkHomePage {
     public WebElement sharkLogoutButton;
 
     // Exceptions
-    @FindBy(id = "")
+    @FindBy(id = "invalid-feedback")
     public WebElement nullValuesMessage;
-
-    @FindBy(id = "")
-    public WebElement tooLongMessage;
-
-    @FindBy(id = "")
-    public WebElement tooShortMessage;
-
-    @FindBy(id = "")
-    public WebElement incorrectDataTypeMessage;
-
-    @FindBy(id = "")
-    public WebElement usernameTakenMessage;
-
-    @FindBy(id = "")
-    public WebElement usernamePasswordIncorrectMessage;
-
 }

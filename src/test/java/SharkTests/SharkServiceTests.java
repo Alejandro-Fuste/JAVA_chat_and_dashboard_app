@@ -1,4 +1,4 @@
-package SharkTests;
+package sharktests;
 
 import com.investing_app.customexceptions.*;
 import com.investing_app.dao.SharkDAO;
@@ -26,37 +26,20 @@ public class SharkServiceTests {
 
     @BeforeClass
     public void setup() {
-<<<<<<< HEAD
-       sharkDAO = Mockito.mock(SharkDAO.class);
-       sharkService = new SharkServiceImplemented(sharkDAO);
-       sharkProfile = new Shark(0, "Lori", "Greiner", "QVC, Inc",
-               "QueenQVC", "qvc12345", "Shark");
-       returnedSharkProfile = new Shark(1, "Lori", "Greiner", "QVC, Inc",
-               "QueenQVC", "qvc12345", "Shark");
-       sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
-               "kasiwuehnvlaskeuhwkjenfalksjnf", "jgkdkjeighejekfjghfjej",
-               "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
+        sharkDAO = Mockito.mock(SharkDAO.class);
+        sharkService = new SharkServiceImplemented(sharkDAO);
+        sharkProfile = new Shark(0, "Lori", "Greiner", "QVC, Inc",
+                "QueenQVC", "qvc12345", "Shark");
+        returnedSharkProfile = new Shark(1, "Lori", "Greiner", "QVC, Inc",
+                "QueenQVC", "qvc12345", "Shark");
+        sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
+                "kasiwuehnvlaskeuhwkjenfalksjnf", "jgkdkjeighejekfjghfjej",
+                "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
         sharkProfileNullValue = new Shark(0, "", "", "", "",
                 "", "");
         sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5", "MyBiz",
-                 "TexasDan", "heyYou765", "5hark");
-        shortUsername = new Shark(0, "Texas", "Dan", "MyBiz",
-=======
-        sharkDAO = Mockito.mock(SharkDAO.class);
-        sharkService = new SharkServiceImplemented(sharkDAO);
-        sharkProfile = new Shark(0, "Lori", "Greiner",
-                "QueenQVC", "qvc12345", "Shark");
-        returnedSharkProfile = new Shark(1, "Lori", "Greiner",
-                "QueenQVC", "qvc12345", "Shark");
-        sharkProfileTooManyChar = new Shark(0, "jgkdkjeighejekfjghfjej", "fjgkdkjeighejekfjghfjej",
-                "jgkdkjeighejekfjghfjej",
-                "kwowkgjthfmbnalkjwkdjhgkskejdjgheef", "kdjfkrjekdnf");
-        sharkProfileNullValue = new Shark(0, "", "", "",
-                "", "");
-        sharkProfileIncorrectDataType = new Shark(0, "Danie1", "Landero5",
                 "TexasDan", "heyYou765", "5hark");
-        shortUsername = new Shark(0, "Texas", "Dan",
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
+        shortUsername = new Shark(0, "Texas", "Dan", "MyBiz",
                 "sjdh", "atleast8", "Shark");
         shortPassword = new Shark(0, "Texas", "Dan", "MyBiz",
                 "AtLeast5", "sj", "Shark");
