@@ -7,17 +7,19 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import poms.BusinessHomePage;
 import poms.HomePage;
 import poms.SharkHomePage;
 
 import java.io.File;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", glue = "runner") // may have to put features folder in resources
+@CucumberOptions(features = "classpath:features", glue = "runner", plugin = {"pretty", "html:src/test/resourses/reports/html-reports.html"})
 public class TestRunner {
     public static WebDriver driver;
     public static HomePage homePage;
     public static SharkHomePage sharkHomePage;
+    public static BusinessHomePage businessHomePage;
 
 
     @BeforeClass
@@ -27,6 +29,7 @@ public class TestRunner {
         driver = new ChromeDriver();
         homePage = new HomePage(driver);
         sharkHomePage = new SharkHomePage(driver);
+        businessHomePage = new BusinessHomePage(driver);
     }
 
     @AfterClass

@@ -39,20 +39,20 @@ public class BusinessServicesTests {
     public void businessSetup() {
         businessDAO = Mockito.mock(BusinessDAO.class);
         businessServices = new BusinessServicesImp(businessDAO);
-        businessProfile = new Business(0, "Tim", "Tebow", "Football Inc", "FBWizard", "Winning", "business");
-        businessProfile2 = new Business(1, "Tim", "Tebow", "Football Inc", "Soccer", "Winning", "business");
-        tooLongRole = new Business(0, "Ned", "Flanders", "Hello World Boxes", "Neddy", "Flanders", "businessbusiness");
-        tooLongRole2 = new Business(1, "Ned", "Flanders", "Hello World Boxes", "Neddy", "Flanders", "businessbusiness");
+        businessProfile = new Business(0, "Tim", "Tebow", "Football Inc", "FBWizard", "Winnings", "business");
+        businessProfile2 = new Business(1, "Tim", "Tebow", "Football Inc", "Socceris", "Winnings", "business");
+        tooLongRole = new Business(0, "Ned", "Flanders", "Hello World Boxes", "Neddyiss", "Flanders", "businessbusiness");
+        tooLongRole2 = new Business(1, "Ned", "Flanders", "Hello World Boxes", "Neddyiss", "Flanders", "businessbusiness");
         tooLongBusinessName = new Business(0, "Ned", "Flanders", "Hello World Boxes For all of the kinds of kids in the world and the extraordinary too!", "Neddy", "Flanders", "businessbusiness");
         tooLongBusinessName1 = new Business(1, "Ned", "Flanders", "Hello World Boxes For all of the kinds of kids in the world and the extraordinary too!", "Neddy", "Flanders", "businessbusiness");
-        withoutAName = new Business(0, "Jim", "Jones", "", "MyUserName", "MyPWforme", "business");
-        withoutAName2 = new Business(1, "Jim", "Jones", "", "MyUserName", "MyPWforme", "business");
+        withoutAName = new Business(0, "Jim", "Jones", "", "MyUserNamer", "MyPWforme", "business");
+        withoutAName2 = new Business(1, "Jim", "Jones", "", "MyUserNamer", "MyPWforme", "business");
         shortUsername = new Business(0, "Tiny", "Tim", "Legots B", "R", "MyNewPAssword", "business");
         shortUsername2 = new Business(1, "Tiny", "Tim", "Legots B", "R", "MyNewPAssword", "business");
-        longUserName = new Business(0, "Mr", "Potter", "Pottersville", "IOwnAllAndIDoNotCareAboutItAtAllNoWayNoHowHaHaHa", "IAmOld", "business");
-        longUserName2 = new Business(2, "Mr", "Potter", "Pottersville", "IOwnAllAndIDoNotCareAboutItAtAllNoWayNoHowHaHaHa", "IAmOld", "business");
-        nonLetters = new Business(0, "Ti'ny1", "Tim", "PoorMan", "FeedMe", "Scrooge", "business");
-        nonLetters2 = new Business(1, "Ti'ny1", "Tim", "PoorMan", "FeedMe", "Scrooge", "business");
+        longUserName = new Business(0, "Mr", "Potter", "Pottersville", "IOwnAllAndIDoNotCareAboutItAtAllNoWayNoHowHaHaHa", "IAmOldAndMean", "business");
+        longUserName2 = new Business(2, "Mr", "Potter", "Pottersville", "IOwnAllAndIDoNotCareAboutItAtAllNoWayNoHowHaHaHa", "IAmOldAndMean", "business");
+        nonLetters = new Business(0, "Ti'ny1", "Tim", "PoorMan", "FeedMeSomeTurkey", "ScroogeIsNice", "business");
+        nonLetters2 = new Business(1, "Ti'ny1", "Tim", "PoorMan", "FeedMeSomeTurkey", "ScroogeIsNice", "business");
     }
 
     @Test(expectedExceptions = UsernameOrPasswordError.class)
