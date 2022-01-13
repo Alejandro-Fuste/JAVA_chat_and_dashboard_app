@@ -28,16 +28,6 @@ const logout = () => {
   window.location.assign("/home.html");
 };
 
-// const validateInputs = (data) => {
-//   let userName = document.querySelector("#userName").value.trim();
-
-//   if (data.userName != '' || data.userName.length >=5){
-//     userName.classList.add("is-valid");
-//   } else {
-//     userName.classList.add("is-valid");
-//   }
-// };
-
 const loginUser = (e) => {
   e.preventDefault();
 
@@ -59,29 +49,29 @@ const loginUser = (e) => {
     userPassword,
   };
 
-  // // get url depending the role the user selects
+  // get url depending the role the user selects
   // let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
 
-  // // let url = "http://localhost:8080/";
+  let url = "http://localhost:8080/";
 
-  // role === "Business" ? (url += `business/login`) : (url += `shark/login`);
+  role === "Business" ? (url += `business/login`) : (url += `shark/login`);
 
-  // // use fetch to send login request to server
-  // fetch(url, {
-  //   method: "POST",
-  //   mode: "cors",
-  //   headers: {
-  //     Accept: "application/json",
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify(loginData),
-  // })
-  //   .then((response) => response.json())
-  //   .then((data) => login(data))
-  //   .catch((err) => {
-  //     errorEl.setAttribute("id", "errorMessage");
-  //     errorEl.textContent = err;
-  //   });
+  // use fetch to send login request to server
+  fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(loginData),
+  })
+    .then((response) => response.json())
+    .then((data) => login(data))
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 };
 
 const createUser = (e) => {
@@ -102,7 +92,7 @@ const createUser = (e) => {
 
   let data = [firstName, lastName, businessName, userName, password, role];
 
-  // let data = {
+  // let createData = {
   //   firstName,
   //   lastName,
   //   businessName,
@@ -112,10 +102,10 @@ const createUser = (e) => {
   // };
 
   // urls
-  let url =
-    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/business/create";
+  // let url =
+  //   "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/business/create";
 
-  // let url = "http://localhost:8080/business/create";
+  let url = "http://localhost:8080/business/create";
 
   // use fetch to send sign up request to server
   fetch(url, {
