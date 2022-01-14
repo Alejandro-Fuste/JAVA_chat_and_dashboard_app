@@ -28,16 +28,6 @@ const logout = () => {
   window.location.assign("/home.html");
 };
 
-// const validateInputs = (data) => {
-//   let userName = document.querySelector("#userName").value.trim();
-
-//   if (data.userName != '' || data.userName.length >=5){
-//     userName.classList.add("is-valid");
-//   } else {
-//     userName.classList.add("is-valid");
-//   }
-// };
-
 const loginUser = (e) => {
   e.preventDefault();
 
