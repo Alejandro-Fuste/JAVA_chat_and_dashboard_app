@@ -17,11 +17,12 @@ Feature: Shark should be able to interact with potential investments
     When The user enters their username
     When The user enters their password
     When The user clicks on the login button
-    Then The shark should be redirected to the shark page
+    Then The shark is redirected to the shark page
 
   Scenario: Shark can make a comment
     Given The shark is on the shark page
     When The shark clicks on the comment button
+    When The shark clicks on drop down list
     When The shark clicks on the recipient
     When The shark enters a date
     When The shark enters a comment
