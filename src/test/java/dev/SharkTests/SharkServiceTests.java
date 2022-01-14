@@ -1,4 +1,4 @@
-package sharktests;
+package dev.SharkTests;
 
 import com.investing_app.customexceptions.*;
 import com.investing_app.dao.SharkDAO;

@@ -1,6 +1,7 @@
 package com.investing_app.dao;
 
 import com.investing_app.entities.Pitch;
+import com.investing_app.utility.ConnectionFile;
 import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;
@@ -11,7 +12,7 @@ public class PitchDAOImplemented implements PitchDAO {
 
     @Override
     public Pitch createPitch(Pitch pitch) {
-        try (Connection connection = DatabaseConnection.createConnection()) {
+        try (Connection connection = ConnectionFile.createConnection()) {
             String sql = "insert into pitches values(default, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1, pitch.getBusinessId());
@@ -35,7 +36,7 @@ public class PitchDAOImplemented implements PitchDAO {
 
     @Override
     public List<Pitch> viewPitches() {
-        try (Connection connection = DatabaseConnection.createConnection()) {
+        try (Connection connection = ConnectionFile.createConnection()) {
             String sql = "select * from pitches";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -64,7 +65,7 @@ public class PitchDAOImplemented implements PitchDAO {
 
     @Override
     public boolean makeOffer(int pitchId, double amount, double percentage) {
-        try (Connection connection = DatabaseConnection.createConnection()) {
+        try (Connection connection = ConnectionFile.createConnection()) {
             String sql = "update pitches set amount = ?, percentage = ? where pitchId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setDouble(1, amount);
@@ -81,7 +82,7 @@ public class PitchDAOImplemented implements PitchDAO {
 
     @Override
     public boolean acceptOffer(int pitchId) {
-        try (Connection connection = DatabaseConnection.createConnection()) {
+        try (Connection connection = ConnectionFile.createConnection()) {
             String sql = "update pitches set status = 'Accepted' where pitchId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, pitchId);
