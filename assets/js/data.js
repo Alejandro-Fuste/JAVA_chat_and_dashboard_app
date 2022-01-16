@@ -1,3 +1,9 @@
+// function for getting name from local storage
+const getName = () => {
+  let tokenData = getToken();
+  return `${tokenData["firstName"]} ${tokenData["lastName"]}`;
+};
+
 // function for sending a comment from the shark end
 const sendSharkComment = (e) => {
   e.preventDefault();
