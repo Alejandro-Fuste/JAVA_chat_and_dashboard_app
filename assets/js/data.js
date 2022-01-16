@@ -175,14 +175,31 @@ const acceptPitchBusiness = (e) => {
 
 // dynamically rendered pitches
 const createPitch = (data) => {
-  const commentsDivEl = document.querySelector("#commentsDiv");
-
-  // commentsDivEl.appendChild();
+  // console.table(data);
 };
 
 // dynamic comments
 const createComment = (data) => {
   console.table(data);
+
+  const commentsDivEl = document.querySelector("#commentsDiv");
+
+  data.forEach((c) => {
+    // div that holds date and comment
+    let createDivTag = document.createElement("div");
+    createDivTag.setAttribute("id", "commentDiv");
+
+    let createDateP = document.createElement("p");
+    createDateP.setAttribute("id", "dateP");
+    createDateP.textContent = c.createDate;
+
+    let createCommentP = document.createElement("p");
+    createCommentP.setAttribute("id", "comment");
+    createCommentP.textContent = c.commenting;
+
+    createDivTag.append(createDateP, createCommentP);
+    commentsDivEl.appendChild(createDivTag);
+  });
 };
 
 // -------------------SHARK MAKE COMMENT VALIDATION---------------
