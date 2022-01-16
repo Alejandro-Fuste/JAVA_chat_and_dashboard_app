@@ -1,9 +1,14 @@
 // Logout, employee name and form selectors
 const sharkLogoutButton = document.querySelector("#sharkLogoutEl");
-// const nameEl = document.querySelector('#employeeName');
+const nameEl = document.querySelector("#headerFullName");
+const profileNameEl = document.querySelector("#fullName");
 const sendCommentShark = document.querySelector("#sendButtonShark");
 const pitchModalButton = document.querySelector("#pitchesDiv");
 const sendPitchOffer = document.querySelector("#submitPitchButton");
+
+// Add name to banner and profile
+nameEl.textContent = getName();
+profileNameEl.textContent = getName();
 
 // get pitches
 
