@@ -137,7 +137,8 @@
   padding-right: 10px;
 }
 
-#headerName {
+#headerName,
+#headerFullName {
   font-size: 1.5rem;
 }
 

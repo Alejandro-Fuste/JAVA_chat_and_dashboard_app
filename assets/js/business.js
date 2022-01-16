@@ -1,9 +1,12 @@
 // Logout, employee name and form selectors
 const logoutButtonEl = document.querySelector("#businessLogoutEl");
-// const nameEl = document.querySelector('#employeeName');
+const nameEl = document.querySelector("#headerFullName");
 // const pitchFormEl = document.querySelector("#pitchForm");
 const pitchButtonEl = document.querySelector("#submitPitchButton");
 const sendCommentBusiness = document.querySelector("#sendButtonBiz");
+
+// Add name to element
+nameEl.textContent = getName();
 
 // get pitches
 
