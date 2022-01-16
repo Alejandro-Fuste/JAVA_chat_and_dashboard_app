@@ -22,6 +22,11 @@ function login(data) {
   }
 }
 
+const getToken = () => {
+  //   Retrieves the user token from localStorage
+  return JSON.parse(localStorage.getItem("pseudoToken"));
+};
+
 async function loginUser2() {
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
