@@ -12,18 +12,16 @@ profileNameEl.textContent = getName();
 
 // get pitches
 let pitchesUrl = `http://localhost:8080/pitches`;
-// fetch(pitchesUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
 fetch(pitchesUrl)
   .then((res) => res.json())
-  .then((data) => console.log(data))
+  .then((data) => createPitch(data))
   .catch((err) => console.log(err));
 
 // get all comments
 let commentsUrl = `http://localhost:8080/commentingAll`;
-// fetch(commentsUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
 fetch(commentsUrl)
   .then((res) => res.json())
-  .then((data) => console.table(data))
+  .then((data) => createComment(data))
   .catch((err) => console.log(err));
 
 // Logout event listener

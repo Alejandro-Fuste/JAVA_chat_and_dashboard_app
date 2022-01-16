@@ -180,7 +180,7 @@ const createPitch = (data) => {
 
 // dynamic comments
 const createComment = (data) => {
-  console.log(data);
+  console.table(data);
 };
 
 // -------------------SHARK MAKE COMMENT VALIDATION---------------
