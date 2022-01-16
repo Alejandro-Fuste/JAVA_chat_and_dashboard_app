@@ -326,15 +326,14 @@ const renderPitchBusiness = (data) => {
       }
 
       let createButton = document.createElement("button");
-      createButton.setAttribute("id", "pitchButtonShark");
+      createButton.setAttribute("id", "businessPitchButton");
       createButton.setAttribute("type", "button");
-      createButton.setAttribute("id", "pitchButtonShark");
       createButton.setAttribute("class", "btn btn-primary");
       createButton.setAttribute("data-bs-toggle", "modal");
       createButton.setAttribute("data-bs-target", "pitchModal");
       createButton.setAttribute("data-pitchId", c.pitchId);
       createButton.setAttribute("data-businessId", c.businessId);
-      createButton.textContent = "+";
+      createButton.innerHTML = '<i class="fas fa-check"></i>';
 
       //div that holds pitchText
       let createPitchDivTag = document.createElement("div");

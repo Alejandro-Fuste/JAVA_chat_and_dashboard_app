@@ -206,14 +206,16 @@
 }
 
 #pitchButtonShark,
-#pitchButtonAccept {
+#pitchButtonAccept,
+#businessPitchButton {
   height: 35px;
   width: 35px;
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
 }
 
-#pitchButtonAccept {
+#pitchButtonAccept,
+#businessPitchButton {
   width: 41px;
 }
 
