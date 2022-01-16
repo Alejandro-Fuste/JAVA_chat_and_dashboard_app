@@ -217,13 +217,13 @@ const createPitch = (data) => {
     let createPercentP = document.createElement("p");
     createPercentP.setAttribute("id", "percent");
     let decimal = c.percentage;
-    createPercentP.textContent = decimal.toFixed(2);
+    createPercentP.textContent = `${decimal.toFixed(2)}%`;
 
     let createPitchAmountP = document.createElement("p");
     createPitchAmountP.setAttribute("id", "pitchAmount");
-    createPitchAmountP.textContent = c.amount
+    createPitchAmountP.textContent = `$${c.amount
       .toString()
-      .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+      .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}`;
 
     let createPitchAcceptedP = document.createElement("p");
     createPitchAcceptedP.setAttribute("id", "pitchAccepted");
