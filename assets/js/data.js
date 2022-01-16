@@ -9,6 +9,11 @@ const getBusinessId = () => {
   return tokenData.businessId;
 };
 
+const getBusinessName = () => {
+  let tokenData = getToken();
+  return tokenData.businessName;
+};
+
 const getSharkId = () => {
   let tokenData = getToken();
   return tokenData.sharkId;

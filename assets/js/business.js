@@ -2,13 +2,16 @@
 const logoutButtonEl = document.querySelector("#businessLogoutEl");
 const nameEl = document.querySelector("#headerFullName");
 const profileNameEl = document.querySelector("#fullName");
-// const pitchFormEl = document.querySelector("#pitchForm");
+const businessNameEl = document.querySelector("#businessName");
 const pitchButtonEl = document.querySelector("#submitPitchButton");
 const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 
 // Add name to element
 nameEl.textContent = getName();
 profileNameEl.textContent = getName();
+
+// Add business name to element
+businessNameEl.textContent = getBusinessName();
 
 // get and render pitches
 let pitchesUrl = `http://localhost:8080/pitches`;
