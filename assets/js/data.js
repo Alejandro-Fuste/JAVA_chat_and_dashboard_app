@@ -177,8 +177,8 @@ const acceptPitchBusiness = (e) => {
 const createPitch = (data) => {
   console.log(data);
 };
-// dynamic comments
 
+// dynamic comments
 const createComment = (data) => {
   console.log(data);
 };

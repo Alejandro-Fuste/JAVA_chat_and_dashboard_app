@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b2196a-83cc-4bb8-99ad-8ba883f13a34" name="Changes" comment="added shark tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchDAOTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchServiceTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

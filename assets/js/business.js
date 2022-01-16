@@ -11,6 +11,12 @@ nameEl.textContent = getName();
 profileNameEl.textContent = getName();
 
 // get pitches
+let pitchesUrl = `http://localhost:8080/pitches/`;
+// fetch(pitchesUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
+fetch(pitchesUrl)
+  .then((res) => res.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
 
 // get comments
 
