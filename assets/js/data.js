@@ -229,6 +229,7 @@ const createPitch = (data) => {
     createPitchAcceptedP.setAttribute("id", "pitchAccepted");
 
     if (c.status === "Accepted") {
+      createPitchAcceptedP.textContent = c.status;
       createPitchAcceptedP.style.display = "block";
     }
 
