@@ -10,12 +10,12 @@ const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 nameEl.textContent = getName();
 profileNameEl.textContent = getName();
 
-// // get and render pitches
-// let pitchesUrl = `http://localhost:8080/pitches`;
-// fetch(pitchesUrl)
-//   .then((res) => res.json())
-//   .then((data) => createPitch(data))
-//   .catch((err) => console.log(err));
+// get and render pitches
+let pitchesUrl = `http://localhost:8080/pitches`;
+fetch(pitchesUrl)
+  .then((res) => res.json())
+  .then((data) => renderPitchBusiness(data))
+  .catch((err) => console.log(err));
 
 // get and render comments
 let commentsUrl = `http://localhost:8080/commentingAll`;

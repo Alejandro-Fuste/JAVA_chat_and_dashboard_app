@@ -14,7 +14,7 @@ profileNameEl.textContent = getName();
 let pitchesSharkUrl = `http://localhost:8080/pitches`;
 fetch(pitchesSharkUrl)
   .then((res) => res.json())
-  .then((data) => createPitch(data))
+  .then((data) => renderPitches(data))
   .catch((err) => console.log(err));
 
 // get and render comments
