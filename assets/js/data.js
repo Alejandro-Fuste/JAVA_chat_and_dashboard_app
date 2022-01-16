@@ -173,9 +173,11 @@ const acceptPitchBusiness = (e) => {
   // fetch with patch method, success then, failure catch
 };
 
-// dynamic pitches
+// dynamically rendered pitches
 const createPitch = (data) => {
-  console.log(data);
+  const commentsDivEl = document.querySelector("#commentsDiv");
+
+  // commentsDivEl.appendChild();
 };
 
 // dynamic comments

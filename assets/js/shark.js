@@ -10,20 +10,18 @@ const sendPitchOffer = document.querySelector("#submitPitchButton");
 nameEl.textContent = getName();
 profileNameEl.textContent = getName();
 
-// get pitches
+// get and render pitches
 let pitchesSharkUrl = `http://localhost:8080/pitches`;
-// fetch(pitchesUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
 fetch(pitchesSharkUrl)
   .then((res) => res.json())
-  .then((data) => console.log(data))
+  .then((data) => createPitch(data))
   .catch((err) => console.log(err));
 
-// get all comments
+// get and render comments
 let commentsSharkUrl = `http://localhost:8080/commentingAll`;
-// fetch(commentsUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
 fetch(commentsSharkUrl)
   .then((res) => res.json())
-  .then((data) => console.table(data))
+  .then((data) => createComment(data))
   .catch((err) => console.log(err));
 
 // Logout event listener
