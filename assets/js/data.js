@@ -185,13 +185,92 @@ const acceptPitchBusiness = (e) => {
 
 // dynamically rendered pitches
 const createPitch = (data) => {
-  // console.table(data);
+  console.table(data);
+
+  // div that holds all pitches
+  const commentsDivEl = document.querySelector("#pitchesDiv");
+
+  data.forEach((c) => {
+    // div that holds pitch
+    let createDivTag = document.createElement("div");
+    createDivTag.setAttribute("id", "pitchDiv");
+
+    // added img for business logo
+    let createImgTag = document.createElement("img");
+    createImgTag.setAttribute("id", "bizPic");
+    createImgTag.setAttribute("src", "./assets/images/defaultLogo.png");
+    createImgTag.setAttribute("alt", "business");
+
+    // div that holds namePercentAmountDiv & textDiv
+    let createBizInfoDivTag = document.createElement("div");
+    createBizInfoDivTag.setAttribute("id", "bizInfoDiv");
+
+    // div that holds business name, percent, pitchAmount, accepted, button
+    let createNamePercentAmountDivTag = document.createElement("div");
+    createNamePercentAmountDivTag.setAttribute("id", "namePercentAmountDiv");
+
+    // p tags for bizName, percent, pitchAmount, pitchAmount, pitchButtonShark
+    let createbizNameP = document.createElement("p");
+    createbizNameP.setAttribute("id", "bizName");
+    createbizNameP.textContent = c.businessName;
+
+    let createPercentP = document.createElement("p");
+    createPercentP.setAttribute("id", "percent");
+    let decimal = c.percentage;
+    createPercentP.textContent = decimal.toFixed(2);
+
+    let createPitchAmountP = document.createElement("p");
+    createPitchAmountP.setAttribute("id", "pitchAmount");
+    createPitchAmountP.textContent = c.amount
+      .toString()
+      .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+
+    let createPitchAcceptedP = document.createElement("p");
+    createPitchAcceptedP.setAttribute("id", "pitchAccepted");
+
+    if (c.status === "Accepted") {
+      createPitchAcceptedP.style.display = "block";
+    }
+
+    let createButton = document.createElement("button");
+    createButton.setAttribute("id", "pitchButtonShark");
+    createButton.setAttribute("type", "button");
+    createButton.setAttribute("id", "pitchButtonShark");
+    createButton.setAttribute("class", "btn btn-primary");
+    createButton.setAttribute("data-bs-toggle", "modal");
+    createButton.setAttribute("data-bs-target", "pitchModal");
+    createButton.setAttribute("data-pitchId", c.pitchId);
+    createButton.setAttribute("data-businessId", c.businessId);
+    createButton.textContent = "+";
+
+    //div that holds pitchText
+    let createPitchDivTag = document.createElement("div");
+    createPitchDivTag.setAttribute("id", "textDiv");
+
+    let createPitchTextP = document.createElement("p");
+    createPitchTextP.setAttribute("id", "pitchText");
+    createPitchTextP.textContent = c.pitch;
+
+    createPitchDivTag.appendChild(createPitchTextP);
+    createNamePercentAmountDivTag.append(
+      createbizNameP,
+      createPercentP,
+      createPitchAmountP,
+      createPitchAcceptedP,
+      createButton
+    );
+    createBizInfoDivTag.append(
+      createNamePercentAmountDivTag,
+      createPitchDivTag
+    );
+    createDivTag.append(createImgTag, createBizInfoDivTag);
+    commentsDivEl.appendChild(createDivTag);
+  });
 };
 
 // dynamic comments
 const createComment = (data) => {
-  console.table(data);
-
+  // div that holds all comments
   const commentsDivEl = document.querySelector("#commentsDiv");
 
   data.forEach((c) => {
