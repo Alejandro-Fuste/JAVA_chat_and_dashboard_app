@@ -2,6 +2,7 @@
 const sharkLogoutButton = document.querySelector("#sharkLogoutEl");
 const nameEl = document.querySelector("#headerFullName");
 const profileNameEl = document.querySelector("#fullName");
+const businessNameEl = document.querySelector("#businessName");
 const sendCommentShark = document.querySelector("#sendButtonShark");
 const pitchModalButton = document.querySelector("#pitchesDiv");
 const sendPitchOffer = document.querySelector("#submitPitchButton");
@@ -9,6 +10,9 @@ const sendPitchOffer = document.querySelector("#submitPitchButton");
 // Add name to banner and profile
 nameEl.textContent = getName();
 profileNameEl.textContent = getName();
+
+// Add business name to element
+businessNameEl.textContent = getBusinessName();
 
 // get and render pitches
 let pitchesSharkUrl = `http://localhost:8080/pitches`;
