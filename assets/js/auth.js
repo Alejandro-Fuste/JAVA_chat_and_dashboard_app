@@ -118,7 +118,7 @@ const createUser = (e) => {
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
-    .then(window.location.assign("/home.html"))
+    .then((location.href = "home.html"))
     .catch((err) => {
       errorEl.setAttribute("id", "errorMessage");
       errorEl.textContent = err;
