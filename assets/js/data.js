@@ -4,6 +4,16 @@ const getName = () => {
   return `${tokenData["firstName"]} ${tokenData["lastName"]}`;
 };
 
+const getBusinessId = () => {
+  let tokenData = getToken();
+  return tokenData.businessId;
+};
+
+const getSharkId = () => {
+  let tokenData = getToken();
+  return tokenData.sharkId;
+};
+
 // function for sending a comment from the shark end
 const sendSharkComment = (e) => {
   e.preventDefault();
