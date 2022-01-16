@@ -11,14 +11,20 @@ nameEl.textContent = getName();
 profileNameEl.textContent = getName();
 
 // get pitches
-let pitchesUrl = `http://localhost:8080/pitches/`;
+let pitchesUrl = `http://localhost:8080/pitches`;
 // fetch(pitchesUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
 fetch(pitchesUrl)
   .then((res) => res.json())
   .then((data) => console.log(data))
   .catch((err) => console.log(err));
 
-// get comments
+// get all comments
+let commentsUrl = `http://localhost:8080/commentingAll`;
+// fetch(commentsUrl).then(res => res.json()).then(data => addPitches(data)).catch(err => console.log(err));
+fetch(commentsUrl)
+  .then((res) => res.json())
+  .then((data) => console.table(data))
+  .catch((err) => console.log(err));
 
 // Logout event listener
 logoutButtonEl.addEventListener("click", logout);

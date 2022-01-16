@@ -57,6 +57,7 @@ public class App {
         app.post("/business/login", businessController.getBusinessLogin);
         app.post("/business/create", businessController.createBusiness);
 
+        // comment routes
         app.get("/commenting/{id}", commentingController.getComment);
         app.get("/commentingAll", commentingController.getAllComments);
         app.post("/commenting/create", commentingController.createComment);
