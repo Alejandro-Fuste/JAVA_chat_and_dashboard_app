@@ -35,15 +35,6 @@ const sendSharkComment = (e) => {
 
   let data = commentSharkValidation();
 
-  // let data = {
-  //   businessId: parseInt(reciepient),
-  //   createDate: date,
-  //   commenting: comment,
-  //   sharkId: sharkId.businessId,
-  // };
-
-  console.log(data);
-
   // get url depending the role the user selects
   // let url =
   //   "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
@@ -395,17 +386,13 @@ const createComment = (data) => {
 // -------------------SHARK MAKE COMMENT VALIDATION---------------
 
 function commentSharkValidation() {
-  let reciepient =
-    document.querySelector("#reciepientfromShark").value.trim() || "";
+  let reciepient = document.querySelector("#reciepientfromShark").value.trim();
   let date = document.querySelector("#commentDateShark").value.trim();
   let comment = document.querySelector("#commentShark").value.trim();
   let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
   let data = {
     sharkId: sharkId.businessId,
   };
-
-  console.log(reciepient);
-  console.log(typeof reciepient);
 
   if (reciepient === "Choose...") {
     alert("Please choose one of the available options.");
