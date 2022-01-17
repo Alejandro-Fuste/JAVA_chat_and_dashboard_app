@@ -33,17 +33,14 @@ const sendSharkComment = (e) => {
   let successEl = document.querySelector("#commentSent");
   let errorEl = document.querySelector("#commentSharkError");
 
-  let reciepient = document.querySelector("#reciepientfromShark").value.trim();
-  let date = document.querySelector("#commentDateShark").value.trim();
-  let comment = document.querySelector("#commentShark").value.trim();
-  let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
+  let data = commentSharkValidation();
 
-  let data = {
-    businessId: parseInt(reciepient),
-    createDate: date,
-    commenting: comment,
-    sharkId: sharkId.businessId,
-  };
+  // let data = {
+  //   businessId: parseInt(reciepient),
+  //   createDate: date,
+  //   commenting: comment,
+  //   sharkId: sharkId.businessId,
+  // };
 
   console.log(data);
 
@@ -397,27 +394,46 @@ const createComment = (data) => {
 
 // -------------------SHARK MAKE COMMENT VALIDATION---------------
 
-function commentValidation() {
-  let dropdown = document.querySelector("#reciepientfromShark");
-  let commentSection = document.querySelector("#commentShark");
-  let data = {};
+function commentSharkValidation() {
+  let reciepient =
+    document.querySelector("#reciepientfromShark").value.trim() || "";
+  let date = document.querySelector("#commentDateShark").value.trim();
+  let comment = document.querySelector("#commentShark").value.trim();
+  let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
+  let data = {
+    sharkId: sharkId.businessId,
+  };
 
-  if (dropdown == null) {
+  console.log(reciepient);
+  console.log(typeof reciepient);
+
+  if (reciepient === "Choose...") {
     alert("Please choose one of the available options.");
+    return;
   } else {
-    data.dropdown = dropdown;
+    data.businessId = parseInt(reciepient);
   }
 
-  if (commentSection.length == 0) {
-    alert("Please enter a comment.");
+  if (date === "") {
+    alert("Please select a date.");
+    return;
   } else {
-    data.commentSection = commentSection;
+    data.createDate = date;
   }
+
+  if (comment.length == 0) {
+    alert("Please enter a comment.");
+    return;
+  } else {
+    data.commenting = comment;
+  }
+
+  return data;
 }
 
 // -------------------Business MAKE COMMENT VALIDATION---------------
 // commentValidation();
-function commentValidation() {
+function commentBusinessValidation() {
   let dropdown = document.querySelector("#reciepientfromBiz");
   let commentSection = document.querySelector("#commentBusiness");
   let data = {};
