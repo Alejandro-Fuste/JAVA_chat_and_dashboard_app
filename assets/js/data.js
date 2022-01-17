@@ -39,9 +39,9 @@ const sendSharkComment = (e) => {
   let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
 
   let data = {
-    reciepient,
-    date,
-    comment,
+    businessId: parseInt(reciepient),
+    createDate: date,
+    commenting: comment,
     sharkId: sharkId.businessId,
   };
 

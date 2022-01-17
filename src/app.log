@@ -12599,3 +12599,196 @@ Response: [400], execution took 1.52 ms
     Body is 123 bytes (starts on next line):
     Cannot invoke "String.length()" because the return value of "com.investing_app.entities.Commenting.getCreateDate()" is null
 ----------------------------------------------------------------------------------
+2022-01-16 19:55:07,247 [qtp1419064126-105] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 766.17 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:55:06 GMT, Content-Type=text/plain}
+    Body is 598 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"}]
+----------------------------------------------------------------------------------
+2022-01-16 19:55:07,247 [qtp1419064126-107] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 766.17 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:55:06 GMT, Content-Type=text/plain}
+    Body is 725 bytes (starts on next line):
+    [{"pitchId":3,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":2,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":"Accepted"},{"pitchId":4,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":1,"businessId":1,"businessName":"The Rhino Glass","creationDate":"2021/12/29","pitch":"I am selling 10% of my company for $100,000","amount":120000.0,"percentage":3.0,"status":""}]
+----------------------------------------------------------------------------------
+2022-01-16 19:55:27,874 [qtp1419064126-101] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 2.22 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Mon, 17 Jan 2022 00:55:27 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-16 19:55:27,883 [qtp1419064126-104] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Origin=null, Accept=application/json, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9, Content-Length=77, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":"1","date":"2022-01-16","comment":"test comment 1","sharkId":1}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 3.03 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:55:27 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    Cannot invoke "String.length()" because the return value of "com.investing_app.entities.Commenting.getCreateDate()" is null
+----------------------------------------------------------------------------------
+2022-01-16 19:56:20,784 [qtp1419064126-96] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 612.10 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:56:20 GMT, Content-Type=text/plain}
+    Body is 598 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"}]
+----------------------------------------------------------------------------------
+2022-01-16 19:56:20,784 [qtp1419064126-99] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 612.36 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:56:20 GMT, Content-Type=text/plain}
+    Body is 725 bytes (starts on next line):
+    [{"pitchId":3,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":2,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":"Accepted"},{"pitchId":4,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":1,"businessId":1,"businessName":"The Rhino Glass","creationDate":"2021/12/29","pitch":"I am selling 10% of my company for $100,000","amount":120000.0,"percentage":3.0,"status":""}]
+----------------------------------------------------------------------------------
+2022-01-16 19:56:34,837 [qtp1419064126-105] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1.51 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Mon, 17 Jan 2022 00:56:34 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-16 19:56:34,845 [qtp1419064126-99] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Origin=null, Accept=application/json, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9, Content-Length=75, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":1,"date":"2022-01-16","comment":"test comment 1","sharkId":1}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 2.91 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 00:56:34 GMT, Content-Type=text/plain}
+    Body is 123 bytes (starts on next line):
+    Cannot invoke "String.length()" because the return value of "com.investing_app.entities.Commenting.getCreateDate()" is null
+----------------------------------------------------------------------------------
+2022-01-16 20:00:21,061 [qtp1419064126-99] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 652.15 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 01:00:20 GMT, Content-Type=text/plain}
+    Body is 598 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"}]
+----------------------------------------------------------------------------------
+2022-01-16 20:00:21,061 [qtp1419064126-109] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 652.16 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 01:00:20 GMT, Content-Type=text/plain}
+    Body is 725 bytes (starts on next line):
+    [{"pitchId":3,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":2,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":"Accepted"},{"pitchId":4,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":1,"businessId":1,"businessName":"The Rhino Glass","creationDate":"2021/12/29","pitch":"I am selling 10% of my company for $100,000","amount":120000.0,"percentage":3.0,"status":""}]
+----------------------------------------------------------------------------------
+2022-01-16 20:00:34,757 [qtp1419064126-95] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1.15 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Mon, 17 Jan 2022 01:00:34 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-16 20:00:35,466 [qtp1419064126-96] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Origin=null, Accept=application/json, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9, Content-Length=84, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":1,"createDate":"2022-01-16","commenting":"test comment 1","sharkId":1}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 701.79 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 01:00:34 GMT, Content-Type=text/plain}
+    Body is 98 bytes (starts on next line):
+    {"commentId":1,"businessId":1,"sharkId":1,"commenting":"test comment 1","createDate":"2022-01-16"}
+----------------------------------------------------------------------------------
+2022-01-16 20:01:24,640 [qtp1419064126-105] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 882.46 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 01:01:23 GMT, Content-Type=text/plain}
+    Body is 697 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":7,"businessId":1,"sharkId":1,"commenting":"test comment 1","createDate":"2022-01-16"}]
+----------------------------------------------------------------------------------
+2022-01-16 20:01:24,670 [qtp1419064126-101] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="macOS", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 917.49 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Mon, 17 Jan 2022 01:01:23 GMT, Content-Type=text/plain}
+    Body is 725 bytes (starts on next line):
+    [{"pitchId":3,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":2,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":"Accepted"},{"pitchId":4,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":""},{"pitchId":1,"businessId":1,"businessName":"The Rhino Glass","creationDate":"2021/12/29","pitch":"I am selling 10% of my company for $100,000","amount":120000.0,"percentage":3.0,"status":""}]
+----------------------------------------------------------------------------------
