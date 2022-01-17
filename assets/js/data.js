@@ -419,7 +419,7 @@ function commentSharkValidation() {
 }
 
 // -------------------Business MAKE COMMENT VALIDATION---------------
-// commentValidation();
+
 function commentBusinessValidation() {
   let dropdown = document.querySelector("#reciepientfromBiz");
   let commentSection = document.querySelector("#commentBusiness");
