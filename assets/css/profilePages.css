@@ -332,7 +332,12 @@
 
 #commentSent,
 #pitchSent,
-#pitchCreated,
-#commentError {
+#pitchCreated {
   display: none;
+}
+
+#commentError,
+#commentSharkError {
+  display: none;
+  color: red;
 }

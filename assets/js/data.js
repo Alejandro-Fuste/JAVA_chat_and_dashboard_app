@@ -19,18 +19,24 @@ const getSharkId = () => {
   return tokenData.sharkId;
 };
 
+function checkFetch(response) {
+  if (!response.ok) {
+    throw Error(`${response.statusText} - ${response.url}`);
+  }
+  return response;
+}
+
 // function for sending a comment from the shark end
 const sendSharkComment = (e) => {
   e.preventDefault();
 
   let successEl = document.querySelector("#commentSent");
-  let errorEl = document.querySelector("#commentError");
+  let errorEl = document.querySelector("#commentSharkError");
 
   let reciepient = document.querySelector("#reciepientfromShark").value.trim();
   let date = document.querySelector("#commentDateShark").value.trim();
   let comment = document.querySelector("#commentShark").value.trim();
   let sharkId = JSON.parse(localStorage.getItem("pseudoToken"));
-  console.log(bizId.businessId);
 
   let data = {
     reciepient,
@@ -39,11 +45,13 @@ const sendSharkComment = (e) => {
     sharkId: sharkId.businessId,
   };
 
-  // get url depending the role the user selects
-  let url =
-    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
+  console.log(data);
 
-  // let url = "http://localhost:8080/commenting/create";
+  // get url depending the role the user selects
+  // let url =
+  //   "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
+
+  let url = "http://localhost:8080/commenting/create";
 
   fetch(url, {
     method: "POST",
@@ -54,12 +62,17 @@ const sendSharkComment = (e) => {
     },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
+    .then(checkFetch)
+    .then((res) => {
+      return res.json();
+    })
     .then((data) => {
+      console.log(data);
       successEl.style.display = "block";
     })
     .catch((err) => {
       errorEl.style.display = "block";
+      console.log(err);
     });
 };
 
@@ -190,8 +203,6 @@ const acceptPitchBusiness = (e) => {
 
 // dynamically rendered pitches
 const renderPitches = (data) => {
-  console.table(data);
-
   // div that holds all pitches
   const commentsDivEl = document.querySelector("#pitchesDiv");
 
