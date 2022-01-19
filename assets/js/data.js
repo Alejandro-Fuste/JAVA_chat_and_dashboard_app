@@ -113,40 +113,74 @@ const sendBusinessComment = (e) => {
 const createPitchBusiness = (e) => {
   e.preventDefault();
 
-  let errorEl = document.querySelector("#commentError");
-  let successEl = document.querySelector("#pitchCreated");
+  let errorPitchEl = document.querySelector("#pitchCommentError");
+  let successPitchEl = document.querySelector("#pitchCreatedSuccess");
 
-  let date = document.querySelector("#validationCustom01").value.trim();
-  let amount = document.querySelector("#validationCustom02").value.trim();
-  let percent = document.querySelector("#validationCustom03").value.trim();
-  let pitchText = document.querySelector("#validationTextarea").value.trim();
+  // let data = {
+  //   businessId,
+  //   businessName,
+  //   creationDate: date,
+  //   pitch: pitchText,
+  //   amount: parseFloat(amount),
+  //   percentage: parseFloat(percent),
+  // };
+  let url = "http://localhost:8080/pitch";
 
-  let data = {
-    date,
-    amount,
-    percent,
-    pitchText,
-  };
+  let data = pitchCreateBusinessValidation();
+
+  if (
+    data.businessId === undefined ||
+    data.businessName === undefined ||
+    data.creationDate === undefined ||
+    data.pitch === undefined ||
+    data.amount === undefined ||
+    data.percentage === undefined
+  ) {
+    errorPitchEl.style.display = "block";
+    return;
+  } else {
+    fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(checkFetch)
+      .then((response) => response.json())
+      .then((data) => {
+        successPitchEl.style.display = "block";
+        console.log(data);
+      })
+      .catch((err) => {
+        errorPitchEl.style.display = "block";
+        console.log(err);
+      });
+  }
+
+  // fetch(url, {
+  //   method: "POST",
+  //   mode: "cors",
+  //   headers: {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(data),
+  // })
+  //   .then(checkFetch)
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     successPitchEl.style.display = "block";
+  //     console.log(data);
+  //   })
+  //   .catch((err) => {
+  //     errorPitchEl.style.display = "block";
+  //     console.log(err);
+  //   });
 
   // urls
-  let url = "http://localhost:8080/";
-
-  fetch(url, {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      successEl.style.display = "block";
-    })
-    .catch((err) => {
-      errorEl.style.display = "block";
-    });
 };
 
 const pitchIdShark = (e) => {
@@ -498,6 +532,53 @@ function offerSharkValidation() {
   }
 
   data.pitchId = id;
+  console.table(data);
+
+  return data;
+}
+
+function pitchCreateBusinessValidation() {
+  let errorPitchEl = document.querySelector(".invalid-feedback");
+
+  let date = document.querySelector("#validationCustom01").value.trim();
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+  let pitchText = document.querySelector("#validationTextarea").value.trim();
+  let businessId = getBusinessId();
+  let businessName = getBusinessName();
+  let data = {};
+
+  if (date === "") {
+    alert("Please enter a date");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.creationDate = date;
+  }
+
+  if (amount === "") {
+    alert("Please enter an amount");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.amount = parseFloat(amount);
+  }
+
+  if (percent === "") {
+    alert("Please enter an percent");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.percentage = parseFloat(percent);
+  }
+
+  if (pitchText === "") {
+    alert("Please enter a pitch");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.pitch = pitchText;
+  }
+
+  data.businessId = businessId;
+  data.businessName = businessName;
+
   console.table(data);
 
   return data;
