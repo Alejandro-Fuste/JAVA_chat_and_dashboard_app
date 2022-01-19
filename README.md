@@ -1,31 +1,53 @@
 
 # JAVA_investing_app [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<table><tr><td>
-<img src="./images/finishedGif.gif" alt="finished gif" style="border-radius:16px" width="838" height="380"/>
-</table></tr></td>
-
 ## Table of Contents
+- [Description](#description)
 
-* [Description](#description)
+- [Technologies Used](#technologies-used)
 
-* [User Story](#user-story)
+- [Features](#features)
 
-* [Installation](#installation)
+- [User Story](#user-story)
 
-* [Usage](#usage)
+- [Installation](#installation)
 
-* [License](#license)
+- [Usage](#usage)
 
-* [Contributing](#contributing)
+- [License](#license)
 
-* [Tests](#tests)
+- [Contributing](#contributing)
 
-* [Questions](#questions)
+- [Tests](#tests)
+
+- [Questions](#questions)
 
 ## Description 
 
-This web application connects business owners, who need to increase their capital, with potential investors. This application uses Java, Javalin and Postgres for the backend, and it uses HTML, CSS, and Javascript on the frontend. This app also uses BDD and TDD testing principles.   
+This web application connects business owners, who need to increase their capital, with potential investors. This application uses Java, Javalin and Postgres for the backend, and it uses HTML, CSS, and Javascript on the frontend. This app also uses BDD and TDD testing principles. 
+
+## Technologies Used
+- Java
+- Javascript
+- HTML
+- CSS
+- PostgresQL
+- Javalin
+- Postman
+- Cucumber
+- Selenium
+- TestNG
+
+## Features
+List of features ready and TODOs for future development
+
+- Business can add/view pitches and make/view comments
+- Shark can bid/view pitches and make/view comments
+
+To-do list:
+
+- Clean up UI
+- Add more functionality to profiles
 
 ## User Story
 
