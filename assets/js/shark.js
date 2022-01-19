@@ -38,7 +38,6 @@ sendCommentShark.addEventListener("click", sendSharkComment);
 sendPitchOffer.addEventListener("click", function () {
   let errorEl = document.querySelector("#commentError");
   let pitchData = offerSharkValidation();
-  console.log(pitchData);
 
   if (pitchData === undefined) {
     errorEl.style.display = "block";
@@ -49,7 +48,3 @@ sendPitchOffer.addEventListener("click", function () {
 });
 
 pitchModalButton.addEventListener("click", pitchIdShark);
-
-// sendPitchOffer.addEventListener("click", function (e) {
-//   console.log(e.target);
-// });
