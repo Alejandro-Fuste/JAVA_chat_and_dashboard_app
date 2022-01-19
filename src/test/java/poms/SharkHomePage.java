@@ -63,6 +63,12 @@ public class SharkHomePage {
     public WebElement sharkLogoutButton;
 
     // Exceptions
-    @FindBy(id = "invalid-feedback")
-    public WebElement nullValuesMessage;
+//    @FindBy(id = "invalid-feedback")
+//    public WebElement nullValuesMessage;
+
+    @FindBy(id = "hideErrorMessage")
+    public WebElement usernameTakenMessage;
+
+    @FindBy(id = "hideErrorMessage")
+    public WebElement usernamePasswordIncorrectMessage;
 }

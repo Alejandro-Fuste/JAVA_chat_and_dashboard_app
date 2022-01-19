@@ -46,11 +46,10 @@ public class App {
         SharkService sharkService = new com.investing_app.service.SharkServiceImplemented(sharkDAO);
         SharkController sharkController = new SharkController(sharkService);
 
-//        // Pitch
+        // // Pitch
         PitchDAO pitchDAO = new PitchDAOImplemented();
         PitchService pitchService = new PitchServiceImplemented(pitchDAO);
         PitchController pitchController = new PitchController(pitchService);
-
 
         // business route
         app.get("/business/{id}", businessController.getBusiness);
@@ -58,19 +57,20 @@ public class App {
         app.post("/business/login", businessController.getBusinessLogin);
         app.post("/business/create", businessController.createBusiness);
 
+        // comment routes
         app.get("/commenting/{id}", commentingController.getComment);
         app.get("/commentingAll", commentingController.getAllComments);
         app.post("/commenting/create", commentingController.createComment);
 
-//        // Shark
+        // // Shark
         app.post("/shark", sharkController.createSharkProfile);
         app.post("/shark/login", sharkController.sharkLogin);
 
-        //Pitch
+        // Pitch
         app.post("/pitch", pitchController.createPitch);
         app.get("/pitches", pitchController.viewPitches);
         app.patch("/offer", pitchController.makeOffer);
-        app.patch("/accept/{pitchId}", pitchController.acceptOffer);
+        app.patch("git ", pitchController.acceptOffer);
 
         // start app connection
         app.start();

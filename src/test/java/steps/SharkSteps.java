@@ -184,7 +184,7 @@ public class SharkSteps {
     // EXCEPTIONS
     @Then("An alert pops up saying form cannot accept null values")
     public void an_alert_pops_up_saying_form_cannot_accept_null_values() {
-        Assert.assertEquals(TestRunner.sharkHomePage.nullValuesMessage.getText(),
+        Assert.assertEquals(TestRunner.driver.switchTo().alert().getText(),
                 "Please enter all values!");
     }
 
@@ -195,7 +195,7 @@ public class SharkSteps {
 
     @Then("An alert pops up saying the entry has exceeded the allowed length")
     public void an_alert_pops_up_saying_the_entry_has_exceeded_the_allowed_length() {
-        Assert.assertEquals(TestRunner.sharkHomePage.tooLongMessage.getText(),
+        Assert.assertEquals(TestRunner.driver.switchTo().alert().getText(),
                 "Your entry is too long!");
     }
 
@@ -206,7 +206,7 @@ public class SharkSteps {
 
     @Then("An alert pops up saying the entry has not met the allowed minimum length")
     public void an_alert_pops_up_saying_the_entry_has_not_met_the_allowed_minimum_length() {
-        Assert.assertEquals(TestRunner.sharkHomePage.tooShortMessage.getText(),
+        Assert.assertEquals(TestRunner.driver.switchTo().alert().getText(),
                 "Your username is too short!");
     }
 
@@ -217,7 +217,7 @@ public class SharkSteps {
 
     @Then("An alert pops up saying the entry has incorrect data type")
     public void an_alert_pops_up_saying_the_entry_has_incorrect_data_type() {
-        Assert.assertEquals(TestRunner.sharkHomePage.incorrectDataTypeMessage.getText(),
+        Assert.assertEquals(TestRunner.driver.switchTo().alert().getText(),
                 "Please enter only letters!");
     }
 

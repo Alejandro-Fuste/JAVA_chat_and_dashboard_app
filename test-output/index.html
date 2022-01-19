@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_Suite" class="navigator-link ">
+                    <span>temp-testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">57 methods,   57 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchDAOTests" class="method navigator-link" hash-for-method="acceptOffer">acceptOffer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="acceptOfferReturnedValue">acceptOfferReturnedValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="badCommentDateMockito">badCommentDateMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="badIdForCommentMockito">badIdForCommentMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="businessByIdMockito">businessByIdMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="businessLoginPasswordFailure">businessLoginPasswordFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="businessLoginUsernameFailure">businessLoginUsernameFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="createBusinessMockito">createBusinessMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="createBusinessNameTooLong">createBusinessNameTooLong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="createBusinessProfileUniqueUsername">createBusinessProfileUniqueUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="createBusinessWithNoName">createBusinessWithNoName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="createCommentMockito">createCommentMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchDAOTests" class="method navigator-link" hash-for-method="createPitch">createPitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchAmountTooHigh">createPitchAmountTooHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchIncorrectDataType">createPitchIncorrectDataType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchNullValue">createPitchNullValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchPercentTooHigh">createPitchPercentTooHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchReturnedValue">createPitchReturnedValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="createPitchTooManyChar">createPitchTooManyChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="createRoleTooLong">createRoleTooLong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileIncorrectDataType">createSharkProfileIncorrectDataType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileNullValue">createSharkProfileNullValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileReturnedValue">createSharkProfileReturnedValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileShortPassword">createSharkProfileShortPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileShortUsername">createSharkProfileShortUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileTooManyChar">createSharkProfileTooManyChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="createSharkProfileUniqueUsername">createSharkProfileUniqueUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businesstests.BusinessDAOTest" class="method navigator-link" hash-for-method="getAllBusinesses">getAllBusinesses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="getAllComments">getAllComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingtests.CommentingDAOTest" class="method navigator-link" hash-for-method="getAllComments">getAllComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkDAOTests" class="method navigator-link" hash-for-method="getAllSharks">getAllSharks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="getCommentMockito">getCommentMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkDAOTests" class="method navigator-link" hash-for-method="getSharkByUsername">getSharkByUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="loginCredentialsIncorrect">loginCredentialsIncorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="longUserNameCreate">longUserNameCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchDAOTests" class="method navigator-link" hash-for-method="makeOffer">makeOffer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="makeOfferReturnedValue">makeOfferReturnedValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="noCommentMockito">noCommentMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="noDateMockito">noDateMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="nonLettersUsedInCreate">nonLettersUsedInCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businesstests.BusinessDAOTest" class="method navigator-link" hash-for-method="selectBusinessById">selectBusinessById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingtests.CommentingDAOTest" class="method navigator-link" hash-for-method="selectCommentById">selectCommentById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkDAOTests" class="method navigator-link" hash-for-method="sharkCreateProfile">sharkCreateProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginNullValues">sharkLoginNullValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginPasswordFail">sharkLoginPasswordFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginServiceUsernamePasswordFail">sharkLoginServiceUsernamePasswordFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginSuccess">sharkLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginTooManyChar">sharkLoginTooManyChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.SharkTests.SharkServiceTests" class="method navigator-link" hash-for-method="sharkLoginUsernameFail">sharkLoginUsernameFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="shortUserNameCreate">shortUserNameCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businesstests.BusinessDAOTest" class="method navigator-link" hash-for-method="testCreateBusiness">testCreateBusiness</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingtests.CommentingDAOTest" class="method navigator-link" hash-for-method="testCreateComment">testCreateComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businesstests.BusinessDAOTest" class="method navigator-link" hash-for-method="testGetBusinessByUserName">testGetBusinessByUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.commentingservicetests.CommentingServiceTests" class="method navigator-link" hash-for-method="tooLongCommentMockito">tooLongCommentMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.businessservicestests.BusinessServicesTests" class="method navigator-link" hash-for-method="viewAllBusinessesMockito">viewAllBusinessesMockito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchDAOTests" class="method navigator-link" hash-for-method="viewPitches">viewPitches</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="dev.pitchtests.PitchServiceTests" class="method navigator-link" hash-for-method="viewPitchesReturnedValue">viewPitchesReturnedValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.commentingtests.CommentingDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllComments">
+                  </a> <!-- getAllComments -->
+                  <span class="method-name">getAllComments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCommentById">
+                  </a> <!-- selectCommentById -->
+                  <span class="method-name">selectCommentById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateComment">
+                  </a> <!-- testCreateComment -->
+                  <span class="method-name">testCreateComment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.pitchtests.PitchDAOTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptOffer">
+                  </a> <!-- acceptOffer -->
+                  <span class="method-name">acceptOffer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitch">
+                  </a> <!-- createPitch -->
+                  <span class="method-name">createPitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeOffer">
+                  </a> <!-- makeOffer -->
+                  <span class="method-name">makeOffer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewPitches">
+                  </a> <!-- viewPitches -->
+                  <span class="method-name">viewPitches</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.SharkTests.SharkDAOTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllSharks">
+                  </a> <!-- getAllSharks -->
+                  <span class="method-name">getAllSharks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSharkByUsername">
+                  </a> <!-- getSharkByUsername -->
+                  <span class="method-name">getSharkByUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkCreateProfile">
+                  </a> <!-- sharkCreateProfile -->
+                  <span class="method-name">sharkCreateProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.businessservicestests.BusinessServicesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="businessByIdMockito">
+                  </a> <!-- businessByIdMockito -->
+                  <span class="method-name">businessByIdMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="businessLoginPasswordFailure">
+                  </a> <!-- businessLoginPasswordFailure -->
+                  <span class="method-name">businessLoginPasswordFailure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="businessLoginUsernameFailure">
+                  </a> <!-- businessLoginUsernameFailure -->
+                  <span class="method-name">businessLoginUsernameFailure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBusinessMockito">
+                  </a> <!-- createBusinessMockito -->
+                  <span class="method-name">createBusinessMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBusinessNameTooLong">
+                  </a> <!-- createBusinessNameTooLong -->
+                  <span class="method-name">createBusinessNameTooLong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBusinessProfileUniqueUsername">
+                  </a> <!-- createBusinessProfileUniqueUsername -->
+                  <span class="method-name">createBusinessProfileUniqueUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBusinessWithNoName">
+                  </a> <!-- createBusinessWithNoName -->
+                  <span class="method-name">createBusinessWithNoName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRoleTooLong">
+                  </a> <!-- createRoleTooLong -->
+                  <span class="method-name">createRoleTooLong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCredentialsIncorrect">
+                  </a> <!-- loginCredentialsIncorrect -->
+                  <span class="method-name">loginCredentialsIncorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="longUserNameCreate">
+                  </a> <!-- longUserNameCreate -->
+                  <span class="method-name">longUserNameCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonLettersUsedInCreate">
+                  </a> <!-- nonLettersUsedInCreate -->
+                  <span class="method-name">nonLettersUsedInCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shortUserNameCreate">
+                  </a> <!-- shortUserNameCreate -->
+                  <span class="method-name">shortUserNameCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewAllBusinessesMockito">
+                  </a> <!-- viewAllBusinessesMockito -->
+                  <span class="method-name">viewAllBusinessesMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.SharkTests.SharkServiceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileIncorrectDataType">
+                  </a> <!-- createSharkProfileIncorrectDataType -->
+                  <span class="method-name">createSharkProfileIncorrectDataType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileNullValue">
+                  </a> <!-- createSharkProfileNullValue -->
+                  <span class="method-name">createSharkProfileNullValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileReturnedValue">
+                  </a> <!-- createSharkProfileReturnedValue -->
+                  <span class="method-name">createSharkProfileReturnedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileShortPassword">
+                  </a> <!-- createSharkProfileShortPassword -->
+                  <span class="method-name">createSharkProfileShortPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileShortUsername">
+                  </a> <!-- createSharkProfileShortUsername -->
+                  <span class="method-name">createSharkProfileShortUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileTooManyChar">
+                  </a> <!-- createSharkProfileTooManyChar -->
+                  <span class="method-name">createSharkProfileTooManyChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createSharkProfileUniqueUsername">
+                  </a> <!-- createSharkProfileUniqueUsername -->
+                  <span class="method-name">createSharkProfileUniqueUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginNullValues">
+                  </a> <!-- sharkLoginNullValues -->
+                  <span class="method-name">sharkLoginNullValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginPasswordFail">
+                  </a> <!-- sharkLoginPasswordFail -->
+                  <span class="method-name">sharkLoginPasswordFail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginServiceUsernamePasswordFail">
+                  </a> <!-- sharkLoginServiceUsernamePasswordFail -->
+                  <span class="method-name">sharkLoginServiceUsernamePasswordFail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginSuccess">
+                  </a> <!-- sharkLoginSuccess -->
+                  <span class="method-name">sharkLoginSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginTooManyChar">
+                  </a> <!-- sharkLoginTooManyChar -->
+                  <span class="method-name">sharkLoginTooManyChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharkLoginUsernameFail">
+                  </a> <!-- sharkLoginUsernameFail -->
+                  <span class="method-name">sharkLoginUsernameFail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.businesstests.BusinessDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllBusinesses">
+                  </a> <!-- getAllBusinesses -->
+                  <span class="method-name">getAllBusinesses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectBusinessById">
+                  </a> <!-- selectBusinessById -->
+                  <span class="method-name">selectBusinessById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBusiness">
+                  </a> <!-- testCreateBusiness -->
+                  <span class="method-name">testCreateBusiness</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBusinessByUserName">
+                  </a> <!-- testGetBusinessByUserName -->
+                  <span class="method-name">testGetBusinessByUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.commentingservicetests.CommentingServiceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="badCommentDateMockito">
+                  </a> <!-- badCommentDateMockito -->
+                  <span class="method-name">badCommentDateMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="badIdForCommentMockito">
+                  </a> <!-- badIdForCommentMockito -->
+                  <span class="method-name">badIdForCommentMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCommentMockito">
+                  </a> <!-- createCommentMockito -->
+                  <span class="method-name">createCommentMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllComments">
+                  </a> <!-- getAllComments -->
+                  <span class="method-name">getAllComments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCommentMockito">
+                  </a> <!-- getCommentMockito -->
+                  <span class="method-name">getCommentMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noCommentMockito">
+                  </a> <!-- noCommentMockito -->
+                  <span class="method-name">noCommentMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noDateMockito">
+                  </a> <!-- noDateMockito -->
+                  <span class="method-name">noDateMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tooLongCommentMockito">
+                  </a> <!-- tooLongCommentMockito -->
+                  <span class="method-name">tooLongCommentMockito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dev.pitchtests.PitchServiceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptOfferReturnedValue">
+                  </a> <!-- acceptOfferReturnedValue -->
+                  <span class="method-name">acceptOfferReturnedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchAmountTooHigh">
+                  </a> <!-- createPitchAmountTooHigh -->
+                  <span class="method-name">createPitchAmountTooHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchIncorrectDataType">
+                  </a> <!-- createPitchIncorrectDataType -->
+                  <span class="method-name">createPitchIncorrectDataType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchNullValue">
+                  </a> <!-- createPitchNullValue -->
+                  <span class="method-name">createPitchNullValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchPercentTooHigh">
+                  </a> <!-- createPitchPercentTooHigh -->
+                  <span class="method-name">createPitchPercentTooHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchReturnedValue">
+                  </a> <!-- createPitchReturnedValue -->
+                  <span class="method-name">createPitchReturnedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPitchTooManyChar">
+                  </a> <!-- createPitchTooManyChar -->
+                  <span class="method-name">createPitchTooManyChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeOfferReturnedValue">
+                  </a> <!-- makeOfferReturnedValue -->
+                  <span class="method-name">makeOfferReturnedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewPitchesReturnedValue">
+                  </a> <!-- viewPitchesReturnedValue -->
+                  <span class="method-name">viewPitchesReturnedValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/alejandro/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;JAVA_investing_app&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;dev.SharkTests.SharkDAOTests&quot;/&gt;
+      &lt;class name=&quot;dev.SharkTests.SharkServiceTests&quot;/&gt;
+      &lt;class name=&quot;dev.businesstests.BusinessDAOTest&quot;/&gt;
+      &lt;class name=&quot;dev.businessservicestests.BusinessServicesTests&quot;/&gt;
+      &lt;class name=&quot;dev.pitchtests.PitchDAOTests&quot;/&gt;
+      &lt;class name=&quot;dev.pitchtests.PitchServiceTests&quot;/&gt;
+      &lt;class name=&quot;dev.commentingtests.CommentingDAOTest&quot;/&gt;
+      &lt;class name=&quot;dev.commentingservicetests.CommentingServiceTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JAVA_investing_app --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">JAVA_investing_app (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(57);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getAllSharks')
+data.setCell(0, 2, 'dev.SharkTests.SharkDAOTests')
+data.setCell(0, 3, 926);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCreateComment')
+data.setCell(1, 2, 'dev.commentingtests.CommentingDAOTest')
+data.setCell(1, 3, 804);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'selectCommentById')
+data.setCell(2, 2, 'dev.commentingtests.CommentingDAOTest')
+data.setCell(2, 3, 723);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCreateBusiness')
+data.setCell(3, 2, 'dev.businesstests.BusinessDAOTest')
+data.setCell(3, 3, 647);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGetBusinessByUserName')
+data.setCell(4, 2, 'dev.businesstests.BusinessDAOTest')
+data.setCell(4, 3, 616);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'selectBusinessById')
+data.setCell(5, 2, 'dev.businesstests.BusinessDAOTest')
+data.setCell(5, 3, 592);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sharkCreateProfile')
+data.setCell(6, 2, 'dev.SharkTests.SharkDAOTests')
+data.setCell(6, 3, 574);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getAllComments')
+data.setCell(7, 2, 'dev.commentingtests.CommentingDAOTest')
+data.setCell(7, 3, 566);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createPitch')
+data.setCell(8, 2, 'dev.pitchtests.PitchDAOTests')
+data.setCell(8, 3, 548);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'viewPitches')
+data.setCell(9, 2, 'dev.pitchtests.PitchDAOTests')
+data.setCell(9, 3, 546);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'makeOffer')
+data.setCell(10, 2, 'dev.pitchtests.PitchDAOTests')
+data.setCell(10, 3, 538);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getAllBusinesses')
+data.setCell(11, 2, 'dev.businesstests.BusinessDAOTest')
+data.setCell(11, 3, 533);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'acceptOffer')
+data.setCell(12, 2, 'dev.pitchtests.PitchDAOTests')
+data.setCell(12, 3, 516);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getSharkByUsername')
+data.setCell(13, 2, 'dev.SharkTests.SharkDAOTests')
+data.setCell(13, 3, 505);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createSharkProfileIncorrectDataType')
+data.setCell(14, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(14, 3, 4);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'createSharkProfileReturnedValue')
+data.setCell(15, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(15, 3, 3);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'createPitchIncorrectDataType')
+data.setCell(16, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'createSharkProfileUniqueUsername')
+data.setCell(17, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getAllComments')
+data.setCell(18, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'createBusinessProfileUniqueUsername')
+data.setCell(19, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'badIdForCommentMockito')
+data.setCell(20, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'sharkLoginSuccess')
+data.setCell(21, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createSharkProfileNullValue')
+data.setCell(22, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'longUserNameCreate')
+data.setCell(23, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'createPitchPercentTooHigh')
+data.setCell(24, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'createPitchReturnedValue')
+data.setCell(25, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'viewAllBusinessesMockito')
+data.setCell(26, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'createPitchNullValue')
+data.setCell(27, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'businessLoginUsernameFailure')
+data.setCell(28, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'createPitchTooManyChar')
+data.setCell(29, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'sharkLoginPasswordFail')
+data.setCell(30, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'createSharkProfileShortUsername')
+data.setCell(31, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'acceptOfferReturnedValue')
+data.setCell(32, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'noCommentMockito')
+data.setCell(33, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'tooLongCommentMockito')
+data.setCell(34, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'createPitchAmountTooHigh')
+data.setCell(35, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'badCommentDateMockito')
+data.setCell(36, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'sharkLoginTooManyChar')
+data.setCell(37, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'makeOfferReturnedValue')
+data.setCell(38, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'createCommentMockito')
+data.setCell(39, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'sharkLoginNullValues')
+data.setCell(40, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'createBusinessNameTooLong')
+data.setCell(41, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'nonLettersUsedInCreate')
+data.setCell(42, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'createSharkProfileShortPassword')
+data.setCell(43, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'loginCredentialsIncorrect')
+data.setCell(44, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'viewPitchesReturnedValue')
+data.setCell(45, 2, 'dev.pitchtests.PitchServiceTests')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'shortUserNameCreate')
+data.setCell(46, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'createBusinessWithNoName')
+data.setCell(47, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'businessByIdMockito')
+data.setCell(48, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'createRoleTooLong')
+data.setCell(49, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'businessLoginPasswordFailure')
+data.setCell(50, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'sharkLoginServiceUsernamePasswordFail')
+data.setCell(51, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'getCommentMockito')
+data.setCell(52, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'createSharkProfileTooManyChar')
+data.setCell(53, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'noDateMockito')
+data.setCell(54, 2, 'dev.commentingservicetests.CommentingServiceTests')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'sharkLoginUsernameFail')
+data.setCell(55, 2, 'dev.SharkTests.SharkServiceTests')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'createBusinessMockito')
+data.setCell(56, 2, 'dev.businessservicestests.BusinessServicesTests')
+data.setCell(56, 3, 0);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.SharkTests.SharkDAOTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllSharks</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSharkByUsername</span>
+                <span class="method-start">934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkCreateProfile</span>
+                <span class="method-start">1440 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.SharkTests.SharkServiceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2020 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileIncorrectDataType</span>
+                <span class="method-start">2255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileNullValue</span>
+                <span class="method-start">2259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileReturnedValue</span>
+                <span class="method-start">2260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileShortPassword</span>
+                <span class="method-start">2264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileShortUsername</span>
+                <span class="method-start">2264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileUniqueUsername</span>
+                <span class="method-start">2265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createSharkProfileTooManyChar</span>
+                <span class="method-start">2265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginNullValues</span>
+                <span class="method-start">2266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginPasswordFail</span>
+                <span class="method-start">2267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginSuccess</span>
+                <span class="method-start">2268 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginServiceUsernamePasswordFail</span>
+                <span class="method-start">2268 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginTooManyChar</span>
+                <span class="method-start">2269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharkLoginUsernameFail</span>
+                <span class="method-start">2269 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.businesstests.BusinessDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllBusinesses</span>
+                <span class="method-start">2270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectBusinessById</span>
+                <span class="method-start">2804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateBusiness</span>
+                <span class="method-start">3396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBusinessByUserName</span>
+                <span class="method-start">4044 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.businessservicestests.BusinessServicesTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">businessSetup</span>
+                <span class="method-start">4661 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">businessByIdMockito</span>
+                <span class="method-start">4675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">businessLoginPasswordFailure</span>
+                <span class="method-start">4675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">businessLoginUsernameFailure</span>
+                <span class="method-start">4675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBusinessMockito</span>
+                <span class="method-start">4676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBusinessProfileUniqueUsername</span>
+                <span class="method-start">4677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBusinessNameTooLong</span>
+                <span class="method-start">4677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBusinessWithNoName</span>
+                <span class="method-start">4678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createRoleTooLong</span>
+                <span class="method-start">4678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginCredentialsIncorrect</span>
+                <span class="method-start">4679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">longUserNameCreate</span>
+                <span class="method-start">4679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nonLettersUsedInCreate</span>
+                <span class="method-start">4680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shortUserNameCreate</span>
+                <span class="method-start">4681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">viewAllBusinessesMockito</span>
+                <span class="method-start">4681 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.pitchtests.PitchDAOTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">acceptOffer</span>
+                <span class="method-start">4683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitch</span>
+                <span class="method-start">5200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">makeOffer</span>
+                <span class="method-start">5749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">viewPitches</span>
+                <span class="method-start">6288 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.pitchtests.PitchServiceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6835 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">acceptOfferReturnedValue</span>
+                <span class="method-start">6843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchAmountTooHigh</span>
+                <span class="method-start">6845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchIncorrectDataType</span>
+                <span class="method-start">6845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchNullValue</span>
+                <span class="method-start">6846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchPercentTooHigh</span>
+                <span class="method-start">6847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchReturnedValue</span>
+                <span class="method-start">6848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPitchTooManyChar</span>
+                <span class="method-start">6849 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">makeOfferReturnedValue</span>
+                <span class="method-start">6850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">viewPitchesReturnedValue</span>
+                <span class="method-start">6850 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.commentingtests.CommentingDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllComments</span>
+                <span class="method-start">6851 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectCommentById</span>
+                <span class="method-start">7417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateComment</span>
+                <span class="method-start">8140 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dev.commentingservicetests.CommentingServiceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8945 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">badCommentDateMockito</span>
+                <span class="method-start">8955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">badIdForCommentMockito</span>
+                <span class="method-start">8955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCommentMockito</span>
+                <span class="method-start">8956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAllComments</span>
+                <span class="method-start">8956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCommentMockito</span>
+                <span class="method-start">8957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noCommentMockito</span>
+                <span class="method-start">8957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noDateMockito</span>
+                <span class="method-start">8958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tooLongCommentMockito</span>
+                <span class="method-start">8958 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

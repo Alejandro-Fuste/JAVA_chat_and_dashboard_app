@@ -1,4 +1,4 @@
-package pitchtests;
+package dev.pitchtests;
 
 import com.investing_app.customexceptions.IncorrectDataType;
 import com.investing_app.customexceptions.NullValue;

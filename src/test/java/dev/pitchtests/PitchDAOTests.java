@@ -1,4 +1,4 @@
-package pitchtests;
+package dev.pitchtests;
 
 import com.investing_app.dao.PitchDAO;
 import com.investing_app.dao.PitchDAOImplemented;

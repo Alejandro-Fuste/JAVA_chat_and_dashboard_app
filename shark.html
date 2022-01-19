@@ -49,7 +49,7 @@
           <div id="dateNameDiv">
             <p id="date"><i class="fas fa-calendar"></i>Jan 6, 2022 5:26pm</p>
 
-            <p id="headerName">Welcome, FirstName LastName</p>
+            <p id="headerName">Welcome, <span id="headerFullName"></span></p>
           </div>
 
           <div id="imgDiv">
@@ -74,7 +74,7 @@
             <div id="pitchesDiv">
               <!-- dynamically add pitches here -->
 
-              <div id="pitchDiv" data-pitchId="1" data-businessId="1">
+              <!-- <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz1.png"
@@ -83,7 +83,7 @@
 
                 <div id="bizInfoDiv">
                   <div id="namePercentAmountDiv">
-                    <p id="bizName">Business Name</p>
+                    <p id="bizName">Stark Industries, Inc.</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
                     <p id="pitchAccepted">Accepted</p>
@@ -93,6 +93,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="1"
+                      data-businessId="1"
                     >
                       +
                     </button>
@@ -110,7 +112,7 @@
                 </div>
               </div>
 
-              <div id="pitchDiv" data-pitchId="2" data-businessId="2">
+              <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz2.png"
@@ -118,7 +120,7 @@
                 />
                 <div id="bizInfoDiv">
                   <div id="namePercentAmountDiv">
-                    <p id="bizName">Business Name</p>
+                    <p id="bizName">Wayne Enterprises, Inc.</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
                     <p id="pitchAccepted">Accepted</p>
@@ -128,6 +130,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="2"
+                      data-businessId="2"
                     >
                       +
                     </button>
@@ -145,7 +149,7 @@
                 </div>
               </div>
 
-              <div id="pitchDiv" data-pitchId="3" data-businessId="3">
+              <div id="pitchDiv">
                 <img
                   id="bizPic"
                   src="./assets/images/biz3.png"
@@ -153,7 +157,7 @@
                 />
                 <div id="bizInfoDiv">
                   <div id="namePercentAmountDiv">
-                    <p id="bizName">Business Name</p>
+                    <p id="bizName">Oscorp Industries, Inc.</p>
                     <p id="percent">10%</p>
                     <p id="pitchAmount">$100,000</p>
                     <p id="pitchAccepted">Accepted</p>
@@ -163,6 +167,8 @@
                       class="btn btn-primary"
                       data-bs-toggle="modal"
                       data-bs-target="#pitchModal"
+                      data-pitchId="3"
+                      data-businessId="3"
                     >
                       +
                     </button>
@@ -178,7 +184,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </article>
         </section>
@@ -227,15 +233,6 @@
 
           <div id="commentsDiv">
             <!-- dynamically add comments here -->
-            <p id="comment">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-              eius totam enim, mollitia rerum esse hic? Sunt facilis blanditiis
-              rem cum suscipit. Perferendis impedit, veniam numquam enim nisi
-              odio est.
-            </p>
-            <p id="comment">comment 2</p>
-            <p id="comment">comment 3</p>
-            <p id="comment">comment 4</p>
           </div>
         </section>
       </aside>
@@ -275,11 +272,8 @@
                     id="validationCustom02"
                     data-name="amount"
                     required
-<<<<<<< HEAD
                     min="0"
                     max="1000000"
-=======
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
                   />
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">
@@ -300,11 +294,8 @@
                     id="validationCustom03"
                     data-name="percentage"
                     required
-<<<<<<< HEAD
                     min="0"
                     max="100.00"
-=======
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
                   />
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">
@@ -315,10 +306,7 @@
             </div>
             <div class="modal-footer">
               <p id="pitchSent">Pitch offer was sent!</p>
-<<<<<<< HEAD
-=======
               <p id="commentError">Opps, something went wrong!</p>
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -376,6 +364,7 @@
                     <option value="1">Bruce Wayne</option>
                     <option value="2">Clark Kent</option>
                   </select>
+                  <div class="invalid-feedback">Please enter a select</div>
                 </div>
 
                 <!-- date input -->
@@ -387,11 +376,8 @@
                     id="commentDateShark"
                     data-name="creationDate"
                     required
-<<<<<<< HEAD
                     minlength="8"
                     maxlength="10"
-=======
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
                   />
                   <div class="invalid-feedback">Please enter a date</div>
                 </div>
@@ -418,10 +404,7 @@
 
             <div class="modal-footer">
               <p id="commentSent">Comment was sent!</p>
-<<<<<<< HEAD
-=======
-              <p id="commentError">Opps, something went wrong!</p>
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
+              <p id="commentSharkError">Opps, something went wrong!</p>
               <button
                 type="button"
                 class="btn btn-secondary"

@@ -137,7 +137,8 @@
   padding-right: 10px;
 }
 
-#headerName {
+#headerName,
+#headerFullName {
   font-size: 1.5rem;
 }
 
@@ -184,8 +185,12 @@
   flex-direction: column;
 }
 
+#bizInfoDiv {
+  width: 41vw;
+}
+
 #bizPic {
-  width: 10vw;
+  width: 5vw;
   height: 10vh;
   border-radius: 10px;
   margin-right: 1rem;
@@ -200,11 +205,18 @@
   display: none;
 }
 
-#pitchButtonShark {
+#pitchButtonShark,
+#pitchButtonAccept,
+#businessPitchButton {
   height: 35px;
   width: 35px;
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
+}
+
+#pitchButtonAccept,
+#businessPitchButton {
+  width: 41px;
 }
 
 /* ********* Right Bar ********* */
@@ -298,6 +310,10 @@
   overflow: scroll;
 }
 
+#dateP {
+  margin: 1rem 0 0 1rem;
+}
+
 #comment {
   border-bottom: solid 1px #e9e9e9;
   padding: 1rem;
@@ -316,7 +332,12 @@
 
 #commentSent,
 #pitchSent,
-#pitchCreated,
-#commentError {
+#pitchCreated {
   display: none;
+}
+
+#commentError,
+#commentSharkError {
+  display: none;
+  color: red;
 }

@@ -1,46 +1,40 @@
-const login = (data) => {
+function login(data) {
+  //   e.preventDefault();
+  console.log(data);
   const errorEl = document.querySelector("#hideErrorMessage");
 
   // send data retrieved from database to localStorage
   localStorage.setItem("pseudoToken", JSON.stringify(data));
 
   // redirect user base the role property in data
-  const expr = data.role;
+  let expr = data.role;
   switch (expr) {
     case "business":
-      window.location.assign("/business.html");
+      location.href = "business.html";
       break;
-    case "business":
-      window.location.assign("/shark.html");
+    case "shark":
+      location.href = "shark.html";
       break;
     default:
       errorEl.setAttribute("id", "errorMessage");
       errorEl.textContent =
         "Opps, something went wrong...refresh and try again!";
   }
+}
+
+function checkFetch(response) {
+  if (!response.ok) {
+    throw Error(`${response.statusText} - ${response.url}`);
+  }
+  return response;
+}
+
+const getToken = () => {
+  //   Retrieves the user token from localStorage
+  return JSON.parse(localStorage.getItem("pseudoToken"));
 };
 
-const logout = () => {
-  // delete fake token from local storage
-  localStorage.removeItem("pseudoToken");
-
-  // redirect user back to home page
-  window.location.assign("/home.html");
-};
-
-// const validateInputs = (data) => {
-//   let userName = document.querySelector("#userName").value.trim();
-
-//   if (data.userName != '' || data.userName.length >=5){
-//     userName.classList.add("is-valid");
-//   } else {
-//     userName.classList.add("is-valid");
-//   }
-// };
-
-const loginUser = (e) => {
-  e.preventDefault();
-
+async function loginUser2() {
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
 
@@ -49,17 +43,17 @@ const loginUser = (e) => {
   let userPassword = document.querySelector("#password").value.trim();
   let role = document.querySelector("#roleSignIn").value;
 
+  // let arrayData = [userName, userPassword, role];
+
   // create object for request body
   let loginData = {
-    userName,
-    userPassword,
+    username: userName,
+    password: userPassword,
   };
 
-  // get url depending the role the user selects
-  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
+  let url = "http://localhost:8080/";
 
-  // let url = "http://localhost:8080/";
-
+  //   get url depending the role the user selects
   role === "Business" ? (url += `business/login`) : (url += `shark/login`);
 
   // use fetch to send login request to server
@@ -73,41 +67,41 @@ const loginUser = (e) => {
     body: JSON.stringify(loginData),
   })
     .then((response) => response.json())
-    .then((data) => login(data))
+    .then((data) => {
+      login(data);
+    })
     .catch((err) => {
       errorEl.setAttribute("id", "errorMessage");
       errorEl.textContent = err;
     });
+}
+
+const logout = () => {
+  // delete fake token from local storage
+  localStorage.removeItem("pseudoToken");
+
+  // redirect user back to home page
+  location.href = "home.html";
 };
 
 const createUser = (e) => {
   e.preventDefault();
+  const signUpButtonEl = document.querySelector("#submitSignUpButton");
 
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
+  let role = document.querySelector("#roleSignIn").value.trim();
+  let data = signupValidation();
 
-  // Get first name, last name, business name, user name, password, and role from inputs
-  let firstName = document.querySelector("#firstName").value.trim();
-  let lastName = document.querySelector("#lastName").value.trim();
-  let businessName = document.querySelector("#businessName").value.trim();
-  let userName = document.querySelector("#userName").value.trim();
-  let password = document.querySelector("#signupPassword").value.trim();
-  let role = document.querySelector("#role").value.trim();
+  if (data === "undefined") {
+    errorEl.style.display = "block";
+    signUpButtonEl.disabled = true;
+    return;
+  }
 
-  let data = {
-    firstName,
-    lastName,
-    businessName,
-    userName,
-    password,
-    role,
-  };
-
-  // urls
-  let url =
-    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/business/create";
-
-  // let url = "http://localhost:8080/business/create";
+  console.log(data);
+  let url = "http://localhost:8080/";
+  role === "Business" ? (url += `business/create`) : (url += `shark`);
 
   // use fetch to send sign up request to server
   fetch(url, {
@@ -119,10 +113,100 @@ const createUser = (e) => {
     },
     body: JSON.stringify(data),
   })
+    .then(checkFetch)
     .then((response) => response.json())
-    .then(window.location.assign("/home.html"))
+    .then((location.href = "home.html"))
     .catch((err) => {
-      errorEl.setAttribute("id", "errorMessage");
-      errorEl.textContent = err;
+      errorEl.style.display = "block";
+      console.log(err);
     });
 };
+
+// ----------------- SIGNUP VALIDATION-------------------
+
+function signupValidation() {
+  let firstName = document.querySelector("#firstName").value.trim();
+  let lastName = document.querySelector("#lastName").value.trim();
+  let businessName = document.querySelector("#businessName").value.trim();
+  let username = document.querySelector("#userName").value.trim();
+  let password = document.querySelector("#signupPassword").value.trim();
+  let role = document.querySelector("#roleSignIn").value.trim();
+  let invalidChars = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+  ];
+
+  let data = {};
+
+  if (
+    firstName.length == 0 ||
+    lastName.length == 0 ||
+    businessName.length == 0 ||
+    username.length == 0 ||
+    password.length == 0 ||
+    role != "Shark" ||
+    role != "Business"
+  ) {
+    alert("Please enter all values!");
+    return;
+  } else if (
+    firstName.length > 20 ||
+    lastName.length > 20 ||
+    businessName.length > 20 ||
+    username.length > 20 ||
+    password.length > 30
+  ) {
+    alert("Your entry is too long!");
+  } else {
+    data.firstName = firstName;
+    data.lastName = lastName;
+    data.businessName = businessName;
+    data.username = username;
+    data.password = password;
+    data.role = role;
+  }
+
+  if (username.length < 5) {
+    alert("Your username is too short!");
+  } else {
+    data.username = username;
+  }
+
+  if (password.length < 8) {
+    alert("Your password is too short!");
+  } else {
+    data.password = password;
+  }
+
+  for (char of invalidChars) {
+    if (
+      firstName.includes(char) ||
+      lastName.includes(char) ||
+      role.includes(char)
+    ) {
+      alert("Please enter only letters!");
+      break;
+    } else {
+      data.firstName = firstName;
+      data.lastName = lastName;
+      data.role = role;
+    }
+  }
+  return data;
+}

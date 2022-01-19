@@ -14,7 +14,7 @@ public class BusinessDAOTest {
 
     @Test
     void testCreateBusiness() {
-        Business newBusiness = new Business(0, "Tim", "Tebow", "QB Training Inc", "Usernames", "Passwords", "business");
+        Business newBusiness = new Business(0, "Tim", "Tebow", "QB Training In", "Usernames4", "Passwords", "business");
         Business returnedBusiness = businessDAO.createBusiness(newBusiness);
         Assert.assertTrue(returnedBusiness.getBusinessNumber() != 0);
     }

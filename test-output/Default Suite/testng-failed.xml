@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="JAVA_investing_app(failed)">
+    <classes>
+      <class name="dev.SharkTests.SharkDAOTests">
+        <methods>
+          <include name="sharkCreateProfile"/>
+        </methods>
+      </class> <!-- dev.SharkTests.SharkDAOTests -->
+    </classes>
+  </test> <!-- JAVA_investing_app(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

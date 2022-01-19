@@ -1,4 +1,4 @@
-package SharkTests;
+package dev.SharkTests;
 
 import com.investing_app.dao.SharkDAO;
 import com.investing_app.dao.SharkDAOImplemented;
@@ -13,16 +13,16 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy Enterprises",
-                "ButterflyEffect2", "70sShow", "Shark");
+        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy Enterprises2",
+                "ButterflyEffect5", "70sShow", "Shark");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
 
     @Test
     void getSharkByUsername() {
-        Shark returnedShark = sharkDAO.getSharkByUsername("Wonders");
-        Assert.assertEquals(returnedShark.getUsername(), "Wonders");
+        Shark returnedShark = sharkDAO.getSharkByUsername("Wonderland Inc");
+        Assert.assertEquals(returnedShark.getUsername(), "Wonderland Inc");
     }
 
     @Test
