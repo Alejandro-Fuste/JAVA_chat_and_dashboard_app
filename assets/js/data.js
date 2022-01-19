@@ -209,7 +209,7 @@ const acceptPitchBusiness = (e) => {
   let url = "http://localhost:8080/";
 
   // fetch with patch method, success then, failure catch
-  let response = await fetch(url + `accept/${pitchId}`, {
+  let response = fetch(url + `accept/${pitchId}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
