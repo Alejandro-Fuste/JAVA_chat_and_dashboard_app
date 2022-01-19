@@ -86,34 +86,22 @@ const logout = () => {
 
 const createUser = (e) => {
   e.preventDefault();
+  const signUpButtonEl = document.querySelector("#submitSignUpButton");
 
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
-
-  // Get first name, last name, business name, user name, password, and role from inputs
-  // let firstName = document.querySelector("#firstName").value.trim();
-  // let lastName = document.querySelector("#lastName").value.trim();
-  // let businessName = document.querySelector("#businessName").value.trim();
-  // let userName = document.querySelector("#userName").value.trim();
-  // let password = document.querySelector("#signupPassword").value.trim();
-  // let role = document.querySelector("#role").value.trim();
-
+  let role = document.querySelector("#roleSignIn").value.trim();
   let data = signupValidation();
 
-  // let createData = {
-  //   firstName,
-  //   lastName,
-  //   businessName,
-  //   userName,
-  //   password,
-  //   role,
-  // };
+  if (data === "undefined") {
+    errorEl.style.display = "block";
+    signUpButtonEl.disabled = true;
+    return;
+  }
 
-  // url
-
+  console.log(data);
   let url = "http://localhost:8080/";
-
-  role === "Business" ? (url += `business/create`) : (url += `/shark`);
+  role === "Business" ? (url += `business/create`) : (url += `shark`);
 
   // use fetch to send sign up request to server
   fetch(url, {
@@ -129,8 +117,8 @@ const createUser = (e) => {
     .then((response) => response.json())
     .then((location.href = "home.html"))
     .catch((err) => {
-      errorEl.setAttribute("id", "errorMessage");
-      errorEl.textContent = err;
+      errorEl.style.display = "block";
+      console.log(err);
     });
 };
 
@@ -140,9 +128,9 @@ function signupValidation() {
   let firstName = document.querySelector("#firstName").value.trim();
   let lastName = document.querySelector("#lastName").value.trim();
   let businessName = document.querySelector("#businessName").value.trim();
-  let userName = document.querySelector("#userName").value.trim();
+  let username = document.querySelector("#userName").value.trim();
   let password = document.querySelector("#signupPassword").value.trim();
-  let role = document.querySelector("#role").value.trim();
+  let role = document.querySelector("#roleSignIn").value.trim();
   let invalidChars = [
     "0",
     "1",
@@ -170,27 +158,18 @@ function signupValidation() {
     firstName.length == 0 ||
     lastName.length == 0 ||
     businessName.length == 0 ||
-    userName.length == 0 ||
+    username.length == 0 ||
     password.length == 0 ||
     role != "Shark" ||
     role != "Business"
   ) {
     alert("Please enter all values!");
-    return null;
-  } else {
-    data.firstName = firstName;
-    data.lastName = lastName;
-    data.businessName = businessName;
-    data.userName = userName;
-    data.password = password;
-    data.role = role;
-  }
-
-  if (
+    return;
+  } else if (
     firstName.length > 20 ||
     lastName.length > 20 ||
     businessName.length > 20 ||
-    userName.length > 20 ||
+    username.length > 20 ||
     password.length > 30
   ) {
     alert("Your entry is too long!");
@@ -198,15 +177,15 @@ function signupValidation() {
     data.firstName = firstName;
     data.lastName = lastName;
     data.businessName = businessName;
-    data.userName = userName;
+    data.username = username;
     data.password = password;
     data.role = role;
   }
 
-  if (userName.length < 5) {
+  if (username.length < 5) {
     alert("Your username is too short!");
   } else {
-    data.userName = userName;
+    data.username = username;
   }
 
   if (password.length < 8) {
@@ -229,4 +208,5 @@ function signupValidation() {
       data.role = role;
     }
   }
+  return data;
 }
