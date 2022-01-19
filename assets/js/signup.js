@@ -1,5 +1,5 @@
 // signup form selector
-const signUpFormEl = document.querySelector("#signUpForm");
+const signUpButtonEl = document.querySelector("#submitSignUpButton");
 
 // signup event listener
-signUpFormEl.addEventListener("submit", createUser);
+signUpButtonEl.addEventListener("click", createUser);

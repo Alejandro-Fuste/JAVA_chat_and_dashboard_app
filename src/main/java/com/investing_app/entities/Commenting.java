@@ -6,17 +6,15 @@ public class Commenting {
 
     private int commentId;
     private int businessId;
-    private int pitchId;
     private int sharkId;
     private String commenting;
     private String createDate;
 
     public Commenting(){}
 
-    public Commenting(int commentId, int businessId, int pitchId, int sharkId, String commenting, String createDate) {
+    public Commenting(int commentId, int businessId, int sharkId, String commenting, String createDate) {
         this.commentId = commentId;
         this.businessId = businessId;
-        this.pitchId = pitchId;
         this.sharkId = sharkId;
         this.commenting = commenting;
         this.createDate = createDate;
@@ -27,7 +25,6 @@ public class Commenting {
         return "Business{" +
                 "commentId=" + commentId +
                 "businessId=" + businessId +
-                "pitchId=" + pitchId +
                 "sharkId=" + sharkId +
                 ", commenting='" + commenting + '\'' +
                 ", createDate='" + createDate + '\'' +
@@ -38,12 +35,12 @@ public class Commenting {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Commenting that = (Commenting) o;
-        return commentId == that.commentId && businessId == that.businessId && pitchId == that.pitchId && sharkId == that.sharkId && Objects.equals(commenting, that.commenting) && Objects.equals(createDate, that.createDate);
+        return commentId == that.commentId && businessId == that.businessId && sharkId == that.sharkId && Objects.equals(commenting, that.commenting) && Objects.equals(createDate, that.createDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(commentId, businessId, pitchId, sharkId, commenting, createDate);
+        return Objects.hash(commentId, businessId, sharkId, commenting, createDate);
     }
 
     public int getCommentId() {
@@ -60,14 +57,6 @@ public class Commenting {
 
     public void setBusinessId(int businessId) {
         this.businessId = businessId;
-    }
-
-    public int getPitchId() {
-        return pitchId;
-    }
-
-    public void setPitchId(int pitchId) {
-        this.pitchId = pitchId;
     }
 
     public int getSharkId() {

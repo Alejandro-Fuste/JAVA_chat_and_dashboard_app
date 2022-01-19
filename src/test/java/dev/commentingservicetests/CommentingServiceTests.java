@@ -39,20 +39,20 @@ public class CommentingServiceTests {
     public static void setup(){
         commentingDAO = Mockito.mock(CommentingDAO.class);
         commentingServices = new CommentingServicesImp(commentingDAO);
-        commentingExample = new Commenting(0, 1, 1, 1, "No deal", "2022/01/01");
-        commentingExample2 = new Commenting(0, 1, 1, 1, "No deal", "llkjljkllkjkljljk;jk");
-        commentingExample3 = new Commenting(1, 1, 1, 1, "No deal", "llkjljkllkjkljljk;jk");
-        commentingExample4 = new Commenting(0, 1, 1, 1, "No deal", "");
-        commentingExample5 = new Commenting(1, 1, 1, 1, "No deal", "");
-        commentingExample6 = new Commenting(0, 1, 1, 1, "", "2022/01/01");
-        commentingExample7 = new Commenting(1, 1, 1, 1, "", "2022/01/01");
-        anotherExample = new Commenting(0, 1, 1, 1, "This is very good!", "2022/01/08");
-        anotherExample2 = new Commenting(1, 1, 1, 1, "This is very bad! No Deal!", "2022/01/08");
-        tooLongComment = new Commenting(0, 1, 1, 1, "asdfjklfdsjkfdjskjksdafjklsdkjlfdsjkl;fdsjklfdjsklfdjsklfdsajklfdsjklfdsjkl;fdsakjlfsdjklfdsjklfsjklfdsjklfdsjklfsajklfdsjklfdsjklfsdjklfsadjklfdsjklfsdajklfdsjklfdsjklfsdjklfsdajklfdsajklfsjklfdsjkldfsajklfdsjklfdskjlfdsjklfdsjklfsdjklfdsjklfdsaljkfsdljksdfjlkfdsjlkfsdjklfdsjkl", "2022/01/01");
-        tooLongComment2 = new Commenting(0, 1, 1, 1, "asdfjklfdsjkfdjskjksdafjklsdkjlfdsjkl;fdsjklfdjsklfdjsklfdsajklfdsjklfdsjkl;fdsakjlfsdjklfdsjklfsjklfdsjklfdsjklfsajklfdsjklfdsjklfsdjklfsadjklfdsjklfsdajklfdsjklfdsjklfsdjklfsdajklfdsajklfsjklfdsjkldfsajklfdsjklfdskjlfdsjklfdsjklfsdjklfdsjklfdsaljkfsdljksdfjlkfdsjlkfsdjklfdsjkl", "2022/01/01");
+        commentingExample = new Commenting(0, 1,  1, "No deal", "2022/01/01");
+        commentingExample2 = new Commenting(0, 1, 1, "No deal", "llkjljkllkjkljljk;jk");
+        commentingExample3 = new Commenting(1, 1, 1, "No deal", "llkjljkllkjkljljk;jk");
+        commentingExample4 = new Commenting(0, 1,  1, "No deal", "");
+        commentingExample5 = new Commenting(1, 1,  1, "No deal", "");
+        commentingExample6 = new Commenting(0, 1,  1, "", "2022/01/01");
+        commentingExample7 = new Commenting(1, 1,  1, "", "2022/01/01");
+        anotherExample = new Commenting(0, 1,  1, "This is very good!", "2022/01/08");
+        anotherExample2 = new Commenting(1, 1,  1, "This is very bad! No Deal!", "2022/01/08");
+        tooLongComment = new Commenting(0, 1,  1, "asdfjklfdsjkfdjskjksdafjklsdkjlfdsjkl;fdsjklfdjsklfdjsklfdsajklfdsjklfdsjkl;fdsakjlfsdjklfdsjklfsjklfdsjklfdsjklfsajklfdsjklfdsjklfsdjklfsadjklfdsjklfsdajklfdsjklfdsjklfsdjklfsdajklfdsajklfsjklfdsjkldfsajklfdsjklfdskjlfdsjklfdsjklfsdjklfdsjklfdsaljkfsdljksdfjlkfdsjlkfsdjklfdsjkl", "2022/01/01");
+        tooLongComment2 = new Commenting(0, 1,  1, "asdfjklfdsjkfdjskjksdafjklsdkjlfdsjkl;fdsjklfdjsklfdjsklfdsajklfdsjklfdsjkl;fdsakjlfsdjklfdsjklfsjklfdsjklfdsjklfsajklfdsjklfdsjklfsdjklfsadjklfdsjklfsdajklfdsjklfdsjklfsdjklfsdajklfdsajklfsjklfdsjkldfsajklfdsjklfdskjlfdsjklfdsjklfsdjklfdsjklfdsaljkfsdljksdfjlkfdsjlkfsdjklfdsjkl", "2022/01/01");
     }
 
-    Commenting aComment = new Commenting(0, 1, 1, 1, "Ok", "");
+    Commenting aComment = new Commenting(0, 1,  1, "Ok", "");
     Commenting anotherComment = new Commenting();
 
     //  No ID for Find ID

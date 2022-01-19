@@ -50,7 +50,9 @@ main {
 /* ********* forms  ********* */
 
 #loginForm,
-#signUpForm {
+#signUpForm,
+#fakeForm,
+#fakeSignUp {
   width: 64%;
   height: 60%;
   border: solid 1px #ced4da;
@@ -63,7 +65,8 @@ main {
 
 /* ********* login form ********* */
 
-#signUpForm {
+#signUpForm,
+#fakeSignUp {
   height: 94%;
 }
 
@@ -76,9 +79,22 @@ main {
 
 #hideErrorMessage {
   display: none;
+  color: red;
 }
 
 #errorMessage {
   color: red;
   margin-top: 4vh;
+}
+
+/* ********* Error Messages ********* */
+
+#firstNameError,
+#lastNameError,
+#businessError,
+#userNameError,
+#passwordError,
+#roleError {
+  color: red;
+  display: none;
 }

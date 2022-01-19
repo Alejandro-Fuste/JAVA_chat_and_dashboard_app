@@ -37,7 +37,7 @@
         <!-- right section -->
         <section id="rightSection">
           <!-- form for logging in -->
-          <form id="loginForm">
+          <div id="fakeForm">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
                 >Username</label
@@ -47,30 +47,13 @@
                 class="form-control"
                 id="userName"
                 aria-describedby="emailHelp"
-<<<<<<< HEAD
-                required
-                minlength="5"
-                maxlength="20"
-=======
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
               />
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
                 >Password</label
               >
-<<<<<<< HEAD
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                required
-                minlength="8"
-                maxlength="30"
-              />
-=======
               <input type="password" class="form-control" id="password" />
->>>>>>> 757b3ba27dfad7161e6410be2a838f285a3f5811
             </div>
 
             <div class="mb-3">
@@ -93,14 +76,19 @@
               Don't have an account? <a href="signup.html">Sign Up</a>
             </div>
 
-            <button id="submitButton" type="submit" class="btn btn-primary">
+            <button
+              id="submitButton"
+              onclick="loginUser2()"
+              class="btn btn-primary"
+            >
               Submit
             </button>
             <p id="hideErrorMessage"></p>
-          </form>
+          </div>
         </section>
       </main>
     </div>
+    <!-- <button onclick="loginUser2()" class="btn btn-primary">Submit</button> -->
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
