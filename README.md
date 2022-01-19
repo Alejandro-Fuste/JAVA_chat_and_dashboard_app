@@ -2,8 +2,6 @@
 # JAVA_investing_app [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
-
-## Table of Contents
 - [Description](#description)
 
 - [Technologies Used](#technologies-used)
