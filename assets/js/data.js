@@ -194,19 +194,28 @@ const acceptPitchBusiness = (e) => {
   // get id
   let id = document.querySelector("#businessPitchButton");
   let pitchId = id.dataset.pitchid;
+  let data = { pitchId: parseInt(pitchId) };
 
   // get urls
   let url = "http://localhost:8080/";
 
   // fetch with patch method, success then, failure catch
-  let response = fetch(url + `accept/${pitchId}`, {
+  fetch(url + `accept/${pitchId}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
-  });
-  if (response.ok) {
-    alert("Accepted");
-  }
+  })
+    .then(checkFetch)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      alert("Accepted");
+    })
+    .catch((err) => {
+      // errorEl.style.display = "block";
+      console.log(err);
+    });
 };
 
 // dynamically rendered pitches
@@ -349,7 +358,7 @@ const renderPitchBusiness = (data) => {
       createButton.setAttribute("type", "button");
       createButton.setAttribute("class", "btn btn-primary");
       createButton.setAttribute("data-bs-toggle", "modal");
-      createButton.setAttribute("data-bs-target", "#pitchModal");
+      createButton.setAttribute("data-bs-target", "#acceptPitchModal");
       createButton.setAttribute("data-pitchId", c.pitchId);
       createButton.setAttribute("data-businessId", c.businessId);
       createButton.innerHTML = '<i class="fas fa-check"></i>';
