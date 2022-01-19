@@ -154,23 +154,23 @@ const pitchIdShark = (e) => {
 };
 
 // function for accepting pitch (shark)
-const makeOfferShark = (e) => {
-  e.preventDefault();
+const makeOfferShark = (data) => {
+  // e.preventDefault();
 
   // get id, amount, percentage
-  let id = parseInt(localStorage.getItem("pitchId"));
-  let amount = document.querySelector("#validationCustom02").value.trim();
-  let percent = document.querySelector("#validationCustom03").value.trim();
+  // let id = parseInt(localStorage.getItem("pitchId"));
+  // let amount = document.querySelector("#validationCustom02").value.trim();
+  // let percent = document.querySelector("#validationCustom03").value.trim();
 
   // success and error p tags
   let successEl = document.querySelector("#pitchSent");
   let errorEl = document.querySelector("#commentError");
 
-  let data = {
-    pitchId: id,
-    amount,
-    percentage: parseFloat(percent),
-  };
+  // let data = {
+  //   pitchId: id,
+  //   amount,
+  //   percentage: parseFloat(percent),
+  // };
 
   console.table(data);
 
@@ -469,4 +469,41 @@ function commentBusinessValidation() {
   } else {
     data.commentSection = commentSection;
   }
+}
+
+function offerSharkValidation() {
+  // get id, amount, percentage
+  let id = parseInt(localStorage.getItem("pitchId"));
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+
+  // error p tags
+  let errorAmountEl = document.querySelector("#invalid-feedback-amount");
+
+  let errorPercentEl = document.querySelector("#invalid-feedback-percent");
+
+  let data = {};
+
+  if (amount === "") {
+    console.log(amount);
+    errorAmountEl.style.dislay = "block";
+    alert("Please enter a valid amount");
+    return;
+  } else {
+    data.amount = amount;
+  }
+
+  if (percent === "") {
+    console.log(percent);
+    alert("Please enter a valid percent");
+    errorPercentEl.style.dislay = "block";
+    return;
+  } else {
+    data.percentage = parseFloat(percent);
+  }
+
+  data.pitchId = id;
+  console.table(data);
+
+  return data;
 }
