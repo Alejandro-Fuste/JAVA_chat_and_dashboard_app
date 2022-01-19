@@ -349,7 +349,7 @@ const renderPitchBusiness = (data) => {
       createButton.setAttribute("type", "button");
       createButton.setAttribute("class", "btn btn-primary");
       createButton.setAttribute("data-bs-toggle", "modal");
-      createButton.setAttribute("data-bs-target", "pitchModal");
+      createButton.setAttribute("data-bs-target", "#pitchModal");
       createButton.setAttribute("data-pitchId", c.pitchId);
       createButton.setAttribute("data-businessId", c.businessId);
       createButton.innerHTML = '<i class="fas fa-check"></i>';
