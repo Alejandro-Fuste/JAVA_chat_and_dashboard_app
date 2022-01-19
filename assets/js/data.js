@@ -157,22 +157,9 @@ const pitchIdShark = (e) => {
 const makeOfferShark = (data) => {
   // e.preventDefault();
 
-  // get id, amount, percentage
-  // let id = parseInt(localStorage.getItem("pitchId"));
-  // let amount = document.querySelector("#validationCustom02").value.trim();
-  // let percent = document.querySelector("#validationCustom03").value.trim();
-
   // success and error p tags
   let successEl = document.querySelector("#pitchSent");
   let errorEl = document.querySelector("#commentError");
-
-  // let data = {
-  //   pitchId: id,
-  //   amount,
-  //   percentage: parseFloat(percent),
-  // };
-
-  console.table(data);
 
   // get urls
   let url = "http://localhost:8080/offer";
@@ -192,7 +179,6 @@ const makeOfferShark = (data) => {
       return res.json();
     })
     .then((data) => {
-      console.log(data);
       successEl.style.display = "block";
     })
     .catch((err) => {
