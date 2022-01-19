@@ -162,16 +162,20 @@ const makeOfferShark = (e) => {
   let amount = document.querySelector("#validationCustom02").value.trim();
   let percent = document.querySelector("#validationCustom03").value.trim();
 
+  // success and error p tags
+  let successEl = document.querySelector("#pitchSent");
+  let errorEl = document.querySelector("#commentError");
+
   let data = {
     pitchId: id,
     amount,
-    percent,
+    percentage: parseFloat(percent),
   };
 
   console.table(data);
 
   // get urls
-  let url = "http://localhost:8080/pitch";
+  let url = "http://localhost:8080/offer";
 
   // fetch with patch method, success then, failure catch
   fetch(url, {
