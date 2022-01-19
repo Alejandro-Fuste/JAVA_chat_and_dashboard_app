@@ -79,6 +79,7 @@ main {
 
 #hideErrorMessage {
   display: none;
+  color: red;
 }
 
 #errorMessage {

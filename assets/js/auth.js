@@ -22,6 +22,13 @@ function login(data) {
   }
 }
 
+function checkFetch(response) {
+  if (!response.ok) {
+    throw Error(`${response.statusText} - ${response.url}`);
+  }
+  return response;
+}
+
 const getToken = () => {
   //   Retrieves the user token from localStorage
   return JSON.parse(localStorage.getItem("pseudoToken"));
@@ -104,7 +111,9 @@ const createUser = (e) => {
 
   // url
 
-  let url = "http://localhost:8080/business/create";
+  let url = "http://localhost:8080/";
+
+  role === "Business" ? (url += `business/create`) : (url += `/shark`);
 
   // use fetch to send sign up request to server
   fetch(url, {
@@ -116,6 +125,7 @@ const createUser = (e) => {
     },
     body: JSON.stringify(data),
   })
+    .then(checkFetch)
     .then((response) => response.json())
     .then((location.href = "home.html"))
     .catch((err) => {

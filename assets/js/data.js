@@ -154,7 +154,7 @@ const pitchIdShark = (e) => {
 };
 
 // function for accepting pitch (shark)
-const acceptPitchShark = (e) => {
+const makeOfferShark = (e) => {
   e.preventDefault();
 
   // get id, amount, percentage
@@ -171,7 +171,7 @@ const acceptPitchShark = (e) => {
   console.table(data);
 
   // get urls
-    let url = "http://localhost:8080//pitch;
+  let url = "http://localhost:8080/pitch";
 
   // fetch with patch method, success then, failure catch
 };
@@ -242,7 +242,7 @@ const renderPitches = (data) => {
     createButton.setAttribute("id", "pitchButtonShark");
     createButton.setAttribute("class", "btn btn-primary");
     createButton.setAttribute("data-bs-toggle", "modal");
-    createButton.setAttribute("data-bs-target", "pitchModal");
+    createButton.setAttribute("data-bs-target", "#pitchModal");
     createButton.setAttribute("data-pitchId", c.pitchId);
     createButton.setAttribute("data-businessId", c.businessId);
     createButton.textContent = "+";
