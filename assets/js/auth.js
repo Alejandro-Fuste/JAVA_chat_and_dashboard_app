@@ -44,8 +44,6 @@ async function loginUser2() {
     password: userPassword,
   };
 
-  //   let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
-
   let url = "http://localhost:8080/";
 
   //   get url depending the role the user selects
@@ -82,20 +80,18 @@ const logout = () => {
 const createUser = (e) => {
   e.preventDefault();
 
-  signupValidation();
-
   // error message selector
   const errorEl = document.querySelector("#hideErrorMessage");
 
   // Get first name, last name, business name, user name, password, and role from inputs
-  let firstName = document.querySelector("#firstName").value.trim();
-  let lastName = document.querySelector("#lastName").value.trim();
-  let businessName = document.querySelector("#businessName").value.trim();
-  let userName = document.querySelector("#userName").value.trim();
-  let password = document.querySelector("#signupPassword").value.trim();
-  let role = document.querySelector("#role").value.trim();
+  // let firstName = document.querySelector("#firstName").value.trim();
+  // let lastName = document.querySelector("#lastName").value.trim();
+  // let businessName = document.querySelector("#businessName").value.trim();
+  // let userName = document.querySelector("#userName").value.trim();
+  // let password = document.querySelector("#signupPassword").value.trim();
+  // let role = document.querySelector("#role").value.trim();
 
-  let data = [firstName, lastName, businessName, userName, password, role];
+  let data = signupValidation();
 
   // let createData = {
   //   firstName,
@@ -106,11 +102,9 @@ const createUser = (e) => {
   //   role,
   // };
 
-  // urls
-  let url =
-    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/business/create";
+  // url
 
-  // let url = "http://localhost:8080/business/create";
+  let url = "http://localhost:8080/business/create";
 
   // use fetch to send sign up request to server
   fetch(url, {

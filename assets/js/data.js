@@ -35,9 +35,7 @@ const sendSharkComment = (e) => {
 
   let data = commentSharkValidation();
 
-  // get url depending the role the user selects
-  // let url =
-  //   "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
+  // url
 
   let url = "http://localhost:8080/commenting/create";
 
@@ -68,8 +66,6 @@ const sendSharkComment = (e) => {
 const sendBusinessComment = (e) => {
   e.preventDefault();
 
-  commentValidation();
-
   let errorEl = document.querySelector("#commentError");
   let successEl = document.querySelector("#commentSent");
 
@@ -78,17 +74,17 @@ const sendBusinessComment = (e) => {
   let comment = document.querySelector("#commentBusiness").value.trim();
   let bizId = JSON.parse(localStorage.getItem("pseudoToken"));
 
-  let data = {
-    reciepient,
-    date,
-    comment,
-    businessId: bizId.businessId,
-  };
+  let data = commentValidation();
+
+  // let data = {
+  //   reciepient,
+  //   date,
+  //   comment,
+  //   businessId: bizId.businessId,
+  // };
 
   // url
-  let url =
-    "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/commenting/create";
-  // let url = "http://localhost:8080/commenting/create";
+  let url = "http://localhost:8080/commenting/create";
 
   fetch(url, {
     method: "POST",
@@ -99,12 +95,17 @@ const sendBusinessComment = (e) => {
     },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
+    .then(checkFetch)
+    .then((res) => {
+      return res.json();
+    })
     .then((data) => {
+      console.log(data);
       successEl.style.display = "block";
     })
     .catch((err) => {
       errorEl.style.display = "block";
+      console.log(err);
     });
 };
 
@@ -128,8 +129,7 @@ const createPitchBusiness = (e) => {
   };
 
   // urls
-  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/";
-  //   let url = "http://localhost:8080/;
+  let url = "http://localhost:8080/";
 
   fetch(url, {
     method: "POST",
@@ -171,8 +171,7 @@ const acceptPitchShark = (e) => {
   console.table(data);
 
   // get urls
-  let url = "https://58e44f55-bd3b-4e4f-9f73-6396bd1d959b.mock.pstmn.io/pitch";
-  //   let url = "http://localhost:8080//pitch;
+    let url = "http://localhost:8080//pitch;
 
   // fetch with patch method, success then, failure catch
 };
