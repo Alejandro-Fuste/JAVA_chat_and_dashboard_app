@@ -50,4 +50,3 @@ public class CommentingServicesImp implements CommentingServices {
         return this.commentingDAO.getAllComments();
     }
 }
-

@@ -12,7 +12,7 @@ function login(data) {
     case "business":
       location.href = "business.html";
       break;
-    case "shark":
+    case "Shark":
       location.href = "shark.html";
       break;
     default:
@@ -159,9 +159,9 @@ function signupValidation() {
     lastName.length == 0 ||
     businessName.length == 0 ||
     username.length == 0 ||
-    password.length == 0 ||
-    role != "Shark" ||
-    role != "Business"
+    password.length == 0
+    // role != "Shark" ||
+    // role != "Business"
   ) {
     alert("Please enter all values!");
     return;

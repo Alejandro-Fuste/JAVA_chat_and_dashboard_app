@@ -19,8 +19,8 @@ public class BusinessServicesImp implements BusinessServices {
         List<Business> businesses = this.businessDAO.getAllBusinesses();
         try {
             for (Business _business : businesses) {
-            if (Objects.equals(_business.getUsername(), business.getUsername()))
-                throw new UsernameAlreadyExists("That username is already taken! Please try again.");
+                if (Objects.equals(_business.getUsername(), business.getUsername()))
+                    throw new UsernameAlreadyExists("That username is already taken! Please try again.");
             }
             if (business.getRole().length() > 10 || business.getLastName().length() > 20 || business.getFirstName().length() > 20 || business.getUsername().length() > 30 || business.getPassword().length() > 30 || business.getBusinessName().length() > 30) {
                 throw new TooLong("Your input is too many characters");

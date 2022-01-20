@@ -14,14 +14,17 @@ Feature: Shark should be able to interact with potential investments
 
   Scenario: Shark logs in to their account
     Given The user is on the home page
-    When The user enters their username
-    When The user enters their password
+    When The user enters their username login
+    When The user enters their password login
+    When The user clicks on drop down list
+    When The user clicks on Shark
     When The user clicks on the login button
     Then The shark is redirected to the shark page
 
   Scenario: Shark can make a comment
     Given The shark is on the shark page
     When The shark clicks on the comment button
+    When The shark comment modal is displayed
     When The shark clicks on drop down list
     When The shark clicks on the recipient
     When The shark enters a date

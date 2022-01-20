@@ -55,7 +55,7 @@ Feature: The system should be able to handle exceptions
 
   Scenario: The system should reject incorrect data types when creating an offer
     Given The shark is on the shark page
-    When The shark enters the pitch ID
+#    When The shark enters the pitch ID
     When The shark enters non-numeric characters for an amount
     When The shark enters a percentage
     When The shark clicks on the submit offer button

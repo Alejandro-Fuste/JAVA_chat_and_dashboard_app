@@ -17,6 +17,9 @@ public class SharkHomePage {
     @FindBy(id = "commentButtonShark")
     public WebElement commentButtonShark;
 
+    @FindBy(id = "commentModal")
+    public WebElement commentModalShark;
+
     @FindBy(id = "reciepientfromShark")
     public WebElement commentDropdown;
 

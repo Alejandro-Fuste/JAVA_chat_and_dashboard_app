@@ -12,7 +12,7 @@ public class SharkDAOImplemented implements SharkDAO{
 
     @Override
     public Shark createSharkProfile(Shark shark) {
-        try (Connection connection = ConnectionFile.createConnection()) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "insert into shark values(default, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, shark.getFirstName());
@@ -37,7 +37,7 @@ public class SharkDAOImplemented implements SharkDAO{
 
     @Override
     public Shark getSharkByUsername(String username) {
-        try (Connection connection = ConnectionFile.createConnection()) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from shark where username = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
@@ -65,7 +65,7 @@ public class SharkDAOImplemented implements SharkDAO{
 
     @Override
     public List<Shark> getAllSharks() {
-        try (Connection connection = ConnectionFile.createConnection()) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from shark";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);

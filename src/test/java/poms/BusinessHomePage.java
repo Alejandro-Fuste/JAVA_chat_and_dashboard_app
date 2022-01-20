@@ -16,7 +16,7 @@ public class BusinessHomePage {
     }
 
     //  ------------------------------    LOGOUT    -----------------------------------
-    @FindBy(id = "logoutEl")
+    @FindBy(id = "businessLogoutEl")
     public WebElement businessLogoutButton;
 
 //    @FindBy(id = "")
@@ -28,6 +28,9 @@ public class BusinessHomePage {
 
     @FindBy(id = "commentButtonBiz")
     public WebElement commentButton;
+
+    @FindBy(id = "commentModal")
+    public WebElement commentModal;
 
     @FindBy(id = "reciepientfromBiz")
     public WebElement downArrow;
@@ -44,13 +47,19 @@ public class BusinessHomePage {
     @FindBy(id = "commentSent")
     public WebElement commentPostSuccessMessage;
 
+    @FindBy(id = "businessCommentModalClose")
+    public WebElement businessCommentModalClose;
+
     @FindBy(id = "submitButton")
     public WebElement businessLoginButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "businessPitchButton")
+    public WebElement openAcceptModal;
+
+    @FindBy(xpath = "/html/body/div[1]/main/section/article[2]/div[2]/div[1]/div/div[1]/button")
     public WebElement acceptBidButton;
 
-    @FindBy(id = "")
+    @FindBy(id = "Accepted")
     public WebElement acceptPitchMessage;
 
 
