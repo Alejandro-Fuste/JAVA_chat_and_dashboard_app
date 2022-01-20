@@ -7,22 +7,65 @@
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="added shark tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/business.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shark.html" beforeDir="false" afterPath="$PROJECT_DIR$/shark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/business.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/business.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shark.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/business.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/business.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/shark.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/BusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/CommentingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/CommentingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/PitchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/PitchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/SharkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/controllers/SharkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/BusinessNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/BusinessNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CommentNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CommentNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateBusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateBusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateCommentException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/CreateCommentException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/IncorrectDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/IncorrectDataType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NoValueException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NoValueException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotEnoughChars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotEnoughChars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotValidDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NotValidDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NullValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/NullValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyLetters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyLetters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/OnlyNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PasswordTooShort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PasswordTooShort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PitchNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/PitchNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/SharkNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/SharkNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooLong.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooLong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooManyChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/TooManyChar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameAlreadyExists.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameAlreadyExists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameOrPasswordError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameOrPasswordError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameOrPasswordIncorrect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameOrPasswordIncorrect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTaken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTaken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTooShort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/UsernameTooShort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/ValueTooLarge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/customexceptions/ValueTooLarge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/BusinessDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/BusinessDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/PitchDAOImplemented.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/SharkDAOImplemented.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Commenting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Commenting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/NewPitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/NewPitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Offer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Pitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Pitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/entities/Shark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/BusinessServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/BusinessServicesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/CommentingServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/CommentingServicesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/PitchServiceImplemented.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/service/SharkServiceImplemented.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/utility/ConnectionFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/utility/ConnectionFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/utility/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/utility/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businessservicestests/BusinessServicesTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingservicetests/CommentingServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/commentingtests/CommentingDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchDAOTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/pitchtests/PitchServiceTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/poms/BusinessHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/BusinessHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
     </list>
@@ -58,11 +101,11 @@
   <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
+        <env name="HOST" value="database-1.clcj8berpakz.us-east-1.rds.amazonaws.com" />
         <env name="DB" value="postgres" />
-        <env name="PASSWORD" value="Udonlamei31" />
+        <env name="PASSWORD" value="Awsrdsroot" />
         <env name="PORT" value="5432" />
-        <env name="USER" value="Virtud87" />
+        <env name="USER" value="root" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.investing_app.app.App" />
       <module name="project2" />
@@ -126,7 +169,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
       <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="HOST" value="database-1.clcj8berpakz.us-east-1.rds.amazonaws.com" />
+        <env name="DB" value="postgres" />
+        <env name="PASSWORD" value="Awsrdsroot" />
+        <env name="PORT" value="5432" />
+        <env name="USER" value="root" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,7 +263,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added shark tests" />
