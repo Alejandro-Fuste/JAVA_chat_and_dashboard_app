@@ -12,7 +12,7 @@ function login(data) {
     case "business":
       location.href = "business.html";
       break;
-    case "shark":
+    case "Shark":
       location.href = "shark.html";
       break;
     default:

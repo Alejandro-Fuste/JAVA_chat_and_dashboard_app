@@ -24,15 +24,18 @@ Feature:  Business Logging
   Scenario: As a business, I want to leave a comment with a shark on a pitch
     Given The business is on the business page
     When The business clicks on the comment button
-    When The business clicks on the down arrow
+    When The comment modal is displayed
+    When The business clicks on drop down list
     When The business clicks on the recipient
     When The business enters a date
     When The business enters a comment
     When The business clicks send
-    Then A message saying comment post was successful appears
+    When A message saying comment post was successful appears
+    Then The business clicks the close button
 
   Scenario:  As a business, I want to accept new bids
     Given The business is on the business page
+    When The business clicks on the open accept modal
     When The business clicks the accept bid button
     Then Message appears saying Accepted
 

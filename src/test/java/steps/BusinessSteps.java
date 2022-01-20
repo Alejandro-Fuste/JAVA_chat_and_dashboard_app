@@ -67,6 +67,11 @@ public class BusinessSteps {
         TestRunner.driver.get("http://127.0.0.1:5500/home.html");
     }
 
+    @When("The user enters their login username")
+    public void the_user_enters_their_login_username() {
+        TestRunner.homePage.usernameInput.sendKeys("Wayne100");
+    }
+
     @When("The user enters their login password")
     public void the_user_enters_their_login_password() {
         TestRunner.homePage.loginPasswordInput.sendKeys("ImBatman");
@@ -109,8 +114,13 @@ public class BusinessSteps {
         TestRunner.businessHomePage.commentButton.click();
     }
 
-    @When("The business clicks on the down arrow")
-    public void the_business_clicks_on_the_down_arrow() {
+    @When("The comment modal is displayed")
+    public void the_comment_modal_is_displayed() {
+        TestRunner.businessHomePage.commentModal.isDisplayed();
+    }
+
+    @When("The business clicks on drop down list")
+    public void the_business_clicks_on_drop_down_list() {
         TestRunner.businessHomePage.downArrow.click();
     }
 
@@ -134,12 +144,22 @@ public class BusinessSteps {
         TestRunner.businessHomePage.postCommentButton.click();
     }
 
-    @Then("A message saying comment post was successful appears")
+    @When("A message saying comment post was successful appears")
     public void a_message_saying_post_was_successful_appears() {
         Assert.assertEquals(TestRunner.businessHomePage.commentPostSuccessMessage.getText(),
                 "Comment was successfully posted");
     }
+
+    @Then("The business clicks the close button")
+    public void the_business_clicks_the_close_button() {
+        TestRunner.businessHomePage.businessCommentModalClose.click();
+    }
 //    ----------------------- Accept offer ----------------------------------
+
+    @When("The business clicks on the open accept modal")
+    public void the_business_clicks_on_the_open_accept_modal() {
+        TestRunner.businessHomePage.openAcceptModal.click();
+    }
 
     @When("The business clicks the accept bid button")
     public void the_business_clicks_the_accept_bid_button() {

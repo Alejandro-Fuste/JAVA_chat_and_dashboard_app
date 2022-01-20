@@ -68,23 +68,21 @@ public class SharkSteps {
 //        TestRunner.driver.get("http://127.0.0.1:5500/home.html");
 //    }
 //
-//    @When("The user enters their username")
-//    public void the_user_enters_their_username_login() {
-//        TestRunner.homePage.loginUsernameInput.sendKeys("MrWonderful");
-//    }
+    @When("The user enters their username login")
+    public void the_user_enters_their_username_login() {
+        TestRunner.homePage.loginUsernameInput.sendKeys("texasDan");
+    }
 
-//    @When("The user enters their password")
-//    public void the_user_enters_their_password_login() {
-//        TestRunner.homePage.loginPasswordInput.sendKeys("Wonders1");
-//    }
+    @When("The user enters their password login")
+    public void the_user_enters_their_password_login() {
+        TestRunner.homePage.loginPasswordInput.sendKeys("veritas1234");
+    }
 
-//    @When("The user clicks on the login button")
-//    public void the_user_clicks_on_the_login_button() {
-//        TestRunner.homePage.loginButton.click();
-//    }
+
 
     @Then("The shark is redirected to the shark page")
-    public void the_shark_is_redirected_to_the_shark_page() {
+    public void the_shark_is_redirected_to_the_shark_page() throws InterruptedException {
+        Thread.sleep(1000);
         String title = TestRunner.driver.getTitle();
         Assert.assertEquals(title, "Shark");
     }
@@ -94,12 +92,19 @@ public class SharkSteps {
     @Given("The shark is on the shark page")
     public void the_shark_is_on_the_shark_page() {
         TestRunner.driver.get("http://127.0.0.1:5500/shark");
+//        http://localhost:63342/JAVA_investing_app/project2/shark.html
     }
 
     // Make comment
     @When("The shark clicks on the comment button")
-    public void the_shark_clicks_on_the_comment_button() {
+    public void the_shark_clicks_on_the_comment_button() throws InterruptedException {
+        Thread.sleep(1000);
         TestRunner.sharkHomePage.commentButtonShark.click();
+    }
+
+    @When("The shark comment modal is displayed")
+    public void the_shark_comment_modal_is_displayed() {
+        TestRunner.sharkHomePage.commentModalShark.isDisplayed();
     }
 
     @When("The shark clicks on drop down list")
