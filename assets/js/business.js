@@ -4,6 +4,7 @@ const nameEl = document.querySelector("#headerFullName");
 const profileNameEl = document.querySelector("#fullName");
 const businessNameEl = document.querySelector("#businessName");
 const pitchButtonEl = document.querySelector("#submitPitchButton");
+const acceptPitchButton = document.querySelector("#acceptPitchButton");
 const sendCommentBusiness = document.querySelector("#sendButtonBiz");
 
 // Add name to element
@@ -32,6 +33,9 @@ logoutButtonEl.addEventListener("click", logout);
 
 // Create Pitch event listener
 pitchButtonEl.addEventListener("click", createPitchBusiness);
+
+// Accept Pitch Button
+acceptPitchButton.addEventListener("click", acceptPitchBusiness);
 
 // Send comment event listener
 sendCommentBusiness.addEventListener("click", sendBusinessComment);
