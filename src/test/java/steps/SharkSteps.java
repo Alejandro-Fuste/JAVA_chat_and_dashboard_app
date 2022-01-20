@@ -90,8 +90,8 @@ public class SharkSteps {
 
     // SHARK HOME PAGE
     @Given("The shark is on the shark page")
-    public void the_shark_is_on_the_shark_page() throws InterruptedException {
-        TestRunner.driver.get("http://127.0.0.1:5500/shark");
+    public void the_shark_is_on_the_shark_page(){
+        TestRunner.driver.get("/Users/dlanderos/JAVA_investing_app/shark.html");
     }
 
     // Make comment

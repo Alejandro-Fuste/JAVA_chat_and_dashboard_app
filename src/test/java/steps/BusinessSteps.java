@@ -65,7 +65,7 @@ public class BusinessSteps {
     // ---------------------------Sign In  DONE ------------------------------------
     @Given("The user is on the home page")
     public void the_user_is_on_the_home_page() {
-        TestRunner.driver.get("http://127.0.0.1:5500/home.html");
+        TestRunner.driver.get("/Users/dlanderos/JAVA_investing_app/home.html");
     }
 
     @When("The user enters their login username")
@@ -194,7 +194,7 @@ public class BusinessSteps {
 
     @Given("The business is on the business home page")
     public void the_business_is_on_the_business_home_page() {
-        TestRunner.driver.get("http://127.0.0.1:5500/business.html");
+        TestRunner.driver.get("/Users/dlanderos/JAVA_investing_app/business.html");
     }
 
     @When("The business clicks the create pitch button")

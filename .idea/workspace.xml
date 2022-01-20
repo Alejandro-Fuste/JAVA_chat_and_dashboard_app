@@ -6,23 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="added shark tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/business.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/BusinessHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/chromedriver" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/business.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/business.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/exceptions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/exceptions.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/business.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/business.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/exceptions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/exceptions.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/BusinessHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/BusinessHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
     </list>
@@ -48,9 +38,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -206,8 +199,8 @@
       <list>
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Cucumber Java.Feature: exceptions" />
         <item itemvalue="Application.DatabaseConnection" />
+        <item itemvalue="Cucumber Java.Feature: exceptions" />
         <item itemvalue="TestNG.BusinessServicesTests" />
       </list>
     </recent_temporary>
