@@ -17,10 +17,6 @@ public class HomePage {
 //    @FindBy(id = "")
 //    public WebElement newBusinessProfileButton;
 
-
-    @FindBy(id = "role")
-    public WebElement dropDownList;
-
     @FindBy(css = "[value='Shark']")
     public WebElement sharkOption;
 
@@ -37,8 +33,11 @@ public class HomePage {
     public WebElement usernameInput;
 
     //  Dont see PW
-    @FindBy(id = "password")
+    @FindBy(id = "signupPassword")
     public WebElement passwordInput;
+
+    @FindBy(id = "roleSignIn")
+    public WebElement dropDownList;
 
     @FindBy(id = "submitSignUpButton")
     public WebElement createBusinessProfileButton;
@@ -61,6 +60,8 @@ public class HomePage {
 
     @FindBy(id = "password")
     public WebElement loginPasswordInput;
+
+
 
 
 

@@ -14,7 +14,7 @@ import poms.SharkHomePage;
 import java.io.File;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", glue = "runner", plugin = {"pretty", "html:src/test/resourses/reports/html-reports.html"})
+@CucumberOptions(features = "classpath:features", glue = "steps", plugin = {"pretty", "html:src/test/resourses/reports/html-reports.html"})
 public class TestRunner {
     public static WebDriver driver;
     public static HomePage homePage;

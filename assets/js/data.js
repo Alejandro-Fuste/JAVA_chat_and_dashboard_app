@@ -306,7 +306,7 @@ const renderPitches = (data) => {
     createButton.setAttribute("id", "pitchButtonShark");
     createButton.setAttribute("class", "btn btn-primary");
     createButton.setAttribute("data-bs-toggle", "modal");
-    createButton.setAttribute("data-bs-target", "#pitchModal");
+    createButton.setAttribute("data-bs-target", "#pitchModalShark");
     createButton.setAttribute("data-pitchId", c.pitchId);
     createButton.setAttribute("data-businessId", c.businessId);
     createButton.textContent = "+";
