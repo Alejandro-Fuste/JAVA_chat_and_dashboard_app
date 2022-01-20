@@ -1,6 +1,7 @@
 package com.investing_app.dao;
 
 import com.investing_app.entities.Shark;
+import com.investing_app.utility.ConnectionFile;
 import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;

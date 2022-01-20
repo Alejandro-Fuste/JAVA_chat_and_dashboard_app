@@ -174,26 +174,50 @@ const makeOfferShark = (e) => {
   let url = "http://localhost:8080/pitch";
 
   // fetch with patch method, success then, failure catch
+  fetch(url, {
+    method: "PATCH",
+    mode: "cors",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then(checkFetch)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      successEl.style.display = "block";
+    })
+    .catch((err) => {
+      errorEl.style.display = "block";
+      console.log(err);
+    });
 };
 
 // function for accepting pitch (business)
-// const acceptPitchBusiness = (e) => {
-//   e.preventDefault();
-//   alert("pitch accepted clicked");
+const acceptPitchBusiness = (e) => {
+  e.preventDefault();
 
-//   // get id, amount, percentage
+  // get id
+  let id = document.querySelector("#businessPitchButton");
+  let pitchId = id.dataset.pitchid;
 
-//   // get urls
+  // get urls
+  let url = "http://localhost:8080/";
 
-//   // fetch with patch method, success then, failure catch
-// };
-
-async function acceptPitch(pitchId) {
-  let response = await fetch(url + `accept/${pitchId}`, {method: "PATCH", headers: {"Content-Type": "application/json"}});
+  // fetch with patch method, success then, failure catch
+  let response = fetch(url + `accept/${pitchId}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
   if (response.ok) {
     alert("Accepted");
   }
-}
+};
 
 // dynamically rendered pitches
 const renderPitches = (data) => {

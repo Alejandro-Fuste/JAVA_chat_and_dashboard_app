@@ -14,7 +14,7 @@ public class CommentingDAOTest {
 
     @Test
     void testCreateComment() {
-        Commenting newComment = new Commenting(0, 1, 1, "Trial", "2021/01/01");
+        Commenting newComment = new Commenting(0,1, 1, "Trial", "2021/01/01");
         Commenting returnedComment = commentingDAO.createComment(newComment);
         Assert.assertTrue(returnedComment.getCommentId() != 0);
     }

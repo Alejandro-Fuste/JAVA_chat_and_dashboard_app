@@ -14,7 +14,7 @@ public class BusinessDAOTest {
 
     @Test
     void testCreateBusiness() {
-        Business newBusiness = new Business(0, "Tim", "Tebow", "QB Training Inc", "UN", "PW", "business");
+        Business newBusiness = new Business(0, "Tim", "Tebow", "QB Training In", "Usernames4", "Passwords", "business");
         Business returnedBusiness = businessDAO.createBusiness(newBusiness);
         Assert.assertTrue(returnedBusiness.getBusinessNumber() != 0);
     }
@@ -40,11 +40,5 @@ public class BusinessDAOTest {
         Business newBusiness = businessDAO.getBusinessByUsername("Wayne100");
         System.out.println("new business is " + newBusiness);
         Assert.assertEquals(newBusiness.getUsername(), "Wayne100");
-    }
-
-    @Test
-    void checkIfUsernameAlreadyExists() {
-//        Business newBusiness = businessDAO.("Wayne100");
-//        Assert.assertEquals(newBusiness.);
     }
 }

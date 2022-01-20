@@ -1,6 +1,6 @@
-let url = "http://localhost:8080/";
-
 function login(data) {
+  //   e.preventDefault();
+  console.log(data);
   const errorEl = document.querySelector("#hideErrorMessage");
 
   // send data retrieved from database to localStorage
@@ -9,10 +9,10 @@ function login(data) {
   // redirect user base the role property in data
   let expr = data.role;
   switch (expr) {
-    case "Business":
+    case "business":
       location.href = "business.html";
       break;
-    case "Shark":
+    case "shark":
       location.href = "shark.html";
       break;
     default:
@@ -22,6 +22,13 @@ function login(data) {
   }
 }
 
+function checkFetch(response) {
+  if (!response.ok) {
+    throw Error(`${response.statusText} - ${response.url}`);
+  }
+  return response;
+}
+
 const getToken = () => {
   //   Retrieves the user token from localStorage
   return JSON.parse(localStorage.getItem("pseudoToken"));
@@ -29,24 +36,28 @@ const getToken = () => {
 
 async function loginUser2() {
   // error message selector
-  let errorEl = document.querySelector("#hideErrorMessage");
+  const errorEl = document.querySelector("#hideErrorMessage");
 
   // Get username, password, and role from inputs
   let userName = document.querySelector("#userName").value.trim();
   let userPassword = document.querySelector("#password").value.trim();
   let role = document.querySelector("#roleSignIn").value;
 
+  // let arrayData = [userName, userPassword, role];
+
   // create object for request body
   let loginData = {
     username: userName,
-    password: userPassword
+    password: userPassword,
   };
 
-  // get url depending the role the user selects
+  let url = "http://localhost:8080/";
+
+  //   get url depending the role the user selects
   role === "Business" ? (url += `business/login`) : (url += `shark/login`);
 
   // use fetch to send login request to server
-  let response = await fetch(url, {
+  fetch(url, {
     method: "POST",
     mode: "cors",
     headers: {
@@ -55,15 +66,14 @@ async function loginUser2() {
     },
     body: JSON.stringify(loginData),
   })
-  let body = await response.json();
-  console.log(response.status);
-  if (response.status === 200) {
-    login(body);
-  }
-  else {
-    errorEl.setAttribute("id", "errorMessage");
-    errorEl.textContent = err;
-  }
+    .then((response) => response.json())
+    .then((data) => {
+      login(data);
+    })
+    .catch((err) => {
+      errorEl.setAttribute("id", "errorMessage");
+      errorEl.textContent = err;
+    });
 }
 
 const logout = () => {
@@ -82,7 +92,7 @@ const createUser = (e) => {
   const errorEl = document.querySelector("#hideErrorMessage");
   let role = document.querySelector("#roleSignIn").value.trim();
   let data = signupValidation();
-  
+
   if (data === "undefined") {
     errorEl.style.display = "block";
     signUpButtonEl.disabled = true;
@@ -101,7 +111,7 @@ const createUser = (e) => {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
   })
     .then(checkFetch)
     .then((response) => response.json())
@@ -111,13 +121,6 @@ const createUser = (e) => {
       console.log(err);
     });
 };
-
-function checkFetch(response) {
-  if (!response.ok) {
-    throw Error(`${response.statusText} - ${response.url}`);
-  }
-  return response;
-}
 
 // ----------------- SIGNUP VALIDATION-------------------
 

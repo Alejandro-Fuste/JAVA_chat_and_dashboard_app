@@ -35,7 +35,7 @@ sharkLogoutButton.addEventListener("click", logout);
 sendCommentShark.addEventListener("click", sendSharkComment);
 
 // shark offer event listener
-sendPitchOffer.addEventListener("click", acceptPitchShark);
+sendPitchOffer.addEventListener("click", makeOfferShark);
 
 pitchModalButton.addEventListener("click", pitchIdShark);
 
