@@ -113,40 +113,74 @@ const sendBusinessComment = (e) => {
 const createPitchBusiness = (e) => {
   e.preventDefault();
 
-  let errorEl = document.querySelector("#commentError");
-  let successEl = document.querySelector("#pitchCreated");
+  let errorPitchEl = document.querySelector("#pitchCommentError");
+  let successPitchEl = document.querySelector("#pitchCreatedSuccess");
 
-  let date = document.querySelector("#validationCustom01").value.trim();
-  let amount = document.querySelector("#validationCustom02").value.trim();
-  let percent = document.querySelector("#validationCustom03").value.trim();
-  let pitchText = document.querySelector("#validationTextarea").value.trim();
+  // let data = {
+  //   businessId,
+  //   businessName,
+  //   creationDate: date,
+  //   pitch: pitchText,
+  //   amount: parseFloat(amount),
+  //   percentage: parseFloat(percent),
+  // };
+  let url = "http://localhost:8080/pitch";
 
-  let data = {
-    date,
-    amount,
-    percent,
-    pitchText,
-  };
+  let data = pitchCreateBusinessValidation();
+
+  if (
+    data.businessId === undefined ||
+    data.businessName === undefined ||
+    data.creationDate === undefined ||
+    data.pitch === undefined ||
+    data.amount === undefined ||
+    data.percentage === undefined
+  ) {
+    errorPitchEl.style.display = "block";
+    return;
+  } else {
+    fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(checkFetch)
+      .then((response) => response.json())
+      .then((data) => {
+        successPitchEl.style.display = "block";
+        console.log(data);
+      })
+      .catch((err) => {
+        errorPitchEl.style.display = "block";
+        console.log(err);
+      });
+  }
+
+  // fetch(url, {
+  //   method: "POST",
+  //   mode: "cors",
+  //   headers: {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(data),
+  // })
+  //   .then(checkFetch)
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     successPitchEl.style.display = "block";
+  //     console.log(data);
+  //   })
+  //   .catch((err) => {
+  //     errorPitchEl.style.display = "block";
+  //     console.log(err);
+  //   });
 
   // urls
-  let url = "http://localhost:8080/";
-
-  fetch(url, {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      successEl.style.display = "block";
-    })
-    .catch((err) => {
-      errorEl.style.display = "block";
-    });
 };
 
 const pitchIdShark = (e) => {
@@ -154,24 +188,15 @@ const pitchIdShark = (e) => {
 };
 
 // function for accepting pitch (shark)
-const makeOfferShark = (e) => {
-  e.preventDefault();
+const makeOfferShark = (data) => {
+  // e.preventDefault();
 
-  // get id, amount, percentage
-  let id = parseInt(localStorage.getItem("pitchId"));
-  let amount = document.querySelector("#validationCustom02").value.trim();
-  let percent = document.querySelector("#validationCustom03").value.trim();
-
-  let data = {
-    pitchId: id,
-    amount,
-    percent,
-  };
-
-  console.table(data);
+  // success and error p tags
+  let successEl = document.querySelector("#pitchSent");
+  let errorEl = document.querySelector("#commentError");
 
   // get urls
-  let url = "http://localhost:8080/pitch";
+  let url = "http://localhost:8080/offer";
 
   // fetch with patch method, success then, failure catch
   fetch(url, {
@@ -188,7 +213,6 @@ const makeOfferShark = (e) => {
       return res.json();
     })
     .then((data) => {
-      console.log(data);
       successEl.style.display = "block";
     })
     .catch((err) => {
@@ -204,19 +228,28 @@ const acceptPitchBusiness = (e) => {
   // get id
   let id = document.querySelector("#businessPitchButton");
   let pitchId = id.dataset.pitchid;
+  let data = { pitchId: parseInt(pitchId) };
 
   // get urls
   let url = "http://localhost:8080/";
 
   // fetch with patch method, success then, failure catch
-  let response = fetch(url + `accept/${pitchId}`, {
+  fetch(url + `accept/${pitchId}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
-  });
-  if (response.ok) {
-    alert("Accepted");
-  }
+  })
+    .then(checkFetch)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      alert("Accepted");
+    })
+    .catch((err) => {
+      // errorEl.style.display = "block";
+      console.log(err);
+    });
 };
 
 // dynamically rendered pitches
@@ -359,7 +392,7 @@ const renderPitchBusiness = (data) => {
       createButton.setAttribute("type", "button");
       createButton.setAttribute("class", "btn btn-primary");
       createButton.setAttribute("data-bs-toggle", "modal");
-      createButton.setAttribute("data-bs-target", "pitchModal");
+      createButton.setAttribute("data-bs-target", "#acceptPitchModal");
       createButton.setAttribute("data-pitchId", c.pitchId);
       createButton.setAttribute("data-businessId", c.businessId);
       createButton.innerHTML = '<i class="fas fa-check"></i>';
@@ -465,4 +498,88 @@ function commentBusinessValidation() {
   } else {
     data.commentSection = commentSection;
   }
+}
+
+function offerSharkValidation() {
+  // get id, amount, percentage
+  let id = parseInt(localStorage.getItem("pitchId"));
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+
+  // error p tags
+  let errorAmountEl = document.querySelector("#invalid-feedback-amount");
+
+  let errorPercentEl = document.querySelector("#invalid-feedback-percent");
+
+  let data = {};
+
+  if (amount === "") {
+    console.log(amount);
+    errorAmountEl.style.dislay = "block";
+    alert("Please enter a valid amount");
+    return;
+  } else {
+    data.amount = amount;
+  }
+
+  if (percent === "") {
+    console.log(percent);
+    alert("Please enter a valid percent");
+    errorPercentEl.style.dislay = "block";
+    return;
+  } else {
+    data.percentage = parseFloat(percent);
+  }
+
+  data.pitchId = id;
+  console.table(data);
+
+  return data;
+}
+
+function pitchCreateBusinessValidation() {
+  let errorPitchEl = document.querySelector(".invalid-feedback");
+
+  let date = document.querySelector("#validationCustom01").value.trim();
+  let amount = document.querySelector("#validationCustom02").value.trim();
+  let percent = document.querySelector("#validationCustom03").value.trim();
+  let pitchText = document.querySelector("#validationTextarea").value.trim();
+  let businessId = getBusinessId();
+  let businessName = getBusinessName();
+  let data = {};
+
+  if (date === "") {
+    alert("Please enter a date");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.creationDate = date;
+  }
+
+  if (amount === "") {
+    alert("Please enter an amount");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.amount = parseFloat(amount);
+  }
+
+  if (percent === "") {
+    alert("Please enter an percent");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.percentage = parseFloat(percent);
+  }
+
+  if (pitchText === "") {
+    alert("Please enter a pitch");
+    errorPitchEl.style.dislay = "block";
+  } else {
+    data.pitch = pitchText;
+  }
+
+  data.businessId = businessId;
+  data.businessName = businessName;
+
+  console.table(data);
+
+  return data;
 }

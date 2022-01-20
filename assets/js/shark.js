@@ -35,10 +35,16 @@ sharkLogoutButton.addEventListener("click", logout);
 sendCommentShark.addEventListener("click", sendSharkComment);
 
 // shark offer event listener
-sendPitchOffer.addEventListener("click", makeOfferShark);
+sendPitchOffer.addEventListener("click", function () {
+  let errorEl = document.querySelector("#commentError");
+  let pitchData = offerSharkValidation();
+
+  if (pitchData === undefined) {
+    errorEl.style.display = "block";
+    return;
+  } else {
+    makeOfferShark(pitchData);
+  }
+});
 
 pitchModalButton.addEventListener("click", pitchIdShark);
-
-// sendPitchOffer.addEventListener("click", function (e) {
-//   console.log(e.target);
-// });
