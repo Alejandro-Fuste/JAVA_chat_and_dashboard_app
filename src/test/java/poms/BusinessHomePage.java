@@ -23,7 +23,7 @@ public class BusinessHomePage {
 //    public WebElement businessIdInput;
 
     //  ------------------------------    MAKE A COMMENT   ------------------------------
-    @FindBy(id = "comment")
+    @FindBy(id = "commentBusiness")
     public WebElement commentInput;
 
     @FindBy(id = "commentButtonBiz")
@@ -32,7 +32,7 @@ public class BusinessHomePage {
     @FindBy(id = "commentModal")
     public WebElement commentModal;
 
-    @FindBy(id = "reciepientfromBiz")
+    @FindBy(id = "chooseOption")
     public WebElement downArrow;
 
     @FindBy(css = "[value='1']")
@@ -56,11 +56,14 @@ public class BusinessHomePage {
     @FindBy(id = "businessPitchButton")
     public WebElement openAcceptModal;
 
-    @FindBy(xpath = "/html/body/div[1]/main/section/article[2]/div[2]/div[1]/div/div[1]/button")
+    @FindBy(id = "acceptPitchButton")
     public WebElement acceptBidButton;
 
     @FindBy(id = "Accepted")
     public WebElement acceptPitchMessage;
+
+    @FindBy(id = "acceptPitchCloseButton")
+    public WebElement acceptPitchCloseButton;
 
 
 //

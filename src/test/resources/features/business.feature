@@ -37,7 +37,7 @@ Feature:  Business Logging
     Given The business is on the business page
     When The business clicks on the open accept modal
     When The business clicks the accept bid button
-    Then Message appears saying Accepted
+    Then The business clicks on the accept pitch close button
 
   Scenario:  As a business, I want to view all of my investment current requests
     Given The business is on the business page

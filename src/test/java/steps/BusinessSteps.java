@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import runner.TestRunner;
 
@@ -120,7 +121,8 @@ public class BusinessSteps {
     }
 
     @When("The business clicks on drop down list")
-    public void the_business_clicks_on_drop_down_list() {
+    public void the_business_clicks_on_drop_down_list() throws InterruptedException {
+        Thread.sleep(1000);
         TestRunner.businessHomePage.downArrow.click();
     }
 
@@ -145,9 +147,9 @@ public class BusinessSteps {
     }
 
     @When("A message saying comment post was successful appears")
-    public void a_message_saying_post_was_successful_appears() {
-        Assert.assertEquals(TestRunner.businessHomePage.commentPostSuccessMessage.getText(),
-                "Comment was successfully posted");
+    public void a_message_saying_post_was_successful_appears() throws InterruptedException {
+        Thread.sleep(1000);
+        TestRunner.businessHomePage.commentPostSuccessMessage.isDisplayed();
     }
 
     @Then("The business clicks the close button")
@@ -162,14 +164,14 @@ public class BusinessSteps {
     }
 
     @When("The business clicks the accept bid button")
-    public void the_business_clicks_the_accept_bid_button() {
+    public void the_business_clicks_the_accept_bid_button() throws InterruptedException {
+        Thread.sleep(1000);
         TestRunner.businessHomePage.acceptBidButton.click();
     }
 
-    @Then("Message appears saying Accepted")
-    public void message_appears_saying_accepted() {
-        Assert.assertEquals(TestRunner.businessHomePage.acceptPitchMessage.getText(),
-                "Bid accepted");
+    @Then("The business clicks on the accept pitch close button")
+    public void message_appears_saying_accepted() throws InterruptedException {
+        TestRunner.businessHomePage.acceptPitchCloseButton.click();
     }
 
     //    ----------------------- View all comments DONE ----------------------------------
@@ -239,8 +241,8 @@ public class BusinessSteps {
 
     @Then("An alert pops up saying the entry has exceeded the allowed length")
     public void an_alert_pops_up_saying_the_entry_has_exceeded_the_allowed_length() {
-        Assert.assertEquals(TestRunner.businessHomePage.tooLongMessage.getText(),
-                "");
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
     }
 
     @When("The user enters too short of a username")
@@ -250,8 +252,8 @@ public class BusinessSteps {
 
     @Then("An alert pops up saying the entry has not met the allowed minimum length")
     public void an_alert_pops_up_saying_the_entry_has_not_met_the_allowed_minimum_length() {
-        Assert.assertEquals(TestRunner.businessHomePage.tooShortMessage.getText(),
-                "");
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
     }
 
     @When("The user enters non-alphabet characters as their first name")
@@ -261,8 +263,8 @@ public class BusinessSteps {
 
     @Then("An alert pops up saying the entry has incorrect data type")
     public void an_alert_pops_up_saying_the_entry_has_incorrect_data_type() {
-        Assert.assertEquals(TestRunner.businessHomePage.incorrectDataTypeMessage.getText(),
-                "");
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
     }
 
     @When("The business enters non-numeric characters for an amount")
@@ -272,7 +274,30 @@ public class BusinessSteps {
 
     @Then("An alert pops up saying the username entered is already taken")
     public void an_alert_pops_up_saying_the_username_entered_is_already_taken() {
-        Assert.assertEquals(TestRunner.businessHomePage.usernameTakenMessage.getText(),
-                "");
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
+    }
+
+    @Then("An alert pops up saying form cannot accept null values")
+    public void an_alert_pops_up_saying_form_cannot_accept_null_values() {
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
+    }
+
+    @Then("An error message appears")
+    public void an_error_message_appears() throws InterruptedException {
+        Thread.sleep(1000);
+        TestRunner.homePage.errorMessage.isDisplayed();
+    }
+
+    @When("The user enters incorrect password")
+    public void the_user_enters_incorrect_password() {
+        TestRunner.homePage.loginPasswordInput.sendKeys("uuuuuuuuuu");
+    }
+
+    @Then("An alert pops up saying either username or password or both are incorrect")
+    public void an_alert_pops_up_saying_either_username_or_password_or_both_are_incorrect() {
+        TestRunner.driver.switchTo().alert().getText();
+        TestRunner.driver.switchTo().alert().accept();
     }
 }

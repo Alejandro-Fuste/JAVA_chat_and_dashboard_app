@@ -89,37 +89,38 @@ const createUser = (e) => {
   const signUpButtonEl = document.querySelector("#submitSignUpButton");
 
   // error message selector
-  const errorEl = document.querySelector("#hideErrorMessage");
+  const errorSignupEl = document.querySelector("#hideErrorMessage");
   let role = document.querySelector("#roleSignIn").value.trim();
+  let url = "http://localhost:8080/";
+  role === "Business" ? (url += `business/create`) : (url += `shark`);
   let data = signupValidation();
 
   if (data === "undefined") {
-    errorEl.style.display = "block";
     signUpButtonEl.disabled = true;
+    errorSignupEl.style.display = "block";
     return;
+  } else {
+    fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(checkFetch)
+      .then((response) => response.json())
+      .then((location.href = "home.html"))
+      .catch((err) => {
+        errorEl.style.display = "block";
+        console.log(err);
+      });
   }
-
-  console.log(data);
-  let url = "http://localhost:8080/";
-  role === "Business" ? (url += `business/create`) : (url += `shark`);
+  
 
   // use fetch to send sign up request to server
-  fetch(url, {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then(checkFetch)
-    .then((response) => response.json())
-    .then((location.href = "home.html"))
-    .catch((err) => {
-      errorEl.style.display = "block";
-      console.log(err);
-    });
+  
 };
 
 // ----------------- SIGNUP VALIDATION-------------------

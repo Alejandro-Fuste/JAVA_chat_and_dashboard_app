@@ -70,12 +70,12 @@ public class SharkSteps {
 //
     @When("The user enters their username login")
     public void the_user_enters_their_username_login() {
-        TestRunner.homePage.loginUsernameInput.sendKeys("texasDan");
+        TestRunner.homePage.loginUsernameInput.sendKeys("Spiderman");
     }
 
     @When("The user enters their password login")
     public void the_user_enters_their_password_login() {
-        TestRunner.homePage.loginPasswordInput.sendKeys("veritas1234");
+        TestRunner.homePage.loginPasswordInput.sendKeys("spideysenses");
     }
 
 
@@ -90,15 +90,13 @@ public class SharkSteps {
 
     // SHARK HOME PAGE
     @Given("The shark is on the shark page")
-    public void the_shark_is_on_the_shark_page() {
+    public void the_shark_is_on_the_shark_page() throws InterruptedException {
         TestRunner.driver.get("http://127.0.0.1:5500/shark");
-//        http://localhost:63342/JAVA_investing_app/project2/shark.html
     }
 
     // Make comment
     @When("The shark clicks on the comment button")
-    public void the_shark_clicks_on_the_comment_button() throws InterruptedException {
-        Thread.sleep(1000);
+    public void the_shark_clicks_on_the_comment_button() {
         TestRunner.sharkHomePage.commentButtonShark.click();
     }
 
@@ -141,7 +139,8 @@ public class SharkSteps {
 
     // Make offer
     @When("The shark clicks on the pitch button")
-    public void the_shark_clicks_on_the_pitch_button() {
+    public void the_shark_clicks_on_the_pitch_button() throws InterruptedException {
+        Thread.sleep(3000);
         TestRunner.sharkHomePage.pitchButtonShark.click();
     }
 

@@ -61,8 +61,6 @@ public class HomePage {
     @FindBy(id = "password")
     public WebElement loginPasswordInput;
 
-
-
-
-
+    @FindBy(id = "errorMessage")
+    public WebElement errorMessage;
 }
