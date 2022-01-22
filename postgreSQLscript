@@ -1,0 +1,63 @@
+drop table if exists commenting, pitches, business, shark;
+
+create table business (
+	businessId serial primary key,
+	firstName varchar(20) not null,
+	lastName varchar(20) not null,
+	businessName varchar(20) not null,
+	username varchar(20) unique not null,
+	password varchar(30) not null,
+	role varchar(10) not null
+);
+
+create table shark (
+	sharkId serial primary key,
+	firstName varchar(20) not null,
+	lastName varchar(20) not null,
+	businessName varchar(20) not null,
+	username varchar(20) unique not null,
+	password varchar(30) not null,
+	role varchar(10) not null
+);
+
+create table pitches (
+	pitchId serial primary key,
+	businessId int references business(businessId) on delete cascade,
+	businessName varchar(20) not null,
+	creationDate varchar(10) not null,
+	pitch text not null,
+	amount decimal not null,
+	percentage decimal not null,
+	status varchar(8) default null
+);
+
+create table commenting (
+	commentId serial primary key,
+	businessId int references business(businessId) on delete cascade,
+	sharkId int references shark(sharkId) on delete cascade,
+	commenting text,
+	createDate varchar(10) not null
+);
+
+truncate table pitches;
+
+-- insert these two sharks for shark DAO tests
+insert into shark values (default, 'Mark', 'Cuban', 'Billions Inc', 'Cubester', 'BigDeal1', 'shark');
+insert into shark values (default, 'Mr', 'Wonderful', 'Wonderland Inc', 'Wonders', 'SellBig11', 'shark');
+
+-- insert these two businesses for pitch DAO tests
+insert into business values (default, 'Bruce', 'Wayne', 'Wayne Enterprises', 'Wayne100', 'ImBatman', 'business');
+insert into business values (default, 'Clark', 'Kent', 'Daily Planet', 'Kent100', 'ImSuperman', 'business');
+
+-- insert this pitch for pitch DAO tests
+insert into pitches
+values (default, 2, 'Wayne Enterprises', '01-20-2022', 'This is my pitch', 125000, 2.3);
+insert into pitches
+values (default, 3, 'Daily Planet', '01-20-2022', 'This is pitch', 135000, 3.3);
+insert into pitches
+values (default, 2, 'Wayne Enterprises', '01-20-2022', 'My pitch', 140000, 4.3);
+insert into pitches
+values (default, 3, 'Daily Planet', '01-20-2022', 'This is my pitches', 145000, 5.3);
+
+insert into commenting
+values (default, 2, 3, 'test comment', '01-19-2022');

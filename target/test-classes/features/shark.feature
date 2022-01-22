@@ -35,15 +35,11 @@ Feature: Shark should be able to interact with potential investments
   Scenario: Shark can make an offer on a pitch
     Given The shark is on the shark page
     When The shark clicks on the pitch button
-    When The shark enters a percentage
+    When The pitch modal is displayed
     When The shark enters an amount
+    When The shark enters a percentage
     When The shark clicks on the submit offer button
     Then A message saying offer was sent
-
-  Scenario: Shark can accept a pitch
-    Given The shark is on the shark page
-    When The shark clicks on the accept button
-    Then Message appears saying Accepted
 
   Scenario: Shark can log out
     Given The shark is on the shark page

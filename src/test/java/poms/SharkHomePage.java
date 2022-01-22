@@ -17,7 +17,7 @@ public class SharkHomePage {
     @FindBy(id = "commentButtonShark")
     public WebElement commentButtonShark;
 
-    @FindBy(id = "commentModal")
+    @FindBy(id = "commentModalShark")
     public WebElement commentModalShark;
 
     @FindBy(id = "reciepientfromShark")
@@ -42,24 +42,27 @@ public class SharkHomePage {
     @FindBy(id = "pitchButtonShark")
     public WebElement pitchButtonShark;
 
-    @FindBy(id = "percent")
-    public WebElement percentageInput;
+    @FindBy(id = "pitchModalShark")
+    public WebElement pitchModalShark;
 
-    @FindBy(id = "pitchAmount")
+    @FindBy(id = "validationCustom02")
     public WebElement amountInput;
+
+    @FindBy(id = "validationCustom03")
+    public WebElement percentageInput;
 
     @FindBy(id = "submitPitchButton")
     public WebElement submitOfferButton;
 
-    @FindBy(id = "pitchAccepted")
-    public WebElement offerPostSuccessMessage;
+    @FindBy(id = "pitchSent")
+    public WebElement pitchSent;
 
     // Accept Offer
     @FindBy(id = "statusButton")
     public WebElement sharkAcceptButton;
 
-    @FindBy(id = "pitchAccepted")
-    public WebElement acceptedMessage;
+//    @FindBy(id = "pitchAccepted")
+//    public WebElement acceptedMessage;
 
     // Logout
     @FindBy(id = "sharkLogoutEl")
@@ -69,9 +72,9 @@ public class SharkHomePage {
 //    @FindBy(id = "invalid-feedback")
 //    public WebElement nullValuesMessage;
 
-    @FindBy(id = "hideErrorMessage")
-    public WebElement usernameTakenMessage;
-
-    @FindBy(id = "hideErrorMessage")
-    public WebElement usernamePasswordIncorrectMessage;
+//    @FindBy(id = "hideErrorMessage")
+//    public WebElement usernameTakenMessage;
+//
+//    @FindBy(id = "hideErrorMessage")
+//    public WebElement usernamePasswordIncorrectMessage;
 }

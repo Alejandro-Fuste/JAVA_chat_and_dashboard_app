@@ -27,7 +27,7 @@ public class CommentingDAOTest {
     @Test
     void getAllComments(){
         List<Commenting> commenting = commentingDAO.getAllComments();
-        Assert.assertTrue(commenting.size() >= 2);
+        Assert.assertTrue(commenting.size() >= 1);
         for (Commenting c : commenting){
             System.out.println(c);
             System.out.println();

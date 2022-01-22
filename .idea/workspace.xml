@@ -7,14 +7,40 @@
     <list default="true" id="1a7555e1-9c5c-40c2-8d56-5126bb59f9bc" name="Changes" comment="added shark tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/investing_app/dao/CommentingDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/SharkTests/SharkDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/SharkTests/SharkDAOTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/businesstests/BusinessDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/commentingtests/CommentingDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/commentingtests/CommentingDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poms/SharkHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BusinessSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SharkSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shark.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/reports/html-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/investing_app/dao/CommentingDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/SharkTests/SharkDAOTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dev/businesstests/BusinessDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/shark.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/shark.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poms/SharkHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/BusinessSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/SharkSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/JAVA_investing_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/JAVA_investing_app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/JAVA_investing_app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/JAVA_investing_app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.SharkTests.SharkDAOTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.SharkTests.SharkDAOTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.SharkTests.SharkServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.SharkTests.SharkServiceTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.businessservicestests.BusinessServicesTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.businessservicestests.BusinessServicesTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.businesstests.BusinessDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.businesstests.BusinessDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.commentingservicetests.CommentingServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.commentingservicetests.CommentingServiceTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.commentingtests.CommentingDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.commentingtests.CommentingDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.pitchtests.PitchDAOTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.pitchtests.PitchDAOTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.pitchtests.PitchServiceTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-dev.pitchtests.PitchServiceTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +74,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
@@ -146,6 +172,7 @@
     <configuration name="All Tests" type="TestNG">
       <module name="project2" />
       <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="dev" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -157,11 +184,11 @@
       <option name="USE_DEFAULT_REPORTERS" value="true" />
       <option name="PROPERTIES_FILE" value="" />
       <envs>
-        <env name="HOST" value="database-1.clcj8berpakz.us-east-1.rds.amazonaws.com" />
-        <env name="DATABASE" value="postgres" />
-        <env name="USER" value="root" />
-        <env name="PASSWORD" value="Awsrdsroot" />
+        <env name="HOST" value="database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com" />
+        <env name="DB" value="postgres" />
+        <env name="PASSWORD" value="Udonlamei31" />
         <env name="PORT" value="5432" />
+        <env name="USER" value="Virtud87" />
       </envs>
       <properties />
       <listeners />
@@ -187,18 +214,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConnectionFile" />
       <item itemvalue="Application.App" />
+      <item itemvalue="Application.ConnectionFile" />
       <item itemvalue="Application.DatabaseConnection" />
+      <item itemvalue="Cucumber Java.Feature: exceptions" />
       <item itemvalue="JUnit.TestRunner" />
       <item itemvalue="TestNG.All Tests" />
       <item itemvalue="TestNG.BusinessServicesTests" />
-      <item itemvalue="Cucumber Java.Feature: exceptions" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.DatabaseConnection" />
         <item itemvalue="Cucumber Java.Feature: exceptions" />
         <item itemvalue="TestNG.BusinessServicesTests" />

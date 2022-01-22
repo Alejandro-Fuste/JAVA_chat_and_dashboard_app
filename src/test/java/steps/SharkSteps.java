@@ -91,7 +91,7 @@ public class SharkSteps {
     // SHARK HOME PAGE
     @Given("The shark is on the shark page")
     public void the_shark_is_on_the_shark_page(){
-        TestRunner.driver.get("/Users/dlanderos/JAVA_investing_app/shark.html");
+        TestRunner.driver.get("File:///Users/dlanderos/JAVA_investing_app/shark.html");
     }
 
     // Make comment
@@ -101,7 +101,8 @@ public class SharkSteps {
     }
 
     @When("The shark comment modal is displayed")
-    public void the_shark_comment_modal_is_displayed() {
+    public void the_shark_comment_modal_is_displayed() throws InterruptedException {
+        Thread.sleep(1000);
         TestRunner.sharkHomePage.commentModalShark.isDisplayed();
     }
 
@@ -144,14 +145,20 @@ public class SharkSteps {
         TestRunner.sharkHomePage.pitchButtonShark.click();
     }
 
+    @When("The pitch modal is displayed")
+    public void the_pitch_modal_is_displayed() {
+        TestRunner.sharkHomePage.pitchModalShark.isDisplayed();
+    }
+
     @When("The shark enters a percentage")
     public void the_shark_enters_a_percentage() {
         TestRunner.sharkHomePage.percentageInput.sendKeys("5.4");
     }
 
     @When("The shark enters an amount")
-    public void the_shark_enters_an_amount() {
-        TestRunner.sharkHomePage.amountInput.sendKeys("100_000");
+    public void the_shark_enters_an_amount() throws InterruptedException {
+        Thread.sleep(1000);
+        TestRunner.sharkHomePage.amountInput.sendKeys("100000");
     }
 
     @When("The shark clicks on the submit offer button")
@@ -161,8 +168,7 @@ public class SharkSteps {
 
     @Then("A message saying offer was sent")
     public void a_message_saying_offer_post_was_successful_appears() {
-        Assert.assertEquals(TestRunner.sharkHomePage.offerPostSuccessMessage.getText(),
-                "Pitch offer was sent!");
+        TestRunner.sharkHomePage.pitchSent.isDisplayed();
     }
 
 

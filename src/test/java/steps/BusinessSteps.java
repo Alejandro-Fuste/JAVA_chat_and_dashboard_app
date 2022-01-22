@@ -13,7 +13,7 @@ public class BusinessSteps {
     // ------------------create profile-------------------------------
     @Given("The user is on the signup page")
     public void the_user_is_on_the_signup_page() {
-        TestRunner.driver.get("file:///Users/dlanderos/JAVA_investing_app/signup.html");
+        TestRunner.driver.get("File:///Users/dlanderos/JAVA_investing_app/signup.html");
     }
 
     @When("The user enters their first name")
@@ -65,7 +65,7 @@ public class BusinessSteps {
     // ---------------------------Sign In  DONE ------------------------------------
     @Given("The user is on the home page")
     public void the_user_is_on_the_home_page() {
-        TestRunner.driver.get("/Users/dlanderos/JAVA_investing_app/home.html");
+        TestRunner.driver.get("File:///Users/dlanderos/JAVA_investing_app/home.html");
     }
 
     @When("The user enters their login username")

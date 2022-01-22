@@ -3,6 +3,11 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="JAVA_investing_app(failed)">
     <classes>
+      <class name="dev.businesstests.BusinessDAOTest">
+        <methods>
+          <include name="testCreateBusiness"/>
+        </methods>
+      </class> <!-- dev.businesstests.BusinessDAOTest -->
       <class name="dev.SharkTests.SharkDAOTests">
         <methods>
           <include name="sharkCreateProfile"/>

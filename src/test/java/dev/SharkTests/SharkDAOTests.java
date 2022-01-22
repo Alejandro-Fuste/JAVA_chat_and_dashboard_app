@@ -13,16 +13,16 @@ public class SharkDAOTests {
 
     @Test
     void sharkCreateProfile() {
-        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy Enterprises2",
-                "ButterflyEffect5", "70sShow", "Shark");
+        Shark shark1 = new Shark(0, "Ashton", "Kutcher", "Ashy Enterprises244",
+                "ButterflyEffect54", "70sShow", "Shark");
         Shark returnedShark = sharkDAO.createSharkProfile(shark1);
         Assert.assertTrue(returnedShark.getSharkId() != 0);
     }
 
     @Test
     void getSharkByUsername() {
-        Shark returnedShark = sharkDAO.getSharkByUsername("Wonderland Inc");
-        Assert.assertEquals(returnedShark.getUsername(), "Wonderland Inc");
+        Shark returnedShark = sharkDAO.getSharkByUsername("Spiderman");
+        Assert.assertEquals(returnedShark.getUsername(), "Spiderman");
     }
 
     @Test
