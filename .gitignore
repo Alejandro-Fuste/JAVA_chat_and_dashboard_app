@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij
 
+#vscode
+.vscode
+
 ### macOS ###
 # General
 .DS_Store
@@ -10,6 +13,28 @@
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# ignore all logs
+*.log
+
+#ignore builds and tests
+/target/
+*/target/**
+/test-output/
+*/test-output/**
+
+.apt_generated
+.classpaths
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+.idea
+*.iws
+*.iml
+*.ipr
 
 # User-specific stuff
 .idea/**/workspace.xml
