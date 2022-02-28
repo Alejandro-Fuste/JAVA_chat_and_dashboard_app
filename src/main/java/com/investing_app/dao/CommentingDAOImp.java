@@ -2,7 +2,6 @@ package com.investing_app.dao;
 
 import com.investing_app.customexceptions.CommentNotFound;
 import com.investing_app.entities.Commenting;
-import com.investing_app.utility.ConnectionFile;
 import com.investing_app.utility.DatabaseConnection;
 
 import java.sql.*;
@@ -13,7 +12,7 @@ public class CommentingDAOImp implements CommentingDAO {
 
     @Override
     public Commenting createComment(Commenting commenting){
-        try(Connection connection = ConnectionFile.createConnection()) {
+        try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "insert into commenting values(default, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1, commenting.getBusinessId());
@@ -32,7 +31,7 @@ public class CommentingDAOImp implements CommentingDAO {
     }
 
     public Commenting getCommentById(int id) {
-        try(Connection connection = ConnectionFile.createConnection()) {
+        try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from commenting where commentId = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -57,7 +56,7 @@ public class CommentingDAOImp implements CommentingDAO {
     }
 
     public List<Commenting> getAllComments(){
-        try(Connection connection = ConnectionFile.createConnection()) {
+        try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from commenting";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);

@@ -17,6 +17,7 @@ public class BusinessDAOImp implements BusinessDAO {
     public Business createBusiness(Business business){
         try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "insert into business values(default, ?, ?, ?, ?, ?, ?)";
+            assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 //            preparedStatement.setInt(1, business.getBusinessNumber());
             preparedStatement.setString(1, business.getFirstName());
@@ -40,6 +41,7 @@ public class BusinessDAOImp implements BusinessDAO {
     public Business getBusinessById(int id){
         try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business where businessId = ?";
+            assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -67,6 +69,7 @@ public class BusinessDAOImp implements BusinessDAO {
     public List<Business> getAllBusinesses(){
         try(Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business";
+            assert connection != null;
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             List<Business> businesses = new ArrayList<>();
@@ -92,6 +95,7 @@ public class BusinessDAOImp implements BusinessDAO {
     public Business getBusinessByUsername(String username) {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from business where username = ?";
+            assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();

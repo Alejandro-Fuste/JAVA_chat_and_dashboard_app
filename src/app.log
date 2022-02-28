@@ -22096,3 +22096,308 @@ Response: [200], execution took 425.63 ms
     Body is 164 bytes (starts on next line):
     [{"pitchId":2,"businessId":2,"businessName":"Daily Planet","creationDate":"01-12-2022","pitch":"This is my pitch","amount":125000.0,"percentage":2.299999952316284}]
 ----------------------------------------------------------------------------------
+2022-02-28 16:50:00,606 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-02-28 16:50:00,634 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-02-28 16:50:00,635 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-02-28 16:50:00,635 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-02-28 16:50:00,635 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-02-28 16:50:00,636 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-02-28 16:50:00,636 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-02-28 16:50:00,637 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-02-28 16:50:00,637 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-02-28 16:50:00,637 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-02-28 16:50:00,638 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch]
+2022-02-28 16:50:00,638 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-02-28 16:50:00,638 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/offer]
+2022-02-28 16:50:00,639 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/git ]
+2022-02-28 16:50:00,639 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-02-28 16:50:00,645 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @809ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-02-28 16:50:00,646 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-02-28 16:50:00,661 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-02-28 16:50:00,662 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-02-28 16:50:00,832 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-02-28 16:50:00,832 [main] INFO  io.javalin.Javalin - Javalin started in 187ms \o/
+2022-02-28 17:09:13,209 [JettyServerThreadPool-31] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+	at com.investing_app.dao.BusinessDAOImp.getAllBusinesses(BusinessDAOImp.java:70) ~[classes/:?]
+	at com.investing_app.service.BusinessServicesImp.getAllBusinessesService(BusinessServicesImp.java:55) ~[classes/:?]
+	at com.investing_app.controllers.BusinessController.lambda$new$2(BusinessController.java:61) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.2.0.jar:4.2.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-02-28 17:09:13,231 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=d271103c-1790-46e5-a4c2-a6ec66889c92, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 41.14 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:09:13 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-02-28 17:17:56,801 [JettyServerThreadPool-33] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+	at com.investing_app.dao.BusinessDAOImp.getAllBusinesses(BusinessDAOImp.java:70) ~[classes/:?]
+	at com.investing_app.service.BusinessServicesImp.getAllBusinessesService(BusinessServicesImp.java:55) ~[classes/:?]
+	at com.investing_app.controllers.BusinessController.lambda$new$2(BusinessController.java:61) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.2.0.jar:4.2.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-02-28 17:17:56,810 [JettyServerThreadPool-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=552c836f-1521-4b89-aad5-08f7607306d0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 18.44 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:17:56 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-02-28 17:19:13,527 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-02-28 17:19:13,549 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-02-28 17:19:13,550 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-02-28 17:19:13,550 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-02-28 17:19:13,551 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-02-28 17:19:13,551 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-02-28 17:19:13,552 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-02-28 17:19:13,552 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-02-28 17:19:13,552 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-02-28 17:19:13,552 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-02-28 17:19:13,553 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch]
+2022-02-28 17:19:13,553 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-02-28 17:19:13,553 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/offer]
+2022-02-28 17:19:13,554 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/git ]
+2022-02-28 17:19:13,554 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-02-28 17:19:13,560 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @839ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-02-28 17:19:13,561 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-02-28 17:19:13,578 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-02-28 17:19:13,578 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-02-28 17:19:13,726 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-02-28 17:19:13,726 [main] INFO  io.javalin.Javalin - Javalin started in 166ms \o/
+2022-02-28 17:19:29,560 [JettyServerThreadPool-31] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+	at com.investing_app.dao.BusinessDAOImp.getAllBusinesses(BusinessDAOImp.java:73) ~[classes/:?]
+	at com.investing_app.service.BusinessServicesImp.getAllBusinessesService(BusinessServicesImp.java:55) ~[classes/:?]
+	at com.investing_app.controllers.BusinessController.lambda$new$2(BusinessController.java:61) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.2.0.jar:4.2.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-02-28 17:19:29,586 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c8f6291f-ff4e-4a8e-b2ca-be464ea25d5c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 33.33 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:19:29 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-02-28 17:32:43,081 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-02-28 17:32:43,097 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-02-28 17:32:43,097 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-02-28 17:32:43,098 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-02-28 17:32:43,098 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-02-28 17:32:43,098 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-02-28 17:32:43,098 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-02-28 17:32:43,098 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-02-28 17:32:43,099 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-02-28 17:32:43,099 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-02-28 17:32:43,099 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch]
+2022-02-28 17:32:43,099 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-02-28 17:32:43,099 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/offer]
+2022-02-28 17:32:43,100 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/git ]
+2022-02-28 17:32:43,100 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-02-28 17:32:43,104 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @826ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-02-28 17:32:43,105 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-02-28 17:32:43,115 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-02-28 17:32:43,115 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-02-28 17:32:43,223 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-02-28 17:32:43,223 [main] INFO  io.javalin.Javalin - Javalin started in 119ms \o/
+2022-02-28 17:33:05,890 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=927a2f71-1f0e-4431-aceb-094f0f435257, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1016.91 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:33:04 GMT, Content-Type=text/plain}
+    Body is 1061 bytes (starts on next line):
+    [{"businessId":1,"firstName":"Bruce","lastName":"Wayne","businessName":"Wayne Enterprises","username":"Wayne100","password":"ImBatman","role":"business"},{"businessId":2,"firstName":"Clark","lastName":"Kent","businessName":"Daily Planet","username":"Kent100","password":"ImSuperman","role":"business"},{"businessId":3,"firstName":"Bruce","lastName":"Banner","businessName":"Green Materials Inc","username":"Banner1","password":"ImHulk","role":"business"},{"businessId":4,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames","password":"Passwords","role":"business"},{"businessId":5,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames1","password":"Passwords","role":"business"},{"businessId":6,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames2","password":"Passwords","role":"business"},{"businessId":7,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training In","username":"Usernames4","password":"Passwords","role":"business"}]
+----------------------------------------------------------------------------------
+2022-02-28 17:46:11,014 [JettyServerThreadPool-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=0353b640-61d5-444a-bf41-9b42cd359ab7, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 816.39 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:46:10 GMT, Content-Type=text/plain}
+    Body is 1061 bytes (starts on next line):
+    [{"businessId":1,"firstName":"Bruce","lastName":"Wayne","businessName":"Wayne Enterprises","username":"Wayne100","password":"ImBatman","role":"business"},{"businessId":2,"firstName":"Clark","lastName":"Kent","businessName":"Daily Planet","username":"Kent100","password":"ImSuperman","role":"business"},{"businessId":3,"firstName":"Bruce","lastName":"Banner","businessName":"Green Materials Inc","username":"Banner1","password":"ImHulk","role":"business"},{"businessId":4,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames","password":"Passwords","role":"business"},{"businessId":5,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames1","password":"Passwords","role":"business"},{"businessId":6,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames2","password":"Passwords","role":"business"},{"businessId":7,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training In","username":"Usernames4","password":"Passwords","role":"business"}]
+----------------------------------------------------------------------------------
+2022-02-28 17:48:44,028 [JettyServerThreadPool-35] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=74cde687-738f-4c06-853c-9b85be222ec4, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 691.62 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:48:43 GMT, Content-Type=text/plain}
+    Body is 1061 bytes (starts on next line):
+    [{"businessId":1,"firstName":"Bruce","lastName":"Wayne","businessName":"Wayne Enterprises","username":"Wayne100","password":"ImBatman","role":"business"},{"businessId":2,"firstName":"Clark","lastName":"Kent","businessName":"Daily Planet","username":"Kent100","password":"ImSuperman","role":"business"},{"businessId":3,"firstName":"Bruce","lastName":"Banner","businessName":"Green Materials Inc","username":"Banner1","password":"ImHulk","role":"business"},{"businessId":4,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames","password":"Passwords","role":"business"},{"businessId":5,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames1","password":"Passwords","role":"business"},{"businessId":6,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames2","password":"Passwords","role":"business"},{"businessId":7,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training In","username":"Usernames4","password":"Passwords","role":"business"}]
+----------------------------------------------------------------------------------
+2022-02-28 17:50:14,693 [JettyServerThreadPool-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=4e7277e8-3750-4f05-9537-1d40ca8e8146, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 711.73 ms
+    Headers: {Date=Mon, 28 Feb 2022 22:50:13 GMT, Content-Type=text/plain}
+    Body is 1061 bytes (starts on next line):
+    [{"businessId":1,"firstName":"Bruce","lastName":"Wayne","businessName":"Wayne Enterprises","username":"Wayne100","password":"ImBatman","role":"business"},{"businessId":2,"firstName":"Clark","lastName":"Kent","businessName":"Daily Planet","username":"Kent100","password":"ImSuperman","role":"business"},{"businessId":3,"firstName":"Bruce","lastName":"Banner","businessName":"Green Materials Inc","username":"Banner1","password":"ImHulk","role":"business"},{"businessId":4,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames","password":"Passwords","role":"business"},{"businessId":5,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames1","password":"Passwords","role":"business"},{"businessId":6,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training Inc","username":"Usernames2","password":"Passwords","role":"business"},{"businessId":7,"firstName":"Tim","lastName":"Tebow","businessName":"QB Training In","username":"Usernames4","password":"Passwords","role":"business"}]
+----------------------------------------------------------------------------------
