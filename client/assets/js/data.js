@@ -116,14 +116,6 @@ const createPitchBusiness = (e) => {
   let errorPitchEl = document.querySelector("#pitchCommentError");
   let successPitchEl = document.querySelector("#pitchCreatedSuccess");
 
-  // let data = {
-  //   businessId,
-  //   businessName,
-  //   creationDate: date,
-  //   pitch: pitchText,
-  //   amount: parseFloat(amount),
-  //   percentage: parseFloat(percent),
-  // };
   let url = "http://localhost:8080/pitch";
 
   let data = pitchCreateBusinessValidation();

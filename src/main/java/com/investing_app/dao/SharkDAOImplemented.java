@@ -17,8 +17,8 @@ public class SharkDAOImplemented implements SharkDAO{
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, shark.getFirstName());
             preparedStatement.setString(2, shark.getLastName());
-            preparedStatement.setString(3, shark.getBusinessName());
-            preparedStatement.setString(4, shark.getUsername());
+            preparedStatement.setString(3, shark.getUsername());
+            preparedStatement.setString(4, shark.getBusinessName());
             preparedStatement.setString(5, shark.getPassword());
             preparedStatement.setString(6, shark.getRole());
             preparedStatement.execute();

@@ -25,7 +25,7 @@ public class BusinessController {
             ctx.status(201);
         } catch (Exception e) {
             ctx.result(e.getMessage());
-            ctx.status(404);
+            ctx.status(400);
         }
     };
 
