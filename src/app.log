@@ -22992,3 +22992,149 @@ Response: [200], execution took 524.39 ms
     Body is 145 bytes (starts on next line):
     {"sharkId":12,"firstName":"Twila","lastName":"Bruen","businessName":"networks","username":"Rey_Ward","password":"hnqFWWLPyyhRYB6","role":"shark"}
 ----------------------------------------------------------------------------------
+2022-03-03 15:41:17,757 [JettyServerThreadPool-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=65358d71-17f0-48f2-a70c-47ceb3e5eb0a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 771.76 ms
+    Headers: {Date=Thu, 03 Mar 2022 20:41:16 GMT, Content-Type=text/plain}
+    Body is 897 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":7,"businessId":1,"sharkId":1,"commenting":"test comment 1","createDate":"2022-01-16"},{"commentId":10,"businessId":1,"sharkId":1,"commenting":"test comment 2","createDate":"2022-01-16"},{"commentId":11,"businessId":1,"sharkId":1,"commenting":"test comment 3","createDate":"2022-01-18"}]
+----------------------------------------------------------------------------------
+2022-03-03 15:42:00,744 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=80cd8636-d459-49c6-b8cd-7071db07c8a0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 576.24 ms
+    Headers: {Content-Encoding=gzip, Date=Thu, 03 Mar 2022 20:42:00 GMT, Content-Type=text/plain}
+    Body is gzipped (1866 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-03 15:42:37,135 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=47844e35-605a-4a19-ae44-b6f0bab9a6fb, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 621.55 ms
+    Headers: {Date=Thu, 03 Mar 2022 20:42:36 GMT, Content-Type=text/plain}
+    Body is 897 bytes (starts on next line):
+    [{"commentId":1,"businessId":1,"sharkId":1,"commenting":"I would potentially get this deal, but I want 25%","createDate":"2021/12/29"},{"commentId":2,"businessId":1,"sharkId":1,"commenting":"I think more of 5%","createDate":"2021/12/30"},{"commentId":3,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":4,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":5,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":6,"businessId":1,"sharkId":1,"commenting":"Trial","createDate":"2021/01/01"},{"commentId":7,"businessId":1,"sharkId":1,"commenting":"test comment 1","createDate":"2022-01-16"},{"commentId":10,"businessId":1,"sharkId":1,"commenting":"test comment 2","createDate":"2022-01-16"},{"commentId":11,"businessId":1,"sharkId":1,"commenting":"test comment 3","createDate":"2022-01-18"}]
+----------------------------------------------------------------------------------
+2022-03-03 16:35:50,395 [JettyServerThreadPool-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=72ce1801-4b34-4a4d-9be9-2b058abd0228, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=128, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 12,
+    "sharkId": 12,
+    "commenting": Reverse-engineered static hierarchy,
+    "createDate": 2022/03/03
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 10.36 ms
+    Headers: {Date=Thu, 03 Mar 2022 21:35:50 GMT, Content-Type=text/plain}
+    Body is 104 bytes (starts on next line):
+    com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 39 path $.commenting
+----------------------------------------------------------------------------------
+2022-03-03 16:53:57,816 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=7618b666-f7b8-43e2-94ca-d1f0838c5488, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=101, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 12,
+    "sharkId": 12,
+    "commenting": optimize,
+    "createDate": 2022/03/03
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 6.25 ms
+    Headers: {Date=Thu, 03 Mar 2022 21:53:57 GMT, Content-Type=text/plain}
+    Body is 104 bytes (starts on next line):
+    com.google.gson.stream.MalformedJsonException: Unterminated object at line 5 column 24 path $.createDate
+----------------------------------------------------------------------------------
+2022-03-03 16:57:22,431 [JettyServerThreadPool-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ef680bb3-cfe3-4ae1-aefd-3c4444e5c45a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=102, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 12,
+    "sharkId": 12,
+    "commenting": transform,
+    "createDate": 2022/03/03
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 3.06 ms
+    Headers: {Date=Thu, 03 Mar 2022 21:57:22 GMT, Content-Type=text/plain}
+    Body is 104 bytes (starts on next line):
+    com.google.gson.stream.MalformedJsonException: Unterminated object at line 5 column 24 path $.createDate
+----------------------------------------------------------------------------------
+2022-03-03 17:08:08,014 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-03 17:08:08,050 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-03 17:08:08,050 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-03 17:08:08,051 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-03 17:08:08,051 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-03 17:08:08,052 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-03 17:08:08,052 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-03 17:08:08,053 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-03 17:08:08,053 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-03 17:08:08,053 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-03 17:08:08,054 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch]
+2022-03-03 17:08:08,054 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-03 17:08:08,054 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/offer]
+2022-03-03 17:08:08,055 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/git ]
+2022-03-03 17:08:08,055 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-03 17:08:08,062 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1126ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-03 17:08:08,064 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-03 17:08:08,087 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-03 17:08:08,087 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-03 17:08:08,285 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-03 17:08:08,285 [main] INFO  io.javalin.Javalin - Javalin started in 222ms \o/
+2022-03-03 17:08:55,120 [JettyServerThreadPool-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ab4bf7eb-2fa8-4d90-8241-827aefefba15, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=124, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 12,
+    "sharkId": 12,
+    "commenting": Switchable background migration,
+    "createDate": 2022/03/03
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 23.57 ms
+    Headers: {Date=Thu, 03 Mar 2022 22:08:55 GMT, Content-Type=text/plain}
+    Body is 104 bytes (starts on next line):
+    com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 31 path $.commenting
+----------------------------------------------------------------------------------
