@@ -22,7 +22,7 @@ public class CommentingDAOImp implements CommentingDAO {
             preparedStatement.execute();
             ResultSet resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
-            commenting.setCommentId(resultSet.getInt("businessId"));
+            commenting.setCommentId(resultSet.getInt("commentId"));
             return commenting;
         } catch (SQLException e){
             e.printStackTrace();

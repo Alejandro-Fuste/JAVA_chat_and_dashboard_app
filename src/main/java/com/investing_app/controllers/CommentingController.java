@@ -1,7 +1,6 @@
 package com.investing_app.controllers;
 
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import com.investing_app.customexceptions.CommentNotFound;
 import com.investing_app.customexceptions.NoValueException;
 import com.investing_app.customexceptions.TooLong;
@@ -10,7 +9,6 @@ import com.investing_app.entities.Commenting;
 import com.investing_app.service.CommentingServices;
 import io.javalin.http.Handler;
 
-import java.io.StringReader;
 import java.util.List;
 
 public class CommentingController {
@@ -22,9 +20,7 @@ public class CommentingController {
     public Handler createComment = ctx ->{
         try {
             Gson gson = new Gson();
-            JsonReader reader = new JsonReader(new StringReader(ctx.body()));
-            reader.setLenient(true);
-            Commenting newComment = gson.fromJson(reader, Commenting.class);
+            Commenting newComment = gson.fromJson(ctx.body(), Commenting.class);
             Commenting createdComment = this.commentingServices.createCommentService(newComment);
             String createdCommentJson = gson.toJson(createdComment);
             ctx.result(createdCommentJson);

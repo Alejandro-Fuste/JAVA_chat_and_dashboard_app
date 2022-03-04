@@ -69,8 +69,8 @@ public class App {
         // Pitch
         app.post("/pitch", pitchController.createPitch);
         app.get("/pitches", pitchController.viewPitches);
-        app.patch("/offer", pitchController.makeOffer);
-        app.patch("git ", pitchController.acceptOffer);
+        app.patch("/pitch/offer", pitchController.makeOffer);
+        app.patch("pitch/accept", pitchController.acceptOffer);
 
         // start app connection
         app.start();
