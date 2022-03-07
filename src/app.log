@@ -23704,3 +23704,195 @@ Response: [200], execution took 632.41 ms
     Body is 1039 bytes (starts on next line):
     [{"pitchId":2,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":100000.0,"percentage":2.5999999046325684,"status":"Accepted"},{"pitchId":4,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":110000.0,"percentage":0.0,"status":"Accepted"},{"pitchId":1,"businessId":1,"businessName":"The Rhino Glass","creationDate":"2021/12/29","pitch":"I am selling 10% of my company for $100,000","amount":123001.0,"percentage":23.0,"status":"Accepted"},{"pitchId":5,"businessId":1,"businessName":"Wayne Enterprises","creationDate":"2022-01-19","pitch":"test pitch 13","amount":125000.0,"percentage":13.0},{"pitchId":6,"businessId":1,"businessName":"Wayne Enterprises","creationDate":"2022-01-19","pitch":"test pitch 13","amount":125000.0,"percentage":13.0},{"pitchId":3,"businessId":1,"businessName":"My Business","creationDate":"01-12-2022","pitch":"This is my pitch","amount":124002.0,"percentage":24.010000228881836,"status":"Accepted"}]
 ----------------------------------------------------------------------------------
+2022-03-07 11:09:24,561 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-07 11:09:24,576 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-07 11:09:24,577 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-07 11:09:24,577 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-07 11:09:24,577 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-07 11:09:24,577 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-07 11:09:24,578 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-07 11:09:24,578 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-07 11:09:24,578 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-07 11:09:24,578 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-07 11:09:24,578 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch]
+2022-03-07 11:09:24,579 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-07 11:09:24,579 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-07 11:09:24,579 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept]
+2022-03-07 11:09:24,579 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-07 11:09:24,584 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @801ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-07 11:09:24,585 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-07 11:09:24,596 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-07 11:09:24,596 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-07 11:09:24,702 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-07 11:09:24,702 [main] INFO  io.javalin.Javalin - Javalin started in 118ms \o/
+2022-03-07 11:51:04,691 [JettyServerThreadPool-26] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/12]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9ec1850f-19a7-49c0-ab09-c92b885d66a7, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1085.31 ms
+    Headers: {Date=Mon, 07 Mar 2022 16:51:03 GMT, Content-Type=text/plain}
+    Body is 161 bytes (starts on next line):
+    {"businessId":12,"firstName":"Rocky","lastName":"Hane","businessName":"action-items","username":"Nasir_Goldner60","password":"O2Fs6p9Ce0426BZ","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-07 11:52:32,746 [JettyServerThreadPool-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/12]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6880971b-d6bf-4408-9425-c7385c4c44a9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 640.20 ms
+    Headers: {Date=Mon, 07 Mar 2022 16:52:32 GMT, Content-Type=text/plain}
+    Body is 161 bytes (starts on next line):
+    {"businessId":12,"firstName":"Rocky","lastName":"Hane","businessName":"action-items","username":"Nasir_Goldner60","password":"O2Fs6p9Ce0426BZ","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-07 12:22:57,546 [JettyServerThreadPool-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitches]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1c66a36b-8185-4b93-b34f-90676f7611b8, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=277, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"Tenetur eos magnam ea reprehenderit qui qui. Rerum hic illum est. Sit nostrum ut. Dignissimos cumque veniam necessitatibus quisquam.}\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 10.27 ms
+    Headers: {Date=Mon, 07 Mar 2022 17:22:57 GMT, Content-Type=text/plain}
+    Body is 9 bytes (starts on next line):
+    Not found
+----------------------------------------------------------------------------------
+2022-03-07 12:25:00,482 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=7e884c7b-9860-4184-a2f9-273ead91bee0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=315, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"Velit possimus neque non explicabo consequatur quo possimus. Eaque ut totam dolores qui et aut odio vero excepturi. Ad dolores nostrum modi. Sunt incidunt nam voluptatem.}\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 886.06 ms
+    Headers: {Date=Mon, 07 Mar 2022 17:24:59 GMT, Content-Type=text/plain}
+    Body is 179 bytes (starts on next line):
+    Cannot invoke "com.investing_app.entities.Pitch.getPercentage()" because the return value of "com.investing_app.dao.PitchDAO.createPitch(com.investing_app.entities.Pitch)" is null
+----------------------------------------------------------------------------------
+2022-03-07 12:25:48,758 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-07 12:25:48,778 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-07 12:25:48,779 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-07 12:25:48,779 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-07 12:25:48,779 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-07 12:25:48,780 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-07 12:25:48,780 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-07 12:25:48,780 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-07 12:25:48,781 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-07 12:25:48,781 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-07 12:25:48,781 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-07 12:25:48,782 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-07 12:25:48,782 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-07 12:25:48,782 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept]
+2022-03-07 12:25:48,783 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-07 12:25:48,788 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @952ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-07 12:25:48,789 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-07 12:25:48,807 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-07 12:25:48,807 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-07 12:25:48,969 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-07 12:25:48,969 [main] INFO  io.javalin.Javalin - Javalin started in 181ms \o/
+2022-03-07 12:28:08,217 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c2bc7505-61c2-4ebe-a32e-f67e345d811c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=352, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"Et occaecati illo suscipit exercitationem voluptatem placeat modi eos. Aperiam eligendi ratione eius quos alias aliquid cumque inventore rerum. Ut unde aut vero. Ut fugit nemo voluptatem exercitationem odio.}\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 830.99 ms
+    Headers: {Date=Mon, 07 Mar 2022 17:28:07 GMT, Content-Type=text/plain}
+    Body is 179 bytes (starts on next line):
+    Cannot invoke "com.investing_app.entities.Pitch.getPercentage()" because the return value of "com.investing_app.dao.PitchDAO.createPitch(com.investing_app.entities.Pitch)" is null
+----------------------------------------------------------------------------------
+2022-03-07 12:30:14,214 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=f1a3401a-0f8e-4d2f-8186-e1c54cf865db, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=248, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"Sit qui hic ut accusantium accusantium sint. Eveniet sit ullam explicabo vitae. Nobis quis ut aut rerum.\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 573.27 ms
+    Headers: {Date=Mon, 07 Mar 2022 17:30:13 GMT, Content-Type=text/plain}
+    Body is 179 bytes (starts on next line):
+    Cannot invoke "com.investing_app.entities.Pitch.getPercentage()" because the return value of "com.investing_app.dao.PitchDAO.createPitch(com.investing_app.entities.Pitch)" is null
+----------------------------------------------------------------------------------
+2022-03-07 14:18:45,416 [JettyServerThreadPool-19] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6d5cdd9a-9af8-4891-8263-56abe34541a9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=515, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"\\\"Deleniti sit iure dolores ex occaecati id repellendus sint. Assumenda at soluta ea libero natus et esse. Quibusdam unde doloribus et reiciendis quod optio quaerat hic est. Impedit distinctio aspernatur minus similique explicabo. Deserunt voluptatem sapiente vel rem quo voluptatem repudiandae vero quia. Aut debitis rerum veniam voluptatum esse eum dolor quaerat.\\\"\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 836.16 ms
+    Headers: {Date=Mon, 07 Mar 2022 19:18:44 GMT, Content-Type=text/plain}
+    Body is 179 bytes (starts on next line):
+    Cannot invoke "com.investing_app.entities.Pitch.getPercentage()" because the return value of "com.investing_app.dao.PitchDAO.createPitch(com.investing_app.entities.Pitch)" is null
+----------------------------------------------------------------------------------
+2022-03-07 14:27:52,163 [JettyServerThreadPool-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=e0c12468-8a27-4fe4-9c0b-92beb35aab6b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=411, Content-Type=application/json}
+    Cookies: {}
+    Body: {"businessId":12,"businessName":"action-items","creationDate":"\"2022/03/07\"","pitch":"\"\\\"Rerum ipsum esse. Quod et tempore consequuntur dicta voluptatem rerum dolor explicabo. In laboriosam molestiae nihil accusantium a a libero voluptatem. Facere ut aut id. Exercitationem culpa veniam voluptatem doloribus quidem aspernatur vero soluta voluptate.\\\"\"","amount":1000,"percentage":100,"status":"pending"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 598.93 ms
+    Headers: {Date=Mon, 07 Mar 2022 19:27:51 GMT, Content-Type=text/plain}
+    Body is 179 bytes (starts on next line):
+    Cannot invoke "com.investing_app.entities.Pitch.getPercentage()" because the return value of "com.investing_app.dao.PitchDAO.createPitch(com.investing_app.entities.Pitch)" is null
+----------------------------------------------------------------------------------
+2022-03-07 14:30:14,472 [JettyServerThreadPool-39] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=3c4502c9-360d-4a50-9dbf-61a955063e33, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=319, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 12,
+    "businessName": action-items,
+    "creationDate": "2022/03/07",
+    "pitch": "Libero sed veritatis at eum doloribus fugit. Architecto deleniti sint eius ipsam ea ratione. Perspiciatis est ipsam saepe saepe est quo.",
+    "amount": 1000.00,
+    "percentage": 100.00,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1224.31 ms
+    Headers: {Date=Mon, 07 Mar 2022 19:30:13 GMT, Content-Type=text/plain}
+    Body is 288 bytes (starts on next line):
+    {"pitchId":8,"businessId":12,"businessName":"action-items","creationDate":"2022/03/07","pitch":"Libero sed veritatis at eum doloribus fugit. Architecto deleniti sint eius ipsam ea ratione. Perspiciatis est ipsam saepe saepe est quo.","amount":1000.0,"percentage":100.0,"status":"pending"}
+----------------------------------------------------------------------------------
