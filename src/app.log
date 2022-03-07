@@ -24203,3 +24203,45 @@ Response: [200], execution took 563.46 ms
     Headers: {Content-Encoding=gzip, Date=Mon, 07 Mar 2022 20:54:54 GMT, Content-Type=text/plain}
     Body is gzipped (2952 bytes, not logged)
 ----------------------------------------------------------------------------------
+2022-03-07 16:03:38,564 [JettyServerThreadPool-48] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=f761aae6-bda7-41be-8ba9-b230e0df4a75, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=180, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Mariam,
+    "lastName": Ziemann,
+    "businessName": Heidenreich LLC,
+    "username": Georgiana_Kuhn99,
+    "password": CJSX6CvlWf5uIs1,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 7.01 ms
+    Headers: {Date=Mon, 07 Mar 2022 21:03:38 GMT, Content-Type=text/plain}
+    Body is 106 bytes (starts on next line):
+    com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 34 path $.businessName
+----------------------------------------------------------------------------------
+2022-03-07 16:04:26,675 [JettyServerThreadPool-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=df998798-ec24-4f50-9d62-fa6d3c65e472, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=168, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Hobart,
+    "lastName": Block,
+    "businessName": "Mann LLC",
+    "username": Mario_Klein,
+    "password": fUsofALVTspQ44M,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1327.50 ms
+    Headers: {Date=Mon, 07 Mar 2022 21:04:25 GMT, Content-Type=text/plain}
+    Body is 155 bytes (starts on next line):
+    {"businessId":13,"firstName":"Hobart","lastName":"Block","businessName":"Mann LLC","username":"Mario_Klein","password":"fUsofALVTspQ44M","role":"business"}
+----------------------------------------------------------------------------------
