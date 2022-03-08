@@ -6,6 +6,7 @@ import com.investing_app.entities.Business;
 import com.investing_app.service.BusinessServices;
 import io.javalin.http.Handler;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -78,12 +79,16 @@ public class BusinessController {
             ctx.result(businessLoginJson);
             ctx.status(200);
         } catch (UsernameOrPasswordError e) {
-            ctx.result(e.getMessage());
-            ctx.status(404);
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
+            ctx.status(400);
         }
         catch (Exception e) {
-            ctx.result(e.getMessage());
-            ctx.status(404);
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
+            ctx.status(400);
         }
     };
 }
