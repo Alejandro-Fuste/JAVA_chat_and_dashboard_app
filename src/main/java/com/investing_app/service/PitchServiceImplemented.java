@@ -26,7 +26,7 @@ public class PitchServiceImplemented implements PitchService{
         Pitch _pitch = this.pitchDAO.createPitch(pitch);
 
         // Try to fix character length of percentage
-        if ((pitch.getCreationDate().length() > 10) || (pitch.getPitch().length() > 200) ||
+        if ((pitch.getCreationDate().length() > 10) || (pitch.getPitch().length() > 500) ||
                 numberFormat.format(percentage).length() > 5)
             throw new TooManyChar("You are exceeding the value length!");
         if ((pitch.getCreationDate().length() == 0) || (pitch.getPitch().length() == 0))
