@@ -17,29 +17,20 @@ public class BusinessController {
     }
 
     public Handler createBusiness = ctx ->{
+        Gson gson = new Gson();
         try {
-            Gson gson = new Gson();
             Business newBusiness = gson.fromJson(ctx.body(), Business.class);
             Business createdBusiness = this.businessServices.getCreateBusinessService(newBusiness);
             String createdBusinessJson = gson.toJson(createdBusiness);
             ctx.result(createdBusinessJson);
             ctx.status(201);
         } catch (Exception e) {
-            ctx.result(e.getMessage());
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(400);
         }
     };
-
-//        catch (NoValueException e) {
-//            ctx.result(e.getMessage());
-//            ctx.status(405);
-//        } catch (NotEnoughChars e){
-//            ctx.result(e.getMessage());
-//            ctx.status(406);
-//        } catch (OnlyLetters e){
-//            ctx.result(e.getMessage());
-//            ctx.status(407);
-//        }
 
 
     public Handler getBusiness = ctx -> {
