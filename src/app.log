@@ -26443,3 +26443,117 @@ Response: [400], execution took 508.90 ms
 2022-03-09 15:35:33,490 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-03-09 15:35:33,574 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-03-09 15:35:33,575 [main] INFO  io.javalin.Javalin - Javalin started in 98ms \o/
+2022-03-09 15:36:23,996 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9fe4f826-4487-432e-8d39-45bf653d66ce, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 850.49 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:36:23 GMT, Content-Type=text/plain}
+    Body is 74 bytes (starts on next line):
+    {"errorMessage":"Either your username or password or both are incorrect!"}
+----------------------------------------------------------------------------------
+2022-03-09 16:25:43,217 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=af4f9aff-a01c-4fc0-9d12-9135421524ee, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 911.40 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:25:42 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length"}
+----------------------------------------------------------------------------------
+2022-03-09 16:27:57,651 [JettyServerThreadPool-35] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=3f5c57e6-b272-4fad-b207-634f6fda3586, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=53, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 605.46 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:27:57 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-09 16:31:19,521 [JettyServerThreadPool-37] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=5bd93912-4a14-4af2-bfe7-a814f9167217, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=170, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "",
+    "lastName": Sanford,
+    "businessName": infomediaries,
+    "username": Zachariah_Bruen,
+    "password": WgYncYi7GvOfL62,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 617.93 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:31:18 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-09 16:33:52,535 [JettyServerThreadPool-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6eee6f20-cc6e-4354-b9ac-2637496835fa, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=293, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "lastName": Reynolds,
+    "businessName": e-markets,
+    "username": Braeden.Connelly26,
+    "password": 4wvf274duCYx1S_,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 583.29 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:33:51 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length"}
+----------------------------------------------------------------------------------
+2022-03-09 16:38:38,949 [JettyServerThreadPool-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=410b8f93-1846-4644-9266-5665b12b096b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=161, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Aiden,
+    "lastName": Prosacco,
+    "businessName": applications,
+    "username": "a",
+    "password": HgVyQ4VKPM_qQ3k,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 743.50 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:38:38 GMT, Content-Type=text/plain}
+    Body is 58 bytes (starts on next line):
+    {"errorMessage":"Username must be at least 5 characters!"}
+----------------------------------------------------------------------------------
