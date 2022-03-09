@@ -26192,3 +26192,191 @@ Response: [400], execution took 692.73 ms
 2022-03-09 15:00:53,556 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-03-09 15:00:53,643 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-03-09 15:00:53,643 [main] INFO  io.javalin.Javalin - Javalin started in 97ms \o/
+2022-03-09 15:03:37,948 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=dde29ffa-be55-48a6-b488-80f95e15acfb, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=207, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Marielle,
+    "lastName": Waelchi,
+    "businessName": "Ledner Inc",
+    "username": Consequatur ullam laboriosam quod voluptate.,
+    "password": bw1ii_6mGzvMITN,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 22.70 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:03:37 GMT, Content-Type=text/plain}
+    Body is 121 bytes (starts on next line):
+    {"errorMessage":"com.google.gson.stream.MalformedJsonException: Unterminated object at line 5 column 30 path $.username"}
+----------------------------------------------------------------------------------
+2022-03-09 15:05:01,235 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=73603b97-873a-4020-8d8b-22ae726dd691, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=287, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Christine,
+    "lastName": Dicki,
+    "businessName": "Ledner Inc",
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": p1awjUilcUmbjEg,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 830.30 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:05:00 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-09 15:13:26,340 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b4b402cb-d6d2-4662-b134-9baa24feb2bc, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=164, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Lenna,
+    "lastName": Bergstrom,
+    "businessName": "Ledner Inc",
+    "username": "",
+    "password": EYwG0eiuxvNHUpG,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 612.55 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:13:25 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
+2022-03-09 15:13:53,550 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1ac37819-4c3a-49ca-a532-325d2e957bf6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=164, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Antonette,
+    "lastName": Bruen,
+    "businessName": "Ledner Inc",
+    "username": "",
+    "password": Ow3PF2ZTbKoKKGH,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 640.67 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:13:52 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
+2022-03-09 15:16:45,624 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6ee83f83-25b2-4bce-833b-e3d539b1efa2, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=161, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Jaylen,
+    "lastName": Wolf,
+    "businessName": "Ledner Inc",
+    "username": "a",
+    "password": JLtMbApkUDQF6IZ,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 606.34 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:16:45 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"Need to fill out the minimum amount of characters"}
+----------------------------------------------------------------------------------
+2022-03-09 15:21:22,603 [JettyServerThreadPool-34] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NumberFormatException: For input string: "create"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at com.investing_app.controllers.BusinessController.lambda$1(BusinessController.java:38) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.2.0.jar:4.2.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-03-09 15:21:22,620 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=bcf22738-acd0-43ff-a75b-11fb0cba650c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=181, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "random First 1",
+    "lastName": Sauer,
+    "businessName": "Ledner Inc",
+    "username": Trent.Hyatt8,
+    "password": trDPz6oiK8Y2FYC,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 28.43 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:21:22 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-03-09 15:21:59,282 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1c459b1d-46b5-499b-a7a4-dcb18beb77e6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=182, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "random First 1",
+    "lastName": Mayer,
+    "businessName": "Ledner Inc",
+    "username": Fae.Bahringer,
+    "password": JWFHYVGMocNg12a,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 592.87 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:21:58 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Can only use letters in this field"}
+----------------------------------------------------------------------------------
