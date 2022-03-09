@@ -25979,3 +25979,32 @@ Response: [400], execution took 3952.43 ms
 2022-03-09 12:20:08,732 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-03-09 12:20:08,918 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-03-09 12:20:08,918 [main] INFO  io.javalin.Javalin - Javalin started in 206ms \o/
+2022-03-09 12:23:31,339 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 12:23:31,359 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 12:23:31,360 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 12:23:31,360 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 12:23:31,360 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 12:23:31,361 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 12:23:31,361 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 12:23:31,361 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 12:23:31,362 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 12:23:31,362 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 12:23:31,362 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 12:23:31,363 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 12:23:31,363 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 12:23:31,363 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 12:23:31,363 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 12:23:31,369 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @968ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 12:23:31,370 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 12:23:31,384 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 12:23:31,384 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 12:23:31,516 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 12:23:31,516 [main] INFO  io.javalin.Javalin - Javalin started in 147ms \o/

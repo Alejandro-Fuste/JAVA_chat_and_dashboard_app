@@ -43,16 +43,17 @@ public class BusinessController {
 
 
     public Handler getBusiness = ctx -> {
+        Gson gson = new Gson();
         int id = Integer.parseInt(ctx.pathParam("id"));
         try{
             Business business = this.businessServices.getBusinessByIdService(id);
-            Gson gson = new Gson();
             String businessJson = gson.toJson(business);
             ctx.result(businessJson);
             ctx.status(200);
-//            return business;
         } catch (BusinessNotFound e){
-            ctx.result(e.getMessage());
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(404);
         }
     };
