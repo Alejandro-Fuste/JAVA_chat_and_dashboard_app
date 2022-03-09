@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.investing_app.entities.Shark;
 import com.investing_app.service.SharkService;
 import io.javalin.http.Handler;
+
+import java.util.HashMap;
 import java.util.Map;
 
 public class SharkController {
@@ -24,7 +26,9 @@ public class SharkController {
             ctx.status(201);
         }
         catch (Exception e) {
-            ctx.result(e.getMessage());
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(400);
         }
     };
@@ -41,7 +45,9 @@ public class SharkController {
             ctx.status(200);
         }
         catch (Exception e) {
-            ctx.result(e.getMessage());
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(400);
         }
     };
