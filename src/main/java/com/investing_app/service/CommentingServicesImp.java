@@ -17,7 +17,7 @@ public class CommentingServicesImp implements CommentingServices {
     public Commenting createCommentService(Commenting commenting) {
         try {
             if(commenting.getCreateDate().length() > 10){
-                throw new TooLong("Your input is too many characters");
+                throw new TooLong("Your input has too many characters");
             } else if(commenting.getCreateDate().length() < 10){
                 throw new NotValidDate("Must be 10 digits long");
             } else if(commenting.getCommenting().length() == 0){

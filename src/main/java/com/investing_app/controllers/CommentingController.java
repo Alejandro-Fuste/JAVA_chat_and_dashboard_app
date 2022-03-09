@@ -30,7 +30,7 @@ public class CommentingController {
             HashMap<String, String> message = new HashMap<>();
             message.put("errorMessage", e.getMessage());
             ctx.result(gson.toJson(message));
-            ctx.status(404);
+            ctx.status(400);
         } catch (Exception e) {
             HashMap<String, String> message = new HashMap<>();
             message.put("errorMessage", e.getMessage());
@@ -44,7 +44,6 @@ public class CommentingController {
         int id = Integer.parseInt(ctx.pathParam("id"));
         try {
             Commenting commenting = this.commentingServices.getCommentByIdService(id);
-            Gson gson = new Gson();
             String commentJson = gson.toJson(commenting);
             ctx.result(commentJson);
             ctx.status(200);
@@ -52,12 +51,12 @@ public class CommentingController {
             HashMap<String, String> message = new HashMap<>();
             message.put("errorMessage", e.getMessage());
             ctx.result(gson.toJson(message));
-            ctx.status(404);
+            ctx.status(400);
         } catch (Exception e) {
             HashMap<String, String> message = new HashMap<>();
             message.put("errorMessage", e.getMessage());
             ctx.result(gson.toJson(message));
-            ctx.status(404);
+            ctx.status(400);
         }
     };
 

@@ -26578,3 +26578,252 @@ Response: [400], execution took 601.48 ms
     Body is 58 bytes (starts on next line):
     {"errorMessage":"Password must be at least 8 characters!"}
 ----------------------------------------------------------------------------------
+2022-03-09 16:48:13,183 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 16:48:13,194 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 16:48:13,194 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 16:48:13,194 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 16:48:13,194 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 16:48:13,195 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 16:48:13,196 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 16:48:13,196 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 16:48:13,196 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 16:48:13,199 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @498ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 16:48:13,200 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 16:48:13,209 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 16:48:13,209 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 16:48:13,286 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 16:48:13,286 [main] INFO  io.javalin.Javalin - Javalin started in 87ms \o/
+2022-03-09 16:51:31,964 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 16:51:31,974 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 16:51:31,974 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 16:51:31,975 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 16:51:31,976 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 16:51:31,976 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 16:51:31,976 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 16:51:31,976 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 16:51:31,976 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 16:51:31,979 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @521ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 16:51:31,980 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 16:51:31,986 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 16:51:31,986 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 16:51:32,054 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 16:51:32,054 [main] INFO  io.javalin.Javalin - Javalin started in 75ms \o/
+2022-03-09 16:52:17,795 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=0e9b2b07-1a9a-4223-81df-065e92ba0498, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=240, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 22.69 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:52:17 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-09 16:52:44,154 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 16:52:44,171 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 16:52:44,171 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 16:52:44,171 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 16:52:44,172 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 16:52:44,173 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 16:52:44,173 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 16:52:44,173 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 16:52:44,173 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 16:52:44,173 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 16:52:44,177 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @457ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 16:52:44,178 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 16:52:44,184 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 16:52:44,184 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 16:52:44,279 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 16:52:44,279 [main] INFO  io.javalin.Javalin - Javalin started in 102ms \o/
+2022-03-09 16:52:51,149 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=88b6f516-41c8-467b-bbc8-6e532d4eef54, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=240, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 38.15 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:52:51 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-09 16:53:32,677 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 16:53:32,692 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 16:53:32,693 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 16:53:32,693 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 16:53:32,693 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 16:53:32,693 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 16:53:32,693 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 16:53:32,694 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 16:53:32,694 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 16:53:32,694 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 16:53:32,698 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @446ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 16:53:32,698 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 16:53:32,709 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 16:53:32,710 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 16:53:32,783 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 16:53:32,784 [main] INFO  io.javalin.Javalin - Javalin started in 86ms \o/
+2022-03-09 16:53:42,296 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=eb81a9e8-bd45-48e8-8a16-50692049c19d, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=240, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 22.21 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:53:42 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-09 16:57:08,334 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6a94a238-d008-4ebc-8bf6-123a302c746c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=118, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "a"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 6.15 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:57:08 GMT, Content-Type=text/plain}
+    Body is 41 bytes (starts on next line):
+    {"errorMessage":"Must be 10 digits long"}
+----------------------------------------------------------------------------------
+2022-03-09 16:59:08,859 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=0e257da2-5be7-4b0d-b071-78d1b3a2a8b8, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=127, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "2022/03/08"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1246.40 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:59:07 GMT, Content-Type=text/plain}
+    Body is 117 bytes (starts on next line):
+    {"commentId":20,"businessId":14,"sharkId":13,"commenting":"Advanced motivating encryption","createDate":"2022/03/08"}
+----------------------------------------------------------------------------------
+2022-03-09 16:59:25,794 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=a8ae1bb7-1494-4d37-abb8-1bd76b8a64c9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=117, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": ""
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 0.90 ms
+    Headers: {Date=Wed, 09 Mar 2022 21:59:25 GMT, Content-Type=text/plain}
+    Body is 41 bytes (starts on next line):
+    {"errorMessage":"Must be 10 digits long"}
+----------------------------------------------------------------------------------
+2022-03-09 17:01:23,508 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=081869f8-dd48-461c-b2e5-4c682884bb41, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=97, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "",
+    "createDate": "2022/03/08"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 6.90 ms
+    Headers: {Date=Wed, 09 Mar 2022 22:01:23 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
