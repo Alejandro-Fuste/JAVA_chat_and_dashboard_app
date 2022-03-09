@@ -26380,3 +26380,37 @@ Response: [400], execution took 592.87 ms
     Body is 53 bytes (starts on next line):
     {"errorMessage":"Can only use letters in this field"}
 ----------------------------------------------------------------------------------
+2022-03-09 15:30:40,176 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9bd58832-9730-4bcd-95e2-fe0ef8bd3adb, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 643.96 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:30:39 GMT, Content-Type=text/plain}
+    Body is 55 bytes (starts on next line):
+    Either your username or password or both are incorrect!
+----------------------------------------------------------------------------------
+2022-03-09 15:31:03,532 [JettyServerThreadPool-35] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=2c0215a9-2d79-4310-97df-729af1024e9a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 508.90 ms
+    Headers: {Date=Wed, 09 Mar 2022 20:31:03 GMT, Content-Type=text/plain}
+    Body is 55 bytes (starts on next line):
+    Either your username or password or both are incorrect!
+----------------------------------------------------------------------------------
