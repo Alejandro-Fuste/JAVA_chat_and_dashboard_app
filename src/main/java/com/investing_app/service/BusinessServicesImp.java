@@ -23,7 +23,7 @@ public class BusinessServicesImp implements BusinessServices {
                     throw new UsernameAlreadyExists("That username is already taken! Please try again.");
             }
             if (business.getRole().length() > 10 || business.getLastName().length() > 20 || business.getFirstName().length() > 20 || business.getUsername().length() > 30 || business.getPassword().length() > 30 || business.getBusinessName().length() > 30) {
-                throw new TooLong("Your input is too many characters");
+                throw new TooLong("Your input has too many characters");
             } else if (business.getRole().length() == 0 || business.getUsername().length() == 0 || business.getPassword().length() == 0 || business.getFirstName().length() == 0 || business.getLastName().length() == 0 || business.getBusinessName().length() == 0) {
                 throw new NoValueException("Cannot leave boxes empty");
             } else if (business.getBusinessName().length() <= 2 || business.getUsername().length() < 2 || business.getPassword().length() < 2 || business.getRole().length() < 5) {

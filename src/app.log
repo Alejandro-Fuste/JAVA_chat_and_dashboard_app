@@ -26051,3 +26051,144 @@ Response: [404], execution took 857.87 ms
 2022-03-09 12:42:34,707 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-03-09 12:42:34,898 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-03-09 12:42:34,900 [main] INFO  io.javalin.Javalin - Javalin started in 214ms \o/
+2022-03-09 12:52:18,203 [JettyServerThreadPool-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=f0996ebb-1f88-490e-b661-b2f6d72c4a0d, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 872.52 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:52:17 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 12:54:39,921 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9eaccf44-b7bd-4fea-97ab-38706dc3bcd8, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 570.56 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:54:39 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 12:55:35,941 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=0432b2d3-3ca9-4775-b888-503518f23ccf, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 600.20 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:55:35 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 12:58:14,620 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=172dae42-8641-4c90-94f5-74040edf0d40, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 594.83 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:58:14 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 12:58:41,730 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=a6d9f1b9-2b71-49c8-ad5d-ec1176182e82, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 548.60 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:58:41 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 12:58:59,548 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1778d295-595a-42a9-a49c-a3aeda60a8a9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 550.42 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 17:58:58 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 13:01:10,786 [JettyServerThreadPool-36] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=791cda45-a4d4-44a1-9d3d-32acaaddeb3f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 567.28 ms
+    Headers: {Content-Encoding=gzip, Date=Wed, 09 Mar 2022 18:01:10 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-09 14:56:14,443 [JettyServerThreadPool-37] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=47132624-b4f1-4d97-b88b-afaf78870a04, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=168, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Jodie,
+    "lastName": Becker,
+    "businessName": "Ledner Inc",
+    "username": "Queen18",
+    "password": eY5WbwRh22SHnMb,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 692.73 ms
+    Headers: {Date=Wed, 09 Mar 2022 19:56:13 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"That username is already taken! Please try again."}
+----------------------------------------------------------------------------------
+2022-03-09 15:00:53,530 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-09 15:00:53,541 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-09 15:00:53,541 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-09 15:00:53,541 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-09 15:00:53,542 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-09 15:00:53,543 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-09 15:00:53,543 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-09 15:00:53,543 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-09 15:00:53,543 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-09 15:00:53,543 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-09 15:00:53,546 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @542ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-09 15:00:53,547 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-09 15:00:53,556 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-09 15:00:53,556 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-09 15:00:53,643 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-09 15:00:53,643 [main] INFO  io.javalin.Javalin - Javalin started in 97ms \o/
