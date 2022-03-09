@@ -58,14 +58,17 @@ public class BusinessController {
     };
 
     public Handler getAllBusinesses = ctx -> {
+        Gson gson = new Gson();
         try {
             List<Business> businesses = this.businessServices.getAllBusinessesService();
-            Gson gson = new Gson();
+            gson = new Gson();
             String businessesJSONs = gson.toJson(businesses);
             ctx.result(businessesJSONs);
             ctx.status(200);
-        } catch (BusinessNotFound e){
-            ctx.result(e.getMessage());
+        } catch (BusinessNotFound e) {
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(404);
         }
     };
