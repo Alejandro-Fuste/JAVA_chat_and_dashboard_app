@@ -26885,3 +26885,93 @@ Response: [400], execution took 6.90 ms
 2022-03-10 14:44:27,561 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
 2022-03-10 14:44:27,717 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
 2022-03-10 14:44:27,718 [main] INFO  io.javalin.Javalin - Javalin started in 180ms \o/
+2022-03-10 14:45:29,000 [JettyServerThreadPool-23] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c195325c-a0ea-4c97-98e0-ca1daae3151b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=328, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "createDate": "2022/03/08"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 25.49 ms
+    Headers: {Date=Thu, 10 Mar 2022 19:45:28 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-10 14:57:53,564 [JettyServerThreadPool-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6b9a4e95-2fe5-4d3a-aa8f-cb1c434bb570, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=122, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "wrong"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 8.53 ms
+    Headers: {Date=Thu, 10 Mar 2022 19:57:53 GMT, Content-Type=text/plain}
+    Body is 41 bytes (starts on next line):
+    {"errorMessage":"Must be 10 digits long"}
+----------------------------------------------------------------------------------
+2022-03-10 14:58:26,798 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=7be4502e-972f-4a1c-9ad5-bec27fb1abf6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=134, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "wrong date format"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 5.02 ms
+    Headers: {Date=Thu, 10 Mar 2022 19:58:26 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-10 14:58:58,123 [JettyServerThreadPool-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=13581c96-ef9f-4844-be09-3a38c16b9f11, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=127, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 14,
+    "sharkId": 13,
+    "commenting": "Advanced motivating encryption",
+    "createDate": "wrong date"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1.60 ms
+    Headers: {Date=Thu, 10 Mar 2022 19:58:58 GMT, Content-Type=text/plain}
+    Body is 38 bytes (starts on next line):
+    {"errorMessage":"Create a valid date"}
+----------------------------------------------------------------------------------
+2022-03-10 15:06:12,687 [JettyServerThreadPool-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commenting/29]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commenting/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=8787328a-780e-4a3d-b219-664c87ceb790, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 853.70 ms
+    Headers: {Date=Thu, 10 Mar 2022 20:06:11 GMT, Content-Type=text/plain}
+    Body is 36 bytes (starts on next line):
+    {"errorMessage":"Comment not found"}
+----------------------------------------------------------------------------------
