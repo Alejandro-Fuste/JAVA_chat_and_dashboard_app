@@ -26975,3 +26975,32 @@ Response: [400], execution took 853.70 ms
     Body is 36 bytes (starts on next line):
     {"errorMessage":"Comment not found"}
 ----------------------------------------------------------------------------------
+2022-03-10 15:15:15,325 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-10 15:15:15,341 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-10 15:15:15,341 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-10 15:15:15,342 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-10 15:15:15,342 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-10 15:15:15,342 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-10 15:15:15,342 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-10 15:15:15,343 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-10 15:15:15,343 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-10 15:15:15,343 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-10 15:15:15,343 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-10 15:15:15,343 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-10 15:15:15,344 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-10 15:15:15,344 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-10 15:15:15,344 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-10 15:15:15,349 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @753ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-10 15:15:15,349 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-10 15:15:15,360 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-10 15:15:15,361 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-10 15:15:15,469 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-10 15:15:15,470 [main] INFO  io.javalin.Javalin - Javalin started in 121ms \o/

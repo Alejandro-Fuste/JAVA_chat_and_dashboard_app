@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.investing_app.entities.Offer;
 import com.investing_app.entities.Pitch;
 import com.investing_app.service.PitchService;
+
+import java.util.HashMap;
 import java.util.List;
 import io.javalin.http.Handler;
 
@@ -25,7 +27,9 @@ public class PitchController {
             ctx.status(201);
         }
         catch (Exception e) {
-            ctx.result(e.getMessage());
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
             ctx.status(400);
         }
     };
