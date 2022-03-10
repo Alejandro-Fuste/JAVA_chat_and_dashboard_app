@@ -23,7 +23,7 @@ public class CommentingServicesImp implements CommentingServices {
             } else if(commenting.getCommenting().length() == 0){
                 throw new NoValueException("Cannot leave boxes empty");
             } else if(commenting.getCommenting().length() > 200){
-                throw new TooLong("Your input is too many characters");
+                throw new TooLong("Your input has too many characters");
             } else if (!Pattern.matches("^[0-9-/]*$", commenting.getCreateDate())){
                 throw new OnlyNumbers("Create a valid date");
             } else {
