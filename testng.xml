@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite for my tests">
+    <test name="JAVA_investing_app Unit Tests">
+        <classes>
+            <class name="dev.businessservicestests.BusinessServicesTests"/>
+            <class name="dev.businesstests.BusinessDAOTest"/>
+            <class name="dev.commentingservicetests.CommentingServiceTests"/>
+            <class name="dev.commentingtests.CommentingDAOTest"/>
+            <class name="dev.pitchtests.PitchDAOTests"/>
+            <class name="dev.pitchtests.PitchServiceTests"/>
+            <class name="dev.SharkTests.SharkDAOTests"/>
+            <class name="dev.SharkTests.SharkServiceTests"/>
+        </classes>
+    </test>
+
+</suite>
