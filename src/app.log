@@ -25897,7 +25897,7 @@ Request: POST [/business/login]
     "password": "badPassword"
 }
     QueryString: null
-    QueryParams: {}
+    QueryParams: {}d
     FormParams: {}
 Response: [400], execution took 1008.79 ms
     Headers: {Date=Tue, 08 Mar 2022 20:53:37 GMT, Content-Type=text/plain}
@@ -27111,6 +27111,1328 @@ Request: POST [/pitch/create]
     FormParams: {}
 Response: [400], execution took 1181.79 ms
     Headers: {Date=Thu, 10 Mar 2022 20:41:53 GMT, Content-Type=text/plain}
+    Body is 71 bytes (starts on next line):
+    {"errorMessage":"Please enter a percentage less than or equal to 100."}
+----------------------------------------------------------------------------------
+2022-03-11 13:19:21,431 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2022-03-11 13:19:21,453 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/business/{id}]
+2022-03-11 13:19:21,453 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/businesses]
+2022-03-11 13:19:21,454 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/login]
+2022-03-11 13:19:21,454 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/business/create]
+2022-03-11 13:19:21,454 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commenting/{id}]
+2022-03-11 13:19:21,455 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/commentingAll]
+2022-03-11 13:19:21,455 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/commenting/create]
+2022-03-11 13:19:21,455 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark]
+2022-03-11 13:19:21,455 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/shark/login]
+2022-03-11 13:19:21,456 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/pitch/create]
+2022-03-11 13:19:21,456 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/pitches]
+2022-03-11 13:19:21,457 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/offer]
+2022-03-11 13:19:21,457 [main] INFO  io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PATCH[/pitch/accept/{pitchId}]
+2022-03-11 13:19:21,457 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-03-11 13:19:21,463 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @670ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-11 13:19:21,464 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-03-11 13:19:21,479 [main] INFO  io.javalin.Javalin - You are running Javalin 4.2.0 (released January 2, 2022).
+2022-03-11 13:19:21,479 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-03-11 13:19:21,610 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-03-11 13:19:21,611 [main] INFO  io.javalin.Javalin - Javalin started in 148ms \o/
+2022-03-11 13:20:22,648 [JettyServerThreadPool-24] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=5764510d-72e8-4956-bfa6-46bd1a3eb080, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1213.45 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:20:21 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:20:23,854 [JettyServerThreadPool-20] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6fa3ac9f-bf49-47e9-86a2-1eb8d899a620, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=190, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Albertha,
+    "lastName": Sauer,
+    "businessName": "Kovacek, Fahey and Hermann",
+    "username": Gloria_Erdman,
+    "password": z7KbpcFEK4tynL8,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1160.25 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:20:22 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    null
+----------------------------------------------------------------------------------
+2022-03-11 13:25:35,378 [JettyServerThreadPool-25] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=75b22777-f917-4489-9539-f3b54eb7c3f9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 780.52 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:25:34 GMT, Content-Type=text/plain}
+    Body is gzipped (2178 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:25:36,512 [JettyServerThreadPool-18] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=d5b74e0e-77d8-44b5-b717-61bd193869ab, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=182, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Lonzo,
+    "lastName": Hilll,
+    "businessName": "Breitenberg - Haag",
+    "username": Glen.Stoltenberg,
+    "password": 7YRHwj4GvDRYFSK,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1086.61 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:35 GMT, Content-Type=text/plain}
+    Body is 169 bytes (starts on next line):
+    {"businessId":15,"firstName":"Lonzo","lastName":"Hilll","businessName":"Breitenberg - Haag","username":"Glen.Stoltenberg","password":"7YRHwj4GvDRYFSK","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:37,095 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/15]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=71af49f7-adf5-402a-ae0f-9a3c2cb9b300, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 545.61 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:36 GMT, Content-Type=text/plain}
+    Body is 169 bytes (starts on next line):
+    {"businessId":15,"firstName":"Lonzo","lastName":"Hilll","businessName":"Breitenberg - Haag","username":"Glen.Stoltenberg","password":"7YRHwj4GvDRYFSK","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:37,701 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=fbe3af2e-240a-415c-a03f-6af9a76fe1d1, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=68, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":Glen.Stoltenberg,
+    "password":7YRHwj4GvDRYFSK
+}
+
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 572.54 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:37 GMT, Content-Type=text/plain}
+    Body is 169 bytes (starts on next line):
+    {"businessId":15,"firstName":"Lonzo","lastName":"Hilll","businessName":"Breitenberg - Haag","username":"Glen.Stoltenberg","password":"7YRHwj4GvDRYFSK","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:38,871 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=4a763626-91c9-44b1-8ad7-7272c3de1ecf, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=166, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Westley,
+    "lastName": Gleichner,
+    "businessName": deliverables,
+    "username": Dee36,
+    "password": nfDKZloOkd0zthc,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1131.91 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:37 GMT, Content-Type=text/plain}
+    Body is 152 bytes (starts on next line):
+    {"sharkId":14,"firstName":"Westley","lastName":"Gleichner","businessName":"deliverables","username":"Dee36","password":"nfDKZloOkd0zthc","role":"shark"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:39,453 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=111a84ce-c0ed-4ddf-87b3-6c51d76b8a1f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=56, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":Dee36,
+    "password":nfDKZloOkd0zthc
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 546.16 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:38 GMT, Content-Type=text/plain}
+    Body is 152 bytes (starts on next line):
+    {"sharkId":14,"firstName":"Westley","lastName":"Gleichner","businessName":"deliverables","username":"Dee36","password":"nfDKZloOkd0zthc","role":"shark"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:40,061 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=000edf7e-49d2-48ec-ab5d-40c7cb0e8d90, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 572.47 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:25:39 GMT, Content-Type=text/plain}
+    Body is gzipped (1986 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:25:40,653 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=d61d827e-fa82-4625-ad23-18b7f6602365, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=126, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 15,
+    "sharkId": 14,
+    "commenting": "Reduced composite flexibility",
+    "createDate": "2022/03/11"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 548.25 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:40 GMT, Content-Type=text/plain}
+    Body is 116 bytes (starts on next line):
+    {"commentId":21,"businessId":15,"sharkId":14,"commenting":"Reduced composite flexibility","createDate":"2022/03/11"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:41,223 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commenting/21]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commenting/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=3ea357a5-f417-48f2-b86c-0fdebc8d7f9f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 543.52 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:40 GMT, Content-Type=text/plain}
+    Body is 116 bytes (starts on next line):
+    {"commentId":21,"businessId":15,"sharkId":14,"commenting":"Reduced composite flexibility","createDate":"2022/03/11"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:41,806 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ded2a76a-5c12-43d1-94d1-06846f4e5f2b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 547.98 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:25:41 GMT, Content-Type=text/plain}
+    Body is gzipped (2348 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:25:42,397 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6953c1b8-3900-44d5-a7b7-5d1c5457bf37, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 553.64 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:25:41 GMT, Content-Type=text/plain}
+    Body is gzipped (9689 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:25:43,556 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=15a79140-205a-414b-825e-9d07b436b723, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=373, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 9,
+    "businessName": "action-items",
+    "creationDate": "2022/03/11",
+    "pitch": "Est doloribus odit ad. At repellat eum numquam quo. Et aliquam occaecati sed odio esse tempora non ipsum. Inventore soluta id. Quibusdam aut est et molestias corporis ea amet consequuntur.",
+    "amount": 620519.77,
+    "percentage": 38.32,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1121.28 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:42 GMT, Content-Type=text/plain}
+    Body is 343 bytes (starts on next line):
+    {"pitchId":30,"businessId":9,"businessName":"action-items","creationDate":"2022/03/11","pitch":"Est doloribus odit ad. At repellat eum numquam quo. Et aliquam occaecati sed odio esse tempora non ipsum. Inventore soluta id. Quibusdam aut est et molestias corporis ea amet consequuntur.","amount":620519.77,"percentage":38.32,"status":"pending"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:44,406 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b0f693e6-d5b2-4da3-b50b-a0f6330abc4c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 815.42 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:25:43 GMT, Content-Type=text/plain}
+    Body is gzipped (10401 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:25:45,168 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/pitch/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/pitch/offer]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b7763c64-a971-463b-a6ea-04fc26a3e4a9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=71, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 28,
+    "amount": 620519.77,
+    "percentage": 38.32
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 726.53 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:44 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-03-11 13:25:45,932 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/pitch/accept/28]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/pitch/accept/{pitchId}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=38172f17-5c7e-42b1-9f81-f75b09f5663b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 731.35 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:45 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-03-11 13:25:46,723 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/25]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=3b6ba184-0a02-4618-a4f0-d87880f21d86, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 755.86 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:45 GMT, Content-Type=text/plain}
+    Body is 37 bytes (starts on next line):
+    {"errorMessage":"Business not found"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:47,617 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=92caf25f-d921-456b-8e23-19b787bdb495, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 861.27 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:46 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Username or Password are incorrect"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:48,302 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9dc8c243-a136-4dba-91f3-284f6afb62fc, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Dameon,
+    "lastName": Mante,
+    "businessName": "Breitenberg - Haag",
+    "username": "Queen18",
+    "password": C5CjESRA2ZpEJSH,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 655.91 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:47 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"That username is already taken! Please try again."}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:49,094 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b6693edb-ae5a-4f4c-9ee1-166c8dcb2afe, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=295, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Godfrey,
+    "lastName": Roberts,
+    "businessName": "Breitenberg - Haag",
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": kx4mG1taDr125ut,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 763.58 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:48 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:49,772 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=58fa0103-9e31-406f-98a6-b85d887dada0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Eleanore,
+    "lastName": Wilkinson,
+    "businessName": "Breitenberg - Haag",
+    "username": "a",
+    "password": 9groowMESoy33we,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 645.14 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:49 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"Need to fill out the minimum amount of characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:50,661 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=105c231c-7c0d-404f-a554-dd241ed5d196, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=166, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Tia,
+    "lastName": Mills,
+    "businessName": "Breitenberg - Haag",
+    "username": "",
+    "password": fVB3_w1gIZp6CPT,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 859.12 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:49 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:51,371 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1513516b-0f15-4fe4-82a1-d8950d621273, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=193, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "random First 1",
+    "lastName": Hettinger,
+    "businessName": "Breitenberg - Haag",
+    "username": Asa_Kuphal13,
+    "password": Ri3V1Z5KcD9AMPe,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 685.35 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:50 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Can only use letters in this field"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:52,043 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ed6a6560-2d05-458d-a155-261f60b1b2d3, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 644.86 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:51 GMT, Content-Type=text/plain}
+    Body is 74 bytes (starts on next line):
+    {"errorMessage":"Either your username or password or both are incorrect!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:52,826 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=58cdf232-8d67-44b0-ae30-afa97d32078a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 748.78 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:52 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:53,661 [JettyServerThreadPool-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b57b685d-faff-4b30-9b7e-bf0d016ae9d0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=53, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 808.39 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:52 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:25:53,694 [JettyServerThreadPool-21] WARN  io.javalin.Javalin - Uncaught exception
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 26 path $.businessName
+	at com.google.gson.Gson.fromJson(Gson.java:978) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar:?]
+	at com.investing_app.controllers.SharkController.lambda$0(SharkController.java:21) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.2.0.jar:4.2.0]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.2.0.jar:4.2.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.2.0.jar:4.2.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 4 column 26 path $.businessName
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562) ~[gson-2.8.9.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:490) ~[gson-2.8.9.jar:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:413) ~[gson-2.8.9.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:216) ~[gson-2.8.9.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar:?]
+	... 44 more
+2022-03-11 13:25:53,709 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ead0c804-cfe8-4fac-9051-a3190bee44ac, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=168, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "",
+    "lastName": Nienow,
+    "businessName": web services,
+    "username": Jaiden.Hoeger44,
+    "password": P3cEiZFJnsTfmS1,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 17.35 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:25:53 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-03-11 13:29:03,275 [JettyServerThreadPool-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=08a60f92-88cd-40fa-bc8e-475b13395d65, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=158, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "",
+    "lastName": Hegmann,
+    "businessName": systems,
+    "username": Johnnie97,
+    "password": F826Witk1SAMQFh,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 586.91 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:02 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:47,573 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=54535f48-e59f-4b8a-aed4-b59fb36dbc9d, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 602.98 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:29:46 GMT, Content-Type=text/plain}
+    Body is gzipped (2348 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:29:48,697 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1d0a1067-eff7-46c7-9546-92db4103fd61, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=178, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Wilmer,
+    "lastName": Feest,
+    "businessName": "Rohan - Lynch",
+    "username": Haven_Altenwerth,
+    "password": 4WCZOqe5MoyoUQG,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1079.05 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:47 GMT, Content-Type=text/plain}
+    Body is 165 bytes (starts on next line):
+    {"businessId":16,"firstName":"Wilmer","lastName":"Feest","businessName":"Rohan - Lynch","username":"Haven_Altenwerth","password":"4WCZOqe5MoyoUQG","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:49,257 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/16]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=99ca5a2a-bb45-43bf-a839-818031af2c1f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 525.60 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:48 GMT, Content-Type=text/plain}
+    Body is 165 bytes (starts on next line):
+    {"businessId":16,"firstName":"Wilmer","lastName":"Feest","businessName":"Rohan - Lynch","username":"Haven_Altenwerth","password":"4WCZOqe5MoyoUQG","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:49,821 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=e2ff1509-b771-46b6-b905-6147ff1f75ca, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=68, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":Haven_Altenwerth,
+    "password":4WCZOqe5MoyoUQG
+}
+
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 531.80 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:49 GMT, Content-Type=text/plain}
+    Body is 165 bytes (starts on next line):
+    {"businessId":16,"firstName":"Wilmer","lastName":"Feest","businessName":"Rohan - Lynch","username":"Haven_Altenwerth","password":"4WCZOqe5MoyoUQG","role":"business"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:50,971 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=0f823fd6-4159-477b-9b69-a09fb149bdd7, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Brannon,
+    "lastName": Swift,
+    "businessName": blockchains,
+    "username": Eleanore_Hettinger34,
+    "password": zpKvudRTccZaTne,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1117.42 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:49 GMT, Content-Type=text/plain}
+    Body is 162 bytes (starts on next line):
+    {"sharkId":15,"firstName":"Brannon","lastName":"Swift","businessName":"blockchains","username":"Eleanore_Hettinger34","password":"zpKvudRTccZaTne","role":"shark"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:51,525 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c76c1e41-bda9-43bc-85b4-b034d11f31b9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=71, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":Eleanore_Hettinger34,
+    "password":zpKvudRTccZaTne
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 520.53 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:51 GMT, Content-Type=text/plain}
+    Body is 162 bytes (starts on next line):
+    {"sharkId":15,"firstName":"Brannon","lastName":"Swift","businessName":"blockchains","username":"Eleanore_Hettinger34","password":"zpKvudRTccZaTne","role":"shark"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:52,196 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commentingAll]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commentingAll]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=f34a602f-1d94-46c7-9c23-7d3cdd51f1a3, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 641.52 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:29:51 GMT, Content-Type=text/plain}
+    Body is gzipped (2103 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:29:52,752 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=641819fb-0bf3-4e9f-805a-4331a7790da1, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "Networked client-driven forecast",
+    "createDate": "2022/03/11"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 516.35 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:52 GMT, Content-Type=text/plain}
+    Body is 119 bytes (starts on next line):
+    {"commentId":22,"businessId":16,"sharkId":15,"commenting":"Networked client-driven forecast","createDate":"2022/03/11"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:53,309 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commenting/22]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commenting/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=d821161f-58e0-4037-a4b1-9fd93123244a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 521.88 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:52 GMT, Content-Type=text/plain}
+    Body is 119 bytes (starts on next line):
+    {"commentId":22,"businessId":16,"sharkId":15,"commenting":"Networked client-driven forecast","createDate":"2022/03/11"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:53,858 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/businesses]
+    Matching endpoint-handlers: [BEFORE=*, GET=/businesses]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=5e273903-eea6-44a4-b965-34de6a132411, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 518.38 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:29:53 GMT, Content-Type=text/plain}
+    Body is gzipped (2514 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:29:54,408 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=f640df43-49a5-4033-8249-2210ac04b74c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 522.10 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:29:53 GMT, Content-Type=text/plain}
+    Body is gzipped (10411 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:29:55,557 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=8d587d01-0f70-4ec1-90a0-b968417b45df, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=376, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "2022/03/11",
+    "pitch": "Et dolorem qui deserunt saepe facere. Ducimus quae et nisi voluptatibus eos aut magnam quas. Amet nemo quidem dolorem pariatur non quam sed harum id. Repellat doloremque dolores excepturi.",
+    "amount": 614033.85,
+    "percentage": 42.94,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1121.57 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:54 GMT, Content-Type=text/plain}
+    Body is 346 bytes (starts on next line):
+    {"pitchId":32,"businessId":4,"businessName":"QB Training Inc","creationDate":"2022/03/11","pitch":"Et dolorem qui deserunt saepe facere. Ducimus quae et nisi voluptatibus eos aut magnam quas. Amet nemo quidem dolorem pariatur non quam sed harum id. Repellat doloremque dolores excepturi.","amount":614033.85,"percentage":42.94,"status":"pending"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:56,166 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/pitches]
+    Matching endpoint-handlers: [BEFORE=*, GET=/pitches]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ab9ae86d-3bdf-410b-9499-d522c49e06fb, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 577.67 ms
+    Headers: {Content-Encoding=gzip, Date=Fri, 11 Mar 2022 18:29:55 GMT, Content-Type=text/plain}
+    Body is gzipped (11133 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-03-11 13:29:56,722 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/pitch/offer]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/pitch/offer]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=d1d4c5c9-dacf-4df9-a75a-c06ccf0c400e, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=71, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "pitchId": 30,
+    "amount": 614033.85,
+    "percentage": 42.94
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 520.76 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:56 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-03-11 13:29:57,306 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PATCH [/pitch/accept/30]
+    Matching endpoint-handlers: [BEFORE=*, PATCH=/pitch/accept/{pitchId}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=868a64ef-de8c-488e-bbf9-e471d48422ba, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 555.08 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:56 GMT, Content-Type=text/plain}
+    Body is 4 bytes (starts on next line):
+    true
+----------------------------------------------------------------------------------
+2022-03-11 13:29:57,923 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/business/26]
+    Matching endpoint-handlers: [BEFORE=*, GET=/business/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=ddcab2cf-733a-4dbc-80f0-3f629ac441ca, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 579.55 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:57 GMT, Content-Type=text/plain}
+    Body is 37 bytes (starts on next line):
+    {"errorMessage":"Business not found"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:58,588 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=7c76a11a-a899-421a-996a-504a797dbca2, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 635.49 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:57 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Username or Password are incorrect"}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:59,296 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=cfe46350-246b-43aa-9763-4519fb889a84, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=171, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Alan,
+    "lastName": Keebler,
+    "businessName": "Rohan - Lynch",
+    "username": "Banner1",
+    "password": XTfOKcD5JN399Uo,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 676.54 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:58 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"That username is already taken! Please try again."}
+----------------------------------------------------------------------------------
+2022-03-11 13:29:59,956 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=6650c832-2025-47a5-b594-f88d11e32730, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=287, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Micah,
+    "lastName": Brakus,
+    "businessName": "Rohan - Lynch",
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": 7J5zuzww2rimRSe,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 628.60 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:59 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:00,714 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=59281082-75b7-428c-b5eb-ad745514fd7f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=165, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Kaylin,
+    "lastName": Morar,
+    "businessName": "Rohan - Lynch",
+    "username": "a",
+    "password": 7C91GaWFNiOrOHH,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 726.34 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:29:59 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"Need to fill out the minimum amount of characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:01,387 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c35cfbde-f26f-401b-b988-db25cbb65d43, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=166, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Mortimer,
+    "lastName": Mills,
+    "businessName": "Rohan - Lynch",
+    "username": "",
+    "password": Mf77ngjL9nPxotZ,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 643.63 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:00 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:01,976 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/business/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/business/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=2efe59e6-95e8-48be-aa23-580323d20fbe, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=183, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "random First 1",
+    "lastName": Kessler,
+    "businessName": "Rohan - Lynch",
+    "username": Freddie59,
+    "password": MgUnBIA7eIP9woC,
+    "role": "business"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 560.53 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:01 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Can only use letters in this field"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:02,637 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=c4e9aa45-f5c5-4dd5-b6ce-5b7d45a086d4, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=64, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "badUserName",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 634.45 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:02 GMT, Content-Type=text/plain}
+    Body is 74 bytes (starts on next line):
+    {"errorMessage":"Either your username or password or both are incorrect!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:03,248 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9d766a60-2e6c-4394-88ad-3f0fbe9a2f83, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=176, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 584.88 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:02 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:03,830 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9ddbbc01-bad6-4dec-bfd8-2cb7a050a3c4, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=53, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username": "",
+    "password": "badPassword"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 554.55 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:03 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:04,491 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=4b258a86-2576-4d54-a595-732067e285a1, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=155, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "",
+    "lastName": Kuhic,
+    "businessName": markets,
+    "username": Randal17,
+    "password": MrE5KU6gYZaa68Q,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 636.78 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:03 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:05,097 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=7c5f5ba7-9b9a-4260-aecb-da5c58dde91c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=291, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "lastName": Nienow,
+    "businessName": eyeballs,
+    "username": Sigmund_Jakubowski0,
+    "password": ji8yEKhG9Jy7078,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 582.26 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:04 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:05,757 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=55a4b959-392e-413b-a1ae-6e5dce08a32d, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=162, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Bartholome,
+    "lastName": Wunsch,
+    "businessName": e-business,
+    "username": "a",
+    "password": Wp_I_v9hZgyBhvL,
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 628.58 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:05 GMT, Content-Type=text/plain}
+    Body is 58 bytes (starts on next line):
+    {"errorMessage":"Username must be at least 5 characters!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,765 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/shark]
+    Matching endpoint-handlers: [BEFORE=*, POST=/shark]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=688dee14-12c1-4f4c-b0dd-aa00db3bef49, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=158, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "firstName": Fausto,
+    "lastName": Stehr,
+    "businessName": communities,
+    "username": Jonathon_Wunsch,
+    "password": "a",
+    "role": "shark"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 984.49 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:05 GMT, Content-Type=text/plain}
+    Body is 58 bytes (starts on next line):
+    {"errorMessage":"Password must be at least 8 characters!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,790 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=9866661e-2484-457b-8f01-a3d9dff0a8a6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=242, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "Networked client-driven forecast",
+    "createDate": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 0.68 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,815 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=1cadce82-9850-4fc6-bc10-3ef267ec1d61, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=120, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "Networked client-driven forecast",
+    "createDate": "a"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 0.74 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 41 bytes (starts on next line):
+    {"errorMessage":"Must be 10 digits long"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,832 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=21f5daea-fa8a-4af9-bf13-09d26a379423, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=97, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "",
+    "createDate": "2022/03/11"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 0.62 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 43 bytes (starts on next line):
+    {"errorMessage":"Cannot leave boxes empty"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,849 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=cacdb1d5-8c36-4356-a358-7f8237039894, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=328, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "createDate": "2022/03/11"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 0.66 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 53 bytes (starts on next line):
+    {"errorMessage":"Your input has too many characters"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:06,868 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/commenting/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/commenting/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=b54aa44a-244d-40ca-9503-5e6365c223d4, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 16,
+    "sharkId": 15,
+    "commenting": "Networked client-driven forecast",
+    "createDate": "wrong date"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1.08 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 38 bytes (starts on next line):
+    {"errorMessage":"Create a valid date"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:07,402 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/commenting/32]
+    Matching endpoint-handlers: [BEFORE=*, GET=/commenting/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=100e384e-d4e7-4c66-a35f-c263d1f5974a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 513.72 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:06 GMT, Content-Type=text/plain}
+    Body is 36 bytes (starts on next line):
+    {"errorMessage":"Comment not found"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:08,478 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=a2d6ba0c-73fb-4fa3-9f08-4d6e8da3f1c3, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=1085, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "2022/03/11",
+    "pitch": "Magna fermentum iaculis eu non. Varius quam quisque id diam vel quam elementum pulvinar. Adipiscing bibendum est ultricies integer quis auctor elit sed. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Diam in arcu cursus euismod quis viverra nibh. Feugiat in ante metus dictum at tempor commodo ullamcorper. Quam nulla porttitor massa id. Ullamcorper malesuada proin libero nunc consequat. Nunc id cursus metus aliquam eleifend mi. Purus sit amet luctus venenatis lectus magna. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Mollis aliquam ut porttitor leo a diam sollicitudin. Semper eget duis at tellus. Quam nulla porttitor massa id neque. Ultricies lacus sed turpis tincidunt id aliquet. In egestas erat imperdiet sed euismod nisi porta. Integer feugiat scelerisque varius morbi.",
+    "amount": 614033.85,
+    "percentage": 42.94,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1045.68 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:07 GMT, Content-Type=text/plain}
+    Body is 54 bytes (starts on next line):
+    {"errorMessage":"You are exceeding the value length!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:09,611 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=528b8917-fc81-4ca8-9c9f-c3168ca32063, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=188, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "2022/03/11",
+    "pitch": "",
+    "amount": 614033.85,
+    "percentage": 42.94,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1102.31 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:08 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"You must enter a value!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:10,724 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=a99f237a-7b75-46a2-900d-c387657db6d3, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=376, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "wrong date",
+    "pitch": "Et dolorem qui deserunt saepe facere. Ducimus quae et nisi voluptatibus eos aut magnam quas. Amet nemo quidem dolorem pariatur non quam sed harum id. Repellat doloremque dolores excepturi.",
+    "amount": 614033.85,
+    "percentage": 42.94,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1085.82 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:09 GMT, Content-Type=text/plain}
+    Body is 42 bytes (starts on next line):
+    {"errorMessage":"Input type not allowed!"}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:11,920 [JettyServerThreadPool-21] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=28a5a515-2f6b-4cf4-8df4-1b1ba70ae324, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=374, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "2022/03/11",
+    "pitch": "Et dolorem qui deserunt saepe facere. Ducimus quae et nisi voluptatibus eos aut magnam quas. Amet nemo quidem dolorem pariatur non quam sed harum id. Repellat doloremque dolores excepturi.",
+    "amount": 1000001,
+    "percentage": 42.94,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1164.27 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:10 GMT, Content-Type=text/plain}
+    Body is 68 bytes (starts on next line):
+    {"errorMessage":"Please enter an amount below one million dollars."}
+----------------------------------------------------------------------------------
+2022-03-11 13:30:13,056 [JettyServerThreadPool-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/pitch/create]
+    Matching endpoint-handlers: [BEFORE=*, POST=/pitch/create]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.29.0, Connection=keep-alive, Postman-Token=8ef5b638-4195-4a23-aa54-daa084be9c86, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=374, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "businessId": 4,
+    "businessName": "QB Training Inc",
+    "creationDate": "2022/03/11",
+    "pitch": "Et dolorem qui deserunt saepe facere. Ducimus quae et nisi voluptatibus eos aut magnam quas. Amet nemo quidem dolorem pariatur non quam sed harum id. Repellat doloremque dolores excepturi.",
+    "amount": 614033.85,
+    "percentage": 101,
+    "status": "pending"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [400], execution took 1109.98 ms
+    Headers: {Date=Fri, 11 Mar 2022 18:30:11 GMT, Content-Type=text/plain}
     Body is 71 bytes (starts on next line):
     {"errorMessage":"Please enter a percentage less than or equal to 100."}
 ----------------------------------------------------------------------------------
